@@ -152,7 +152,7 @@ void process_data(mpu6050_acce_value_t *acce_value, mpu6050_gyro_value_t *gyro_v
 }
 
 
-void control_buzzer(bool activate) {
+void buzzer(bool activate) {
 	
     gpio_set_level(BUZZER_GPIO, activate ? 1 : 0);
 }
@@ -162,10 +162,10 @@ void isFallen(float jerk, float angle) {
     if (jerk > fallThreshold && fabs(angle) > 45.0) { 
         printf("Fallen detected!\n");
         fall_detected = true;
-        control_buzzer(true);
+        buzzer(true);
     } else {
         fall_detected = false;
-        control_buzzer(false);
+        buzzer(false);
     }
 }
 
@@ -176,6 +176,17 @@ void init_semaphores() {
     xIsFallenSemaphore = xSemaphoreCreateBinary();
 }
 
+void vTaskCheckButton(void *pvParameters) {  // Emergency button
+    for (;;) {
+     
+        if (gpio_get_level(BUTTON) == 0) { 
+            printf("Button Pressed \n");
+            fall_detected = true;
+            buzzer(true);
+        }
+        vTaskDelay(pdMS_TO_TICKS(100)); 
+    }
+}
 
 void vTaskReadData(void *pvParameters) {
     for (;;) {
@@ -209,10 +220,15 @@ void vTaskIsFallen(void *pvParameters) {
 
 void app_main(void) {
     gpio_set_direction(GPIO_NUM_4, GPIO_MODE_OUTPUT);
+    
+    gpio_set_direction(BUTTON, GPIO_MODE_INPUT);
+    gpio_set_pull_mode(BUTTON, GPIO_PULLUP_ONLY);
+    
     i2c_sensor_mpu6050_init();
     
     init_semaphores();
     
+    xTaskCreate(vTaskCheckButton, "check_button", 1024*2, NULL, 6, NULL);
     xTaskCreate(vTaskReadData, "read_data", 1024*2, NULL, 5, NULL);
     xTaskCreate(vTaskProcessData, "process_data", 1024*2, NULL, 4, NULL);
     xTaskCreate(vTaskIsFallen, "is_fallen", 1024*2, NULL, 3, NULL);
