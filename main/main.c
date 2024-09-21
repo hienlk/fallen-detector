@@ -140,7 +140,6 @@ void process_data(mpu6050_acce_value_t *acce_value, mpu6050_gyro_value_t *gyro_v
     prevAccZ = acceleration_mg_z;
     
     
-    
  	angleAcc = atan2(acceleration_mg_y, sqrt(acceleration_mg_x * acceleration_mg_x + acceleration_mg_z * acceleration_mg_z)) * RAD_TO_DEG;
     float deltaTime = sampleInterval / 1000.0; 
     angleGyro += gyro_value->gyro_x * deltaTime;
@@ -157,17 +156,42 @@ void buzzer(bool activate) {
     gpio_set_level(BUZZER_GPIO, activate ? 1 : 0);
 }
 
+void blink_led(bool activate) {
+	
+    gpio_set_level(LED_GPIO, activate ? 1 : 0);
+}
+
+
 
 void isFallen(float jerk, float angle) {
     if (jerk > fallThreshold && fabs(angle) > 45.0) { 
         printf("Fallen detected!\n");
         fall_detected = true;
         buzzer(true);
+        blink_led(true);
     } else {
         fall_detected = false;
         buzzer(false);
+        blink_led(false);
     }
 }
+
+
+void connect_ble(){ // output: T/F, link led 
+	
+	
+}
+
+
+void tranfer_data_ble(){
+	
+	
+}
+
+
+
+
+
 
 
 void init_semaphores() {
@@ -176,7 +200,7 @@ void init_semaphores() {
     xIsFallenSemaphore = xSemaphoreCreateBinary();
 }
 
-void vTaskCheckButton(void *pvParameters) {  // Emergency button
+void vTaskCheckButton(void *pvParameters) {  // Emergency button *chua xu ly chong rung
     for (;;) {
      
         if (gpio_get_level(BUTTON) == 0) { 
@@ -220,7 +244,8 @@ void vTaskIsFallen(void *pvParameters) {
 
 void app_main(void) {
     gpio_set_direction(GPIO_NUM_4, GPIO_MODE_OUTPUT);
-    
+    gpio_set_direction(GPIO_NUM_5, GPIO_MODE_OUTPUT);
+   
     gpio_set_direction(BUTTON, GPIO_MODE_INPUT);
     gpio_set_pull_mode(BUTTON, GPIO_PULLUP_ONLY);
     
