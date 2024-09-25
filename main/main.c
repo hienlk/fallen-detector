@@ -22,7 +22,8 @@
 
 #define BUZZER_GPIO 4
 #define LED_GPIO 5
-#define BUTTON 10
+#define CHECK_BUTTON 10
+#define STOP_BUTTON 18
 
 #define I2C_MASTER_SCL_IO 9      /*!< gpio number for I2C master clock */
 #define I2C_MASTER_SDA_IO 8      /*!< gpio number for I2C master data  */
@@ -40,9 +41,12 @@ mpu6050_temp_value_t temp;
 SemaphoreHandle_t xReadDataSemaphore;
 SemaphoreHandle_t xProcessDataSemaphore;
 SemaphoreHandle_t xIsFallenSemaphore;
+SemaphoreHandle_t xBuzzerLedMutex;
+
 
 
 bool fall_detected = false;
+bool buzzerLedActive = false;
 
 const float fallThreshold = 650000; 
 const float angleThreshold = 45.0;
@@ -167,17 +171,20 @@ void isFallen(float jerk, float angle) {
     if (jerk > fallThreshold && fabs(angle) > 45.0) { 
         printf("Fallen detected!\n");
         fall_detected = true;
-        buzzer(true);
-        blink_led(true);
+		buzzerLedActive = true; 	
     } else {
         fall_detected = false;
+        /*
         buzzer(false);
         blink_led(false);
+        */
+        buzzerLedActive = false; 
+
     }
 }
 
 
-void connect_ble(){ // output: T/F, link led 
+void connect_ble(){ // output: T/F, blink led 
 	
 	
 }
@@ -191,22 +198,55 @@ void tranfer_data_ble(){
 
 
 
-
-
-
 void init_semaphores() {
     xReadDataSemaphore = xSemaphoreCreateBinary();
     xProcessDataSemaphore = xSemaphoreCreateBinary();
     xIsFallenSemaphore = xSemaphoreCreateBinary();
+    xBuzzerLedMutex = xSemaphoreCreateMutex();
 }
 
 void vTaskCheckButton(void *pvParameters) {  // Emergency button *chua xu ly chong rung
     for (;;) {
-     
-        if (gpio_get_level(BUTTON) == 0) { 
-            printf("Button Pressed \n");
-            fall_detected = true;
-            buzzer(true);
+        if (gpio_get_level(CHECK_BUTTON) == 0) {
+            printf("Button Pressed!\n");
+
+            if (xSemaphoreTake(xBuzzerLedMutex, portMAX_DELAY) == pdTRUE) {
+                fall_detected = true;
+                buzzerLedActive = true;
+                xSemaphoreGive(xBuzzerLedMutex);
+            }
+        }
+        vTaskDelay(pdMS_TO_TICKS(100));
+    }
+}
+
+void vTaskStopButton(void *pvParameters) {
+    for (;;) {
+        if (gpio_get_level(STOP_BUTTON) == 0) {
+            printf("Stop Button Pressed!\n");
+
+            if (xSemaphoreTake(xBuzzerLedMutex, portMAX_DELAY) == pdTRUE) {
+                fall_detected = false;
+                buzzerLedActive = false;
+                xSemaphoreGive(xBuzzerLedMutex);
+            }
+        }
+        vTaskDelay(pdMS_TO_TICKS(100));
+    }
+}
+
+void vTaskBuzzerLed(void *pvParameters) {
+    for (;;) {
+
+        if (xSemaphoreTake(xBuzzerLedMutex, portMAX_DELAY) == pdTRUE) {
+            if (buzzerLedActive) {
+                buzzer(true);
+                blink_led(true);
+            } else {
+                buzzer(false);
+                blink_led(false);
+            }
+            xSemaphoreGive(xBuzzerLedMutex);
         }
         vTaskDelay(pdMS_TO_TICKS(100)); 
     }
@@ -216,6 +256,8 @@ void vTaskReadData(void *pvParameters) {
     for (;;) {
         read_temperature(mpu6050);
         read_data(mpu6050, &acce, &gyro);
+        printf("%.2f \n",jerkMagnitude);
+        printf("%.2f \n",angle);
         
         xSemaphoreGive(xReadDataSemaphore);
         
@@ -242,12 +284,17 @@ void vTaskIsFallen(void *pvParameters) {
     }
 }
 
+
+
+
 void app_main(void) {
     gpio_set_direction(GPIO_NUM_4, GPIO_MODE_OUTPUT);
     gpio_set_direction(GPIO_NUM_5, GPIO_MODE_OUTPUT);
    
-    gpio_set_direction(BUTTON, GPIO_MODE_INPUT);
-    gpio_set_pull_mode(BUTTON, GPIO_PULLUP_ONLY);
+    gpio_set_direction(CHECK_BUTTON, GPIO_MODE_INPUT);
+    gpio_set_pull_mode(CHECK_BUTTON, GPIO_PULLUP_ONLY);
+    gpio_set_direction(STOP_BUTTON, GPIO_MODE_INPUT);
+    gpio_set_pull_mode(STOP_BUTTON, GPIO_PULLUP_ONLY);
     
     i2c_sensor_mpu6050_init();
     
@@ -257,5 +304,6 @@ void app_main(void) {
     xTaskCreate(vTaskReadData, "read_data", 1024*2, NULL, 5, NULL);
     xTaskCreate(vTaskProcessData, "process_data", 1024*2, NULL, 4, NULL);
     xTaskCreate(vTaskIsFallen, "is_fallen", 1024*2, NULL, 3, NULL);
+    xTaskCreate(vTaskBuzzerLed, "control_task", 1024*2, NULL, 1, NULL);
     
 }
