@@ -20,6 +20,7 @@
 #include "mpu6050.h"
 #include "nimble/nimble_port.h"
 #include "nimble/nimble_port_freertos.h"
+#include "nvs_flash.h"
 #include "sdkconfig.h"
 #include "services/gap/ble_svc_gap.h"
 #include "services/gatt/ble_svc_gatt.h"
@@ -43,9 +44,10 @@
 
 char *TAG = "BLE-Test-Sever";
 uint8_t ble_addr_type;
+void ble_app_advertise(void);
+
 static mpu6050_handle_t mpu6050 = NULL;
 uint8_t mpu6050_deviceid;
-void ble_app_advertise(void);
 
 mpu6050_acce_value_t acce;
 mpu6050_gyro_value_t gyro;
@@ -69,6 +71,87 @@ float jerkMagnitude = 0.0;
 float angleAcc = 0.0;
 float angleGyro = 0.0;
 float angle = 0.0;
+
+static int device_write(uint16_t conn_handle, uint16_t attr_handle,
+                        struct ble_gatt_access_ctxt *ctxt, void *arg) {
+  char *data = (char *)ctxt->om->om_data;
+  if (strcmp(data, "LED ON") == 0) {
+    printf("LIGHT ON\n");
+    gpio_set_level(LED_GPIO, 1);
+  } else if (strcmp(data, "LED OFF") == 0) {
+    printf("LIGHT OFF\n");
+    gpio_set_level(LED_GPIO, 0);
+  } else if (strcmp(data, "BUZZER ON") == 0) {
+    printf("BUZZER ON\n");
+    gpio_set_level(BUZZER_GPIO, 1);
+  } else if (strcmp(data, "BUZZER OFF") == 0) {
+    printf("BUZZER OFF\n");
+    gpio_set_level(BUZZER_GPIO, 0);
+  }
+  return 0;
+}
+
+static int device_read(uint16_t con_handle, uint16_t attr_handle,
+                       struct ble_gatt_access_ctxt *ctxt, void *arg) {
+  char sensor_data[100];
+
+  if (fall_detected) {
+    sprintf(sensor_data, "Fallen");
+  } else {
+
+    sprintf(sensor_data, "Temp: %.2f \n", temp.temp);
+  }
+
+  os_mbuf_append(ctxt->om, sensor_data, strlen(sensor_data));
+  return 0;
+}
+
+static const struct ble_gatt_svc_def gatt_svcs[] = {
+    {.type = BLE_GATT_SVC_TYPE_PRIMARY,
+     .uuid = BLE_UUID16_DECLARE(0x180),
+     .characteristics =
+         (struct ble_gatt_chr_def[]){{.uuid = BLE_UUID16_DECLARE(0xFEF4),
+                                      .flags = BLE_GATT_CHR_F_READ,
+                                      .access_cb = device_read},
+                                     {.uuid = BLE_UUID16_DECLARE(0xDEAD),
+                                      .flags = BLE_GATT_CHR_F_WRITE,
+                                      .access_cb = device_write},
+                                     {0}}},
+    {0}};
+
+static int ble_gap_event(struct ble_gap_event *event, void *arg) {
+  if (event->type == BLE_GAP_EVENT_CONNECT) {
+    ESP_LOGI(TAG, "BLE GAP EVENT CONNECT");
+  } else if (event->type == BLE_GAP_EVENT_DISCONNECT) {
+    ESP_LOGI(TAG, "BLE GAP EVENT DISCONNECT");
+    ble_app_advertise();
+  }
+  return 0;
+}
+
+void ble_app_advertise(void) {
+  struct ble_hs_adv_fields fields;
+  const char *device_name = ble_svc_gap_device_name();
+  memset(&fields, 0, sizeof(fields));
+  fields.name = (uint8_t *)device_name;
+  fields.name_len = strlen(device_name);
+  fields.name_is_complete = 1;
+  ble_gap_adv_set_fields(&fields);
+
+  struct ble_gap_adv_params adv_params;
+  memset(&adv_params, 0, sizeof(adv_params));
+  adv_params.conn_mode = BLE_GAP_CONN_MODE_UND;
+  adv_params.disc_mode = BLE_GAP_DISC_MODE_GEN;
+  ble_gap_adv_start(ble_addr_type, NULL, BLE_HS_FOREVER, &adv_params,
+                    ble_gap_event, NULL);
+}
+
+void ble_app_on_sync(void) {
+  ble_hs_id_infer_auto(0, &ble_addr_type);
+  ble_app_advertise();
+}
+
+void host_task(void *param) { nimble_port_run(); }
 
 static void i2c_bus_init(void) {
   i2c_config_t conf;
@@ -180,11 +263,13 @@ void isFallen(float jerk, float angle) {
     buzzerLedActive = false;
   }
 }
-
-void connect_ble() { // output: T/F, blink led
+/*
+void connect_ble() {
+  // output: T/F, blink led
 }
 
 void tranfer_data_ble() {}
+*/
 
 void init_semaphores() {
   xReadDataSemaphore = xSemaphoreCreateBinary();
@@ -193,7 +278,14 @@ void init_semaphores() {
   xBuzzerLedMutex = xSemaphoreCreateMutex();
 }
 
-void vTaskConnectBle(void *pvParameters) {}
+void vTaskConnectBle(void *pvParameters) {
+  for (;;) {
+
+    vTaskDelay(1000 / portTICK_PERIOD_MS);
+  }
+
+  vTaskDelete(NULL);
+}
 
 void vTaskCheckButton(
     void *pvParameters) { // Emergency button *chua xu ly chong rung
@@ -289,12 +381,25 @@ void app_main(void) {
   i2c_sensor_mpu6050_init();
 
   init_semaphores();
+  nvs_flash_init();      // 1 - Initialize NVS flash using
+  esp_nimble_hci_init(); // 2 - Initialize ESP controller
+  nimble_port_init();    // 3 - Initialize the host stack
+  ble_svc_gap_device_name_set(
+      "BLE-Server");   // 4 - Initialize NimBLE configuration - server name
+  ble_svc_gap_init();  // 4 - Initialize NimBLE configuration - gap service
+  ble_svc_gatt_init(); // 4 - Initialize NimBLE configuration - gatt service
+  ble_gatts_count_cfg(
+      gatt_svcs); // 4 - Initialize NimBLE configuration - config gatt services
+  ble_gatts_add_svcs(
+      gatt_svcs); // 4 - Initialize NimBLE configuration - queues gatt services.
+  ble_hs_cfg.sync_cb = ble_app_on_sync; // 5 - Initialize application
+  nimble_port_freertos_init(host_task); // 6 - Run the thread
 
+  xTaskCreate(vTaskConnectBle, "connect_ble", 1024 * 2, NULL, 7, NULL);
   xTaskCreate(vTaskCheckButton, "check_button", 1024 * 2, NULL, 6, NULL);
   xTaskCreate(vTaskReadData, "read_data", 1024 * 2, NULL, 5, NULL);
   xTaskCreate(vTaskProcessData, "process_data", 1024 * 2, NULL, 4, NULL);
   xTaskCreate(vTaskIsFallen, "is_fallen", 1024 * 2, NULL, 3, NULL);
   xTaskCreate(vTaskBuzzerLed, "control_task", 1024 * 2, NULL, 1, NULL);
-  xTaskCreate(vTaskConnectBle, "connect_ble", 1024 * 2, NULL, 5, NULL);
-  xTaskCreate(vTaskTransData, "transfer_data", 1024 * 2, NULL, 3, NULL);
+  xTaskCreate(vTaskTransData, "transfer_data", 1024 * 2, NULL, 1, NULL);
 }
