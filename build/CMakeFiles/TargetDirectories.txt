@@ -398,6 +398,7 @@ E:/workspace/v1/build/esp-idf/esp_wifi/CMakeFiles/list_install_components.dir
 E:/workspace/v1/build/esp-idf/esp_wifi/CMakeFiles/install.dir
 E:/workspace/v1/build/esp-idf/esp_wifi/CMakeFiles/install/local.dir
 E:/workspace/v1/build/esp-idf/esp_wifi/CMakeFiles/install/strip.dir
+E:/workspace/v1/build/esp-idf/bt/CMakeFiles/__idf_bt.dir
 E:/workspace/v1/build/esp-idf/bt/CMakeFiles/edit_cache.dir
 E:/workspace/v1/build/esp-idf/bt/CMakeFiles/rebuild_cache.dir
 E:/workspace/v1/build/esp-idf/bt/CMakeFiles/list_install_components.dir

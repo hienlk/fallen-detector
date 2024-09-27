@@ -1,19 +1,28 @@
 #include "driver/gpio.h"
 #include "driver/i2c.h"
 #include "esp_chip_info.h"
+#include "esp_event.h"
 #include "esp_flash.h"
+#include "esp_log.h"
+#include "esp_nimble_hci.h"
 #include "esp_rom_gpio.h"
 #include "esp_system.h"
 #include "esp_timer.h"
 #include "freertos/FreeRTOS.h"
+#include "freertos/event_groups.h"
 #include "freertos/semphr.h"
 #include "freertos/task.h"
 #include "hal/gpio_types.h"
 #include "hal/i2c_types.h"
 #include "hal/mpu_types.h"
+#include "host/ble_hs.h"
 #include "math.h"
 #include "mpu6050.h"
+#include "nimble/nimble_port.h"
+#include "nimble/nimble_port_freertos.h"
 #include "sdkconfig.h"
+#include "services/gap/ble_svc_gap.h"
+#include "services/gatt/ble_svc_gatt.h"
 #include "soc/gpio_num.h"
 #include "unity.h"
 #include <stdbool.h>
@@ -32,8 +41,12 @@
 
 #define RAD_TO_DEG 57.2958
 
+char *TAG = "BLE-Test-Sever";
+uint8_t ble_addr_type;
 static mpu6050_handle_t mpu6050 = NULL;
 uint8_t mpu6050_deviceid;
+void ble_app_advertise(void);
+
 mpu6050_acce_value_t acce;
 mpu6050_gyro_value_t gyro;
 mpu6050_temp_value_t temp;
@@ -46,7 +59,7 @@ SemaphoreHandle_t xBuzzerLedMutex;
 bool fall_detected = false;
 bool buzzerLedActive = false;
 
-const float fallThreshold = 100.0;
+const float fallThreshold = 200.0;
 const float angleThreshold = 30.0;
 const int sampleInterval = 5;
 float prevAccX = 0.0, prevAccY = 0.0, prevAccZ = 0.0;
@@ -180,6 +193,8 @@ void init_semaphores() {
   xBuzzerLedMutex = xSemaphoreCreateMutex();
 }
 
+void vTaskConnectBle(void *pvParameters) {}
+
 void vTaskCheckButton(
     void *pvParameters) { // Emergency button *chua xu ly chong rung
   for (;;) {
@@ -251,6 +266,8 @@ void vTaskProcessData(void *pvParameters) {
   }
 }
 
+void vTaskTransData(void *pvParameters) {}
+
 void vTaskIsFallen(void *pvParameters) {
   for (;;) {
     if (xSemaphoreTake(xProcessDataSemaphore, portMAX_DELAY) == pdTRUE) {
@@ -278,4 +295,6 @@ void app_main(void) {
   xTaskCreate(vTaskProcessData, "process_data", 1024 * 2, NULL, 4, NULL);
   xTaskCreate(vTaskIsFallen, "is_fallen", 1024 * 2, NULL, 3, NULL);
   xTaskCreate(vTaskBuzzerLed, "control_task", 1024 * 2, NULL, 1, NULL);
+  xTaskCreate(vTaskConnectBle, "connect_ble", 1024 * 2, NULL, 5, NULL);
+  xTaskCreate(vTaskTransData, "transfer_data", 1024 * 2, NULL, 3, NULL);
 }
