@@ -61,7 +61,7 @@ SemaphoreHandle_t xBuzzerLedMutex;
 bool fall_detected = false;
 bool buzzerLedActive = false;
 
-const float fallThreshold = 200.0;
+const float fallThreshold = 650000;
 const float angleThreshold = 30.0;
 const int sampleInterval = 5;
 float prevAccX = 0.0, prevAccY = 0.0, prevAccZ = 0.0;
@@ -220,9 +220,9 @@ void read_data(mpu6050_handle_t mpu6050, mpu6050_acce_value_t *acce_value,
 
 void process_data(mpu6050_acce_value_t *acce_value,
                   mpu6050_gyro_value_t *gyro_value) {
-  float acceleration_mg_x = acce_value->acce_x / 9.8;
-  float acceleration_mg_y = acce_value->acce_y / 9.8;
-  float acceleration_mg_z = acce_value->acce_z / 9.8;
+  float acceleration_mg_x = acce_value->acce_x * 0.488;
+  float acceleration_mg_y = acce_value->acce_y * 0.488;
+  float acceleration_mg_z = acce_value->acce_z * 0.488;
 
   float jerkX = (acceleration_mg_x - prevAccX) / (sampleInterval / 1000.0);
   float jerkY = (acceleration_mg_y - prevAccY) / (sampleInterval / 1000.0);
@@ -238,8 +238,9 @@ void process_data(mpu6050_acce_value_t *acce_value,
       atan2(acceleration_mg_y, sqrt(acceleration_mg_x * acceleration_mg_x +
                                     acceleration_mg_z * acceleration_mg_z)) *
       RAD_TO_DEG;
+
   float deltaTime = sampleInterval / 1000.0;
-  angleGyro += gyro_value->gyro_x * deltaTime;
+  angleGyro += gyro_value->gyro_x * 0.01526 * deltaTime;
 
   float alpha = 0.98;
   angle = alpha * angleGyro + (1.0 - alpha) * angleAcc;
@@ -250,7 +251,7 @@ void buzzer(bool activate) { gpio_set_level(BUZZER_GPIO, activate ? 1 : 0); }
 void blink_led(bool activate) { gpio_set_level(LED_GPIO, activate ? 1 : 0); }
 
 void isFallen(float jerk, float angle) {
-  if (jerkMagnitude > fallThreshold && fabs(angle) > 45.0) {
+  if (jerkMagnitude > fallThreshold && fabs(angle) > angleThreshold) {
     printf("Fallen detected!\n");
     fall_detected = true;
     buzzerLedActive = true;
