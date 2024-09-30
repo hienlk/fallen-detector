@@ -190,7 +190,7 @@ void read_temperature(mpu6050_handle_t mpu6050) {
   err = mpu6050_get_temp(mpu6050, &temp);
 
   if (err == ESP_OK) {
-    printf("Temperature: %.2f°C\n", temp.temp);
+    printf("Temperature: %.2f\n", temp.temp);
   } else {
     printf("Error reading temperature: %d\n", err);
   }
@@ -358,7 +358,7 @@ void vTaskProcessData(void *pvParameters) {
   }
 }
 
-void vTaskTransData(void *pvParameters) {}
+// void vTaskTransData(void *pvParameters) {}
 
 void vTaskIsFallen(void *pvParameters) {
   for (;;) {
@@ -401,5 +401,5 @@ void app_main(void) {
   xTaskCreate(vTaskProcessData, "process_data", 1024 * 2, NULL, 4, NULL);
   xTaskCreate(vTaskIsFallen, "is_fallen", 1024 * 2, NULL, 3, NULL);
   xTaskCreate(vTaskBuzzerLed, "control_task", 1024 * 2, NULL, 1, NULL);
-  xTaskCreate(vTaskTransData, "transfer_data", 1024 * 2, NULL, 1, NULL);
+  //  xTaskCreate(vTaskTransData, "transfer_data", 1024 * 2, NULL, 1, NULL);
 }
