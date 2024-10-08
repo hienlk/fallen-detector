@@ -41,12 +41,10 @@
 #define I2C_MASTER_NUM I2C_NUM_0  /*!< I2C port number for master dev */
 #define I2C_MASTER_FREQ_HZ 100000 /*!< I2C master clock frequency */
 /*
-
-*/
-
 static uint16_t temp_char_handle;
 static uint16_t fall_char_handle;
 static uint16_t conn_handle = BLE_HS_CONN_HANDLE_NONE;
+*/
 
 #define RAD_TO_DEG 57.2958
 
@@ -109,7 +107,7 @@ static int device_read_fallen(uint16_t con_handle, uint16_t attr_handle,
   os_mbuf_append(ctxt->om, sensor_data, strlen(sensor_data));
   return 0;
 }
-/*
+
 static const struct ble_gatt_svc_def gatt_svcs[] = {
     {.type = BLE_GATT_SVC_TYPE_PRIMARY,
      .uuid = BLE_UUID16_DECLARE(0x180),
@@ -136,7 +134,7 @@ static int ble_gap_event(struct ble_gap_event *event, void *arg) {
   return 0;
 }
 
-*/
+/*
 static const struct ble_gatt_svc_def gatt_svcs[] = {
     {.type = BLE_GATT_SVC_TYPE_PRIMARY,
      .uuid = BLE_UUID16_DECLARE(0x180),
@@ -145,13 +143,11 @@ static const struct ble_gatt_svc_def gatt_svcs[] = {
                                          .uuid = BLE_UUID16_DECLARE(0xFEF4),
                                          .flags = BLE_GATT_CHR_F_NOTIFY,
                                          .val_handle = &temp_char_handle,
-                                         .access_cb = device_read_fallen,
                                      },
                                      {
                                          .uuid = BLE_UUID16_DECLARE(0xFEF5),
                                          .flags = BLE_GATT_CHR_F_NOTIFY,
                                          .val_handle = &fall_char_handle,
-                                         .access_cb = device_read_temp,
                                      },
                                      {
                                          .uuid = BLE_UUID16_DECLARE(0xDEAD),
@@ -183,7 +179,7 @@ static int ble_gap_event(struct ble_gap_event *event, void *arg) {
     return 0;
   }
 }
-
+*/
 void ble_app_advertise(void) {
   struct ble_hs_adv_fields fields;
   const char *device_name = ble_svc_gap_device_name();
@@ -356,14 +352,12 @@ void vTaskCheckButton(
   }
 }
 /*
-
-*/
 static void send_notification(uint16_t attr_handle, void *data,
                               size_t data_len) {
   if (conn_handle != BLE_HS_CONN_HANDLE_NONE) {
     struct os_mbuf *om = ble_hs_mbuf_from_flat(data, data_len);
     if (om) {
-      ble_gatts_notify_custom(conn_handle, attr_handle, om);
+      ble_gattc_notify_custom(conn_handle, attr_handle, om);
     }
   }
 }
@@ -382,6 +376,7 @@ void vTaskNotifyBle(void *pvParameters) {
     vTaskDelay(pdMS_TO_TICKS(100)); // Delay 100ms
   }
 }
+*/
 
 void vTaskStopButton(void *pvParameters) {
   for (;;) {
@@ -438,6 +433,8 @@ void vTaskProcessData(void *pvParameters) {
   }
 }
 
+// void vTaskTransData(void *pvParameters) {}
+
 void vTaskIsFallen(void *pvParameters) {
   for (;;) {
     if (xSemaphoreTake(xProcessDataSemaphore, portMAX_DELAY) == pdTRUE) {
@@ -474,10 +471,11 @@ void app_main(void) {
   nimble_port_freertos_init(host_task); // 6 - Run the thread
 
   xTaskCreate(vTaskConnectBle, "connect_ble", 1024 * 2, NULL, 7, NULL);
-  xTaskCreate(vTaskNotifyBle, "notify_ble", 1024 * 2, NULL, 6, NULL);
+  //  xTaskCreate(vTaskNotifyBle, "notify_ble", 1024 * 2, NULL, 6, NULL);
   xTaskCreate(vTaskCheckButton, "check_button", 1024 * 2, NULL, 6, NULL);
   xTaskCreate(vTaskReadData, "read_data", 1024 * 2, NULL, 5, NULL);
   xTaskCreate(vTaskProcessData, "process_data", 1024 * 2, NULL, 4, NULL);
   xTaskCreate(vTaskIsFallen, "is_fallen", 1024 * 2, NULL, 3, NULL);
   xTaskCreate(vTaskBuzzerLed, "control_task", 1024 * 2, NULL, 1, NULL);
+  //  xTaskCreate(vTaskTransData, "transfer_data", 1024 * 2, NULL, 1, NULL);
 }
