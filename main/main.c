@@ -41,10 +41,12 @@
 #define I2C_MASTER_NUM I2C_NUM_0  /*!< I2C port number for master dev */
 #define I2C_MASTER_FREQ_HZ 100000 /*!< I2C master clock frequency */
 /*
+
+*/
+
 static uint16_t temp_char_handle;
 static uint16_t fall_char_handle;
 static uint16_t conn_handle = BLE_HS_CONN_HANDLE_NONE;
-*/
 
 #define RAD_TO_DEG 57.2958
 
@@ -107,7 +109,7 @@ static int device_read_fallen(uint16_t con_handle, uint16_t attr_handle,
   os_mbuf_append(ctxt->om, sensor_data, strlen(sensor_data));
   return 0;
 }
-
+/*
 static const struct ble_gatt_svc_def gatt_svcs[] = {
     {.type = BLE_GATT_SVC_TYPE_PRIMARY,
      .uuid = BLE_UUID16_DECLARE(0x180),
@@ -133,8 +135,8 @@ static int ble_gap_event(struct ble_gap_event *event, void *arg) {
   }
   return 0;
 }
+*/
 
-/*
 static const struct ble_gatt_svc_def gatt_svcs[] = {
     {.type = BLE_GATT_SVC_TYPE_PRIMARY,
      .uuid = BLE_UUID16_DECLARE(0x180),
@@ -142,11 +144,13 @@ static const struct ble_gatt_svc_def gatt_svcs[] = {
          (struct ble_gatt_chr_def[]){{
                                          .uuid = BLE_UUID16_DECLARE(0xFEF4),
                                          .flags = BLE_GATT_CHR_F_NOTIFY,
+                                         .access_cb = device_read_temp,
                                          .val_handle = &temp_char_handle,
                                      },
                                      {
                                          .uuid = BLE_UUID16_DECLARE(0xFEF5),
                                          .flags = BLE_GATT_CHR_F_NOTIFY,
+                                         .access_cb = device_read_fallen,
                                          .val_handle = &fall_char_handle,
                                      },
                                      {
@@ -179,7 +183,7 @@ static int ble_gap_event(struct ble_gap_event *event, void *arg) {
     return 0;
   }
 }
-*/
+
 void ble_app_advertise(void) {
   struct ble_hs_adv_fields fields;
   const char *device_name = ble_svc_gap_device_name();
@@ -352,6 +356,9 @@ void vTaskCheckButton(
   }
 }
 /*
+
+*/
+
 static void send_notification(uint16_t attr_handle, void *data,
                               size_t data_len) {
   if (conn_handle != BLE_HS_CONN_HANDLE_NONE) {
@@ -376,7 +383,6 @@ void vTaskNotifyBle(void *pvParameters) {
     vTaskDelay(pdMS_TO_TICKS(100)); // Delay 100ms
   }
 }
-*/
 
 void vTaskStopButton(void *pvParameters) {
   for (;;) {
