@@ -1,6 +1,6 @@
 
-#ifndef MAIN_STUFF_H_
-#define MAIN_STUFF_H_
+#ifndef MAIN_SERVER_H_
+#define MAIN_SERVER_H_
 
 #include "driver/gpio.h"
 #include "driver/i2c.h"
