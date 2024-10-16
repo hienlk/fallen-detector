@@ -1,9 +1,7 @@
-#include "host/ble_hs.h"
-#include "host/ble_sm.h"
 #include "stuff.h"
 
 bool fall_detected = false;
-bool buzzer_led_active = false;
+bool buzzerLedActive = false;
 mpu6050_temp_value_t temp;
 mpu6050_acce_value_t acce;
 mpu6050_gyro_value_t gyro;
@@ -14,8 +12,6 @@ uint8_t ble_addr_type;
 mpu6050_handle_t mpu6050 = NULL;
 uint16_t fall_char_handle;
 uint16_t temp_char_handle;
-
-static bool is_encrypted = false;
 
 void ble_app_advertise(void);
 
@@ -73,71 +69,23 @@ const struct ble_gatt_svc_def gatt_svcs[] = {
     {0}};
 
 int ble_gap_event(struct ble_gap_event *event, void *arg) {
-  struct ble_gap_conn_desc desc;
-  int rc;
-
   switch (event->type) {
   case BLE_GAP_EVENT_CONNECT:
     ESP_LOGI(TAG, "BLE GAP EVENT CONNECT %s",
              event->connect.status == 0 ? "OK" : "FAILED");
     if (event->connect.status == 0) {
       conn_handle = event->connect.conn_handle;
-      rc = ble_gap_conn_find(event->connect.conn_handle, &desc);
-      if (rc == 0) {
-        ESP_LOGI(TAG,
-                 "Connection security state: encrypted=%d, authenticated=%d, "
-                 "bonded=%d",
-                 desc.sec_state.encrypted, desc.sec_state.authenticated,
-                 desc.sec_state.bonded);
-
-        if (!desc.sec_state.encrypted) {
-          rc = ble_gap_security_initiate(conn_handle);
-          ESP_LOGI(TAG, "Security initiate result: %d", rc);
-        }
-      }
     }
     return 0;
-
   case BLE_GAP_EVENT_DISCONNECT:
-    ESP_LOGI(TAG, "BLE GAP EVENT DISCONNECT reason=%d",
-             event->disconnect.reason);
+    ESP_LOGI(TAG, "BLE GAP EVENT DISCONNECT");
     conn_handle = BLE_HS_CONN_HANDLE_NONE;
-    is_encrypted = false;
     ble_app_advertise();
     return 0;
-
-  case BLE_GAP_EVENT_ENC_CHANGE:
-    ESP_LOGI(TAG, "BLE GAP EVENT ENC CHANGE: status=%d",
-             event->enc_change.status);
-    rc = ble_gap_conn_find(event->enc_change.conn_handle, &desc);
-    if (rc == 0) {
-      is_encrypted = desc.sec_state.encrypted;
-      ESP_LOGI(TAG,
-               "Encryption change: encrypted=%d, authenticated=%d, bonded=%d, "
-               "key_size=%d",
-               desc.sec_state.encrypted, desc.sec_state.authenticated,
-               desc.sec_state.bonded, desc.sec_state.key_size);
-    }
-    return 0;
-
-  case BLE_GAP_EVENT_REPEAT_PAIRING:
-    ESP_LOGI(TAG, "BLE GAP EVENT REPEAT PAIRING");
-    rc = ble_gap_conn_find(event->repeat_pairing.conn_handle, &desc);
-    if (rc == 0) {
-
-      ble_store_util_delete_peer(&desc.peer_id_addr);
-    }
-    return BLE_GAP_REPEAT_PAIRING_RETRY;
-
   case BLE_GAP_EVENT_ADV_COMPLETE:
     ESP_LOGI(TAG, "BLE GAP EVENT ADV COMPLETE");
     ble_app_advertise();
     return 0;
-
-  case BLE_GAP_EVENT_MTU:
-    ESP_LOGI(TAG, "MTU Update Event: %d", event->mtu.value);
-    return 0;
-
   default:
     return 0;
   }
@@ -147,12 +95,9 @@ void ble_app_advertise(void) {
   struct ble_hs_adv_fields fields;
   const char *device_name = ble_svc_gap_device_name();
   memset(&fields, 0, sizeof(fields));
-
-  fields.flags = BLE_HS_ADV_F_DISC_GEN | BLE_HS_ADV_F_BREDR_UNSUP;
   fields.name = (uint8_t *)device_name;
   fields.name_len = strlen(device_name);
   fields.name_is_complete = 1;
-
   ble_gap_adv_set_fields(&fields);
 
   struct ble_gap_adv_params adv_params;
@@ -165,14 +110,6 @@ void ble_app_advertise(void) {
 
 void ble_app_on_sync(void) {
   ble_hs_id_infer_auto(0, &ble_addr_type);
-
-  ble_hs_cfg.sm_io_cap = BLE_SM_IO_CAP_NO_IO;
-  ble_hs_cfg.sm_bonding = 0;
-  ble_hs_cfg.sm_mitm = 0;
-  ble_hs_cfg.sm_sc = 0;
-  ble_hs_cfg.sm_our_key_dist = 0;
-  ble_hs_cfg.sm_their_key_dist = 0;
-
   ble_app_advertise();
 }
 
@@ -188,16 +125,17 @@ void send_notification(uint16_t attr_handle, void *data, size_t data_len) {
 }
 
 void gatt_server(void) {
-  nvs_flash_init();
-  esp_nimble_hci_init();
-  nimble_port_init();
-
-  ble_svc_gap_device_name_set("BLE-Server");
-  ble_svc_gap_init();
-  ble_svc_gatt_init();
-
-  ble_gatts_count_cfg(gatt_svcs);
-  ble_gatts_add_svcs(gatt_svcs);
-  ble_hs_cfg.sync_cb = ble_app_on_sync;
-  nimble_port_freertos_init(host_task);
+  nvs_flash_init();      // 1 - Initialize NVS flash using
+  esp_nimble_hci_init(); // 2 - Initialize ESP controller
+  nimble_port_init();    // 3 - Initialize the host stack
+  ble_svc_gap_device_name_set(
+      "BLE-Server");   // 4 - Initialize NimBLE conf iguration - server name
+  ble_svc_gap_init();  // 4 - Initialize NimBLE configuration - gap service
+  ble_svc_gatt_init(); // 4 - Initialize NimBLE configuration - gatt service
+  ble_gatts_count_cfg(
+      gatt_svcs); // 4 - Initialize NimBLE configuration - config gatt services
+  ble_gatts_add_svcs(
+      gatt_svcs); // 4 - Initialize NimBLE configuration - queues gatt services.
+  ble_hs_cfg.sync_cb = ble_app_on_sync; // 5 - Initialize application
+  nimble_port_freertos_init(host_task); // 6 - Run the thread
 }
