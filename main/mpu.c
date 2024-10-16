@@ -1,14 +1,14 @@
 #include "stuff.h"
 
-const float fallThreshold = 650000;
-const float angleThreshold = 30.0;
-const int sampleInterval = 10;
-float prevAccX = 0.0, prevAccY = 0.0, prevAccZ = 0.0;
-float prevAngleGyro = 0.0;
+const float fall_threshold = 650000;
+const float angle_threshold = 30.0;
+const int sample_interval = 10;
+float prev_acc_x = 0.0, prev_acc_y = 0.0, prev_acc_z = 0.0;
+float prev_angle_gyro = 0.0;
 // const int DOUBLE_PRESS_THRESHOLD = 1500;
-float jerkMagnitude = 0.0;
-float angleAcc = 0.0;
-float angleGyro = 0.0;
+float jerk_magnitude = 0.0;
+float angle_acc = 0.0;
+float angle_gyro = 0.0;
 float angle = 0.0;
 
 void i2c_bus_init(void) {
@@ -82,39 +82,39 @@ void process_data(mpu6050_acce_value_t *acce_value,
   float acceleration_mg_y = acce_value->acce_y * 0.488;
   float acceleration_mg_z = acce_value->acce_z * 0.488;
 
-  float jerkX = (acceleration_mg_x - prevAccX) / (sampleInterval / 1000.0);
-  float jerkY = (acceleration_mg_y - prevAccY) / (sampleInterval / 1000.0);
-  float jerkZ = (acceleration_mg_z - prevAccZ) / (sampleInterval / 1000.0);
+  float jerk_x = (acceleration_mg_x - prev_acc_x) / (sample_interval / 1000.0);
+  float jerk_y = (acceleration_mg_y - prev_acc_y) / (sample_interval / 1000.0);
+  float jerk_z = (acceleration_mg_z - prev_acc_z) / (sample_interval / 1000.0);
 
-  jerkMagnitude = sqrt(jerkX * jerkX + jerkY * jerkY + jerkZ * jerkZ);
+  jerk_magnitude = sqrt(jerk_x * jerk_x + jerk_y * jerk_y + jerk_z * jerk_z);
 
-  prevAccX = acceleration_mg_x;
-  prevAccY = acceleration_mg_y;
-  prevAccZ = acceleration_mg_z;
+  prev_acc_x = acceleration_mg_x;
+  prev_acc_y = acceleration_mg_y;
+  prev_acc_z = acceleration_mg_z;
 
-  angleAcc =
+  angle_acc =
       atan2(acceleration_mg_y, sqrt(acceleration_mg_x * acceleration_mg_x +
                                     acceleration_mg_z * acceleration_mg_z)) *
       RAD_TO_DEG;
 
-  float deltaTime = sampleInterval / 1000.0;
-  angleGyro += gyro_value->gyro_x * 0.01526 * deltaTime;
+  float delta_time = sample_interval / 1000.0;
+  angle_gyro += gyro_value->gyro_x * 0.01526 * delta_time;
 
   float alpha = 0.98;
-  angle = alpha * angleGyro + (1.0 - alpha) * angleAcc;
+  angle = alpha * angle_gyro + (1.0 - alpha) * angle_acc;
 }
 
 void buzzer(bool activate) { gpio_set_level(BUZZER_GPIO, activate ? 1 : 0); }
 
 void blink_led(bool activate) { gpio_set_level(LED_GPIO, activate ? 1 : 0); }
 
-void isFallen(float jerk, float angle) {
-  if (jerkMagnitude > fallThreshold && fabs(angle) > angleThreshold) {
+void is_fallen(float jerk, float angle) {
+  if (jerk_magnitude > fall_threshold && fabs(angle) > angle_threshold) {
     printf("Fallen detected!\n");
     fall_detected = true;
-    buzzerLedActive = true;
+    buzzer_led_active = true;
   } else {
     fall_detected = false;
-    buzzerLedActive = false;
+    buzzer_led_active = false;
   }
 }

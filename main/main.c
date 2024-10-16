@@ -30,7 +30,7 @@ void vTaskCheckButton(void *pvParameters) { // Emergency button
 
       if (xSemaphoreTake(xBuzzerLedMutex, portMAX_DELAY) == pdTRUE) {
         fall_detected = true;
-        buzzerLedActive = true;
+        buzzer_led_active = true;
         xSemaphoreGive(xBuzzerLedMutex);
       }
     }
@@ -60,7 +60,7 @@ void vTaskStopButton(void *pvParameters) {
 
       if (xSemaphoreTake(xBuzzerLedMutex, portMAX_DELAY) == pdTRUE) {
         fall_detected = false;
-        buzzerLedActive = false;
+        buzzer_led_active = false;
         xSemaphoreGive(xBuzzerLedMutex);
       }
     }
@@ -72,7 +72,7 @@ void vTaskBuzzerLed(void *pvParameters) {
   for (;;) {
 
     if (xSemaphoreTake(xBuzzerLedMutex, portMAX_DELAY) == pdTRUE) {
-      if (buzzerLedActive) {
+      if (buzzer_led_active) {
         buzzer(true);
         blink_led(true);
       } else {
@@ -89,7 +89,7 @@ void vTaskReadData(void *pvParameters) {
   for (;;) {
     read_temperature(mpu6050);
     read_data(mpu6050, &acce, &gyro);
-    printf("jerk = %.2f \n", jerkMagnitude);
+    printf("jerk = %.2f \n", jerk_magnitude);
     printf("angle = %.2f \n", angle);
 
     xSemaphoreGive(xReadDataSemaphore);
@@ -111,7 +111,7 @@ void vTaskProcessData(void *pvParameters) {
 void vTaskIsFallen(void *pvParameters) {
   for (;;) {
     if (xSemaphoreTake(xProcessDataSemaphore, portMAX_DELAY) == pdTRUE) {
-      isFallen(jerkMagnitude, angle);
+      is_fallen(jerk_magnitude, angle);
       xSemaphoreGive(xIsFallenSemaphore);
     }
   }
