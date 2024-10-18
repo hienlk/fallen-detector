@@ -2,6 +2,7 @@
 #ifndef MAIN_STUFF_H_
 #define MAIN_STUFF_H_
 
+#include "console/console.h"
 #include "driver/gpio.h"
 #include "driver/i2c.h"
 #include "esp_chip_info.h"
@@ -22,12 +23,16 @@
 #include "host/ble_gap.h"
 #include "host/ble_hs.h"
 #include "host/ble_hs_mbuf.h"
+#include "host/ble_sm.h"
+
+#include "host/util/util.h"
 #include "math.h"
 #include "mpu6050.h"
 #include "nimble/nimble_port.h"
 #include "nimble/nimble_port_freertos.h"
 #include "nvs_flash.h"
 #include "sdkconfig.h"
+#include "services/ans/ble_svc_ans.h"
 #include "services/gap/ble_svc_gap.h"
 #include "services/gatt/ble_svc_gatt.h"
 #include "soc/gpio_num.h"
@@ -55,10 +60,10 @@ extern mpu6050_handle_t mpu6050;
 extern uint16_t temp_char_handle;
 extern uint16_t fall_char_handle;
 extern float angle;
-extern float jerkMagnitude;
+extern float jerk_magnitude;
 
 extern bool fall_detected;
-extern bool buzzerLedActive;
+extern bool buzzer_led_active;
 extern uint16_t conn_handle;
 
 extern mpu6050_temp_value_t temp;
@@ -75,7 +80,7 @@ int device_read_fallen(uint16_t con_handle, uint16_t attr_handle,
 void blink_led(bool activate);
 void buzzer(bool activate);
 void i2c_sensor_mpu6050_init(void);
-void isFallen(float jerk, float angle);
+void is_fallen(float jerk, float angle);
 void process_data(mpu6050_acce_value_t *acce_value,
                   mpu6050_gyro_value_t *gyro_value);
 void read_data(mpu6050_handle_t mpu6050, mpu6050_acce_value_t *acce_value,
