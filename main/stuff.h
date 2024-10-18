@@ -1,7 +1,7 @@
 
 #ifndef MAIN_STUFF_H_
 #define MAIN_STUFF_H_
-
+/*
 #include "console/console.h"
 #include "driver/gpio.h"
 #include "driver/i2c.h"
@@ -40,10 +40,10 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <unistd.h>
-/*
-
-
 */
+
+#include "esp_peripheral.h"
+
 extern mpu6050_handle_t mpu6050;
 
 #define BUZZER_GPIO 4

@@ -1,7 +1,15 @@
 
+#include "host/ble_gatt.h"
 #include "stuff.h"
 
-#define NIMBLE_STACK_SIZE 4096
+#define CHECK(rc, msg)                                                         \
+  do {                                                                         \
+    if ((rc) != 0) {                                                           \
+      MODLOG_DFLT(ERROR, "%s; rc=%d\n", (msg), (rc));                          \
+      return;                                                                  \
+    }                                                                          \
+  } while (0)
+
 bool fall_detected = false;
 bool buzzer_led_active = false;
 mpu6050_temp_value_t temp;
@@ -20,12 +28,12 @@ static bool is_encrypted = false;
 
 void ble_app_advertise(void);
 void ble_store_config_init(void);
-
+/*
 void print_addr(const uint8_t *addr) {
   printf("%02x:%02x:%02x:%02x:%02x:%02x\n", addr[0], addr[1], addr[2], addr[3],
          addr[4], addr[5]);
 }
-
+*/
 static void ble_print_conn_desc(struct ble_gap_conn_desc *desc) {
   MODLOG_DFLT(INFO,
               "handle=%d our_ota_addr_type=%d our_ota_addr=", desc->conn_handle,
@@ -81,24 +89,29 @@ const struct ble_gatt_svc_def gatt_svcs[] = {
     {.type = BLE_GATT_SVC_TYPE_PRIMARY,
      .uuid = BLE_UUID16_DECLARE(0x180),
      .characteristics =
-         (struct ble_gatt_chr_def[]){{
-                                         .uuid = BLE_UUID16_DECLARE(0xFEF4),
-                                         .flags = BLE_GATT_CHR_F_NOTIFY,
-                                         .val_handle = &temp_char_handle,
-                                         .access_cb = device_read_temp,
-                                     },
-                                     {
-                                         .uuid = BLE_UUID16_DECLARE(0xFEF5),
-                                         .flags = BLE_GATT_CHR_F_NOTIFY,
-                                         .val_handle = &fall_char_handle,
-                                         .access_cb = device_read_fallen,
-                                     },
-                                     {
-                                         .uuid = BLE_UUID16_DECLARE(0xDEAD),
-                                         .flags = BLE_GATT_CHR_F_WRITE,
-                                         .access_cb = device_write,
-                                     },
-                                     {0}}},
+         (struct ble_gatt_chr_def[]){
+             {
+                 .uuid = BLE_UUID16_DECLARE(0xFEF4),
+                 .flags = BLE_GATT_CHR_F_READ | BLE_GATT_CHR_F_WRITE |
+                          BLE_GATT_CHR_F_READ_ENC | BLE_GATT_CHR_F_WRITE_ENC |
+                          BLE_GATT_CHR_F_NOTIFY | BLE_GATT_CHR_F_INDICATE,
+                 .val_handle = &temp_char_handle,
+                 .access_cb = device_read_temp,
+             },
+             {
+                 .uuid = BLE_UUID16_DECLARE(0xFEF5),
+                 .flags = BLE_GATT_CHR_F_READ | BLE_GATT_CHR_F_WRITE |
+                          BLE_GATT_CHR_F_READ_ENC | BLE_GATT_CHR_F_WRITE_ENC |
+                          BLE_GATT_CHR_F_NOTIFY | BLE_GATT_CHR_F_INDICATE,
+                 .val_handle = &fall_char_handle,
+                 .access_cb = device_read_fallen,
+             },
+             {
+                 .uuid = BLE_UUID16_DECLARE(0xDEAD),
+                 .flags = BLE_GATT_CHR_F_WRITE,
+                 .access_cb = device_write,
+             },
+             {0}}},
     {0}};
 
 int ble_gap_event(struct ble_gap_event *event, void *arg) {
@@ -208,6 +221,54 @@ int ble_gap_event(struct ble_gap_event *event, void *arg) {
                 event->subscribe.cur_indicate);
     return 0;
 
+  case BLE_GAP_EVENT_PASSKEY_ACTION:
+    ESP_LOGI(TAG, "PASSKEY_ACTION_EVENT started");
+    struct ble_sm_io pkey = {0};
+    int key = 0;
+
+    if (event->passkey.params.action == BLE_SM_IOACT_DISP) {
+      pkey.action = event->passkey.params.action;
+      pkey.passkey = 123456; // This is the passkey to be entered on peer
+      ESP_LOGI(TAG, "Enter passkey %" PRIu32 "on the peer side", pkey.passkey);
+      rc = ble_sm_inject_io(event->passkey.conn_handle, &pkey);
+      ESP_LOGI(TAG, "ble_sm_inject_io result: %d", rc);
+    } else if (event->passkey.params.action == BLE_SM_IOACT_NUMCMP) {
+      ESP_LOGI(TAG, "Passkey on device's display: %" PRIu32,
+               event->passkey.params.numcmp);
+      ESP_LOGI(TAG, "Accept or reject the passkey through console in this "
+                    "format -> key Y or key N");
+      pkey.action = event->passkey.params.action;
+      if (scli_receive_key(&key)) {
+        pkey.numcmp_accept = key;
+      } else {
+        pkey.numcmp_accept = 0;
+        ESP_LOGE(TAG, "Timeout! Rejecting the key");
+      }
+      rc = ble_sm_inject_io(event->passkey.conn_handle, &pkey);
+      ESP_LOGI(TAG, "ble_sm_inject_io result: %d", rc);
+    } else if (event->passkey.params.action == BLE_SM_IOACT_OOB) {
+      static uint8_t tem_oob[16] = {0};
+      pkey.action = event->passkey.params.action;
+      for (int i = 0; i < 16; i++) {
+        pkey.oob[i] = tem_oob[i];
+      }
+      rc = ble_sm_inject_io(event->passkey.conn_handle, &pkey);
+      ESP_LOGI(TAG, "ble_sm_inject_io result: %d", rc);
+    } else if (event->passkey.params.action == BLE_SM_IOACT_INPUT) {
+      ESP_LOGI(TAG,
+               "Enter the passkey through console in this format-> key 123456");
+      pkey.action = event->passkey.params.action;
+      if (scli_receive_key(&key)) {
+        pkey.passkey = key;
+      } else {
+        pkey.passkey = 0;
+        ESP_LOGE(TAG, "Timeout! Passing 0 as the key");
+      }
+      rc = ble_sm_inject_io(event->passkey.conn_handle, &pkey);
+      ESP_LOGI(TAG, "ble_sm_inject_io result: %d", rc);
+    }
+    return 0;
+
   default:
     return 0;
   }
@@ -218,6 +279,7 @@ static void ble_on_reset(int reason) {
 }
 
 void ble_app_advertise(void) {
+  int rc;
   struct ble_hs_adv_fields fields;
   struct ble_gap_adv_params adv_params;
 
@@ -229,14 +291,18 @@ void ble_app_advertise(void) {
   fields.name_len = strlen(device_name);
   fields.name_is_complete = 1;
 
-  ble_gap_adv_set_fields(&fields);
+  // ble_gap_adv_set_fields(&fields);
+
+  rc = ble_gap_adv_set_fields(&fields);
+  CHECK(rc, "error setting advertisement data");
 
   memset(&adv_params, 0, sizeof(adv_params));
   adv_params.conn_mode = BLE_GAP_CONN_MODE_UND;
   adv_params.disc_mode = BLE_GAP_DISC_MODE_GEN;
 
-  ble_gap_adv_start(ble_addr_type, NULL, BLE_HS_FOREVER, &adv_params,
-                    ble_gap_event, NULL);
+  rc = ble_gap_adv_start(ble_addr_type, NULL, BLE_HS_FOREVER, &adv_params,
+                         ble_gap_event, NULL);
+  CHECK(rc, "error enabling advertisement");
 }
 
 void ble_app_on_sync(void) {
@@ -253,12 +319,8 @@ void ble_app_on_sync(void) {
   print_addr(addr_val);
   MODLOG_DFLT(INFO, "\n");
 
-  /* Figure out address to use while advertising (no privacy for now) */
   rc = ble_hs_id_infer_auto(0, &own_addr_type);
-  if (rc != 0) {
-    MODLOG_DFLT(ERROR, "error determining address type; rc=%d\n", rc);
-    return;
-  }
+  CHECK(rc, "error determining address type");
 
   ble_app_advertise();
 }
@@ -281,9 +343,9 @@ void gatt_server(void) {
   nvs_flash_init();
   esp_nimble_hci_init();
   nimble_port_init();
-  ble_hs_cfg.sm_io_cap = BLE_SM_IO_CAP_NO_IO;
+  ble_hs_cfg.sm_io_cap = BLE_HS_IO_DISPLAY_ONLY;
   ble_hs_cfg.sm_bonding = 1;
-  ble_hs_cfg.sm_mitm = 0;
+  ble_hs_cfg.sm_mitm = 1;
   ble_hs_cfg.sm_sc = 0;
   ble_hs_cfg.reset_cb = ble_on_reset;
   ble_hs_cfg.sync_cb = ble_app_on_sync;
