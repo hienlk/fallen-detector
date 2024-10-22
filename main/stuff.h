@@ -50,6 +50,8 @@ extern mpu6050_handle_t mpu6050;
 #define LED_GPIO 5
 #define CHECK_BUTTON 10
 #define STOP_BUTTON 18
+#define BLE_BUTTON 1
+
 #define RAD_TO_DEG 57.2958
 
 #define I2C_MASTER_SCL_IO 9       /*!< gpio number for I2C master clock */
@@ -64,6 +66,8 @@ extern float jerk_magnitude;
 
 extern bool fall_detected;
 extern bool buzzer_led_active;
+extern bool nimble_enabled;
+
 extern uint16_t conn_handle;
 
 extern mpu6050_temp_value_t temp;
@@ -90,5 +94,7 @@ void gatt_server(void);
 void host_task(void *param);
 void ble_app_on_sync(void);
 void send_notification(uint16_t attr_handle, void *data, size_t data_len);
+
+void stop_nimble();
 
 #endif

@@ -117,6 +117,26 @@ void vTaskIsFallen(void *pvParameters) {
   }
 }
 
+void vTaskOnOff(void *pvParameters) {
+  for (;;) {
+    if (gpio_get_level(BLE_BUTTON) == 0) {
+      printf("Enable/Disable Button Pressed!\n");
+
+      if (!nimble_enabled) {
+        printf("Starting NimBLE stack...\n");
+        gatt_server();
+        nimble_enabled = true;
+      } else {
+        printf("Stopping NimBLE stack...\n");
+        stop_nimble();
+      }
+
+      vTaskDelay(pdMS_TO_TICKS(1000));
+    }
+    vTaskDelay(pdMS_TO_TICKS(100));
+  }
+}
+
 void app_main(void) {
   gpio_set_direction(GPIO_NUM_4, GPIO_MODE_OUTPUT);
   gpio_set_direction(GPIO_NUM_5, GPIO_MODE_OUTPUT);
@@ -125,6 +145,8 @@ void app_main(void) {
   gpio_set_pull_mode(CHECK_BUTTON, GPIO_PULLUP_ONLY);
   gpio_set_direction(STOP_BUTTON, GPIO_MODE_INPUT);
   gpio_set_pull_mode(STOP_BUTTON, GPIO_PULLUP_ONLY);
+  gpio_set_direction(BLE_BUTTON, GPIO_MODE_INPUT);
+  gpio_set_pull_mode(BLE_BUTTON, GPIO_PULLUP_ONLY);
 
   i2c_sensor_mpu6050_init();
 
@@ -138,4 +160,6 @@ void app_main(void) {
   xTaskCreate(vTaskProcessData, "process_data", 1024 * 2, NULL, 4, NULL);
   xTaskCreate(vTaskIsFallen, "is_fallen", 1024 * 2, NULL, 3, NULL);
   xTaskCreate(vTaskBuzzerLed, "control_task", 1024 * 2, NULL, 1, NULL);
+
+  xTaskCreate(vTaskOnOff, "nimble", 1024 * 2, NULL, 7, NULL);
 }

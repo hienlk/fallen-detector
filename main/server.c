@@ -25,15 +25,21 @@ uint16_t fall_char_handle;
 uint16_t temp_char_handle;
 
 static bool is_encrypted = false;
+bool nimble_enabled = true;
 
 void ble_app_advertise(void);
 void ble_store_config_init(void);
-/*
-void print_addr(const uint8_t *addr) {
-  printf("%02x:%02x:%02x:%02x:%02x:%02x\n", addr[0], addr[1], addr[2], addr[3],
-         addr[4], addr[5]);
+
+void stop_nimble() {
+  if (nimble_enabled) {
+    ble_gap_adv_stop();
+    nimble_port_stop();
+    nimble_port_deinit();
+    nimble_enabled = false;
+    printf("NimBLE stack stopped\n");
+  }
 }
-*/
+
 static void ble_print_conn_desc(struct ble_gap_conn_desc *desc) {
   MODLOG_DFLT(INFO,
               "handle=%d our_ota_addr_type=%d our_ota_addr=", desc->conn_handle,
