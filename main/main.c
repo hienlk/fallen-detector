@@ -1,5 +1,6 @@
 
-#include "stuff.h"
+#include "mpu.h"
+#include "server.h"
 
 SemaphoreHandle_t xReadDataSemaphore;
 SemaphoreHandle_t xProcessDataSemaphore;

@@ -1,6 +1,8 @@
 
+#include "server.h"
+
 #include "host/ble_gatt.h"
-#include "stuff.h"
+#include "mpu.h"
 
 #define CHECK(rc, msg)                                                         \
   do {                                                                         \
