@@ -1,0 +1,789 @@
+D (419) spi_flash: trying chip: winbond[0m
+D (422) spi_flash: tryingESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c0d4
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Oct 18 2024 17:31:12[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (33) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (85) esp_image: segment 0: paddr=00010020 vaddr=3c070020 size=1ad10h (109840) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=0002ad38 vaddr=3fc92e00 size=025f8h (  9720) load[0m
+[0;32mI (113) esp_image: segment 2: paddr=0002d338 vaddr=40380000 size=02ce0h ( 11488) load[0m
+[0;32mI (118) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=61854h (399444) map[0m
+[0;32mI (187) esp_image: segment 4: paddr=0009187c vaddr=40382ce0 size=0ff40h ( 65344) load[0m
+[0;32mI (205) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (206) boot: Disabling RNG early entropy source...[0m
+[0;32mI (217) cpu_start: Unicore app[0m
+D (217) cpu_start: Pro cpu up[0m
+D (225) clk: RTC_SLOW_CLK calibration value: 3628902[0m
+[0;32mI (231) cpu_start: Pro cpu start user code[0m
+[0;32mI (231) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (231) cpu_start: Application information:[0m
+[0;32mI (234) cpu_start: Project name:     app-template[0m
+[0;32mI (239) cpu_start: App version:      9f1355b-dirty[0m
+[0;32mI (245) cpu_start: Compile time:     Nov 20 2024 15:23:26[0m
+[0;32mI (251) cpu_start: ELF file SHA256:  76274f8a3...[0m
+[0;32mI (256) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (262) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (266) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (271) cpu_start: Chip rev:         v0.4[0m
+D (276) memory_layout: Checking 5 reserved memory ranges:[0m
+D (281) memory_layout: Reserved memory range 0x3fc80000 - 0x3fc92e00[0m
+D (288) memory_layout: Reserved memory range 0x3fc92e00 - 0x3fc98160[0m
+D (294) memory_layout: Reserved memory range 0x3fcdf060 - 0x3fce0000[0m
+D (301) memory_layout: Reserved memory range 0x50000000 - 0x50000010[0m
+D (307) memory_layout: Reserved memory range 0x50001fe8 - 0x50002000[0m
+D (313) memory_layout: Building list of available memory regions:[0m
+D (320) memory_layout: Available memory region 0x3fc98160 - 0x3fca0000[0m
+D (326) memory_layout: Available memory region 0x3fca0000 - 0x3fcc0000[0m
+D (333) memory_layout: Available memory region 0x3fcc0000 - 0x3fcdc710[0m
+D (339) memory_layout: Available memory region 0x3fcdc710 - 0x3fcdf060[0m
+D (346) memory_layout: Available memory region 0x50000010 - 0x50001fe8[0m
+[0;32mI (353) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (360) heap_init: New heap initialised at 0x3fc98160[0m
+[0;32mI (365) heap_init: At 3FC98160 len 00027EA0 (159 KiB): RAM[0m
+D (371) heap_init: New heap initialised at 0x3fcc0000[0m
+[0;32mI (376) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (383) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+D (390) heap_init: New heap initialised at 0x50000010[0m
+[0;32mI (395) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+D (402) intr_alloc: Connected src 27 to int 2 (cpu 0)[0m
+D (407) spi_flash: trying chip: issi[0m
+D (410) spi_flash: trying chip: gd[0m
+D (414) spi_flash: trying chip: mxic[0m
+D (417) spi_flash: trying chip: winbond[0m
+D (421) spi_flash: trying chip: boya[0m
+D (425) spi_flash: trying chip: th[0m
+D (428) spi_flash: trying chip: generic[0m
+[0;32mI (432) spi_flash: detected chip: generic[0m
+[0;32mI (437) spi_flash: flash io: dio[0m
+[0;33mW (441) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+D (454) cpu_start: calling init function: 0x4204b7d4[0m
+D (459) cpu_start: calling init function: 0x4204b758[0m
+D (464) cpu_start: calling init function: 0x4204b29c[0m
+D (469) cpu_start: calling init function: 0x42034944[0m
+[0;33mW (474) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+D (485) cpu_start: calling init function: 0x40389ba2[0m
+D (490) cpu_start: calling init function: 0x4200002a[0m
+D (495) cpu_start: calling init function: 0x42005886 on core: 0[0m
+D (501) intr_alloc: Connected src 39 to int 3 (cpu 0)[0m
+D (506) cpu_start: calling init function: 0x42001c1a on core: 0[0m
+D (512) cpu_start: calling init function: 0x42003550 on core: 0[0m
+[0;32mI (518) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (525) sleep: Enable automatic switching of GPIO sleep configuration[0m
+D (532) cpu_start: calling init function: 0x42001430 on core: 0[0m
+[0;32mI (538) coexist: coex firmware version: d96c1e51f[0m
+[0;32mI (543) coexist: coexist rom version 9387209[0m
+D (549) intr_alloc: Connected src 50 to int 4 (cpu 0)[0m
+D (553) app_start: Starting scheduler on CPU0[0m
+D (558) intr_alloc: Connected src 37 to int 7 (cpu 0)[0m
+[0;32mI (558) main_task: Started on CPU0[0m
+D (558) heap_init: New heap initialised at 0x3fcdc710[0m
+D (558) intr_alloc: Connected src 33 to int 9 (cpu 0)[0m
+[0;32mI (568) main_task: Calling app_main()[0m
+D (568) intr_alloc: Connected src 29 to int 10 (cpu 0)[0m
+[0;32mI (588) BLE_INIT: BT controller compile version [c23ab4c][0m
+D (588) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (588) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (598) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (608) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (608) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (618) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+[0;32mI (628) BLE_INIT: Bluetooth MAC: 34:b7:da:f6:47:7e[0m
+[0;32mI (628) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+D (638) phy_init: loading PHY init data from application binary[0m
+D (648) nvs: nvs_open_from_partition phy 0[0m
+D (648) nvs: nvs_get cal_version 4[0m
+D (648) nvs: nvs_get_str_or_blob cal_mac[0m
+D (658) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (658) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (668) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (678) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (678) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (688) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (698) nvs: nvs_get_str_or_blob cal_data[0m
+D (698) nvs: nvs_close 1[0m
+D (708) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (708) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (718) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (728) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (728) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (738) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (758) temperature_sensor: range changed, change to index 2[0m
+D (788) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (788) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (788) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (788) nvs: nvs_close 2[0m
+D (788) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (798) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (798) nvs: nvs_get_str_or_blob our_sec_2[0m
+D (808) nvs: nvs_close 3[0m
+D (808) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (808) nvs: nvs_get_str_or_blob our_sec_3[0m
+D (818) nvs: nvs_close 4[0m
+D (818) NIMBLE_NVS: ble_store_config_our_secs restored 1 bonds[0m
+D (828) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (828) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (838) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (838) nvs: nvs_close 5[0m
+D (838) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (848) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (848) nvs: nvs_get_str_or_blob peer_sec_2[0m
+D (858) nvs: nvs_close 6[0m
+D (858) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (858) nvs: nvs_get_str_or_blob peer_sec_3[0m
+D (868) nvs: nvs_close 7[0m
+D (868) NIMBLE_NVS: ble_store_config_peer_secs restored 1 bonds[0m
+D (878) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (878) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (888) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (888) nvs: nvs_close 8[0m
+D (888) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 1[0m
+D (898) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (898) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (908) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (908) nvs: nvs_close 9[0m
+D (918) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 2[0m
+D (918) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (928) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (928) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (938) nvs: nvs_close 10[0m
+D (938) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 3[0m
+D (938) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (948) nvs: nvs_get_str_or_blob cccd_sec_4[0m
+D (948) nvs: nvs_close 11[0m
+D (958) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (958) nvs: nvs_get_str_or_blob cccd_sec_5[0m
+D (958) nvs: nvs_close 12[0m
+D (968) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (968) nvs: nvs_get_str_or_blob cccd_sec_6[0m
+D (978) nvs: nvs_close 13[0m
+D (978) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (978) nvs: nvs_get_str_or_blob cccd_sec_7[0m
+D (988) nvs: nvs_close 14[0m
+D (988) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (998) nvs: nvs_get_str_or_blob cccd_sec_8[0m
+D (998) nvs: nvs_close 15[0m
+D (998) NIMBLE_NVS: ble_store_config_cccds restored 3 bonds[0m
+D (1008) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1008) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (1018) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (1018) nvs: nvs_close 16[0m
+D (1018) NIMBLE_NVS: Local IRK in RAM is filled up from NVS index = 1[0m
+D (1028) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1038) nvs: nvs_get_str_or_blob local_irk_2[0m
+D (1038) nvs: nvs_close 17[0m
+D (1038) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1048) nvs: nvs_get_str_or_blob local_irk_3[0m
+D (1048) nvs: nvs_close 18[0m
+D (1058) NIMBLE_NVS: ble_store_config_local_irks restored 1 irks[0m
+D (1058) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1068) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (1068) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (1078) nvs: nvs_close 19[0m
+D (1078) NIMBLE_NVS: RPA_REC in RAM is filled up from NVS index = 1[0m
+D (1078) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1088) nvs: nvs_get_str_or_blob rpa_rec_2[0m
+D (1088) nvs: nvs_close 20[0m
+D (1098) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1098) nvs: nvs_get_str_or_blob rpa_rec_3[0m
+D (1108) nvs: nvs_close 21[0m
+D (1108) NIMBLE_NVS: ble_store_config_rpa_recs restored 1 bonds[0m
+[0;32mI (1118) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1118) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1128) NimBLE: Device Address: [0m
+[0;32mI (1128) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (1138) NimBLE: 
+[0m
+[0;32mI (1138) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1138) NimBLE: disc_mode=2[0m
+[0;32mI (1148) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1158) NimBLE: 
+[0m
+[0;32mI (1158) main_task: Returned from app_main()[0m
+jerk = 10885.86 
+Stop Button Pressed!
+Off led buzjerk = 242.22 
+jerk = 42.89 
+jerk = 65.33 
+Stop Button Pressed!
+Off led buzjerk = 114.53 
+Stop Button Pressed!
+Off led buzjerk = 120.54 
+jerk = 98.17 
+jerk = 226.74 
+Stop Button Pressed!
+Off led buzjerk = 232.88 
+jerk = 143.85 
+jerk = 247.58 
+jerk = 187.66 
+jerk = 188.39 
+Stop Button Pressed!
+Off led buzjerk = 72.86 
+jerk = 129.94 
+Stop Button Pressed!
+Off led buzjerk = 135.42 
+jerk = 156.97 
+jerk = 127.31 
+Stop Button Pressed!
+Off led buzjerk = 55.31 
+jerk = 133.56 
+jerk = 124.86 
+jerk = 118.78 
+jerk = 66.45 
+Stop Button Pressed!
+Off led buzjerk = 110.96 
+jerk = 157.67 
+Stop Button Pressed!
+Off led buzjerk = 194.48 
+jerk = 140.74 
+jerk = 123.96 
+Stop Button Pressed!
+Off led buzjerk = 101.09 
+jerk = 163.21 
+jerk = 168.68 
+jerk = 82.20 
+Stop Button Pressed!
+Off led buzjerk = 156.33 
+jerk = 137.60 
+Stop Button Pressed!
+Off led buzjerk = 70.08 
+jerk = 40.59 
+Stop Button Pressed!
+Off led buzjerk = 75.24 
+jerk = 126.07 
+jerk = 182.64 
+jerk = 100.88 
+jerk = 48.32 
+jerk = 104.82 
+jerk = 118.00 
+jerk = 133.44 
+jerk = 179.08 
+jerk = 80.14 
+jerk = 184.99 
+Stop Button Pressed!
+Off led buzjerk = 205.55 
+jerk = 159.76 
+jerk = 60.04 
+Stop Button Pressed!
+Off led buzjerk = 40.05 
+Stop Button Pressed!
+Off led buzjerk = 128.88 
+jerk = 33.48 
+jerk = 93.45 
+jerk = 117.58 
+Stop Button Pressed!
+Off led buzjerk = 74.87 
+jerk = 154.50 
+Stop Button Pressed!
+Off led buzjerk = 30.78 
+jerk = 130.48 
+Stop Button Pressed!
+Off led buzjerk = 167.41 
+jerk = 83.06 
+jerk = 52.26 
+jerk = 98.58 
+jerk = 155.22 
+jerk = 93.02 
+Stop Button Pressed!
+Off led buzjerk = 183.05 
+jerk = 158.93 
+jerk = 115.82 
+jerk = 100.60 
+jerk = 297.59 
+Stop Button Pressed!
+Off led buzjerk = 364.45 
+Stop Button Pressed!
+Off led buzjerk = 352.11 
+jerk = 271.22 
+Stop Button Pressed!
+Off led buzjerk = 269.49 
+jerk = 173.19 
+jerk = 329.27 
+jerk = 171.59 
+jerk = 327.61 
+jerk = 1012.12 
+jerk = 447.47 
+Stop Button Pressed!
+Off led buzjerk = 928.62 
+jerk = 401.99 
+Stop Button Pressed!
+Off led buzjerk = 1297.24 
+Stop Button Pressed!
+Off led buzjerk = 1466.87 
+jerk = 468.13 
+jerk = 786.13 
+jerk = 665.12 
+Stop Button Pressed!
+Off led buzjerk = 3244.20 
+jerk = 2524.94 
+jerk = 2310.07 
+jerk = 2669.38 
+jerk = 747.68 
+jerk = 358.18 
+Stop Button Pressed!
+Off led buzjerk = 120.44 
+jerk = 287.38 
+Stop Button Pressed!
+Off led buzjerk = 245.52 
+jerk = 47.94 
+Stop Button Pressed!
+Off led buzjerk = 176.36 
+Stop Button Pressed!
+Off led buzjerk = 172.46 
+Stop Button Pressed!
+Off led buzjerk = 154.70 
+jerk = 237.54 
+Stop Button Pressed!
+Off led buzjerk = 168.22 
+jerk = 172.89 
+Stop Button Pressed!
+Off led buzjerk = 362.72 
+jerk = 331.23 
+jerk = 334.72 
+jerk = 307.32 
+jerk = 297.04 
+Stop Button Pressed!
+Off led buzjerk = 336.65 
+jerk = 75.73 
+jerk = 152.05 
+Stop Button Pressed!
+Off led buzjerk = 115.72 
+jerk = 70.57 
+Stop Button Pressed!
+Off led buzjerk = 102.07 
+jerk = 137.08 
+Stop Button Pressed!
+Off led buzjerk = 153.27 
+jerk = 153.59 
+jerk = 166.05 
+Stop Button Pressed!
+Off led buzjerk = 67.29 
+jerk = 64.03 
+Stop Button Pressed!
+Off led buzjerk = 134.99 
+Stop Button Pressed!
+Off led buzjerk = 45.28 
+jerk = 134.37 
+jerk = 188.91 
+jerk = 226.94 
+jerk = 241.04 
+Stop Button Pressed!
+Off led buzjerk = 38.64 
+jerk = 170.20 
+jerk = 311.27 
+Stop Button Pressed!
+Off led buzjerk = 250.32 
+Stop Button Pressed!
+Off led buzjerk = 624.19 
+Stop Button Pressed!
+Off led buzjerk = 358.41 
+jerk = 190.25 
+Stop Button Pressed!
+Off led buzjerk = 53.95 
+jerk = 91.00 
+Stop Button Pressed!
+Off led buzjerk = 113.96 
+jerk = 172.01 
+Stop Button Pressed!
+Off led buzjerk = 155.70 
+jerk = 106.43 
+jerk = 176.98 
+Stop Button Pressed!
+Off led buzjerk = 177.95 
+jerk = 71.31 
+jerk = 103.15 
+Stop Button Pressed!
+Off led buzjerk = 169.69 
+jerk = 193.00 
+Stop Button Pressed!
+Off led buzjerk = 260.37 
+Stop Button Pressed!
+Off led buzjerk = 133.60 
+Stop Button Pressed!
+Off led buzjerk = 163.14 
+jerk = 55.09 
+jerk = 50.58 
+Stop Button Pressed!
+Off led buzjerk = 93.85 
+Stop Button Pressed!
+Off led buzjerk = 67.97 
+Stop Button Pressed!
+Off led buzjerk = 112.68 
+jerk = 165.74 
+Stop Button Pressed!
+Off led buzjerk = 88.23 
+Stop Button Pressed!
+Off led buzjerk = 131.15 
+jerk = 170.45 
+jerk = 259.52 
+jerk = 181.54 
+Stop Button Pressed!
+Off led buzjerk = 115.69 
+jerk = 83.77 
+jerk = 110.54 
+jerk = 136.02 
+jerk = 214.27 
+Stop Button Pressed!
+Off led buzjerk = 139.12 
+Stop Button Pressed!
+Off led buzjerk = 146.16 
+jerk = 131.43 
+jerk = 103.69 
+jerk = 88.23 
+jerk = 115.72 
+Stop Button Pressed!
+Off led buzjerk = 157.67 
+jerk = 73.57 
+jerk = 142.23 
+Stop Button Pressed!
+Off led buzjerk = 127.05 
+Stop Button Pressed!
+Off led buzjerk = 125.94 
+jerk = 156.79 
+jerk = 23.61 
+jerk = 60.60 
+Stop Button Pressed!
+Off led buzjerk = 43.53 
+jerk = 108.76 
+Stop Button Pressed!
+Off led buzjerk = 96.10 
+jerk = 186.00 
+jerk = 96.55 
+Stop Button Pressed!
+Off led buzjerk = 99.67 
+jerk = 129.34 
+jerk = 127.36 
+Stop Button Pressed!
+Off led buzjerk = 178.44 
+Stop Button Pressed!
+Off led buzjerk = 199.87 
+jerk = 131.50 
+Stop Button Pressed!
+Off led buzjerk = 67.19 
+Stop Button Pressed!
+Off led buzjerk = 24.76 
+Stop Button Pressed!
+Off led buzjerk = 76.34 
+jerk = 101.55 
+jerk = 93.42 
+jerk = 126.83 
+jerk = 105.76 
+Stop Button Pressed!
+Off led buzjerk = 139.32 
+jerk = 119.20 
+jerk = 216.23 
+jerk = 173.48 
+jerk = 303.67 
+jerk = 380.15 
+jerk = 1216.43 
+jerk = 1655.17 
+Stop Button Pressed!
+Off led buzjerk = 3682.83 
+jerk = 1636.62 
+jerk = 1476.97 
+Stop Button Pressed!
+Off led buzjerk = 990.39 
+Stop Button Pressed!
+Off led buzjerk = 1387.88 
+Stop Button Pressed!
+Off led buzjerk = 1525.10 
+Stop Button Pressed!
+Off led buzjerk = 521.40 
+jerk = 677.24 
+jerk = 1347.85 
+jerk = 401.86 
+Stop Button Pressed!
+Off led buzjerk = 571.70 
+Stop Button Pressed!
+Off led buzjerk = 473.98 
+Stop Button Pressed!
+Off led buzjerk = 692.97 
+jerk = 181.88 
+Stop Button Pressed!
+Off led buzjerk = 172.82 
+jerk = 653.98 
+Stop Button Pressed!
+Off led buzjerk = 658.94 
+Stop Button Pressed!
+Off led buzjerk = 378.96 
+Stop Button Pressed!
+Off led buzjerk = 388.63 
+Stop Button Pressed!
+Off led buzjerk = 195.34 
+Stop Button Pressed!
+Off led buzjerk = 818.77 
+jerk = 397.30 
+jerk = 512.39 
+Stop Button Pressed!
+Off led buzjerk = 540.70 
+Stop Button Pressed!
+Off led buzjerk = 710.76 
+jerk = 207.67 
+jerk = 2286.16 
+jerk = 1070.09 
+Stop Button Pressed!
+Off led buzjerk = 201.38 
+jerk = 218.51 
+jerk = 199.27 
+jerk = 89.66 
+jerk = 150.54 
+Stop Button Pressed!
+Off led buzjerk = 243.90 
+Stop Button Pressed!
+Off led buzjerk = 266.35 
+jerk = 250.86 
+jerk = 107.96 
+jerk = 125.40 
+jerk = 162.32 
+jerk = 76.71 
+jerk = 125.38 
+Stop Button Pressed!
+Off led buzjerk = 131.95 
+jerk = 102.55 
+jerk = 39.97 
+jerk = 68.34 
+Stop Button Pressed!
+Off led buzjerk = 140.67 
+Stop Button Pressed!
+Off led buzjerk = 110.43 
+jerk = 138.52 
+jerk = 53.95 
+jerk = 130.60 
+Stop Button Pressed!
+Off led buzjerk = 89.14 
+Stop Button Pressed!
+Off led buzjerk = 112.71 
+Stop Button Pressed!
+Off led buzjerk = 159.53 
+jerk = 63.79 
+jerk = 71.44 
+jerk = 88.41 
+jerk = 48.32 
+Stop Button Pressed!
+Off led buzjerk = 105.73 
+Stop Button Pressed!
+Off led buzjerk = 83.95 
+jerk = 114.21 
+jerk = 61.92 
+jerk = 303.56 
+Stop Button Pressed!
+Off led buzjerk = 1566.29 
+jerk = 2357.94 
+jerk = 2177.00 
+Stop Button Pressed!
+Off led buzjerk = 1186.53 
+jerk = 1038.98 
+Stop Button Pressed!
+Off led buzjerk = 747.95 
+Stop Button Pressed!
+Off led buzjerk = 598.87 
+jerk = 1892.74 
+jerk = 535.44 
+jerk = 238.68 
+Stop Button Pressed!
+Off led buzjerk = 597.63 
+Stop Button Pressed!
+Off led buzjerk = 1478.07 
+Stop Button Pressed!
+Off led buzjerk = 134.50 
+Stop Button Pressed!
+Off led buzjerk = 317.40 
+Stop Button Pressed!
+Off led buzjerk = 690.29 
+Stop Button Pressed!
+Off led buzjerk = 364.50 
+jerk = 170.29 
+jerk = 75.49 
+Stop Button Pressed!
+Off led buzjerk = 70.04 
+jerk = 311.88 
+Stop Button Pressed!
+Off led buzjerk = 253.97 
+jerk = 639.40 
+jerk = 3161.07 
+jerk = 1911.00 
+Stop Button Pressed!
+Off led buzjerk = 1711.46 
+Stop Button Pressed!
+Off led buzjerk = 2066.94 
+jerk = 104.26 
+jerk = 75.28 
+jerk = 99.24 
+jerk = 228.93 
+jerk = 269.12 
+jerk = 222.28 
+jerk = 232.00 
+jerk = 199.89 
+jerk = 193.19 
+Stop Button Pressed!
+Off led buzjerk = 111.82 
+jerk = 133.33 
+jerk = 122.60 
+Stop Button Pressed!
+Off led buzjerk = 86.82 
+jerk = 73.03 
+Stop Button Pressed!
+Off led buzjerk = 175.45 
+jerk = 206.46 
+Stop Button Pressed!
+Off led buzjerk = 170.63 
+jerk = 125.48 
+Stop Button Pressed!
+Off led buzjerk = 142.73 
+jerk = 91.85 
+jerk = 46.02 
+Stop Button Pressed!
+Off led buzjerk = 127.92 
+jerk = 89.35 
+jerk = 106.14 
+Stop Button Pressed!
+Off led buzjerk = 187.25 
+Stop Button Pressed!
+Off led buzjerk = 172.82 
+Stop Button Pressed!
+Off led buzjerk = 88.58 
+jerk = 76.06 
+Stop Button Pressed!
+Off led buzjerk = 87.85 
+Stop Button Pressed!
+Off led buzjerk = 84.87 
+jerk = 127.41 
+jerk = 122.28 
+Stop Button Pressed!
+Off led buzjerk = 99.58 
+jerk = 155.46 
+jerk = 147.86 
+jerk = 168.15 
+jerk = 109.98 
+Stop Button Pressed!
+Off led buzjerk = 96.19 
+jerk = 143.87 
+jerk = 122.15 
+jerk = 111.88 
+jerk = 166.93 
+jerk = 98.89 
+Stop Button Pressed!
+Off led buzjerk = 203.19 
+jerk = 199.16 
+jerk = 204.59 
+Stop Button Pressed!
+Off led buzjerk = 181.71 
+jerk = 110.35 
+Stop Button Pressed!
+Off led buzjerk = 187.99 
+jerk = 43.53 
+Stop Button Pressed!
+Off led buzjerk = 40.67 
+jerk = 91.81 
+Stop Button Pressed!
+Off led buzjerk = 169.98 
+Stop Button Pressed!
+Off led buzjerk = 102.73 
+jerk = 84.21 
+jerk = 210.32 
+jerk = 280.17 
+jerk = 151.85 
+Stop Button Pressed!
+Off led buzjerk = 70.43 
+Stop Button Pressed!
+Off led buzjerk = 42.01 
+Stop Button Pressed!
+Off led buzjerk = 165.85 
+jerk = 233.54 
+jerk = 125.99 
+jerk = 149.72 
+Stop Button Pressed!
+Off led buzjerk = 178.41 
+Stop Button Pressed!
+Off led buzjerk = 75.36 
+Stop Button Pressed!
+Off led buzjerk = 110.54 
+jerk = 128.79 
+jerk = 103.09 
+Stop Button Pressed!
+Off led buzjerk = 67.24 
+jerk = 101.61 
+Stop Button Pressed!
+Off led buzjerk = 148.43 
+jerk = 113.12 
+jerk = 131.08 
+Stop Button Pressed!
+Off led buzjerk = 98.48 
+Stop Button Pressed!
+Off led buzjerk = 82.92 
+jerk = 225.92 
+jerk = 56.20 
+Stop Button Pressed!
+Off led buzjerk = 171.67 
+jerk = 44.17 
+jerk = 55.48 
+jerk = 150.60 
+Stop Button Pressed!
+Off led buzjerk = 211.80 
+Stop Button Pressed!
+Off led buzjerk = 233.15 
+jerk = 136.22 
+jerk = 117.89 
+Stop Button Pressed!
+Off led buzjerk = 101.61 
+Stop Button Pressed!
+Off led buzjerk = 165.77 
+jerk = 171.61 
+Stop Button Pressed!
+Off led buzjerk = 73.70 
+jerk = 43.68 
+Stop Button Pressed!
+Off led buzjerk = 86.39 
+Stop Button Pressed!
+Off led buzjerk = 209.88 
+Stop Button Pressed!
+Off led buzjerk = 261.77 
+Stop Button Pressed!
+Off led buzjerk = 119.97 
+jerk = 114.59 
+jerk = 88.02 
+jerk = 125.57 
+Stop Button Pressed!
+Off led buzjerk = 220.39 
+Stop Button Pressed!
+Off led buzjerk = 161.61 
+jerk = 104.05 
+Stop Button Pressed!
+Off led buzjerk = 136.31 
+Stop Button Pressed!
+Off led buzjerk = 127.63 
+Stop Button Pressed!
+Off led buzjerk = 101.95 
+Stop Button Pressed!
+Off led buzjerk = 115.90 
+jerk = 84.10 
+jerk = 120.90 
+Stop Button Pressed!
+Off led buzjerk = 53.26 
+Stop Button Pressed!
+Off led buzjerk = 102.82 
+jerk = 170.89 
+Stop Button Pressed!
+Off led buzjerk = 168.15 
+jerk = 135.40 
+jerk = 110.12 
+jerk = 168.81 

@@ -1,0 +1,6548 @@
+[0;33mW (442) spi_flash: Detected size(4ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c0d8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Oct 18 2024 17:31:12[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (33) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (85) esp_image: segment 0: paddr=00010020 vaddr=3c070020 size=1ad20h (109856) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=0002ad48 vaddr=3fc92e00 size=025f8h (  9720) load[0m
+[0;32mI (113) esp_image: segment 2: paddr=0002d348 vaddr=40380000 size=02cd0h ( 11472) load[0m
+[0;32mI (118) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=61828h (399400) map[0m
+[0;32mI (187) esp_image: segment 4: paddr=00091850 vaddr=40382cd0 size=0ff50h ( 65360) load[0m
+[0;32mI (205) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (206) boot: Disabling RNG early entropy source...[0m
+[0;32mI (217) cpu_start: Unicore app[0m
+D (217) cpu_start: Pro cpu up[0m
+D (225) clk: RTC_SLOW_CLK calibration value: 3635315[0m
+[0;32mI (231) cpu_start: Pro cpu start user code[0m
+[0;32mI (231) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (231) cpu_start: Application information:[0m
+[0;32mI (234) cpu_start: Project name:     app-template[0m
+[0;32mI (239) cpu_start: App version:      9f1355b-dirty[0m
+[0;32mI (245) cpu_start: Compile time:     Oct 30 2024 02:31:34[0m
+[0;32mI (251) cpu_start: ELF file SHA256:  1e55db554...[0m
+[0;32mI (256) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (262) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (266) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (271) cpu_start: Chip rev:         v0.4[0m
+D (276) memory_layout: Checking 5 reserved memory ranges:[0m
+D (281) memory_layout: Reserved memory range 0x3fc80000 - 0x3fc92e00[0m
+D (288) memory_layout: Reserved memory range 0x3fc92e00 - 0x3fc98160[0m
+D (294) memory_layout: Reserved memory range 0x3fcdf060 - 0x3fce0000[0m
+D (301) memory_layout: Reserved memory range 0x50000000 - 0x50000010[0m
+D (307) memory_layout: Reserved memory range 0x50001fe8 - 0x50002000[0m
+D (313) memory_layout: Building list of available memory regions:[0m
+D (320) memory_layout: Available memory region 0x3fc98160 - 0x3fca0000[0m
+D (326) memory_layout: Available memory region 0x3fca0000 - 0x3fcc0000[0m
+D (333) memory_layout: Available memory region 0x3fcc0000 - 0x3fcdc710[0m
+D (339) memory_layout: Available memory region 0x3fcdc710 - 0x3fcdf060[0m
+D (346) memory_layout: Available memory region 0x50000010 - 0x50001fe8[0m
+[0;32mI (353) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (360) heap_init: New heap initialised at 0x3fc98160[0m
+[0;32mI (365) heap_init: At 3FC98160 len 00027EA0 (159 KiB): RAM[0m
+D (371) heap_init: New heap initialised at 0x3fcc0000[0m
+[0;32mI (376) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (383) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+D (390) heap_init: New heap initialised at 0x50000010[0m
+[0;32mI (395) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+D (402) intr_alloc: Connected src 27 to int 2 (cpu 0)[0m
+D (407) spi_flash: trying chip: issi[0m
+D (410) spi_flash: trying chip: gd[0m
+D (414) spi_flash: trying chip: mxic[0m
+D (417) spi_flash: trying chip: winbond[0m
+D (421) spi_flash: trying chip: boya[0m
+D (425) spi_flash: trying chip: th[0m
+D (428) spi_flash: trying chip: generic[0m
+[0;32mI (432) spi_flash: detected chip: generic[0m
+[0;32mI (437) spi_flash: flash io: dio[0m
+[0;33mW (441) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+D (454) cpu_start: calling init function: 0x4204b7a8[0m
+D (459) cpu_start: calling init function: 0x4204b72c[0m
+D (464) cpu_start: calling init function: 0x4204b270[0m
+D (469) cpu_start: calling init function: 0x42034918[0m
+[0;33mW (474) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+D (485) cpu_start: calling init function: 0x40389ba2[0m
+D (490) cpu_start: calling init function: 0x4200002a[0m
+D (495) cpu_start: calling init function: 0x42005886 on core: 0[0m
+D (501) intr_alloc: Connected src 39 to int 3 (cpu 0)[0m
+D (506) cpu_start: calling init function: 0x42001c1a on core: 0[0m
+D (512) cpu_start: calling init function: 0x42003550 on core: 0[0m
+[0;32mI (518) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (525) sleep: Enable automatic switching of GPIO sleep configuration[0m
+D (532) cpu_start: calling init function: 0x42001430 on core: 0[0m
+[0;32mI (538) coexist: coex firmware version: d96c1e51f[0m
+[0;32mI (543) coexist: coexist rom version 9387209[0m
+D (548) intr_alloc: Connected src 50 to int 4 (cpu 0)[0m
+D (553) app_start: Starting scheduler on CPU0[0m
+D (558) intr_alloc: Connected src 37 to int 7 (cpu 0)[0m
+[0;32mI (558) main_task: Started on CPU0[0m
+D (558) heap_init: New heap initialised at 0x3fcdc710[0m
+D (558) intr_alloc: Connected src 33 to int 9 (cpu 0)[0m
+[0;32mI (568) main_task: Calling app_main()[0m
+D (568) intr_alloc: Connected src 29 to int 10 (cpu 0)[0m
+[0;32mI (588) BLE_INIT: BT controller compile version [c23ab4c][0m
+D (588) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (588) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (598) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (608) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (608) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (618) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+[0;32mI (628) BLE_INIT: Bluetooth MAC: 34:b7:da:f6:47:7e[0m
+[0;32mI (628) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+D (638) phy_init: loading PHY init data from application binary[0m
+D (648) nvs: nvs_open_from_partition phy 0[0m
+D (648) nvs: nvs_get cal_version 4[0m
+D (648) nvs: nvs_get_str_or_blob cal_mac[0m
+D (658) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (658) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (668) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (678) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (678) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (688) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (698) nvs: nvs_get_str_or_blob cal_data[0m
+D (698) nvs: nvs_close 1[0m
+D (708) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (708) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (718) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (728) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (728) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (738) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (758) temperature_sensor: range changed, change to index 2[0m
+D (778) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (778) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (778) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (788) nvs: nvs_close 2[0m
+D (788) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (788) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (798) nvs: nvs_get_str_or_blob our_sec_2[0m
+D (798) nvs: nvs_close 3[0m
+D (808) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (808) nvs: nvs_get_str_or_blob our_sec_3[0m
+D (808) nvs: nvs_close 4[0m
+D (818) NIMBLE_NVS: ble_store_config_our_secs restored 1 bonds[0m
+D (818) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (828) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (828) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (838) nvs: nvs_close 5[0m
+D (838) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (848) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (848) nvs: nvs_get_str_or_blob peer_sec_2[0m
+D (848) nvs: nvs_close 6[0m
+D (858) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (858) nvs: nvs_get_str_or_blob peer_sec_3[0m
+D (868) nvs: nvs_close 7[0m
+D (868) NIMBLE_NVS: ble_store_config_peer_secs restored 1 bonds[0m
+D (868) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (878) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (878) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (888) nvs: nvs_close 8[0m
+D (888) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 1[0m
+D (898) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (898) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (908) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (908) nvs: nvs_close 9[0m
+D (908) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 2[0m
+D (918) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (918) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (928) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (928) nvs: nvs_close 10[0m
+D (928) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 3[0m
+D (938) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (948) nvs: nvs_get_str_or_blob cccd_sec_4[0m
+D (948) nvs: nvs_close 11[0m
+D (948) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (958) nvs: nvs_get_str_or_blob cccd_sec_5[0m
+D (958) nvs: nvs_close 12[0m
+D (958) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (968) nvs: nvs_get_str_or_blob cccd_sec_6[0m
+D (968) nvs: nvs_close 13[0m
+D (978) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (978) nvs: nvs_get_str_or_blob cccd_sec_7[0m
+D (988) nvs: nvs_close 14[0m
+D (988) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (988) nvs: nvs_get_str_or_blob cccd_sec_8[0m
+D (998) nvs: nvs_close 15[0m
+D (998) NIMBLE_NVS: ble_store_config_cccds restored 3 bonds[0m
+D (1008) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1008) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (1008) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (1018) nvs: nvs_close 16[0m
+D (1018) NIMBLE_NVS: Local IRK in RAM is filled up from NVS index = 1[0m
+D (1028) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1028) nvs: nvs_get_str_or_blob local_irk_2[0m
+D (1038) nvs: nvs_close 17[0m
+D (1038) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1048) nvs: nvs_get_str_or_blob local_irk_3[0m
+D (1048) nvs: nvs_close 18[0m
+D (1048) NIMBLE_NVS: ble_store_config_local_irks restored 1 irks[0m
+D (1058) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1058) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (1068) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (1068) nvs: nvs_close 19[0m
+D (1068) NIMBLE_NVS: RPA_REC in RAM is filled up from NVS index = 1[0m
+D (1078) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1088) nvs: nvs_get_str_or_blob rpa_rec_2[0m
+D (1088) nvs: nvs_close 20[0m
+D (1088) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1098) nvs: nvs_get_str_or_blob rpa_rec_3[0m
+D (1098) nvs: nvs_close 21[0m
+D (1108) NIMBLE_NVS: ble_store_config_rpa_recs restored 1 bonds[0m
+[0;32mI (1108) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1118) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1118) NimBLE: Device Address: [0m
+[0;32mI (1128) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (1128) NimBLE: 
+[0m
+[0;32mI (1138) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1138) NimBLE: disc_mode=2[0m
+[0;32mI (1138) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1148) NimBLE: 
+[0m
+[0;32mI (1158) main_task: Returned from app_main()[0m
+Temperature: 32.72
+Accel: X=1.06, Y=-0.06, Z=-0.15 (m/s^2)
+jerk = 0.00 
+angle = 0.00 
+Temperature: 32.77
+Accel: X=1.06, Y=-0.06, Z=-0.13 (m/s^2)
+jerk = 105958.41 
+angle = -0.07 
+Temperature: 32.86
+Accel: X=1.05, Y=-0.03, Z=-0.16 (m/s^2)
+jerk = 2016.34 
+angle = -0.05 
+Temperature: 32.81
+Accel: X=1.05, Y=-0.08, Z=-0.09 (m/s^2)
+jerk = 4235.05 
+angle = -0.04 
+Temperature: 32.91
+Accel: X=1.07, Y=-0.09, Z=-0.12 (m/s^2)
+jerk = 10146.06 
+angle = -0.09 
+Temperature: 32.77
+Accel: X=1.08, Y=-0.11, Z=-0.15 (m/s^2)
+jerk = 4470.44 
+angle = -0.10 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.08, Z=-0.09 (m/s^2)
+jerk = 2675.99 
+angle = -0.12 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.15, Z=-0.11 (m/s^2)
+jerk = 6014.04 
+angle = -0.07 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.14, Z=-0.09 (m/s^2)
+jerk = 8704.12 
+angle = -0.16 
+Temperature: 32.81
+Accel: X=1.12, Y=-0.10, Z=-0.13 (m/s^2)
+jerk = 6527.56 
+angle = -0.16 
+Temperature: 32.81
+Accel: X=0.95, Y=-0.11, Z=-0.12 (m/s^2)
+jerk = 8026.47 
+angle = -0.10 
+Temperature: 32.86
+Accel: X=1.16, Y=-0.02, Z=-0.00 (m/s^2)
+jerk = 14583.62 
+angle = -0.14 
+Temperature: 32.81
+Accel: X=1.47, Y=0.10, Z=0.18 (m/s^2)
+jerk = 27202.55 
+angle = -0.02 
+Temperature: 32.81
+Accel: X=1.73, Y=0.19, Z=0.11 (m/s^2)
+jerk = 40238.23 
+angle = 0.06 
+Temperature: 32.86
+Accel: X=0.65, Y=-0.09, Z=-0.29 (m/s^2)
+jerk = 28032.79 
+angle = 0.09 
+Temperature: 32.81
+Accel: X=-0.50, Y=-0.82, Z=-0.39 (m/s^2)
+jerk = 125437.26 
+angle = -0.25 
+Temperature: 32.81
+Accel: X=-1.16, Y=-0.93, Z=-0.04 (m/s^2)
+jerk = 131427.81 
+angle = -1.09 
+Temperature: 32.77
+Accel: X=-0.50, Y=0.19, Z=0.02 (m/s^2)
+jerk = 69565.23 
+angle = -0.79 
+Temperature: 32.77
+Accel: X=1.68, Y=1.03, Z=0.03 (m/s^2)
+jerk = 133426.47 
+angle = 0.53 
+Temperature: 32.72
+Accel: X=2.00, Y=1.03, Z=0.55 (m/s^2)
+jerk = 233660.30 
+angle = 0.60 
+Temperature: 32.81
+Accel: X=2.00, Y=1.11, Z=0.41 (m/s^2)
+jerk = 50643.87 
+angle = 0.52 
+Temperature: 32.77
+Accel: X=0.69, Y=0.63, Z=-0.65 (m/s^2)
+jerk = 16613.37 
+angle = 0.55 
+Temperature: 32.77
+Accel: X=-0.53, Y=-0.43, Z=-0.17 (m/s^2)
+jerk = 184634.28 
+angle = 0.60 
+Temperature: 32.72
+Accel: X=-0.99, Y=-0.73, Z=0.55 (m/s^2)
+jerk = 165939.53 
+angle = -0.80 
+Temperature: 32.81
+Accel: X=-0.88, Y=-0.34, Z=0.31 (m/s^2)
+jerk = 86831.02 
+angle = -0.67 
+Temperature: 32.77
+Accel: X=0.99, Y=0.44, Z=-0.75 (m/s^2)
+jerk = 53022.77 
+angle = -0.42 
+Temperature: 32.77
+Accel: X=2.00, Y=0.62, Z=-0.22 (m/s^2)
+jerk = 232132.31 
+angle = 0.35 
+Temperature: 32.86
+Accel: X=2.00, Y=0.76, Z=0.57 (m/s^2)
+jerk = 107823.05 
+angle = 0.32 
+Temperature: 32.91
+Accel: X=2.00, Y=0.78, Z=-0.06 (m/s^2)
+jerk = 78628.60 
+angle = 0.38 
+Temperature: 32.72
+Accel: X=-0.01, Y=0.01, Z=-0.54 (m/s^2)
+jerk = 67677.05 
+angle = 0.38 
+Temperature: 32.77
+Accel: X=-1.03, Y=-0.63, Z=0.44 (m/s^2)
+jerk = 226065.00 
+angle = -0.07 
+Temperature: 32.77
+Accel: X=-1.73, Y=-0.31, Z=0.45 (m/s^2)
+jerk = 156169.20 
+angle = -0.61 
+Temperature: 32.77
+Accel: X=1.47, Y=0.82, Z=-1.30 (m/s^2)
+jerk = 68472.26 
+angle = -0.21 
+Temperature: 32.86
+Accel: X=2.00, Y=0.44, Z=-0.12 (m/s^2)
+jerk = 384310.91 
+angle = 0.38 
+Temperature: 32.81
+Accel: X=1.00, Y=0.35, Z=-0.05 (m/s^2)
+jerk = 133269.48 
+angle = 0.20 
+Temperature: 32.81
+Accel: X=1.04, Y=0.12, Z=-0.78 (m/s^2)
+jerk = 90064.52 
+angle = 0.24 
+Temperature: 32.67
+Accel: X=1.11, Y=0.09, Z=-0.26 (m/s^2)
+jerk = 58400.88 
+angle = 0.13 
+Temperature: 32.67
+Accel: X=0.97, Y=0.10, Z=-0.28 (m/s^2)
+jerk = 49078.00 
+angle = 0.04 
+Temperature: 32.81
+Accel: X=1.00, Y=0.11, Z=-0.21 (m/s^2)
+jerk = 11534.76 
+angle = 0.05 
+Temperature: 32.81
+Accel: X=1.34, Y=0.26, Z=-0.28 (m/s^2)
+jerk = 7184.25 
+angle = 0.07 
+Temperature: 32.77
+Accel: X=1.07, Y=0.27, Z=-0.27 (m/s^2)
+jerk = 30782.20 
+angle = 0.13 
+Temperature: 32.81
+Accel: X=1.02, Y=0.11, Z=-0.15 (m/s^2)
+jerk = 22693.03 
+angle = 0.21 
+Temperature: 32.81
+Accel: X=1.00, Y=0.19, Z=-0.14 (m/s^2)
+jerk = 20152.02 
+angle = 0.04 
+Temperature: 32.72
+Accel: X=1.02, Y=0.13, Z=-0.16 (m/s^2)
+jerk = 7554.76 
+angle = 0.12 
+Temperature: 32.77
+Accel: X=1.03, Y=0.08, Z=-0.15 (m/s^2)
+jerk = 5725.71 
+angle = 0.07 
+Temperature: 32.77
+Accel: X=1.07, Y=0.12, Z=-0.17 (m/s^2)
+jerk = 5425.31 
+angle = 0.01 
+Temperature: 32.77
+Accel: X=1.06, Y=0.12, Z=-0.23 (m/s^2)
+jerk = 3961.25 
+angle = 0.04 
+Temperature: 32.67
+Accel: X=1.05, Y=0.19, Z=-0.24 (m/s^2)
+jerk = 6376.61 
+angle = 0.04 
+Temperature: 32.81
+Accel: X=1.07, Y=0.15, Z=-0.19 (m/s^2)
+jerk = 6449.38 
+angle = 0.11 
+Temperature: 32.81
+Accel: X=1.07, Y=0.15, Z=-0.23 (m/s^2)
+jerk = 5289.12 
+angle = 0.07 
+Temperature: 32.86
+Accel: X=1.07, Y=0.16, Z=-0.24 (m/s^2)
+jerk = 3245.23 
+angle = 0.07 
+Temperature: 32.77
+Accel: X=1.07, Y=0.16, Z=-0.22 (m/s^2)
+jerk = 2426.10 
+angle = 0.08 
+Temperature: 32.77
+Accel: X=1.06, Y=0.16, Z=-0.23 (m/s^2)
+jerk = 3203.46 
+angle = 0.07 
+Temperature: 32.86
+Accel: X=1.06, Y=0.16, Z=-0.23 (m/s^2)
+jerk = 1120.12 
+angle = 0.08 
+Temperature: 32.77
+Accel: X=1.05, Y=0.17, Z=-0.21 (m/s^2)
+jerk = 1654.04 
+angle = 0.07 
+Temperature: 32.77
+Accel: X=1.04, Y=0.17, Z=-0.24 (m/s^2)
+jerk = 2438.11 
+angle = 0.08 
+Temperature: 32.86
+Accel: X=1.05, Y=0.17, Z=-0.22 (m/s^2)
+jerk = 1476.80 
+angle = 0.08 
+Temperature: 32.72
+Accel: X=1.05, Y=0.16, Z=-0.22 (m/s^2)
+jerk = 1817.33 
+angle = 0.08 
+Temperature: 32.81
+Accel: X=1.05, Y=0.18, Z=-0.23 (m/s^2)
+jerk = 298.01 
+angle = 0.08 
+Temperature: 32.67
+Accel: X=1.06, Y=0.17, Z=-0.22 (m/s^2)
+jerk = 2090.79 
+angle = 0.09 
+Temperature: 32.77
+Accel: X=1.05, Y=0.16, Z=-0.23 (m/s^2)
+jerk = 3038.94 
+angle = 0.09 
+Temperature: 32.86
+Accel: X=1.07, Y=0.16, Z=-0.22 (m/s^2)
+jerk = 1183.26 
+angle = 0.09 
+Temperature: 32.81
+Accel: X=1.05, Y=0.17, Z=-0.24 (m/s^2)
+jerk = 1346.32 
+angle = 0.08 
+Temperature: 32.72
+Accel: X=1.05, Y=0.17, Z=-0.22 (m/s^2)
+jerk = 1064.46 
+angle = 0.09 
+Temperature: 32.81
+Accel: X=1.05, Y=0.17, Z=-0.21 (m/s^2)
+jerk = 1015.17 
+angle = 0.08 
+Temperature: 32.86
+Accel: X=1.07, Y=0.17, Z=-0.23 (m/s^2)
+jerk = 720.11 
+angle = 0.09 
+Temperature: 32.77
+Accel: X=1.05, Y=0.16, Z=-0.22 (m/s^2)
+jerk = 860.75 
+angle = 0.08 
+Temperature: 32.86
+Accel: X=1.05, Y=0.17, Z=-0.22 (m/s^2)
+jerk = 1590.10 
+angle = 0.07 
+Temperature: 32.67
+Accel: X=1.06, Y=0.17, Z=-0.21 (m/s^2)
+jerk = 440.13 
+angle = 0.08 
+Temperature: 32.81
+Accel: X=1.06, Y=0.18, Z=-0.22 (m/s^2)
+jerk = 967.06 
+angle = 0.08 
+Temperature: 32.81
+Accel: X=1.05, Y=0.18, Z=-0.21 (m/s^2)
+jerk = 1910.23 
+angle = 0.09 
+Temperature: 32.91
+Accel: X=1.06, Y=0.17, Z=-0.21 (m/s^2)
+jerk = 231.61 
+angle = 0.09 
+Temperature: 32.77
+Accel: X=1.05, Y=0.17, Z=-0.22 (m/s^2)
+jerk = 3208.20 
+angle = 0.07 
+Temperature: 32.86
+Accel: X=1.06, Y=0.17, Z=-0.22 (m/s^2)
+jerk = 2195.23 
+angle = 0.08 
+Temperature: 32.91
+Accel: X=1.05, Y=0.17, Z=-0.22 (m/s^2)
+jerk = 684.47 
+angle = 0.08 
+Temperature: 32.81
+Accel: X=1.05, Y=0.17, Z=-0.23 (m/s^2)
+jerk = 1322.42 
+angle = 0.09 
+Temperature: 32.86
+Accel: X=1.05, Y=0.17, Z=-0.22 (m/s^2)
+jerk = 156.33 
+angle = 0.09 
+Temperature: 32.77
+Accel: X=1.07, Y=0.17, Z=-0.23 (m/s^2)
+jerk = 694.84 
+angle = 0.08 
+Temperature: 32.81
+Accel: X=1.06, Y=0.17, Z=-0.22 (m/s^2)
+jerk = 994.11 
+angle = 0.08 
+Temperature: 32.86
+Accel: X=1.06, Y=0.17, Z=-0.23 (m/s^2)
+jerk = 768.17 
+angle = 0.08 
+Temperature: 32.95
+Accel: X=1.05, Y=0.17, Z=-0.22 (m/s^2)
+jerk = 1206.71 
+angle = 0.08 
+Temperature: 32.81
+Accel: X=1.06, Y=0.18, Z=-0.22 (m/s^2)
+jerk = 1101.88 
+angle = 0.08 
+Temperature: 32.86
+Accel: X=1.05, Y=0.18, Z=-0.21 (m/s^2)
+jerk = 1107.01 
+angle = 0.09 
+Temperature: 32.86
+Accel: X=1.06, Y=0.18, Z=-0.23 (m/s^2)
+jerk = 1368.28 
+angle = 0.08 
+Temperature: 32.86
+Accel: X=1.05, Y=0.17, Z=-0.22 (m/s^2)
+jerk = 832.23 
+angle = 0.09 
+Temperature: 32.81
+Accel: X=1.06, Y=0.17, Z=-0.23 (m/s^2)
+jerk = 1179.98 
+angle = 0.08 
+Temperature: 32.81
+Accel: X=1.06, Y=0.17, Z=-0.22 (m/s^2)
+jerk = 1755.44 
+angle = 0.08 
+Temperature: 32.77
+Accel: X=1.05, Y=0.17, Z=-0.23 (m/s^2)
+jerk = 1149.28 
+angle = 0.07 
+Temperature: 32.86
+Accel: X=1.05, Y=0.17, Z=-0.21 (m/s^2)
+jerk = 1280.28 
+angle = 0.08 
+Temperature: 32.86
+Accel: X=1.06, Y=0.17, Z=-0.22 (m/s^2)
+jerk = 1754.08 
+angle = 0.07 
+Temperature: 32.81
+Accel: X=1.05, Y=0.18, Z=-0.21 (m/s^2)
+jerk = 2395.81 
+angle = 0.08 
+Temperature: 32.81
+Accel: X=1.05, Y=0.17, Z=-0.23 (m/s^2)
+jerk = 2702.14 
+angle = 0.08 
+Temperature: 32.72
+Accel: X=1.05, Y=0.17, Z=-0.23 (m/s^2)
+jerk = 1949.77 
+angle = 0.08 
+Temperature: 32.77
+Accel: X=1.06, Y=0.17, Z=-0.21 (m/s^2)
+jerk = 824.68 
+angle = 0.08 
+Temperature: 32.86
+Accel: X=1.06, Y=0.17, Z=-0.21 (m/s^2)
+jerk = 590.50 
+angle = 0.08 
+Temperature: 32.86
+Accel: X=1.05, Y=0.17, Z=-0.22 (m/s^2)
+jerk = 1304.27 
+angle = 0.08 
+Temperature: 32.86
+Accel: X=1.06, Y=0.17, Z=-0.22 (m/s^2)
+jerk = 1470.12 
+angle = 0.08 
+Temperature: 32.81
+Accel: X=1.05, Y=0.18, Z=-0.23 (m/s^2)
+jerk = 2136.47 
+angle = 0.08 
+Temperature: 32.77
+Accel: X=1.06, Y=0.17, Z=-0.22 (m/s^2)
+jerk = 2053.10 
+angle = 0.08 
+Temperature: 32.86
+Accel: X=1.05, Y=0.17, Z=-0.22 (m/s^2)
+jerk = 1359.54 
+angle = 0.07 
+Temperature: 32.86
+Accel: X=1.05, Y=0.18, Z=-0.23 (m/s^2)
+jerk = 670.39 
+angle = 0.07 
+Temperature: 32.86
+Accel: X=1.05, Y=0.18, Z=-0.21 (m/s^2)
+jerk = 984.77 
+angle = 0.08 
+Temperature: 32.72
+Accel: X=1.05, Y=0.18, Z=-0.21 (m/s^2)
+jerk = 1129.66 
+angle = 0.08 
+Temperature: 32.86
+Accel: X=1.05, Y=0.18, Z=-0.22 (m/s^2)
+jerk = 1109.70 
+angle = 0.09 
+Temperature: 32.86
+Accel: X=1.05, Y=0.17, Z=-0.22 (m/s^2)
+jerk = 746.13 
+angle = 0.08 
+Temperature: 32.77
+Accel: X=1.05, Y=0.17, Z=-0.22 (m/s^2)
+jerk = 1021.31 
+angle = 0.07 
+Temperature: 32.86
+Accel: X=1.05, Y=0.17, Z=-0.20 (m/s^2)
+jerk = 1408.84 
+angle = 0.07 
+Temperature: 32.72
+Accel: X=1.06, Y=0.18, Z=-0.21 (m/s^2)
+jerk = 1194.54 
+angle = 0.07 
+Temperature: 32.72
+Accel: X=1.05, Y=0.18, Z=-0.20 (m/s^2)
+jerk = 800.10 
+angle = 0.08 
+Temperature: 32.86
+Accel: X=1.05, Y=0.17, Z=-0.22 (m/s^2)
+jerk = 1129.66 
+angle = 0.08 
+Temperature: 32.86
+Accel: X=1.05, Y=0.18, Z=-0.22 (m/s^2)
+jerk = 1264.36 
+angle = 0.08 
+Temperature: 32.77
+Accel: X=1.06, Y=0.17, Z=-0.21 (m/s^2)
+jerk = 1666.61 
+angle = 0.08 
+Temperature: 32.72
+Accel: X=1.05, Y=0.17, Z=-0.23 (m/s^2)
+jerk = 1554.85 
+angle = 0.08 
+Temperature: 32.72
+Accel: X=1.06, Y=0.17, Z=-0.22 (m/s^2)
+jerk = 1890.63 
+angle = 0.07 
+Temperature: 32.86
+Accel: X=1.06, Y=0.17, Z=-0.21 (m/s^2)
+jerk = 1674.81 
+angle = 0.07 
+Temperature: 32.77
+Accel: X=1.05, Y=0.17, Z=-0.21 (m/s^2)
+jerk = 1033.78 
+angle = 0.07 
+Temperature: 32.86
+Accel: X=1.05, Y=0.17, Z=-0.21 (m/s^2)
+jerk = 1769.47 
+angle = 0.07 
+Temperature: 32.81
+Accel: X=1.05, Y=0.17, Z=-0.21 (m/s^2)
+jerk = 1158.06 
+angle = 0.07 
+Temperature: 32.81
+Accel: X=1.05, Y=0.17, Z=-0.22 (m/s^2)
+jerk = 466.43 
+angle = 0.07 
+Temperature: 32.77
+Accel: X=1.06, Y=0.17, Z=-0.22 (m/s^2)
+jerk = 1044.40 
+angle = 0.07 
+Temperature: 32.77
+Accel: X=1.05, Y=0.18, Z=-0.22 (m/s^2)
+jerk = 753.68 
+angle = 0.07 
+Temperature: 32.86
+Accel: X=1.06, Y=0.18, Z=-0.20 (m/s^2)
+jerk = 1189.54 
+angle = 0.07 
+Temperature: 32.86
+Accel: X=1.05, Y=0.18, Z=-0.21 (m/s^2)
+jerk = 1760.69 
+angle = 0.06 
+Temperature: 32.81
+Accel: X=1.04, Y=0.18, Z=-0.23 (m/s^2)
+jerk = 807.51 
+angle = 0.07 
+Temperature: 32.72
+Accel: X=1.07, Y=0.16, Z=-0.20 (m/s^2)
+jerk = 1751.53 
+angle = 0.08 
+Temperature: 32.77
+Accel: X=1.05, Y=0.17, Z=-0.23 (m/s^2)
+jerk = 3082.17 
+angle = 0.05 
+Temperature: 32.77
+Accel: X=1.05, Y=0.18, Z=-0.20 (m/s^2)
+jerk = 3268.02 
+angle = 0.08 
+Temperature: 32.86
+Accel: X=1.05, Y=0.17, Z=-0.21 (m/s^2)
+jerk = 2793.57 
+angle = 0.07 
+Temperature: 32.81
+Accel: X=1.07, Y=0.17, Z=-0.20 (m/s^2)
+jerk = 1421.27 
+angle = 0.07 
+Temperature: 32.72
+Accel: X=1.05, Y=0.19, Z=-0.21 (m/s^2)
+jerk = 1428.17 
+angle = 0.07 
+Temperature: 32.81
+Accel: X=1.06, Y=0.18, Z=-0.21 (m/s^2)
+jerk = 721.35 
+angle = 0.07 
+Temperature: 32.77
+Accel: X=1.04, Y=0.18, Z=-0.22 (m/s^2)
+jerk = 537.66 
+angle = 0.07 
+Temperature: 32.77
+Accel: X=1.04, Y=0.18, Z=-0.21 (m/s^2)
+jerk = 1230.67 
+angle = 0.07 
+Temperature: 32.67
+Accel: X=1.05, Y=0.17, Z=-0.22 (m/s^2)
+jerk = 1149.80 
+angle = 0.08 
+Temperature: 32.81
+Accel: X=1.05, Y=0.18, Z=-0.22 (m/s^2)
+jerk = 1297.40 
+angle = 0.07 
+Temperature: 32.81
+Accel: X=1.05, Y=0.18, Z=-0.22 (m/s^2)
+jerk = 824.68 
+angle = 0.07 
+Temperature: 32.81
+Accel: X=1.05, Y=0.17, Z=-0.21 (m/s^2)
+jerk = 424.27 
+angle = 0.07 
+Temperature: 32.72
+Accel: X=1.04, Y=0.18, Z=-0.22 (m/s^2)
+jerk = 770.49 
+angle = 0.07 
+Temperature: 32.77
+Accel: X=1.06, Y=0.17, Z=-0.21 (m/s^2)
+jerk = 1229.46 
+angle = 0.07 
+Temperature: 32.77
+Accel: X=1.05, Y=0.17, Z=-0.22 (m/s^2)
+jerk = 1346.32 
+angle = 0.07 
+Temperature: 32.67
+Accel: X=1.06, Y=0.17, Z=-0.22 (m/s^2)
+jerk = 818.14 
+angle = 0.07 
+Temperature: 32.81
+Accel: X=1.04, Y=0.17, Z=-0.23 (m/s^2)
+jerk = 635.70 
+angle = 0.06 
+Temperature: 32.81
+Accel: X=1.07, Y=0.17, Z=-0.20 (m/s^2)
+jerk = 1285.63 
+angle = 0.06 
+Temperature: 32.67
+Accel: X=1.06, Y=0.17, Z=-0.21 (m/s^2)
+jerk = 2593.64 
+angle = 0.07 
+Temperature: 32.77
+Accel: X=1.06, Y=0.17, Z=-0.22 (m/s^2)
+jerk = 2360.35 
+angle = 0.07 
+Temperature: 32.77
+Accel: X=1.07, Y=0.17, Z=-0.20 (m/s^2)
+jerk = 2003.14 
+angle = 0.05 
+Temperature: 32.77
+Accel: X=1.06, Y=0.17, Z=-0.21 (m/s^2)
+jerk = 1837.72 
+angle = 0.07 
+Temperature: 32.86
+Accel: X=1.06, Y=0.17, Z=-0.21 (m/s^2)
+jerk = 1329.61 
+angle = 0.07 
+Temperature: 32.72
+Accel: X=1.06, Y=0.17, Z=-0.20 (m/s^2)
+jerk = 694.41 
+angle = 0.06 
+Temperature: 32.72
+Accel: X=1.05, Y=0.18, Z=-0.21 (m/s^2)
+jerk = 923.23 
+angle = 0.06 
+Temperature: 32.81
+Accel: X=1.05, Y=0.17, Z=-0.21 (m/s^2)
+jerk = 539.88 
+angle = 0.07 
+Temperature: 32.91
+Accel: X=1.05, Y=0.18, Z=-0.21 (m/s^2)
+jerk = 1239.84 
+angle = 0.05 
+Temperature: 32.77
+Accel: X=1.06, Y=0.17, Z=-0.21 (m/s^2)
+jerk = 2144.13 
+angle = 0.07 
+Temperature: 32.77
+Accel: X=1.06, Y=0.17, Z=-0.20 (m/s^2)
+jerk = 1985.51 
+angle = 0.06 
+Temperature: 32.77
+Accel: X=1.09, Y=0.17, Z=-0.27 (m/s^2)
+jerk = 2516.19 
+angle = 0.07 
+Temperature: 32.77
+Accel: X=1.11, Y=0.07, Z=-0.06 (m/s^2)
+jerk = 8444.62 
+angle = 0.04 
+Temperature: 32.86
+Accel: X=1.18, Y=-0.07, Z=-0.16 (m/s^2)
+jerk = 24146.16 
+angle = -0.07 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.10, Z=-0.15 (m/s^2)
+jerk = 13384.96 
+angle = -0.19 
+Temperature: 32.86
+Accel: X=0.72, Y=0.06, Z=-0.14 (m/s^2)
+jerk = 12275.30 
+angle = -0.21 
+Temperature: 32.72
+Accel: X=0.90, Y=-0.54, Z=-0.11 (m/s^2)
+jerk = 37088.07 
+angle = 0.05 
+Temperature: 32.72
+Accel: X=1.12, Y=-0.19, Z=-0.31 (m/s^2)
+jerk = 66018.59 
+angle = -0.73 
+Temperature: 32.72
+Accel: X=1.12, Y=-0.35, Z=-0.40 (m/s^2)
+jerk = 45163.62 
+angle = -0.27 
+Temperature: 32.72
+Accel: X=1.05, Y=-0.44, Z=-0.22 (m/s^2)
+jerk = 21895.29 
+angle = -0.42 
+Temperature: 32.77
+Accel: X=1.15, Y=-0.22, Z=-0.22 (m/s^2)
+jerk = 24173.36 
+angle = -0.52 
+Temperature: 32.77
+Accel: X=1.21, Y=-0.18, Z=-0.24 (m/s^2)
+jerk = 23265.87 
+angle = -0.30 
+Temperature: 32.77
+Accel: X=1.11, Y=-0.07, Z=-0.27 (m/s^2)
+jerk = 8024.58 
+angle = -0.25 
+Temperature: 32.77
+Accel: X=1.02, Y=0.05, Z=-0.09 (m/s^2)
+jerk = 13713.62 
+angle = -0.17 
+Temperature: 32.77
+Accel: X=0.85, Y=0.15, Z=-0.04 (m/s^2)
+jerk = 24494.51 
+angle = -0.04 
+Temperature: 32.81
+Accel: X=0.74, Y=0.27, Z=-0.04 (m/s^2)
+jerk = 19126.51 
+angle = 0.13 
+Temperature: 32.72
+Accel: X=0.94, Y=0.22, Z=-0.28 (m/s^2)
+jerk = 14220.81 
+angle = 0.31 
+Temperature: 32.81
+Accel: X=1.17, Y=-0.12, Z=-0.08 (m/s^2)
+jerk = 38239.54 
+angle = 0.18 
+Temperature: 32.77
+Accel: X=1.28, Y=-0.12, Z=-0.20 (m/s^2)
+jerk = 50737.65 
+angle = -0.19 
+Temperature: 32.77
+Accel: X=0.94, Y=0.13, Z=-0.51 (m/s^2)
+jerk = 13690.20 
+angle = -0.18 
+Temperature: 32.77
+Accel: X=0.91, Y=0.01, Z=-0.31 (m/s^2)
+jerk = 51039.27 
+angle = 0.08 
+Temperature: 32.77
+Accel: X=1.16, Y=-0.15, Z=-0.22 (m/s^2)
+jerk = 22458.02 
+angle = -0.06 
+Temperature: 32.77
+Accel: X=1.08, Y=-0.22, Z=-0.27 (m/s^2)
+jerk = 30722.29 
+angle = -0.22 
+Temperature: 32.77
+Accel: X=1.05, Y=-0.21, Z=-0.20 (m/s^2)
+jerk = 11443.66 
+angle = -0.27 
+Temperature: 32.81
+Accel: X=1.12, Y=-0.15, Z=-0.22 (m/s^2)
+jerk = 8716.81 
+angle = -0.30 
+Temperature: 32.81
+Accel: X=1.11, Y=-0.07, Z=-0.23 (m/s^2)
+jerk = 7905.82 
+angle = -0.23 
+Temperature: 32.81
+Accel: X=1.05, Y=-0.08, Z=-0.18 (m/s^2)
+jerk = 9957.35 
+angle = -0.14 
+Temperature: 32.81
+Accel: X=1.15, Y=-0.06, Z=-0.18 (m/s^2)
+jerk = 13305.75 
+angle = -0.19 
+Temperature: 32.77
+Accel: X=0.63, Y=-0.07, Z=-0.87 (m/s^2)
+jerk = 9117.21 
+angle = -0.17 
+Temperature: 32.77
+Accel: X=1.10, Y=0.00, Z=-0.00 (m/s^2)
+jerk = 74995.47 
+angle = -0.17 
+Temperature: 32.77
+Accel: X=1.08, Y=-0.01, Z=-0.10 (m/s^2)
+jerk = 84025.69 
+angle = -0.06 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.11 (m/s^2)
+jerk = 9614.49 
+angle = -0.05 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.01, Z=-0.14 (m/s^2)
+jerk = 1865.72 
+angle = -0.06 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 1467.08 
+angle = -0.06 
+Temperature: 32.72
+Accel: X=1.08, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 549.72 
+angle = -0.06 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 1732.71 
+angle = -0.06 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1797.21 
+angle = -0.06 
+Temperature: 32.67
+Accel: X=1.07, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 974.73 
+angle = -0.07 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1626.97 
+angle = -0.07 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 1583.91 
+angle = -0.07 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 644.55 
+angle = -0.07 
+Temperature: 32.81
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1531.29 
+angle = -0.06 
+Temperature: 32.72
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 821.78 
+angle = -0.06 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.00, Z=-0.12 (m/s^2)
+jerk = 732.01 
+angle = -0.07 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 710.11 
+angle = -0.06 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.00, Z=-0.12 (m/s^2)
+jerk = 295.00 
+angle = -0.07 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.01, Z=-0.11 (m/s^2)
+jerk = 1235.99 
+angle = -0.06 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 1484.65 
+angle = -0.06 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1928.87 
+angle = -0.07 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.02, Z=-0.12 (m/s^2)
+jerk = 1073.66 
+angle = -0.07 
+Temperature: 32.77
+Accel: X=1.06, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 329.36 
+angle = -0.07 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1370.24 
+angle = -0.06 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 947.44 
+angle = -0.07 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.00, Z=-0.12 (m/s^2)
+jerk = 1275.39 
+angle = -0.07 
+Temperature: 32.77
+Accel: X=1.08, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 420.74 
+angle = -0.07 
+Temperature: 32.91
+Accel: X=1.07, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 734.45 
+angle = -0.07 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 744.93 
+angle = -0.07 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.00, Z=-0.12 (m/s^2)
+jerk = 1138.07 
+angle = -0.06 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.12 (m/s^2)
+jerk = 1004.84 
+angle = -0.07 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1589.92 
+angle = -0.07 
+Temperature: 32.77
+Accel: X=1.06, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1029.16 
+angle = -0.07 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.00, Z=-0.12 (m/s^2)
+jerk = 920.64 
+angle = -0.07 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 332.07 
+angle = -0.07 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 580.32 
+angle = -0.07 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 314.55 
+angle = -0.07 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 800.47 
+angle = -0.07 
+Temperature: 32.86
+Accel: X=1.08, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1369.37 
+angle = -0.08 
+Temperature: 32.77
+Accel: X=1.08, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 870.05 
+angle = -0.07 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 1398.44 
+angle = -0.07 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1030.32 
+angle = -0.07 
+Temperature: 32.72
+Accel: X=1.07, Y=-0.01, Z=-0.11 (m/s^2)
+jerk = 702.09 
+angle = -0.08 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1076.99 
+angle = -0.08 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 2495.14 
+angle = -0.08 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.01, Z=-0.11 (m/s^2)
+jerk = 2053.40 
+angle = -0.08 
+Temperature: 32.77
+Accel: X=1.06, Y=-0.01, Z=-0.11 (m/s^2)
+jerk = 1022.48 
+angle = -0.07 
+Temperature: 32.86
+Accel: X=1.05, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 1813.23 
+angle = -0.07 
+Temperature: 32.77
+Accel: X=1.06, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1347.21 
+angle = -0.08 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1299.69 
+angle = -0.08 
+Temperature: 32.72
+Accel: X=1.08, Y=-0.01, Z=-0.14 (m/s^2)
+jerk = 1764.92 
+angle = -0.08 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1394.38 
+angle = -0.07 
+Temperature: 32.72
+Accel: X=1.08, Y=-0.00, Z=-0.12 (m/s^2)
+jerk = 1928.87 
+angle = -0.07 
+Temperature: 32.77
+Accel: X=1.06, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 816.32 
+angle = -0.07 
+Temperature: 32.77
+Accel: X=1.06, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1442.50 
+angle = -0.07 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.02, Z=-0.13 (m/s^2)
+jerk = 708.85 
+angle = -0.08 
+Temperature: 32.77
+Accel: X=1.06, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 1110.50 
+angle = -0.08 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 1259.40 
+angle = -0.07 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.00, Z=-0.12 (m/s^2)
+jerk = 1218.01 
+angle = -0.08 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 920.32 
+angle = -0.07 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1117.99 
+angle = -0.08 
+Temperature: 32.81
+Accel: X=1.08, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 1275.39 
+angle = -0.08 
+Temperature: 32.81
+Accel: X=1.09, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 1758.66 
+angle = -0.08 
+Temperature: 32.81
+Accel: X=1.08, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1174.42 
+angle = -0.07 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.00, Z=-0.12 (m/s^2)
+jerk = 1409.69 
+angle = -0.08 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 629.11 
+angle = -0.08 
+Temperature: 32.77
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1223.63 
+angle = -0.08 
+Temperature: 32.81
+Accel: X=1.08, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 520.20 
+angle = -0.08 
+Temperature: 32.72
+Accel: X=1.08, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 595.02 
+angle = -0.09 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 2204.31 
+angle = -0.07 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 916.75 
+angle = -0.08 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 279.43 
+angle = -0.08 
+Temperature: 32.91
+Accel: X=1.06, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1199.27 
+angle = -0.09 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1380.64 
+angle = -0.09 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1446.42 
+angle = -0.08 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 398.18 
+angle = -0.08 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 1553.51 
+angle = -0.08 
+Temperature: 32.72
+Accel: X=1.06, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1742.83 
+angle = -0.08 
+Temperature: 32.72
+Accel: X=1.07, Y=-0.00, Z=-0.12 (m/s^2)
+jerk = 1234.78 
+angle = -0.07 
+Temperature: 32.77
+Accel: X=1.08, Y=-0.01, Z=-0.14 (m/s^2)
+jerk = 767.01 
+angle = -0.08 
+Temperature: 32.77
+Accel: X=1.06, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 840.43 
+angle = -0.09 
+Temperature: 32.91
+Accel: X=1.07, Y=-0.00, Z=-0.12 (m/s^2)
+jerk = 912.18 
+angle = -0.09 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.00, Z=-0.12 (m/s^2)
+jerk = 1824.70 
+angle = -0.08 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.00, Z=-0.12 (m/s^2)
+jerk = 887.34 
+angle = -0.08 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1398.65 
+angle = -0.09 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 1130.98 
+angle = -0.08 
+Temperature: 32.91
+Accel: X=1.08, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1503.80 
+angle = -0.08 
+Temperature: 32.81
+Accel: X=1.08, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1061.94 
+angle = -0.08 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 879.58 
+angle = -0.08 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 409.98 
+angle = -0.08 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 1187.29 
+angle = -0.08 
+Temperature: 32.81
+Accel: X=1.05, Y=-0.01, Z=-0.14 (m/s^2)
+jerk = 501.53 
+angle = -0.08 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1923.14 
+angle = -0.09 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.02, Z=-0.14 (m/s^2)
+jerk = 1117.99 
+angle = -0.09 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 1576.36 
+angle = -0.09 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.00, Z=-0.12 (m/s^2)
+jerk = 1462.81 
+angle = -0.08 
+Temperature: 32.72
+Accel: X=1.07, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 1669.64 
+angle = -0.09 
+Temperature: 32.91
+Accel: X=1.07, Y=-0.00, Z=-0.12 (m/s^2)
+jerk = 1217.28 
+angle = -0.09 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1015.46 
+angle = -0.09 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1041.83 
+angle = -0.09 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1527.59 
+angle = -0.09 
+Temperature: 32.81
+Accel: X=1.00, Y=0.00, Z=-0.17 (m/s^2)
+jerk = 1135.19 
+angle = -0.08 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.01, Z=-0.14 (m/s^2)
+jerk = 9921.67 
+angle = -0.09 
+Temperature: 32.91
+Accel: X=1.07, Y=-0.02, Z=-0.14 (m/s^2)
+jerk = 9886.01 
+angle = -0.10 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 798.23 
+angle = -0.11 
+Temperature: 32.86
+Accel: X=1.08, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 2063.24 
+angle = -0.09 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 806.77 
+angle = -0.09 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 2246.76 
+angle = -0.08 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.02, Z=-0.13 (m/s^2)
+jerk = 772.43 
+angle = -0.08 
+Temperature: 32.72
+Accel: X=1.07, Y=-0.02, Z=-0.13 (m/s^2)
+jerk = 2311.36 
+angle = -0.10 
+Temperature: 32.77
+Accel: X=1.05, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 909.89 
+angle = -0.10 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 2555.56 
+angle = -0.08 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 2674.65 
+angle = -0.10 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 1492.46 
+angle = -0.09 
+Temperature: 32.72
+Accel: X=1.08, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1271.88 
+angle = -0.09 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1992.10 
+angle = -0.10 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 974.12 
+angle = -0.09 
+Temperature: 32.72
+Accel: X=1.05, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 512.70 
+angle = -0.09 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1695.15 
+angle = -0.10 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 1025.10 
+angle = -0.09 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 973.20 
+angle = -0.10 
+Temperature: 32.81
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1167.29 
+angle = -0.10 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1160.37 
+angle = -0.10 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.01, Z=-0.11 (m/s^2)
+jerk = 1005.73 
+angle = -0.09 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1221.19 
+angle = -0.10 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.00, Z=-0.12 (m/s^2)
+jerk = 872.78 
+angle = -0.09 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 841.13 
+angle = -0.09 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1728.06 
+angle = -0.10 
+Temperature: 32.91
+Accel: X=1.06, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 698.26 
+angle = -0.10 
+Temperature: 32.77
+Accel: X=1.05, Y=-0.01, Z=-0.14 (m/s^2)
+jerk = 882.29 
+angle = -0.10 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 811.93 
+angle = -0.10 
+Temperature: 32.77
+Accel: X=1.06, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 2098.76 
+angle = -0.10 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 429.16 
+angle = -0.10 
+Temperature: 32.77
+Accel: X=1.08, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1061.10 
+angle = -0.10 
+Temperature: 32.77
+Accel: X=1.08, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1882.58 
+angle = -0.09 
+Temperature: 32.72
+Accel: X=1.07, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1374.80 
+angle = -0.10 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 763.50 
+angle = -0.10 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 655.55 
+angle = -0.10 
+Temperature: 32.91
+Accel: X=1.07, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 512.70 
+angle = -0.10 
+Temperature: 32.95
+Accel: X=1.05, Y=-0.00, Z=-0.12 (m/s^2)
+jerk = 962.42 
+angle = -0.10 
+Temperature: 32.86
+Accel: X=1.05, Y=-0.01, Z=-0.14 (m/s^2)
+jerk = 305.91 
+angle = -0.10 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 765.84 
+angle = -0.10 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1927.01 
+angle = -0.09 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.01, Z=-0.14 (m/s^2)
+jerk = 871.41 
+angle = -0.10 
+Temperature: 32.77
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 687.94 
+angle = -0.10 
+Temperature: 32.72
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 874.49 
+angle = -0.10 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.01, Z=-0.14 (m/s^2)
+jerk = 562.05 
+angle = -0.10 
+Temperature: 32.86
+Accel: X=1.08, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1663.92 
+angle = -0.10 
+Temperature: 32.81
+Accel: X=1.08, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1095.64 
+angle = -0.10 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 313.60 
+angle = -0.10 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 685.77 
+angle = -0.11 
+Temperature: 32.91
+Accel: X=1.06, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 957.45 
+angle = -0.11 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1888.74 
+angle = -0.10 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 806.03 
+angle = -0.10 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 708.43 
+angle = -0.11 
+Temperature: 32.81
+Accel: X=1.07, Y=0.00, Z=-0.12 (m/s^2)
+jerk = 1861.56 
+angle = -0.10 
+Temperature: 32.95
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 657.37 
+angle = -0.10 
+Temperature: 32.77
+Accel: X=1.07, Y=0.00, Z=-0.12 (m/s^2)
+jerk = 896.70 
+angle = -0.10 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.01, Z=-0.14 (m/s^2)
+jerk = 836.16 
+angle = -0.11 
+Temperature: 32.77
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 2012.35 
+angle = -0.11 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 2035.03 
+angle = -0.11 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1715.95 
+angle = -0.10 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.02, Z=-0.13 (m/s^2)
+jerk = 586.95 
+angle = -0.10 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.01, Z=-0.14 (m/s^2)
+jerk = 960.87 
+angle = -0.11 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 823.23 
+angle = -0.11 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 689.24 
+angle = -0.11 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 912.84 
+angle = -0.11 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 909.57 
+angle = -0.11 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 1119.33 
+angle = -0.10 
+Temperature: 32.77
+Accel: X=1.06, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 809.35 
+angle = -0.11 
+Temperature: 32.72
+Accel: X=1.06, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 755.26 
+angle = -0.10 
+Temperature: 32.81
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 842.20 
+angle = -0.11 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 688.37 
+angle = -0.11 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1232.85 
+angle = -0.11 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1509.93 
+angle = -0.11 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 1455.45 
+angle = -0.10 
+Temperature: 32.86
+Accel: X=1.05, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 878.91 
+angle = -0.11 
+Temperature: 32.91
+Accel: X=1.06, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 1483.04 
+angle = -0.11 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1204.73 
+angle = -0.11 
+Temperature: 32.91
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1581.08 
+angle = -0.12 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1707.07 
+angle = -0.11 
+Temperature: 32.95
+Accel: X=1.08, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1292.10 
+angle = -0.11 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.01, Z=-0.14 (m/s^2)
+jerk = 804.18 
+angle = -0.11 
+Temperature: 32.86
+Accel: X=1.08, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1398.65 
+angle = -0.11 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1195.29 
+angle = -0.11 
+Temperature: 32.95
+Accel: X=1.07, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 784.30 
+angle = -0.11 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 522.48 
+angle = -0.10 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 2404.26 
+angle = -0.12 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.01, Z=-0.14 (m/s^2)
+jerk = 599.02 
+angle = -0.12 
+Temperature: 32.81
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1722.53 
+angle = -0.12 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1220.95 
+angle = -0.12 
+Temperature: 32.72
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1794.89 
+angle = -0.10 
+Temperature: 32.95
+Accel: X=1.08, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1657.46 
+angle = -0.12 
+Temperature: 32.86
+Accel: X=1.08, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 518.48 
+angle = -0.12 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 562.05 
+angle = -0.12 
+Temperature: 32.91
+Accel: X=1.08, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1186.53 
+angle = -0.11 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1179.48 
+angle = -0.11 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 1367.41 
+angle = -0.12 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1062.22 
+angle = -0.12 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 723.41 
+angle = -0.12 
+Temperature: 32.77
+Accel: X=1.06, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 905.96 
+angle = -0.12 
+Temperature: 32.86
+Accel: X=1.05, Y=-0.01, Z=-0.14 (m/s^2)
+jerk = 1090.19 
+angle = -0.11 
+Temperature: 32.77
+Accel: X=1.06, Y=-0.01, Z=-0.14 (m/s^2)
+jerk = 1109.70 
+angle = -0.11 
+Temperature: 32.91
+Accel: X=1.06, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1267.89 
+angle = -0.12 
+Temperature: 32.81
+Accel: X=1.08, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 1227.03 
+angle = -0.11 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 962.42 
+angle = -0.12 
+Temperature: 32.77
+Accel: X=1.08, Y=-0.00, Z=-0.12 (m/s^2)
+jerk = 133.72 
+angle = -0.12 
+Temperature: 32.86
+Accel: X=1.08, Y=-0.01, Z=-0.14 (m/s^2)
+jerk = 1944.10 
+angle = -0.12 
+Temperature: 32.91
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1809.11 
+angle = -0.13 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1599.26 
+angle = -0.11 
+Temperature: 32.77
+Accel: X=1.08, Y=-0.01, Z=-0.14 (m/s^2)
+jerk = 1170.35 
+angle = -0.12 
+Temperature: 32.77
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 714.71 
+angle = -0.12 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1336.32 
+angle = -0.12 
+Temperature: 32.91
+Accel: X=1.06, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1892.05 
+angle = -0.11 
+Temperature: 32.81
+Accel: X=1.05, Y=-0.00, Z=-0.12 (m/s^2)
+jerk = 1406.30 
+angle = -0.13 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 1198.28 
+angle = -0.13 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1401.63 
+angle = -0.12 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 2401.28 
+angle = -0.12 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 654.19 
+angle = -0.12 
+Temperature: 32.81
+Accel: X=1.08, Y=0.00, Z=-0.12 (m/s^2)
+jerk = 1008.39 
+angle = -0.12 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 890.03 
+angle = -0.12 
+Temperature: 32.77
+Accel: X=1.06, Y=-0.02, Z=-0.13 (m/s^2)
+jerk = 1275.39 
+angle = -0.13 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 524.19 
+angle = -0.13 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.00, Z=-0.12 (m/s^2)
+jerk = 1162.94 
+angle = -0.11 
+Temperature: 32.81
+Accel: X=1.05, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1600.75 
+angle = -0.12 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1444.56 
+angle = -0.13 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1045.54 
+angle = -0.14 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 2155.36 
+angle = -0.13 
+Temperature: 32.77
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1002.17 
+angle = -0.13 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1280.98 
+angle = -0.12 
+Temperature: 32.95
+Accel: X=1.07, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1044.11 
+angle = -0.12 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 948.39 
+angle = -0.13 
+Temperature: 32.81
+Accel: X=1.06, Y=0.00, Z=-0.15 (m/s^2)
+jerk = 1973.47 
+angle = -0.12 
+Temperature: 33.00
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 696.55 
+angle = -0.12 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.02, Z=-0.14 (m/s^2)
+jerk = 1218.26 
+angle = -0.13 
+Temperature: 32.67
+Accel: X=1.07, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 1797.54 
+angle = -0.13 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1070.88 
+angle = -0.13 
+Temperature: 32.91
+Accel: X=1.06, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1068.10 
+angle = -0.12 
+Temperature: 32.81
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1266.48 
+angle = -0.12 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1321.75 
+angle = -0.13 
+Temperature: 32.77
+Accel: X=1.06, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1297.85 
+angle = -0.12 
+Temperature: 32.86
+Accel: X=1.05, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1767.79 
+angle = -0.13 
+Temperature: 32.81
+Accel: X=1.08, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1094.56 
+angle = -0.13 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 836.52 
+angle = -0.13 
+Temperature: 32.81
+Accel: X=1.08, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 748.52 
+angle = -0.13 
+Temperature: 32.81
+Accel: X=1.08, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 196.83 
+angle = -0.13 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 666.82 
+angle = -0.13 
+Temperature: 32.86
+Accel: X=1.08, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1257.03 
+angle = -0.14 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.00, Z=-0.12 (m/s^2)
+jerk = 1110.77 
+angle = -0.13 
+Temperature: 32.91
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1232.61 
+angle = -0.13 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.01, Z=-0.14 (m/s^2)
+jerk = 1359.76 
+angle = -0.14 
+Temperature: 32.77
+Accel: X=1.05, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 2135.64 
+angle = -0.13 
+Temperature: 32.77
+Accel: X=1.06, Y=-0.01, Z=-0.14 (m/s^2)
+jerk = 1214.34 
+angle = -0.14 
+Temperature: 32.81
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1510.91 
+angle = -0.13 
+Temperature: 32.86
+Accel: X=1.08, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 1522.51 
+angle = -0.13 
+Temperature: 32.77
+Accel: X=1.08, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1465.05 
+angle = -0.12 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1339.66 
+angle = -0.14 
+Temperature: 32.91
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1861.40 
+angle = -0.14 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1249.90 
+angle = -0.14 
+Temperature: 32.77
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 540.98 
+angle = -0.14 
+Temperature: 32.81
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1181.25 
+angle = -0.13 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 820.69 
+angle = -0.13 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 755.26 
+angle = -0.14 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.00, Z=-0.12 (m/s^2)
+jerk = 898.36 
+angle = -0.14 
+Temperature: 32.81
+Accel: X=1.06, Y=0.00, Z=-0.15 (m/s^2)
+jerk = 805.66 
+angle = -0.14 
+Temperature: 32.72
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1233.82 
+angle = -0.14 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 1443.74 
+angle = -0.13 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 763.11 
+angle = -0.14 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1331.41 
+angle = -0.13 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 682.72 
+angle = -0.13 
+Temperature: 32.77
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1713.51 
+angle = -0.13 
+Temperature: 32.86
+Accel: X=1.08, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 2008.64 
+angle = -0.14 
+Temperature: 32.81
+Accel: X=1.08, Y=-0.00, Z=-0.12 (m/s^2)
+jerk = 785.06 
+angle = -0.14 
+Temperature: 32.77
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 487.06 
+angle = -0.14 
+Temperature: 32.86
+Accel: X=1.05, Y=0.00, Z=-0.12 (m/s^2)
+jerk = 588.98 
+angle = -0.14 
+Temperature: 32.72
+Accel: X=1.06, Y=-0.00, Z=-0.12 (m/s^2)
+jerk = 1041.25 
+angle = -0.14 
+Temperature: 32.81
+Accel: X=1.06, Y=0.00, Z=-0.12 (m/s^2)
+jerk = 278.36 
+angle = -0.14 
+Temperature: 32.77
+Accel: X=1.06, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 241.69 
+angle = -0.14 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 589.99 
+angle = -0.14 
+Temperature: 32.91
+Accel: X=1.06, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1328.72 
+angle = -0.15 
+Temperature: 32.86
+Accel: X=1.08, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1683.33 
+angle = -0.15 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 1824.86 
+angle = -0.13 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 417.90 
+angle = -0.13 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1473.16 
+angle = -0.14 
+Temperature: 32.77
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 734.05 
+angle = -0.14 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.01, Z=-0.14 (m/s^2)
+jerk = 629.58 
+angle = -0.14 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 1762.05 
+angle = -0.14 
+Temperature: 32.86
+Accel: X=1.02, Y=0.00, Z=-0.15 (m/s^2)
+jerk = 996.20 
+angle = -0.14 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 3402.94 
+angle = -0.14 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 2852.27 
+angle = -0.15 
+Temperature: 32.77
+Accel: X=1.08, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1241.52 
+angle = -0.16 
+Temperature: 32.77
+Accel: X=1.07, Y=0.00, Z=-0.12 (m/s^2)
+jerk = 1910.23 
+angle = -0.14 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 973.51 
+angle = -0.14 
+Temperature: 32.81
+Accel: X=1.08, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1782.90 
+angle = -0.14 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 997.70 
+angle = -0.14 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.01, Z=-0.14 (m/s^2)
+jerk = 1043.54 
+angle = -0.15 
+Temperature: 32.91
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 579.80 
+angle = -0.15 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1503.80 
+angle = -0.16 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 725.06 
+angle = -0.15 
+Temperature: 32.91
+Accel: X=1.08, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 808.62 
+angle = -0.15 
+Temperature: 32.77
+Accel: X=1.06, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 700.82 
+angle = -0.14 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 913.49 
+angle = -0.15 
+Temperature: 32.72
+Accel: X=1.06, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 857.97 
+angle = -0.15 
+Temperature: 32.77
+Accel: X=1.06, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 649.16 
+angle = -0.15 
+Temperature: 32.86
+Accel: X=1.05, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1102.15 
+angle = -0.14 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 332.07 
+angle = -0.14 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 734.05 
+angle = -0.15 
+Temperature: 32.77
+Accel: X=1.08, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 798.60 
+angle = -0.15 
+Temperature: 32.81
+Accel: X=1.08, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1803.50 
+angle = -0.15 
+Temperature: 32.81
+Accel: X=1.08, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1447.04 
+angle = -0.14 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.00, Z=-0.12 (m/s^2)
+jerk = 937.96 
+angle = -0.13 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1829.10 
+angle = -0.15 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1192.55 
+angle = -0.14 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1586.16 
+angle = -0.15 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 942.40 
+angle = -0.15 
+Temperature: 32.77
+Accel: X=1.05, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1048.95 
+angle = -0.15 
+Temperature: 32.81
+Accel: X=1.05, Y=0.00, Z=-0.12 (m/s^2)
+jerk = 1728.58 
+angle = -0.15 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.01, Z=-0.14 (m/s^2)
+jerk = 878.23 
+angle = -0.15 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1157.80 
+angle = -0.16 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1866.68 
+angle = -0.16 
+Temperature: 32.91
+Accel: X=1.08, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 1010.75 
+angle = -0.15 
+Temperature: 32.91
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1989.71 
+angle = -0.15 
+Temperature: 32.77
+Accel: X=1.07, Y=0.00, Z=-0.12 (m/s^2)
+jerk = 1231.88 
+angle = -0.15 
+Temperature: 32.77
+Accel: X=1.08, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1232.61 
+angle = -0.16 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 1268.12 
+angle = -0.16 
+Temperature: 32.86
+Accel: X=1.05, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 2455.40 
+angle = -0.14 
+Temperature: 32.77
+Accel: X=1.05, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 1237.92 
+angle = -0.15 
+Temperature: 32.77
+Accel: X=1.05, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1498.83 
+angle = -0.15 
+Temperature: 32.67
+Accel: X=1.06, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 522.48 
+angle = -0.15 
+Temperature: 32.72
+Accel: X=1.07, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 1346.32 
+angle = -0.16 
+Temperature: 32.81
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1548.32 
+angle = -0.15 
+Temperature: 32.81
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 542.63 
+angle = -0.15 
+Temperature: 32.81
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 552.97 
+angle = -0.15 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 80.97 
+angle = -0.16 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1551.97 
+angle = -0.16 
+Temperature: 32.77
+Accel: X=1.06, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 669.94 
+angle = -0.15 
+Temperature: 32.95
+Accel: X=1.06, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1521.72 
+angle = -0.16 
+Temperature: 32.86
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1751.53 
+angle = -0.16 
+Temperature: 32.77
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 979.61 
+angle = -0.15 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 611.81 
+angle = -0.16 
+Temperature: 32.72
+Accel: X=1.08, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 866.27 
+angle = -0.16 
+Temperature: 32.72
+Accel: X=1.08, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 751.70 
+angle = -0.16 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 561.52 
+angle = -0.17 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1508.94 
+angle = -0.15 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 925.48 
+angle = -0.16 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1560.21 
+angle = -0.16 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 1887.63 
+angle = -0.15 
+Temperature: 32.81
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1718.55 
+angle = -0.17 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 612.79 
+angle = -0.16 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 474.04 
+angle = -0.16 
+Temperature: 32.91
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1712.82 
+angle = -0.16 
+Temperature: 32.81
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1641.38 
+angle = -0.17 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1883.21 
+angle = -0.15 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 2025.34 
+angle = -0.16 
+Temperature: 32.91
+Accel: X=1.07, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 1078.65 
+angle = -0.16 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 1917.09 
+angle = -0.16 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 2138.57 
+angle = -0.16 
+Temperature: 32.81
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 2285.81 
+angle = -0.17 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 940.81 
+angle = -0.17 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.01, Z=-0.15 (m/s^2)
+jerk = 1783.06 
+angle = -0.16 
+Temperature: 32.77
+Accel: X=1.08, Y=-0.01, Z=-0.10 (m/s^2)
+jerk = 2140.38 
+angle = -0.18 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 3998.92 
+angle = -0.16 
+Temperature: 32.81
+Accel: X=1.05, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 4258.14 
+angle = -0.14 
+Temperature: 32.72
+Accel: X=1.06, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 3239.90 
+angle = -0.17 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 326.64 
+angle = -0.17 
+Temperature: 32.77
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 2116.15 
+angle = -0.16 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1025.39 
+angle = -0.17 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 889.02 
+angle = -0.16 
+Temperature: 32.91
+Accel: X=1.07, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1038.67 
+angle = -0.15 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1954.80 
+angle = -0.17 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1670.54 
+angle = -0.17 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 2111.64 
+angle = -0.16 
+Temperature: 32.86
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1106.47 
+angle = -0.17 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 2176.28 
+angle = -0.17 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 753.68 
+angle = -0.17 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.01, Z=-0.14 (m/s^2)
+jerk = 591.00 
+angle = -0.17 
+Temperature: 32.81
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1161.66 
+angle = -0.17 
+Temperature: 32.72
+Accel: X=1.07, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 1066.98 
+angle = -0.16 
+Temperature: 32.81
+Accel: X=1.08, Y=-0.01, Z=-0.14 (m/s^2)
+jerk = 888.35 
+angle = -0.16 
+Temperature: 32.81
+Accel: X=1.08, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 2253.91 
+angle = -0.17 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 2052.81 
+angle = -0.17 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.00, Z=-0.12 (m/s^2)
+jerk = 1558.30 
+angle = -0.18 
+Temperature: 32.86
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 542.08 
+angle = -0.18 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 2776.34 
+angle = -0.16 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 2010.42 
+angle = -0.18 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1034.94 
+angle = -0.17 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 1667.32 
+angle = -0.17 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1256.79 
+angle = -0.18 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 900.68 
+angle = -0.17 
+Temperature: 32.77
+Accel: X=1.06, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1133.09 
+angle = -0.17 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 370.26 
+angle = -0.17 
+Temperature: 32.86
+Accel: X=1.08, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 879.58 
+angle = -0.18 
+Temperature: 32.77
+Accel: X=1.07, Y=0.00, Z=-0.12 (m/s^2)
+jerk = 1142.25 
+angle = -0.18 
+Temperature: 32.77
+Accel: X=1.06, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 569.95 
+angle = -0.18 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 986.88 
+angle = -0.17 
+Temperature: 32.81
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1531.09 
+angle = -0.18 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1940.11 
+angle = -0.18 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 312.65 
+angle = -0.18 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 976.87 
+angle = -0.17 
+Temperature: 32.77
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 861.79 
+angle = -0.18 
+Temperature: 32.81
+Accel: X=1.05, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 831.51 
+angle = -0.17 
+Temperature: 32.72
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 689.67 
+angle = -0.17 
+Temperature: 32.72
+Accel: X=1.08, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 282.61 
+angle = -0.18 
+Temperature: 32.81
+Accel: X=1.08, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1044.11 
+angle = -0.18 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 1612.25 
+angle = -0.17 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 374.26 
+angle = -0.17 
+Temperature: 32.77
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1203.24 
+angle = -0.18 
+Temperature: 32.86
+Accel: X=1.05, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 612.79 
+angle = -0.18 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.15 (m/s^2)
+jerk = 1052.64 
+angle = -0.19 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1433.79 
+angle = -0.18 
+Temperature: 32.72
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1116.13 
+angle = -0.18 
+Temperature: 32.77
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 804.18 
+angle = -0.18 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1178.72 
+angle = -0.17 
+Temperature: 32.81
+Accel: X=1.07, Y=0.00, Z=-0.12 (m/s^2)
+jerk = 1285.40 
+angle = -0.18 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 1418.12 
+angle = -0.17 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1277.25 
+angle = -0.18 
+Temperature: 32.86
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 909.24 
+angle = -0.18 
+Temperature: 32.81
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1408.84 
+angle = -0.19 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1092.65 
+angle = -0.18 
+Temperature: 32.72
+Accel: X=1.05, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1140.95 
+angle = -0.19 
+Temperature: 32.77
+Accel: X=1.06, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1606.33 
+angle = -0.19 
+Temperature: 32.86
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1097.55 
+angle = -0.18 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1449.30 
+angle = -0.17 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1193.30 
+angle = -0.18 
+Temperature: 32.77
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1015.46 
+angle = -0.18 
+Temperature: 32.86
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 881.95 
+angle = -0.18 
+Temperature: 32.77
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1050.37 
+angle = -0.18 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1068.93 
+angle = -0.18 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 496.15 
+angle = -0.19 
+Temperature: 32.81
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 814.86 
+angle = -0.19 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 823.95 
+angle = -0.19 
+Temperature: 32.77
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1130.72 
+angle = -0.18 
+Temperature: 32.77
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 747.33 
+angle = -0.18 
+Temperature: 32.67
+Accel: X=1.06, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1321.29 
+angle = -0.19 
+Temperature: 32.77
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 932.22 
+angle = -0.19 
+Temperature: 32.67
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 422.16 
+angle = -0.19 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1193.55 
+angle = -0.18 
+Temperature: 32.72
+Accel: X=1.08, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 612.30 
+angle = -0.18 
+Temperature: 32.81
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1621.84 
+angle = -0.20 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1127.02 
+angle = -0.19 
+Temperature: 32.77
+Accel: X=1.08, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1942.11 
+angle = -0.19 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1743.85 
+angle = -0.18 
+Temperature: 32.77
+Accel: X=1.06, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 873.81 
+angle = -0.18 
+Temperature: 32.72
+Accel: X=1.06, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 2246.76 
+angle = -0.20 
+Temperature: 32.72
+Accel: X=1.04, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 2766.77 
+angle = -0.20 
+Temperature: 32.72
+Accel: X=1.05, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 919.99 
+angle = -0.20 
+Temperature: 32.77
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1133.87 
+angle = -0.20 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 797.86 
+angle = -0.19 
+Temperature: 32.77
+Accel: X=1.08, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1201.26 
+angle = -0.19 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 508.61 
+angle = -0.19 
+Temperature: 32.72
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 754.07 
+angle = -0.19 
+Temperature: 32.77
+Accel: X=1.06, Y=0.01, Z=-0.15 (m/s^2)
+jerk = 981.43 
+angle = -0.19 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 686.20 
+angle = -0.19 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 474.66 
+angle = -0.19 
+Temperature: 32.86
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 954.65 
+angle = -0.19 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 2012.79 
+angle = -0.19 
+Temperature: 32.77
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1602.24 
+angle = -0.19 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1728.58 
+angle = -0.20 
+Temperature: 32.72
+Accel: X=1.06, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 1473.16 
+angle = -0.20 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1586.91 
+angle = -0.19 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 913.82 
+angle = -0.20 
+Temperature: 32.77
+Accel: X=1.06, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 576.71 
+angle = -0.20 
+Temperature: 32.77
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1273.52 
+angle = -0.19 
+Temperature: 32.72
+Accel: X=1.08, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1171.11 
+angle = -0.20 
+Temperature: 32.72
+Accel: X=1.07, Y=0.01, Z=-0.15 (m/s^2)
+jerk = 760.76 
+angle = -0.20 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 586.95 
+angle = -0.20 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 846.43 
+angle = -0.20 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 210.02 
+angle = -0.20 
+Temperature: 32.72
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1290.02 
+angle = -0.19 
+Temperature: 32.77
+Accel: X=1.06, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 790.73 
+angle = -0.20 
+Temperature: 32.77
+Accel: X=1.05, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 760.76 
+angle = -0.20 
+Temperature: 32.77
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 855.19 
+angle = -0.20 
+Temperature: 32.72
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 838.30 
+angle = -0.19 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1120.39 
+angle = -0.19 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1317.00 
+angle = -0.19 
+Temperature: 32.77
+Accel: X=1.08, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1290.02 
+angle = -0.20 
+Temperature: 32.67
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1211.39 
+angle = -0.19 
+Temperature: 32.62
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1062.22 
+angle = -0.20 
+Temperature: 32.72
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 742.93 
+angle = -0.19 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1024.81 
+angle = -0.21 
+Temperature: 32.77
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1202.50 
+angle = -0.21 
+Temperature: 32.77
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1605.58 
+angle = -0.20 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1085.53 
+angle = -0.20 
+Temperature: 32.62
+Accel: X=1.06, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1099.18 
+angle = -0.20 
+Temperature: 32.67
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1258.92 
+angle = -0.21 
+Temperature: 32.72
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 226.41 
+angle = -0.21 
+Temperature: 32.72
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1067.82 
+angle = -0.21 
+Temperature: 32.72
+Accel: X=1.06, Y=-0.00, Z=-0.12 (m/s^2)
+jerk = 956.21 
+angle = -0.21 
+Temperature: 32.72
+Accel: X=1.06, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 698.26 
+angle = -0.21 
+Temperature: 32.77
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1327.82 
+angle = -0.22 
+Temperature: 32.77
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1270.00 
+angle = -0.20 
+Temperature: 32.77
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 764.67 
+angle = -0.20 
+Temperature: 32.77
+Accel: X=1.04, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 972.28 
+angle = -0.21 
+Temperature: 32.77
+Accel: X=1.12, Y=0.01, Z=-0.09 (m/s^2)
+jerk = 2222.89 
+angle = -0.20 
+Temperature: 32.77
+Accel: X=1.05, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 4946.91 
+angle = -0.19 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 4716.28 
+angle = -0.20 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 805.66 
+angle = -0.20 
+Temperature: 32.81
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 2255.10 
+angle = -0.22 
+Temperature: 32.81
+Accel: X=1.07, Y=0.00, Z=-0.15 (m/s^2)
+jerk = 692.26 
+angle = -0.22 
+Temperature: 32.67
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1451.15 
+angle = -0.20 
+Temperature: 32.77
+Accel: X=1.09, Y=-0.00, Z=-0.11 (m/s^2)
+jerk = 501.53 
+angle = -0.20 
+Temperature: 32.77
+Accel: X=1.08, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 8440.74 
+angle = -0.20 
+Temperature: 32.67
+Accel: X=1.08, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 6725.04 
+angle = -0.21 
+Temperature: 32.77
+Accel: X=1.06, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 758.80 
+angle = -0.21 
+Temperature: 32.77
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 574.12 
+angle = -0.21 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 911.86 
+angle = -0.21 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 1052.64 
+angle = -0.21 
+Temperature: 32.81
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 572.04 
+angle = -0.21 
+Temperature: 32.81
+Accel: X=1.05, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1567.45 
+angle = -0.21 
+Temperature: 32.91
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 959.32 
+angle = -0.21 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1015.17 
+angle = -0.22 
+Temperature: 32.67
+Accel: X=1.08, Y=0.00, Z=-0.12 (m/s^2)
+jerk = 1912.11 
+angle = -0.22 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 389.10 
+angle = -0.21 
+Temperature: 32.72
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1987.31 
+angle = -0.20 
+Temperature: 32.72
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 661.44 
+angle = -0.20 
+Temperature: 32.72
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 787.71 
+angle = -0.21 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 713.46 
+angle = -0.22 
+Temperature: 32.81
+Accel: X=1.05, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1937.50 
+angle = -0.21 
+Temperature: 32.81
+Accel: X=1.05, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1181.25 
+angle = -0.21 
+Temperature: 32.77
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1278.42 
+angle = -0.20 
+Temperature: 32.77
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 939.54 
+angle = -0.21 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1140.17 
+angle = -0.22 
+Temperature: 32.77
+Accel: X=1.06, Y=0.00, Z=-0.12 (m/s^2)
+jerk = 472.15 
+angle = -0.22 
+Temperature: 32.77
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1039.53 
+angle = -0.22 
+Temperature: 32.72
+Accel: X=1.06, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 758.41 
+angle = -0.21 
+Temperature: 32.81
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1672.68 
+angle = -0.21 
+Temperature: 32.67
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 905.96 
+angle = -0.21 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1015.75 
+angle = -0.21 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 2366.65 
+angle = -0.21 
+Temperature: 32.77
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1106.47 
+angle = -0.22 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 468.98 
+angle = -0.22 
+Temperature: 32.72
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 973.20 
+angle = -0.22 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1075.88 
+angle = -0.21 
+Temperature: 32.77
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1518.78 
+angle = -0.22 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1116.93 
+angle = -0.22 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1635.20 
+angle = -0.23 
+Temperature: 32.77
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1494.85 
+angle = -0.22 
+Temperature: 32.91
+Accel: X=1.06, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 451.50 
+angle = -0.22 
+Temperature: 32.72
+Accel: X=1.06, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 372.66 
+angle = -0.22 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 382.14 
+angle = -0.22 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 438.09 
+angle = -0.22 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 826.48 
+angle = -0.22 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 542.08 
+angle = -0.22 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 431.93 
+angle = -0.22 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1516.82 
+angle = -0.22 
+Temperature: 32.91
+Accel: X=1.07, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 1547.36 
+angle = -0.22 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1113.99 
+angle = -0.21 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 2731.21 
+angle = -0.22 
+Temperature: 32.77
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 2180.66 
+angle = -0.23 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1329.61 
+angle = -0.23 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 713.46 
+angle = -0.23 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1766.27 
+angle = -0.22 
+Temperature: 32.86
+Accel: X=1.08, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1460.57 
+angle = -0.21 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 535.44 
+angle = -0.22 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1418.75 
+angle = -0.22 
+Temperature: 32.81
+Accel: X=1.05, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1044.97 
+angle = -0.23 
+Temperature: 32.81
+Accel: X=1.05, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1770.15 
+angle = -0.23 
+Temperature: 32.91
+Accel: X=1.06, Y=-0.01, Z=-0.12 (m/s^2)
+jerk = 487.06 
+angle = -0.22 
+Temperature: 32.86
+Accel: X=1.05, Y=0.01, Z=-0.15 (m/s^2)
+jerk = 700.82 
+angle = -0.22 
+Temperature: 32.77
+Accel: X=1.06, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 713.46 
+angle = -0.23 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 968.29 
+angle = -0.22 
+Temperature: 32.86
+Accel: X=1.07, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 1038.96 
+angle = -0.22 
+Temperature: 32.86
+Accel: X=1.08, Y=0.00, Z=-0.11 (m/s^2)
+jerk = 2425.36 
+angle = -0.22 
+Temperature: 32.77
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1359.10 
+angle = -0.22 
+Temperature: 32.72
+Accel: X=1.05, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1090.46 
+angle = -0.23 
+Temperature: 32.72
+Accel: X=1.05, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 2469.81 
+angle = -0.23 
+Temperature: 32.91
+Accel: X=1.05, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 703.36 
+angle = -0.23 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 687.94 
+angle = -0.23 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 538.22 
+angle = -0.24 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1328.94 
+angle = -0.23 
+Temperature: 32.86
+Accel: X=1.08, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 928.06 
+angle = -0.22 
+Temperature: 32.86
+Accel: X=1.08, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 895.70 
+angle = -0.23 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 774.35 
+angle = -0.23 
+Temperature: 32.72
+Accel: X=1.07, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 1721.15 
+angle = -0.22 
+Temperature: 32.81
+Accel: X=1.05, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1132.82 
+angle = -0.22 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 1405.88 
+angle = -0.23 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1011.34 
+angle = -0.23 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 677.46 
+angle = -0.23 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 725.06 
+angle = -0.23 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 1152.39 
+angle = -0.22 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1015.46 
+angle = -0.23 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1938.57 
+angle = -0.23 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1129.66 
+angle = -0.23 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 947.44 
+angle = -0.22 
+Temperature: 32.77
+Accel: X=1.06, Y=0.02, Z=-0.12 (m/s^2)
+jerk = 1468.70 
+angle = -0.23 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1088.82 
+angle = -0.23 
+Temperature: 32.72
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1428.80 
+angle = -0.24 
+Temperature: 32.77
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 706.74 
+angle = -0.23 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1156.00 
+angle = -0.24 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1032.92 
+angle = -0.23 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 214.23 
+angle = -0.23 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 448.85 
+angle = -0.23 
+Temperature: 32.91
+Accel: X=1.06, Y=0.00, Z=-0.12 (m/s^2)
+jerk = 665.03 
+angle = -0.24 
+Temperature: 32.77
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1152.64 
+angle = -0.24 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1761.88 
+angle = -0.23 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 631.94 
+angle = -0.24 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1006.91 
+angle = -0.24 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1733.91 
+angle = -0.23 
+Temperature: 32.95
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1574.85 
+angle = -0.25 
+Temperature: 32.91
+Accel: X=1.06, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 1747.10 
+angle = -0.23 
+Temperature: 32.86
+Accel: X=1.05, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 557.80 
+angle = -0.23 
+Temperature: 32.86
+Accel: X=1.05, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 959.63 
+angle = -0.24 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 1117.19 
+angle = -0.24 
+Temperature: 32.77
+Accel: X=1.06, Y=0.01, Z=-0.15 (m/s^2)
+jerk = 1076.44 
+angle = -0.24 
+Temperature: 32.86
+Accel: X=1.07, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 437.41 
+angle = -0.24 
+Temperature: 32.81
+Accel: X=1.08, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 491.32 
+angle = -0.24 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 590.50 
+angle = -0.24 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 3476.07 
+angle = -0.23 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 3096.84 
+angle = -0.24 
+Temperature: 32.81
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1025.39 
+angle = -0.25 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 789.60 
+angle = -0.25 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1299.46 
+angle = -0.24 
+Temperature: 32.81
+Accel: X=1.06, Y=0.02, Z=-0.15 (m/s^2)
+jerk = 1348.31 
+angle = -0.24 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 583.39 
+angle = -0.24 
+Temperature: 32.86
+Accel: X=1.08, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 2238.78 
+angle = -0.26 
+Temperature: 32.86
+Accel: X=1.08, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 1996.14 
+angle = -0.24 
+Temperature: 32.77
+Accel: X=1.07, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 1517.80 
+angle = -0.23 
+Temperature: 33.00
+Accel: X=1.06, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 952.46 
+angle = -0.24 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1708.64 
+angle = -0.25 
+Temperature: 32.77
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 911.86 
+angle = -0.25 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1958.46 
+angle = -0.26 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 3011.75 
+angle = -0.23 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 693.12 
+angle = -0.23 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 733.24 
+angle = -0.24 
+Temperature: 32.81
+Accel: X=1.07, Y=0.00, Z=-0.12 (m/s^2)
+jerk = 997.40 
+angle = -0.25 
+Temperature: 32.72
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 580.32 
+angle = -0.25 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1853.70 
+angle = -0.25 
+Temperature: 32.77
+Accel: X=1.09, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 1357.78 
+angle = -0.23 
+Temperature: 32.86
+Accel: X=1.04, Y=-0.00, Z=-0.17 (m/s^2)
+jerk = 2971.20 
+angle = -0.24 
+Temperature: 32.86
+Accel: X=1.08, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 5283.94 
+angle = -0.24 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 4329.35 
+angle = -0.25 
+Temperature: 32.81
+Accel: X=1.08, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1140.17 
+angle = -0.24 
+Temperature: 32.91
+Accel: X=1.06, Y=0.02, Z=-0.12 (m/s^2)
+jerk = 2216.44 
+angle = -0.24 
+Temperature: 32.91
+Accel: X=1.08, Y=0.01, Z=-0.15 (m/s^2)
+jerk = 3464.04 
+angle = -0.25 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 2654.97 
+angle = -0.25 
+Temperature: 32.77
+Accel: X=1.06, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 2747.64 
+angle = -0.25 
+Temperature: 32.72
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 2494.18 
+angle = -0.24 
+Temperature: 32.77
+Accel: X=1.05, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 1990.76 
+angle = -0.25 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 417.90 
+angle = -0.25 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1378.48 
+angle = -0.25 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1079.48 
+angle = -0.25 
+Temperature: 32.77
+Accel: X=1.07, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 826.12 
+angle = -0.25 
+Temperature: 32.86
+Accel: X=1.08, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1091.28 
+angle = -0.24 
+Temperature: 32.72
+Accel: X=1.05, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 719.28 
+angle = -0.25 
+Temperature: 32.72
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1237.67 
+angle = -0.25 
+Temperature: 32.81
+Accel: X=1.05, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 519.62 
+angle = -0.25 
+Temperature: 32.77
+Accel: X=1.05, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1598.89 
+angle = -0.25 
+Temperature: 32.86
+Accel: X=1.06, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 872.44 
+angle = -0.25 
+Temperature: 32.77
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1154.19 
+angle = -0.25 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1116.93 
+angle = -0.25 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 493.74 
+angle = -0.25 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 860.40 
+angle = -0.26 
+Temperature: 32.95
+Accel: X=1.07, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 1898.18 
+angle = -0.25 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 484.61 
+angle = -0.24 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 1967.87 
+angle = -0.25 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 655.55 
+angle = -0.25 
+Temperature: 32.86
+Accel: X=1.05, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 295.00 
+angle = -0.25 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1893.62 
+angle = -0.25 
+Temperature: 32.81
+Accel: X=1.07, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 991.70 
+angle = -0.25 
+Temperature: 32.77
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 252.54 
+angle = -0.25 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 1916.93 
+angle = -0.25 
+Temperature: 32.77
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 863.17 
+angle = -0.25 
+Temperature: 32.81
+Accel: X=1.06, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 687.07 
+angle = -0.25 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 616.18 
+angle = -0.26 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 783.16 
+angle = -0.26 
+Temperature: 32.86
+Accel: X=1.08, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1490.06 
+angle = -0.25 
+Temperature: 32.86
+Accel: X=1.07, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 922.90 
+angle = -0.25 
+Temperature: 32.81
+Accel: X=1.07, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 757.23 
+angle = -0.25 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 415.04 
+angle = -0.25 
+Temperature: 32.77
+Accel: X=1.06, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 1666.79 
+angle = -0.26 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 729.98 
+angle = -0.26 
+Temperature: 32.81
+Accel: X=1.05, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 720.94 
+angle = -0.26 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 646.40 
+angle = -0.26 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1281.91 
+angle = -0.27 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 729.57 
+angle = -0.26 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1379.77 
+angle = -0.25 
+Temperature: 32.86
+Accel: X=1.06, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 1203.49 
+angle = -0.26 
+Temperature: 32.77
+Accel: X=1.08, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 1160.89 
+angle = -0.26 
+Temperature: 32.81
+Accel: X=1.08, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1253.70 
+angle = -0.26 
+Temperature: 32.81
+Accel: X=1.07, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 1473.57 
+angle = -0.26 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 2339.80 
+angle = -0.25 
+Temperature: 32.77
+Accel: X=1.05, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1473.97 
+angle = -0.26 
+Temperature: 32.86
+Accel: X=1.08, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 738.10 
+angle = -0.27 
+Temperature: 32.81
+Accel: X=1.05, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1096.73 
+angle = -0.27 
+Temperature: 32.77
+Accel: X=1.06, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 4024.55 
+angle = -0.27 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 2328.83 
+angle = -0.25 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 992.91 
+angle = -0.26 
+Temperature: 32.86
+Accel: X=1.08, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 2953.29 
+angle = -0.26 
+Temperature: 32.91
+Accel: X=1.08, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 360.47 
+angle = -0.26 
+Temperature: 32.81
+Accel: X=1.06, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 1884.47 
+angle = -0.26 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 552.97 
+angle = -0.26 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 802.33 
+angle = -0.26 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 1292.10 
+angle = -0.26 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 599.02 
+angle = -0.26 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1110.77 
+angle = -0.26 
+Temperature: 32.77
+Accel: X=1.05, Y=0.01, Z=-0.15 (m/s^2)
+jerk = 1662.49 
+angle = -0.27 
+Temperature: 32.86
+Accel: X=1.05, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 2198.49 
+angle = -0.26 
+Temperature: 32.86
+Accel: X=1.06, Y=0.00, Z=-0.12 (m/s^2)
+jerk = 1879.25 
+angle = -0.27 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1981.75 
+angle = -0.27 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1402.91 
+angle = -0.26 
+Temperature: 32.81
+Accel: X=1.07, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 907.27 
+angle = -0.26 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1818.64 
+angle = -0.27 
+Temperature: 32.86
+Accel: X=1.06, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 1196.54 
+angle = -0.27 
+Temperature: 32.77
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1945.02 
+angle = -0.27 
+Temperature: 32.77
+Accel: X=1.08, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1106.47 
+angle = -0.27 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 1213.85 
+angle = -0.26 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1877.50 
+angle = -0.27 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 400.42 
+angle = -0.27 
+Temperature: 32.91
+Accel: X=1.05, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 901.01 
+angle = -0.26 
+Temperature: 32.86
+Accel: X=1.05, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1690.22 
+angle = -0.27 
+Temperature: 32.86
+Accel: X=1.06, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 2568.24 
+angle = -0.27 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1205.47 
+angle = -0.27 
+Temperature: 32.77
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1097.55 
+angle = -0.27 
+Temperature: 32.91
+Accel: X=1.08, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 746.13 
+angle = -0.27 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 897.69 
+angle = -0.27 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 593.02 
+angle = -0.27 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 445.51 
+angle = -0.28 
+Temperature: 32.86
+Accel: X=1.07, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 943.66 
+angle = -0.27 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1647.54 
+angle = -0.28 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1961.04 
+angle = -0.27 
+Temperature: 32.86
+Accel: X=1.06, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1494.85 
+angle = -0.28 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1445.59 
+angle = -0.26 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 353.79 
+angle = -0.26 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1710.73 
+angle = -0.28 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1068.93 
+angle = -0.28 
+Temperature: 32.86
+Accel: X=1.08, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1532.65 
+angle = -0.27 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1688.10 
+angle = -0.27 
+Temperature: 32.91
+Accel: X=1.08, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 526.46 
+angle = -0.27 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1594.22 
+angle = -0.27 
+Temperature: 32.81
+Accel: X=1.05, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 2113.05 
+angle = -0.29 
+Temperature: 32.77
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 349.56 
+angle = -0.29 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1856.27 
+angle = -0.28 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1344.99 
+angle = -0.27 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1228.25 
+angle = -0.28 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1469.72 
+angle = -0.28 
+Temperature: 32.91
+Accel: X=1.08, Y=0.02, Z=-0.12 (m/s^2)
+jerk = 3561.27 
+angle = -0.28 
+Temperature: 32.91
+Accel: X=1.09, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 2854.88 
+angle = -0.27 
+Temperature: 32.81
+Accel: X=1.07, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 864.20 
+angle = -0.27 
+Temperature: 32.95
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 2004.18 
+angle = -0.28 
+Temperature: 32.77
+Accel: X=1.06, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 3324.35 
+angle = -0.27 
+Temperature: 32.77
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1548.90 
+angle = -0.27 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1429.00 
+angle = -0.28 
+Temperature: 32.91
+Accel: X=1.06, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 452.81 
+angle = -0.27 
+Temperature: 32.81
+Accel: X=1.06, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 1580.14 
+angle = -0.29 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 969.21 
+angle = -0.28 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1204.73 
+angle = -0.27 
+Temperature: 32.91
+Accel: X=1.08, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1369.15 
+angle = -0.28 
+Temperature: 32.86
+Accel: X=1.08, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1180.24 
+angle = -0.28 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 2037.66 
+angle = -0.29 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 1130.72 
+angle = -0.28 
+Temperature: 32.86
+Accel: X=1.08, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 574.12 
+angle = -0.28 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 2095.77 
+angle = -0.28 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1890.16 
+angle = -0.28 
+Temperature: 32.91
+Accel: X=1.11, Y=0.02, Z=-0.10 (m/s^2)
+jerk = 1494.85 
+angle = -0.28 
+Temperature: 32.81
+Accel: X=1.06, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 7433.47 
+angle = -0.28 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 7577.37 
+angle = -0.28 
+Temperature: 32.72
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 816.32 
+angle = -0.29 
+Temperature: 32.81
+Accel: X=1.06, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 1241.52 
+angle = -0.29 
+Temperature: 32.77
+Accel: X=1.05, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1253.70 
+angle = -0.28 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1501.42 
+angle = -0.29 
+Temperature: 32.77
+Accel: X=1.06, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 523.05 
+angle = -0.29 
+Temperature: 32.77
+Accel: X=1.09, Y=0.01, Z=-0.11 (m/s^2)
+jerk = 1425.66 
+angle = -0.29 
+Temperature: 32.86
+Accel: X=1.06, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 3684.91 
+angle = -0.28 
+Temperature: 32.91
+Accel: X=1.08, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 2987.91 
+angle = -0.27 
+Temperature: 32.91
+Accel: X=1.08, Y=0.00, Z=-0.12 (m/s^2)
+jerk = 1725.64 
+angle = -0.29 
+Temperature: 32.81
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 986.88 
+angle = -0.29 
+Temperature: 32.81
+Accel: X=1.05, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 1951.45 
+angle = -0.29 
+Temperature: 32.81
+Accel: X=1.05, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 827.56 
+angle = -0.28 
+Temperature: 32.86
+Accel: X=1.06, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 2057.31 
+angle = -0.29 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1734.09 
+angle = -0.29 
+Temperature: 32.77
+Accel: X=1.06, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 1367.41 
+angle = -0.29 
+Temperature: 32.95
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1567.26 
+angle = -0.28 
+Temperature: 32.91
+Accel: X=1.08, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 2119.81 
+angle = -0.29 
+Temperature: 32.81
+Accel: X=1.07, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 1095.64 
+angle = -0.30 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 2348.45 
+angle = -0.28 
+Temperature: 32.91
+Accel: X=1.06, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 1142.25 
+angle = -0.29 
+Temperature: 32.86
+Accel: X=1.05, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 1195.54 
+angle = -0.28 
+Temperature: 32.86
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1420.85 
+angle = -0.29 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 497.95 
+angle = -0.29 
+Temperature: 32.86
+Accel: X=1.06, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 785.81 
+angle = -0.30 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 2206.06 
+angle = -0.28 
+Temperature: 32.72
+Accel: X=1.07, Y=0.03, Z=-0.11 (m/s^2)
+jerk = 2006.86 
+angle = -0.29 
+Temperature: 32.81
+Accel: X=1.06, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 2721.70 
+angle = -0.29 
+Temperature: 32.86
+Accel: X=1.09, Y=0.00, Z=-0.11 (m/s^2)
+jerk = 1911.48 
+angle = -0.29 
+Temperature: 32.95
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1980.25 
+angle = -0.28 
+Temperature: 32.86
+Accel: X=1.07, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 2492.75 
+angle = -0.29 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1190.80 
+angle = -0.29 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 641.77 
+angle = -0.29 
+Temperature: 32.95
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 736.07 
+angle = -0.30 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1145.64 
+angle = -0.29 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1846.77 
+angle = -0.30 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 454.78 
+angle = -0.29 
+Temperature: 32.77
+Accel: X=1.08, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1031.19 
+angle = -0.30 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 721.35 
+angle = -0.30 
+Temperature: 32.86
+Accel: X=1.05, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1614.65 
+angle = -0.29 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 819.24 
+angle = -0.29 
+Temperature: 32.95
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 822.14 
+angle = -0.30 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1002.17 
+angle = -0.30 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1098.63 
+angle = -0.29 
+Temperature: 32.91
+Accel: X=1.07, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 1642.47 
+angle = -0.29 
+Temperature: 32.86
+Accel: X=1.08, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1561.16 
+angle = -0.30 
+Temperature: 32.95
+Accel: X=1.05, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 829.36 
+angle = -0.30 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.12 (m/s^2)
+jerk = 1395.24 
+angle = -0.30 
+Temperature: 32.95
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1070.88 
+angle = -0.31 
+Temperature: 32.72
+Accel: X=1.06, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 1293.02 
+angle = -0.30 
+Temperature: 32.91
+Accel: X=1.06, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 2401.65 
+angle = -0.31 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1402.91 
+angle = -0.30 
+Temperature: 32.91
+Accel: X=1.07, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 607.91 
+angle = -0.29 
+Temperature: 32.81
+Accel: X=1.07, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 983.25 
+angle = -0.29 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1272.58 
+angle = -0.30 
+Temperature: 32.95
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 656.46 
+angle = -0.30 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 670.83 
+angle = -0.30 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 427.07 
+angle = -0.30 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1839.98 
+angle = -0.31 
+Temperature: 32.86
+Accel: X=1.06, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 1114.52 
+angle = -0.31 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 2005.82 
+angle = -0.29 
+Temperature: 32.86
+Accel: X=1.08, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 1586.16 
+angle = -0.29 
+Temperature: 32.72
+Accel: X=1.05, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 2263.67 
+angle = -0.30 
+Temperature: 32.91
+Accel: X=1.05, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1515.05 
+angle = -0.29 
+Temperature: 32.81
+Accel: X=1.05, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 1260.82 
+angle = -0.29 
+Temperature: 32.86
+Accel: X=1.09, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 1772.33 
+angle = -0.30 
+Temperature: 32.77
+Accel: X=1.06, Y=0.00, Z=-0.15 (m/s^2)
+jerk = 2647.77 
+angle = -0.30 
+Temperature: 32.91
+Accel: X=1.11, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 3993.40 
+angle = -0.31 
+Temperature: 32.86
+Accel: X=1.07, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 5197.04 
+angle = -0.30 
+Temperature: 32.86
+Accel: X=1.06, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 3434.84 
+angle = -0.30 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1856.91 
+angle = -0.31 
+Temperature: 32.77
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 3112.58 
+angle = -0.30 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 992.30 
+angle = -0.30 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 548.64 
+angle = -0.31 
+Temperature: 32.81
+Accel: X=1.06, Y=0.02, Z=-0.12 (m/s^2)
+jerk = 1732.02 
+angle = -0.30 
+Temperature: 32.86
+Accel: X=1.05, Y=0.00, Z=-0.11 (m/s^2)
+jerk = 789.60 
+angle = -0.30 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.15 (m/s^2)
+jerk = 3113.15 
+angle = -0.31 
+Temperature: 32.81
+Accel: X=1.03, Y=0.01, Z=-0.15 (m/s^2)
+jerk = 2242.64 
+angle = -0.31 
+Temperature: 32.86
+Accel: X=1.06, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 3109.51 
+angle = -0.31 
+Temperature: 32.86
+Accel: X=1.06, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 4435.71 
+angle = -0.30 
+Temperature: 32.72
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1668.39 
+angle = -0.30 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 907.60 
+angle = -0.31 
+Temperature: 32.86
+Accel: X=1.05, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1364.79 
+angle = -0.30 
+Temperature: 32.72
+Accel: X=1.06, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 2206.06 
+angle = -0.31 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1398.65 
+angle = -0.30 
+Temperature: 32.86
+Accel: X=1.06, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1061.10 
+angle = -0.31 
+Temperature: 32.77
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 660.08 
+angle = -0.32 
+Temperature: 32.81
+Accel: X=1.07, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 759.59 
+angle = -0.32 
+Temperature: 32.81
+Accel: X=1.06, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 2942.98 
+angle = -0.30 
+Temperature: 32.95
+Accel: X=1.08, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 2388.09 
+angle = -0.31 
+Temperature: 32.86
+Accel: X=1.07, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 1878.14 
+angle = -0.31 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 937.96 
+angle = -0.31 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 843.26 
+angle = -0.32 
+Temperature: 32.86
+Accel: X=1.05, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 2038.68 
+angle = -0.30 
+Temperature: 32.86
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1419.17 
+angle = -0.31 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1208.43 
+angle = -0.32 
+Temperature: 32.81
+Accel: X=1.06, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 1527.39 
+angle = -0.31 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.15 (m/s^2)
+jerk = 865.93 
+angle = -0.31 
+Temperature: 32.95
+Accel: X=1.08, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 1681.03 
+angle = -0.32 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1434.83 
+angle = -0.31 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1244.40 
+angle = -0.31 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 474.66 
+angle = -0.31 
+Temperature: 32.77
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 744.13 
+angle = -0.32 
+Temperature: 32.81
+Accel: X=1.06, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 578.26 
+angle = -0.31 
+Temperature: 32.81
+Accel: X=1.07, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 1071.44 
+angle = -0.32 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 915.45 
+angle = -0.32 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.02, Z=-0.13 (m/s^2)
+jerk = 1511.70 
+angle = -0.31 
+Temperature: 32.77
+Accel: X=1.06, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 3840.85 
+angle = -0.28 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 3125.10 
+angle = -0.31 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 446.18 
+angle = -0.31 
+Temperature: 32.91
+Accel: X=1.07, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 1020.15 
+angle = -0.32 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.12 (m/s^2)
+jerk = 246.57 
+angle = -0.32 
+Temperature: 32.81
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 673.49 
+angle = -0.32 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1572.77 
+angle = -0.31 
+Temperature: 32.81
+Accel: X=1.06, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 878.23 
+angle = -0.32 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 650.53 
+angle = -0.32 
+Temperature: 32.86
+Accel: X=1.07, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 1187.54 
+angle = -0.33 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1018.10 
+angle = -0.32 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1437.12 
+angle = -0.31 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1155.74 
+angle = -0.32 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 903.65 
+angle = -0.32 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 566.28 
+angle = -0.32 
+Temperature: 32.86
+Accel: X=1.05, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 1365.66 
+angle = -0.32 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 806.40 
+angle = -0.32 
+Temperature: 32.86
+Accel: X=1.06, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 1051.22 
+angle = -0.33 
+Temperature: 32.86
+Accel: X=1.08, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 777.43 
+angle = -0.32 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1847.42 
+angle = -0.32 
+Temperature: 32.81
+Accel: X=1.07, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 595.02 
+angle = -0.32 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1040.97 
+angle = -0.32 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1086.63 
+angle = -0.33 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 265.20 
+angle = -0.33 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1010.46 
+angle = -0.32 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 472.15 
+angle = -0.32 
+Temperature: 32.91
+Accel: X=1.06, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 836.52 
+angle = -0.32 
+Temperature: 32.77
+Accel: X=1.05, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1384.73 
+angle = -0.32 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1194.29 
+angle = -0.33 
+Temperature: 32.86
+Accel: X=1.07, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 1105.93 
+angle = -0.32 
+Temperature: 32.81
+Accel: X=1.08, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 505.67 
+angle = -0.33 
+Temperature: 32.91
+Accel: X=1.08, Y=0.02, Z=-0.12 (m/s^2)
+jerk = 1194.29 
+angle = -0.32 
+Temperature: 32.86
+Accel: X=1.08, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 388.33 
+angle = -0.32 
+Temperature: 32.95
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 759.98 
+angle = -0.32 
+Temperature: 32.77
+Accel: X=1.07, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 1365.66 
+angle = -0.32 
+Temperature: 32.81
+Accel: X=1.05, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1637.56 
+angle = -0.32 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 2071.75 
+angle = -0.33 
+Temperature: 32.81
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1879.72 
+angle = -0.32 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1970.29 
+angle = -0.33 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.15 (m/s^2)
+jerk = 1875.28 
+angle = -0.33 
+Temperature: 32.86
+Accel: X=1.07, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 844.32 
+angle = -0.32 
+Temperature: 32.86
+Accel: X=1.05, Y=0.02, Z=-0.15 (m/s^2)
+jerk = 561.52 
+angle = -0.32 
+Temperature: 32.86
+Accel: X=1.08, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 2545.86 
+angle = -0.34 
+Temperature: 32.77
+Accel: X=1.08, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 3507.73 
+angle = -0.32 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 1851.77 
+angle = -0.33 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 1348.97 
+angle = -0.32 
+Temperature: 32.86
+Accel: X=1.05, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 830.44 
+angle = -0.32 
+Temperature: 32.91
+Accel: X=1.05, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1266.95 
+angle = -0.33 
+Temperature: 32.91
+Accel: X=1.05, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1550.44 
+angle = -0.33 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 464.51 
+angle = -0.33 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 759.98 
+angle = -0.33 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1143.82 
+angle = -0.33 
+Temperature: 32.86
+Accel: X=1.08, Y=0.02, Z=-0.15 (m/s^2)
+jerk = 826.12 
+angle = -0.33 
+Temperature: 32.86
+Accel: X=1.08, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 761.94 
+angle = -0.32 
+Temperature: 33.00
+Accel: X=1.09, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 2612.53 
+angle = -0.34 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1395.24 
+angle = -0.33 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1270.47 
+angle = -0.33 
+Temperature: 32.95
+Accel: X=1.06, Y=0.03, Z=-0.13 (m/s^2)
+jerk = 1738.21 
+angle = -0.34 
+Temperature: 32.86
+Accel: X=1.06, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 1203.49 
+angle = -0.33 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 374.26 
+angle = -0.33 
+Temperature: 32.81
+Accel: X=1.06, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 582.37 
+angle = -0.33 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1244.16 
+angle = -0.34 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 1176.70 
+angle = -0.33 
+Temperature: 32.72
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 4281.10 
+angle = -0.32 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 4093.63 
+angle = -0.33 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1887.32 
+angle = -0.34 
+Temperature: 32.91
+Accel: X=1.06, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 2317.92 
+angle = -0.34 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1208.19 
+angle = -0.34 
+Temperature: 32.86
+Accel: X=1.06, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 1443.74 
+angle = -0.33 
+Temperature: 32.86
+Accel: X=1.07, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 851.70 
+angle = -0.34 
+Temperature: 32.86
+Accel: X=1.08, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1648.81 
+angle = -0.33 
+Temperature: 32.86
+Accel: X=1.08, Y=0.02, Z=-0.12 (m/s^2)
+jerk = 715.54 
+angle = -0.33 
+Temperature: 32.81
+Accel: X=1.05, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 2159.64 
+angle = -0.34 
+Temperature: 32.91
+Accel: X=1.05, Y=0.01, Z=-0.15 (m/s^2)
+jerk = 4478.23 
+angle = -0.33 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 794.11 
+angle = -0.33 
+Temperature: 32.91
+Accel: X=1.06, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 2362.37 
+angle = -0.34 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1858.68 
+angle = -0.34 
+Temperature: 32.86
+Accel: X=1.07, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 890.36 
+angle = -0.34 
+Temperature: 32.86
+Accel: X=1.08, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1660.87 
+angle = -0.33 
+Temperature: 32.95
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 972.28 
+angle = -0.34 
+Temperature: 32.91
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1574.28 
+angle = -0.32 
+Temperature: 32.81
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1344.77 
+angle = -0.34 
+Temperature: 32.91
+Accel: X=1.05, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1494.25 
+angle = -0.34 
+Temperature: 33.00
+Accel: X=1.05, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 618.11 
+angle = -0.34 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1332.97 
+angle = -0.33 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 710.95 
+angle = -0.34 
+Temperature: 32.77
+Accel: X=1.07, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 1093.19 
+angle = -0.33 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 827.56 
+angle = -0.34 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1214.34 
+angle = -0.34 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1286.79 
+angle = -0.33 
+Temperature: 32.91
+Accel: X=1.07, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 1675.35 
+angle = -0.33 
+Temperature: 32.81
+Accel: X=1.06, Y=0.00, Z=-0.12 (m/s^2)
+jerk = 1260.58 
+angle = -0.34 
+Temperature: 32.91
+Accel: X=1.05, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1870.35 
+angle = -0.34 
+Temperature: 32.91
+Accel: X=1.05, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1131.24 
+angle = -0.34 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1169.07 
+angle = -0.34 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 562.58 
+angle = -0.34 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1691.98 
+angle = -0.35 
+Temperature: 32.91
+Accel: X=1.07, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 1003.95 
+angle = -0.35 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 1264.12 
+angle = -0.34 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1212.87 
+angle = -0.34 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1351.40 
+angle = -0.34 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 219.73 
+angle = -0.34 
+Temperature: 32.91
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 758.02 
+angle = -0.33 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1210.65 
+angle = -0.34 
+Temperature: 32.81
+Accel: X=1.05, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 196.83 
+angle = -0.35 
+Temperature: 32.91
+Accel: X=1.06, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 1081.68 
+angle = -0.34 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1240.08 
+angle = -0.35 
+Temperature: 32.77
+Accel: X=1.07, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 2069.73 
+angle = -0.34 
+Temperature: 32.95
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1822.08 
+angle = -0.34 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 847.84 
+angle = -0.34 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1499.83 
+angle = -0.34 
+Temperature: 32.91
+Accel: X=1.07, Y=0.02, Z=-0.12 (m/s^2)
+jerk = 1282.61 
+angle = -0.35 
+Temperature: 32.91
+Accel: X=1.06, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 636.64 
+angle = -0.34 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 897.03 
+angle = -0.34 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1086.08 
+angle = -0.35 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1572.20 
+angle = -0.34 
+Temperature: 32.81
+Accel: X=1.03, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 1454.43 
+angle = -0.36 
+Temperature: 32.81
+Accel: X=1.06, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 2206.47 
+angle = -0.34 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 3153.39 
+angle = -0.35 
+Temperature: 32.86
+Accel: X=1.05, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 2091.79 
+angle = -0.34 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 1416.44 
+angle = -0.35 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 2683.88 
+angle = -0.35 
+Temperature: 32.86
+Accel: X=1.06, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 3290.74 
+angle = -0.34 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1305.87 
+angle = -0.35 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1022.19 
+angle = -0.35 
+Temperature: 32.81
+Accel: X=1.07, Y=0.02, Z=-0.15 (m/s^2)
+jerk = 442.83 
+angle = -0.35 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1340.77 
+angle = -0.35 
+Temperature: 32.81
+Accel: X=1.04, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1814.21 
+angle = -0.35 
+Temperature: 32.81
+Accel: X=1.08, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1257.03 
+angle = -0.34 
+Temperature: 32.91
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 2820.85 
+angle = -0.34 
+Temperature: 32.86
+Accel: X=1.05, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 2712.16 
+angle = -0.36 
+Temperature: 32.77
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1282.84 
+angle = -0.37 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 3142.21 
+angle = -0.35 
+Temperature: 32.86
+Accel: X=1.07, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 2323.44 
+angle = -0.34 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1270.70 
+angle = -0.35 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1116.93 
+angle = -0.35 
+Temperature: 32.86
+Accel: X=1.05, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 335.64 
+angle = -0.35 
+Temperature: 32.86
+Accel: X=1.05, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 760.76 
+angle = -0.35 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1472.55 
+angle = -0.35 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1332.08 
+angle = -0.35 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 512.11 
+angle = -0.35 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1283.77 
+angle = -0.36 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1385.81 
+angle = -0.36 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 920.32 
+angle = -0.35 
+Temperature: 32.95
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1171.37 
+angle = -0.36 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1015.17 
+angle = -0.35 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 995.00 
+angle = -0.35 
+Temperature: 32.91
+Accel: X=1.05, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 590.50 
+angle = -0.36 
+Temperature: 32.91
+Accel: X=1.05, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1403.76 
+angle = -0.35 
+Temperature: 32.81
+Accel: X=1.06, Y=0.02, Z=-0.12 (m/s^2)
+jerk = 1682.62 
+angle = -0.36 
+Temperature: 32.95
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1380.64 
+angle = -0.36 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 1474.78 
+angle = -0.36 
+Temperature: 32.77
+Accel: X=1.06, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 972.28 
+angle = -0.35 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1918.17 
+angle = -0.35 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1992.25 
+angle = -0.36 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1101.61 
+angle = -0.36 
+Temperature: 32.86
+Accel: X=1.05, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1275.39 
+angle = -0.37 
+Temperature: 32.86
+Accel: X=1.07, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 1490.06 
+angle = -0.36 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1101.61 
+angle = -0.35 
+Temperature: 32.91
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1311.56 
+angle = -0.36 
+Temperature: 32.81
+Accel: X=1.07, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 2447.38 
+angle = -0.36 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1160.63 
+angle = -0.35 
+Temperature: 32.91
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 851.70 
+angle = -0.36 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1161.91 
+angle = -0.36 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1865.40 
+angle = -0.36 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1925.46 
+angle = -0.36 
+Temperature: 32.91
+Accel: X=1.06, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1167.03 
+angle = -0.35 
+Temperature: 32.77
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1475.59 
+angle = -0.37 
+Temperature: 32.95
+Accel: X=1.07, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 1220.95 
+angle = -0.36 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 671.72 
+angle = -0.36 
+Temperature: 32.95
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1632.09 
+angle = -0.35 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1322.20 
+angle = -0.36 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 265.20 
+angle = -0.36 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 1190.55 
+angle = -0.36 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1144.34 
+angle = -0.36 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 440.81 
+angle = -0.36 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.15 (m/s^2)
+jerk = 1146.42 
+angle = -0.37 
+Temperature: 32.77
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1241.52 
+angle = -0.36 
+Temperature: 32.95
+Accel: X=1.05, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 642.70 
+angle = -0.36 
+Temperature: 32.95
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1002.46 
+angle = -0.37 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 637.58 
+angle = -0.37 
+Temperature: 32.77
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 986.28 
+angle = -0.36 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 849.60 
+angle = -0.36 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 934.77 
+angle = -0.37 
+Temperature: 32.86
+Accel: X=1.07, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 580.32 
+angle = -0.37 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 996.20 
+angle = -0.37 
+Temperature: 32.86
+Accel: X=1.07, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 1984.16 
+angle = -0.36 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1603.54 
+angle = -0.36 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 268.55 
+angle = -0.36 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 813.03 
+angle = -0.36 
+Temperature: 32.95
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 775.89 
+angle = -0.37 
+Temperature: 32.77
+Accel: X=1.05, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 2177.51 
+angle = -0.36 
+Temperature: 32.86
+Accel: X=1.05, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1097.00 
+angle = -0.37 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.15 (m/s^2)
+jerk = 487.06 
+angle = -0.37 
+Temperature: 32.86
+Accel: X=1.07, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 287.84 
+angle = -0.37 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 2120.79 
+angle = -0.36 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 2435.30 
+angle = -0.37 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 681.41 
+angle = -0.36 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 916.42 
+angle = -0.37 
+Temperature: 32.91
+Accel: X=1.07, Y=0.02, Z=-0.15 (m/s^2)
+jerk = 874.15 
+angle = -0.37 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 992.91 
+angle = -0.38 
+Temperature: 32.91
+Accel: X=1.05, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1175.18 
+angle = -0.37 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 902.00 
+angle = -0.37 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1347.21 
+angle = -0.37 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1876.39 
+angle = -0.37 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1555.43 
+angle = -0.38 
+Temperature: 32.91
+Accel: X=1.07, Y=0.02, Z=-0.15 (m/s^2)
+jerk = 1698.66 
+angle = -0.37 
+Temperature: 32.95
+Accel: X=1.08, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1518.59 
+angle = -0.37 
+Temperature: 32.95
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1368.06 
+angle = -0.37 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 2087.94 
+angle = -0.37 
+Temperature: 32.86
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1250.85 
+angle = -0.37 
+Temperature: 32.86
+Accel: X=1.05, Y=0.01, Z=-0.15 (m/s^2)
+jerk = 1065.58 
+angle = -0.36 
+Temperature: 32.86
+Accel: X=1.05, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 4945.16 
+angle = -0.40 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 3586.54 
+angle = -0.38 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 788.84 
+angle = -0.37 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 889.02 
+angle = -0.37 
+Temperature: 32.86
+Accel: X=1.08, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 418.61 
+angle = -0.37 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1537.89 
+angle = -0.38 
+Temperature: 32.81
+Accel: X=1.07, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 1868.59 
+angle = -0.37 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 766.23 
+angle = -0.37 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 890.70 
+angle = -0.36 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1892.52 
+angle = -0.38 
+Temperature: 32.91
+Accel: X=1.07, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 156.33 
+angle = -0.38 
+Temperature: 32.91
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1228.49 
+angle = -0.37 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1437.94 
+angle = -0.38 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 679.22 
+angle = -0.38 
+Temperature: 32.81
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1412.43 
+angle = -0.37 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 974.12 
+angle = -0.38 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 558.86 
+angle = -0.37 
+Temperature: 32.95
+Accel: X=1.08, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1112.11 
+angle = -0.37 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1048.38 
+angle = -0.38 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 574.64 
+angle = -0.38 
+Temperature: 32.86
+Accel: X=1.06, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 952.46 
+angle = -0.38 
+Temperature: 32.95
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1531.09 
+angle = -0.38 
+Temperature: 33.00
+Accel: X=1.07, Y=-0.01, Z=-0.14 (m/s^2)
+jerk = 1383.22 
+angle = -0.37 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1371.76 
+angle = -0.38 
+Temperature: 32.95
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 556.73 
+angle = -0.38 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1044.11 
+angle = -0.39 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 486.45 
+angle = -0.38 
+Temperature: 32.91
+Accel: X=1.06, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 505.67 
+angle = -0.38 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1338.55 
+angle = -0.38 
+Temperature: 32.95
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1038.96 
+angle = -0.38 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1176.70 
+angle = -0.38 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 996.80 
+angle = -0.38 
+Temperature: 32.91
+Accel: X=1.06, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 750.11 
+angle = -0.38 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1296.71 
+angle = -0.39 
+Temperature: 32.95
+Accel: X=1.08, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1160.12 
+angle = -0.37 
+Temperature: 32.91
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1159.09 
+angle = -0.37 
+Temperature: 32.81
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 622.44 
+angle = -0.38 
+Temperature: 32.95
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1363.70 
+angle = -0.38 
+Temperature: 32.95
+Accel: X=1.05, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 1789.57 
+angle = -0.38 
+Temperature: 32.77
+Accel: X=1.06, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1535.37 
+angle = -0.39 
+Temperature: 32.81
+Accel: X=1.06, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 2170.11 
+angle = -0.38 
+Temperature: 32.81
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1443.94 
+angle = -0.38 
+Temperature: 32.77
+Accel: X=1.08, Y=0.01, Z=-0.15 (m/s^2)
+jerk = 1080.86 
+angle = -0.39 
+Temperature: 32.86
+Accel: X=1.08, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 916.75 
+angle = -0.38 
+Temperature: 32.86
+Accel: X=1.08, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1825.19 
+angle = -0.38 
+Temperature: 32.86
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 552.97 
+angle = -0.38 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 322.04 
+angle = -0.38 
+Temperature: 32.95
+Accel: X=1.06, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1186.53 
+angle = -0.39 
+Temperature: 32.95
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 939.54 
+angle = -0.38 
+Temperature: 32.77
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1139.12 
+angle = -0.38 
+Temperature: 32.86
+Accel: X=1.05, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 905.96 
+angle = -0.38 
+Temperature: 32.86
+Accel: X=1.05, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 653.73 
+angle = -0.38 
+Temperature: 32.86
+Accel: X=1.06, Y=0.00, Z=-0.16 (m/s^2)
+jerk = 1703.74 
+angle = -0.39 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 767.78 
+angle = -0.39 
+Temperature: 32.95
+Accel: X=1.08, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1112.65 
+angle = -0.39 
+Temperature: 32.95
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 875.17 
+angle = -0.38 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1317.91 
+angle = -0.38 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1002.17 
+angle = -0.38 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1010.75 
+angle = -0.39 
+Temperature: 32.86
+Accel: X=1.06, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 989.90 
+angle = -0.39 
+Temperature: 32.95
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1359.10 
+angle = -0.39 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 546.46 
+angle = -0.39 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 1275.62 
+angle = -0.39 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1183.52 
+angle = -0.39 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1008.39 
+angle = -0.39 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 781.63 
+angle = -0.39 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1457.71 
+angle = -0.38 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1122.52 
+angle = -0.39 
+Temperature: 32.86
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 795.24 
+angle = -0.39 
+Temperature: 32.86
+Accel: X=1.06, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 984.16 
+angle = -0.40 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.15 (m/s^2)
+jerk = 1641.02 
+angle = -0.39 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1509.14 
+angle = -0.38 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1240.56 
+angle = -0.39 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 564.17 
+angle = -0.39 
+Temperature: 32.81
+Accel: X=1.06, Y=0.00, Z=-0.15 (m/s^2)
+jerk = 835.80 
+angle = -0.39 
+Temperature: 32.81
+Accel: X=1.05, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 528.72 
+angle = -0.40 
+Temperature: 32.91
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 680.10 
+angle = -0.39 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1376.53 
+angle = -0.38 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1343.22 
+angle = -0.39 
+Temperature: 32.91
+Accel: X=1.08, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 415.76 
+angle = -0.40 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1503.80 
+angle = -0.39 
+Temperature: 32.77
+Accel: X=1.08, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1043.25 
+angle = -0.39 
+Temperature: 32.95
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 552.97 
+angle = -0.39 
+Temperature: 32.95
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1380.42 
+angle = -0.39 
+Temperature: 32.86
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1362.16 
+angle = -0.40 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1043.25 
+angle = -0.40 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 826.48 
+angle = -0.39 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1169.84 
+angle = -0.40 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1188.29 
+angle = -0.39 
+Temperature: 32.95
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1196.79 
+angle = -0.39 
+Temperature: 33.00
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 533.77 
+angle = -0.40 
+Temperature: 32.91
+Accel: X=1.08, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 824.68 
+angle = -0.39 
+Temperature: 32.91
+Accel: X=1.08, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 710.11 
+angle = -0.39 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 874.83 
+angle = -0.39 
+Temperature: 32.91
+Accel: X=1.06, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1514.07 
+angle = -0.40 
+Temperature: 32.91
+Accel: X=1.06, Y=-0.01, Z=-0.14 (m/s^2)
+jerk = 2520.21 
+angle = -0.40 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 911.53 
+angle = -0.40 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1263.41 
+angle = -0.39 
+Temperature: 32.91
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 321.12 
+angle = -0.39 
+Temperature: 32.81
+Accel: X=1.08, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1195.29 
+angle = -0.40 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1215.32 
+angle = -0.39 
+Temperature: 33.00
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1332.97 
+angle = -0.40 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.15 (m/s^2)
+jerk = 1572.58 
+angle = -0.40 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1293.95 
+angle = -0.41 
+Temperature: 32.86
+Accel: X=1.09, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 821.05 
+angle = -0.41 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1262.23 
+angle = -0.40 
+Temperature: 32.95
+Accel: X=1.08, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1823.23 
+angle = -0.40 
+Temperature: 32.86
+Accel: X=1.05, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 948.38 
+angle = -0.39 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 3462.84 
+angle = -0.39 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 4172.02 
+angle = -0.39 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1654.76 
+angle = -0.40 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 889.02 
+angle = -0.40 
+Temperature: 32.91
+Accel: X=1.04, Y=0.01, Z=-0.15 (m/s^2)
+jerk = 816.32 
+angle = -0.40 
+Temperature: 32.81
+Accel: X=1.04, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 2888.81 
+angle = -0.40 
+Temperature: 32.86
+Accel: X=1.03, Y=0.01, Z=-0.15 (m/s^2)
+jerk = 687.94 
+angle = -0.40 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1844.68 
+angle = -0.41 
+Temperature: 32.86
+Accel: X=1.08, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 2221.28 
+angle = -0.40 
+Temperature: 32.91
+Accel: X=1.08, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1238.64 
+angle = -0.40 
+Temperature: 32.86
+Accel: X=1.09, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 2279.42 
+angle = -0.40 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 827.56 
+angle = -0.39 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 986.88 
+angle = -0.40 
+Temperature: 32.81
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 709.27 
+angle = -0.41 
+Temperature: 32.86
+Accel: X=1.06, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1399.08 
+angle = -0.40 
+Temperature: 32.91
+Accel: X=1.07, Y=-0.01, Z=-0.14 (m/s^2)
+jerk = 843.61 
+angle = -0.40 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.01, Z=-0.14 (m/s^2)
+jerk = 1581.27 
+angle = -0.41 
+Temperature: 32.86
+Accel: X=1.05, Y=0.02, Z=-0.13 (m/s^2)
+jerk = 677.46 
+angle = -0.41 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1002.17 
+angle = -0.40 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.15 (m/s^2)
+jerk = 1307.92 
+angle = -0.41 
+Temperature: 32.91
+Accel: X=1.08, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 2414.40 
+angle = -0.40 
+Temperature: 32.77
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 885.66 
+angle = -0.40 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 471.51 
+angle = -0.40 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1176.44 
+angle = -0.40 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1723.22 
+angle = -0.40 
+Temperature: 32.86
+Accel: X=1.06, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1663.92 
+angle = -0.41 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1451.15 
+angle = -0.41 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1369.37 
+angle = -0.40 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 2358.33 
+angle = -0.41 
+Temperature: 32.77
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 959.63 
+angle = -0.41 
+Temperature: 32.86
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 124.49 
+angle = -0.41 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 595.02 
+angle = -0.41 
+Temperature: 32.91
+Accel: X=1.07, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 1048.10 
+angle = -0.41 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1782.90 
+angle = -0.41 
+Temperature: 32.77
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 728.34 
+angle = -0.41 
+Temperature: 32.95
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 406.33 
+angle = -0.41 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1681.91 
+angle = -0.41 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.01, Z=-0.14 (m/s^2)
+jerk = 909.24 
+angle = -0.41 
+Temperature: 32.81
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1353.61 
+angle = -0.40 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1238.40 
+angle = -0.39 
+Temperature: 32.95
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1897.08 
+angle = -0.40 
+Temperature: 32.86
+Accel: X=1.05, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1445.59 
+angle = -0.42 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 691.40 
+angle = -0.42 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 479.66 
+angle = -0.41 
+Temperature: 32.95
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1980.55 
+angle = -0.40 
+Temperature: 32.95
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1121.45 
+angle = -0.40 
+Temperature: 32.77
+Accel: X=1.08, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1527.98 
+angle = -0.41 
+Temperature: 32.81
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 908.26 
+angle = -0.41 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 2096.06 
+angle = -0.41 
+Temperature: 32.91
+Accel: X=1.06, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 2720.17 
+angle = -0.41 
+Temperature: 32.91
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1305.87 
+angle = -0.41 
+Temperature: 32.91
+Accel: X=1.06, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 385.25 
+angle = -0.41 
+Temperature: 32.77
+Accel: X=1.06, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1513.08 
+angle = -0.41 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 549.18 
+angle = -0.42 
+Temperature: 32.95
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 888.69 
+angle = -0.42 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 706.74 
+angle = -0.41 
+Temperature: 32.81
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1469.31 
+angle = -0.41 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 545.92 
+angle = -0.41 
+Temperature: 32.91
+Accel: X=1.06, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 131.47 
+angle = -0.41 
+Temperature: 32.91
+Accel: X=1.08, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 579.29 
+angle = -0.42 
+Temperature: 32.91
+Accel: X=1.06, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 992.00 
+angle = -0.41 
+Temperature: 32.86
+Accel: X=1.05, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1556.58 
+angle = -0.41 
+Temperature: 32.86
+Accel: X=1.05, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1299.69 
+angle = -0.42 
+Temperature: 32.95
+Accel: X=1.06, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 946.18 
+angle = -0.41 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.15 (m/s^2)
+jerk = 1335.88 
+angle = -0.42 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 872.78 
+angle = -0.42 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1716.81 
+angle = -0.41 
+Temperature: 32.86
+Accel: X=1.08, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1040.97 
+angle = -0.42 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 724.65 
+angle = -0.41 
+Temperature: 32.91
+Accel: X=1.05, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1495.85 
+angle = -0.42 
+Temperature: 32.81
+Accel: X=1.07, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 1017.22 
+angle = -0.43 
+Temperature: 32.86
+Accel: X=1.05, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1712.82 
+angle = -0.41 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 696.12 
+angle = -0.42 
+Temperature: 32.91
+Accel: X=1.06, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 373.46 
+angle = -0.42 
+Temperature: 33.00
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 895.37 
+angle = -0.42 
+Temperature: 32.91
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1017.81 
+angle = -0.43 
+Temperature: 32.86
+Accel: X=1.07, Y=0.02, Z=-0.14 (m/s^2)
+jerk = 1325.12 
+angle = -0.42 
+Temperature: 32.95
+Accel: X=1.07, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 1299.69 
+angle = -0.42 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1008.69 
+angle = -0.42 
+Temperature: 32.95
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 930.62 
+angle = -0.42 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1160.89 
+angle = -0.41 
+Temperature: 32.91
+Accel: X=1.07, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1415.38 
+angle = -0.42 
+Temperature: 32.91
+Accel: X=1.05, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 937.64 
+angle = -0.42 
+Temperature: 32.81
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 2058.47 
+angle = -0.41 
+Temperature: 32.81
+Accel: X=1.06, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 834.38 
+angle = -0.42 
+Temperature: 32.86
+Accel: X=1.08, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 600.51 
+angle = -0.42 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.15 (m/s^2)
+jerk = 442.83 
+angle = -0.42 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1194.79 
+angle = -0.43 
+Temperature: 32.95
+Accel: X=1.08, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1262.94 
+angle = -0.42 
+Temperature: 32.95
+Accel: X=1.06, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 616.67 
+angle = -0.42 
+Temperature: 32.91
+Accel: X=1.07, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 1321.52 
+angle = -0.43 
+Temperature: 32.91
+Accel: X=1.06, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1058.85 
+angle = -0.42 
+Temperature: 32.91
+Accel: X=1.06, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 739.71 
+angle = -0.42 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 768.17 
+angle = -0.42 
+Temperature: 32.91
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 598.02 
+angle = -0.42 
+Temperature: 32.81
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1417.49 
+angle = -0.43 
+Temperature: 32.95
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1887.32 
+angle = -0.41 
+Temperature: 32.95
+Accel: X=1.07, Y=0.01, Z=-0.15 (m/s^2)
+jerk = 919.67 
+angle = -0.42 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 2726.19 
+angle = -0.42 
+Temperature: 32.91
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 2290.50 
+angle = -0.43 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1148.76 
+angle = -0.43 
+Temperature: 32.95
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 646.40 
+angle = -0.42 
+Temperature: 32.95
+Accel: X=1.05, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 1243.44 
+angle = -0.42 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1867.16 
+angle = -0.42 
+Temperature: 32.91
+Accel: X=1.06, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 1224.12 
+angle = -0.42 
+Temperature: 32.91
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1285.16 
+angle = -0.43 
+Temperature: 32.91
+Accel: X=1.08, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1429.00 
+angle = -0.43 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 606.92 
+angle = -0.42 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 984.77 
+angle = -0.42 
+Temperature: 32.77
+Accel: X=1.06, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1158.83 
+angle = -0.42 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 595.02 
+angle = -0.42 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1989.71 
+angle = -0.44 
+Temperature: 32.95
+Accel: X=1.06, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 1320.62 
+angle = -0.43 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 2111.64 
+angle = -0.43 
+Temperature: 32.81
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1420.64 
+angle = -0.43 
+Temperature: 32.95
+Accel: X=1.06, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 929.34 
+angle = -0.43 
+Temperature: 32.95
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 473.41 
+angle = -0.43 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1149.28 
+angle = -0.43 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.00, Z=-0.15 (m/s^2)
+jerk = 2599.73 
+angle = -0.43 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1228.01 
+angle = -0.43 
+Temperature: 32.81
+Accel: X=1.05, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1887.79 
+angle = -0.43 
+Temperature: 32.91
+Accel: X=1.07, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 1577.31 
+angle = -0.43 
+Temperature: 32.91
+Accel: X=1.06, Y=0.00, Z=-0.15 (m/s^2)
+jerk = 2619.71 
+angle = -0.42 
+Temperature: 33.00
+Accel: X=1.07, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 1773.01 
+angle = -0.43 
+Temperature: 32.95
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1194.04 
+angle = -0.44 
+Temperature: 32.95
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1525.05 
+angle = -0.43 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1417.07 
+angle = -0.42 
+Temperature: 32.81
+Accel: X=1.11, Y=0.02, Z=-0.11 (m/s^2)
+jerk = 1292.10 
+angle = -0.43 
+Temperature: 32.91
+Accel: X=1.06, Y=-0.01, Z=-0.14 (m/s^2)
+jerk = 1050.94 
+angle = -0.44 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.01, Z=-0.14 (m/s^2)
+jerk = 505.67 
+angle = -0.44 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.00, Z=-0.15 (m/s^2)
+jerk = 2278.11 
+angle = -0.44 
+Temperature: 32.95
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 2671.97 
+angle = -0.43 
+Temperature: 32.91
+Accel: X=1.06, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 2546.21 
+angle = -0.43 
+Temperature: 32.91
+Accel: X=1.06, Y=-0.00, Z=-0.15 (m/s^2)
+jerk = 1857.07 
+angle = -0.43 
+Temperature: 32.86
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 2035.17 
+angle = -0.43 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.01, Z=-0.15 (m/s^2)
+jerk = 1368.06 
+angle = -0.44 
+Temperature: 32.91
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 2199.16 
+angle = -0.43 
+Temperature: 32.95
+Accel: X=1.07, Y=0.00, Z=-0.12 (m/s^2)
+jerk = 1591.60 
+angle = -0.43 
+Temperature: 32.77
+Accel: X=1.06, Y=-0.01, Z=-0.15 (m/s^2)
+jerk = 962.11 
+angle = -0.42 
+Temperature: 32.86
+Accel: X=1.06, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 1698.66 
+angle = -0.44 
+Temperature: 32.91
+Accel: X=1.06, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 1339.22 
+angle = -0.44 
+Temperature: 32.91
+Accel: X=1.06, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 1673.39 
+angle = -0.44 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1941.03 
+angle = -0.43 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 2001.80 
+angle = -0.44 
+Temperature: 32.91
+Accel: X=1.08, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 658.73 
+angle = -0.44 
+Temperature: 32.81
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1341.22 
+angle = -0.43 
+Temperature: 32.91
+Accel: X=1.05, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1538.28 
+angle = -0.44 
+Temperature: 32.95
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 914.47 
+angle = -0.43 
+Temperature: 32.95
+Accel: X=1.07, Y=-0.00, Z=-0.15 (m/s^2)
+jerk = 1120.12 
+angle = -0.44 
+Temperature: 32.81
+Accel: X=1.08, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1446.42 
+angle = -0.44 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 1285.16 
+angle = -0.43 
+Temperature: 32.95
+Accel: X=1.07, Y=0.01, Z=-0.14 (m/s^2)
+jerk = 1083.61 
+angle = -0.43 
+Temperature: 32.95
+Accel: X=1.07, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 1255.84 
+angle = -0.43 
+Temperature: 32.95
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1427.54 
+angle = -0.44 
+Temperature: 32.91
+Accel: X=1.06, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 954.96 
+angle = -0.44 
+Temperature: 32.91
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 852.05 
+angle = -0.44 
+Temperature: 32.91
+Accel: X=1.06, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1972.71 
+angle = -0.44 
+Temperature: 32.91
+Accel: X=1.05, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1194.29 
+angle = -0.43 
+Temperature: 32.95
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1247.03 
+angle = -0.44 
+Temperature: 32.86
+Accel: X=1.07, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1509.33 
+angle = -0.43 
+Temperature: 32.95
+Accel: X=1.08, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 843.26 
+angle = -0.43 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1853.22 
+angle = -0.44 
+Temperature: 32.91
+Accel: X=1.08, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1362.38 
+angle = -0.45 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.01, Z=-0.14 (m/s^2)
+jerk = 943.66 
+angle = -0.44 
+Temperature: 32.91
+Accel: X=1.06, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 969.52 
+angle = -0.44 
+Temperature: 32.95
+Accel: X=1.06, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 464.51 
+angle = -0.44 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 1111.58 
+angle = -0.44 
+Temperature: 32.95
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 734.05 
+angle = -0.44 
+Temperature: 32.86
+Accel: X=1.08, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 142.36 
+angle = -0.44 
+Temperature: 32.86
+Accel: X=1.08, Y=0.01, Z=-0.12 (m/s^2)
+jerk = 668.61 
+angle = -0.44 
+Temperature: 32.95
+Accel: X=1.08, Y=0.01, Z=-0.13 (m/s^2)
+jerk = 1024.81 
+angle = -0.44 
+Temperature: 32.91
+Accel: X=1.06, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 1947.47 
+angle = -0.45 
+Temperature: 32.81
+Accel: X=1.08, Y=-0.02, Z=-0.13 (m/s^2)
+jerk = 1083.61 
+angle = -0.44 
+Temperature: 32.91
+Accel: X=1.07, Y=-0.01, Z=-0.14 (m/s^2)
+jerk = 863.17 
+angle = -0.43 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 2087.79 
+angle = -0.44 
+Temperature: 32.77
+Accel: X=1.08, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1709.86 
+angle = -0.43 
+Temperature: 32.95
+Accel: X=1.07, Y=-0.00, Z=-0.13 (m/s^2)
+jerk = 1102.15 
+angle = -0.44 
+Temperature: 33.00
+Accel: X=1.06, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 1134.93 
+angle = -0.43 
+Temperature: 32.91
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1701.64 
+angle = -0.44 
+Temperature: 32.81
+Accel: X=1.06, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1633.19 
+angle = -0.44 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 1371.97 
+angle = -0.45 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.01, Z=-0.13 (m/s^2)
+jerk = 734.45 
+angle = -0.45 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.01, Z=-0.14 (m/s^2)
+jerk = 855.89 
+angle = -0.45 
+Temperature: 32.81
+Accel: X=1.07, Y=0.00, Z=-0.13 (m/s^2)
+jerk = 1209.91 
+angle = -0.44 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.15 (m/s^2)
+jerk = 875.51 
+angle = -0.45 
+Temperature: 32.86
+Accel: X=1.00, Y=-0.02, Z=0.17 (m/s^2)
+jerk = 1158.06 
+angle = -0.44 
+Temperature: 32.81
+Accel: X=1.13, Y=-0.03, Z=-0.20 (m/s^2)
+jerk = 37824.86 
+angle = -0.54 
+Temperature: 32.91
+Accel: X=1.23, Y=-0.14, Z=-0.07 (m/s^2)
+jerk = 45144.54 
+angle = -0.46 
+Temperature: 32.86
+Accel: X=1.21, Y=-0.44, Z=-0.09 (m/s^2)
+jerk = 21298.37 
+angle = -0.56 
+Temperature: 32.86
+Accel: X=0.87, Y=-0.23, Z=0.03 (m/s^2)
+jerk = 31243.46 
+angle = -0.83 
+Temperature: 32.77
+Accel: X=0.47, Y=0.14, Z=0.28 (m/s^2)
+jerk = 44699.24 
+angle = -0.71 
+Temperature: 32.91
+Accel: X=0.87, Y=-0.09, Z=0.12 (m/s^2)
+jerk = 57612.71 
+angle = -0.15 
+Temperature: 32.86
+Accel: X=1.03, Y=-0.12, Z=0.01 (m/s^2)
+jerk = 49441.73 
+angle = -0.56 
+Temperature: 32.95
+Accel: X=1.04, Y=-0.12, Z=-0.07 (m/s^2)
+jerk = 18421.25 
+angle = -0.57 
+Temperature: 32.91
+Accel: X=1.09, Y=-0.10, Z=-0.17 (m/s^2)
+jerk = 7896.20 
+angle = -0.57 
+Temperature: 32.86
+Accel: X=1.08, Y=-0.12, Z=-0.14 (m/s^2)
+jerk = 10429.15 
+angle = -0.56 
+Temperature: 32.95
+Accel: X=1.13, Y=-0.16, Z=-0.22 (m/s^2)
+jerk = 1987.91 
+angle = -0.55 
+Temperature: 32.91
+Accel: X=1.03, Y=-0.24, Z=-0.27 (m/s^2)
+jerk = 7230.97 
+angle = -0.61 
+Temperature: 32.95
+Accel: X=1.12, Y=-0.15, Z=-0.23 (m/s^2)
+jerk = 8870.10 
+angle = -0.67 
+Temperature: 32.95
+Accel: X=2.00, Y=0.19, Z=-0.24 (m/s^2)
+jerk = 13385.01 
+angle = -0.60 
+Temperature: 32.91
+Accel: X=1.05, Y=0.00, Z=-0.14 (m/s^2)
+jerk = 110418.48 
+angle = -0.17 
+Temperature: 32.95
+Accel: X=1.03, Y=-0.01, Z=-0.15 (m/s^2)
+jerk = 106042.09 
+angle = -0.44 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.00, Z=-0.15 (m/s^2)
+jerk = 5815.31 
+angle = -0.46 
+Temperature: 33.00
+Accel: X=1.06, Y=0.00, Z=-0.15 (m/s^2)
+jerk = 1253.94 
+angle = -0.46 
+Temperature: 32.95
+Accel: X=1.08, Y=0.00, Z=-0.15 (m/s^2)
+jerk = 1054.62 
+angle = -0.45 
+Temperature: 32.86
+Accel: X=1.08, Y=-0.00, Z=-0.15 (m/s^2)
+jerk = 838.30 
+angle = -0.45 
+Temperature: 32.81
+Accel: X=1.08, Y=-0.00, Z=-0.15 (m/s^2)
+jerk = 1658.72 
+angle = -0.46 
+Temperature: 33.00
+Accel: X=1.07, Y=-0.00, Z=-0.14 (m/s^2)
+jerk = 1325.12 
+angle = -0.45 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.00, Z=-0.15 (m/s^2)
+jerk = 747.33 
+angle = -0.45 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.00, Z=-0.15 (m/s^2)
+jerk = 1365.88 
+angle = -0.46 
+Temperature: 32.81
+Accel: X=1.06, Y=-0.01, Z=-0.16 (m/s^2)
+jerk = 684.47 
+angle = -0.46 
+Temperature: 32.86
+Accel: X=1.06, Y=-0.00, Z=-0.15 (m/s^2)
+jerk = 728.34 
+angle = -0.46 
+Temperature: 32.86
+Accel: X=1.08, Y=-0.00, Z=-0.15 (m/s^2)
+jerk = 732.01 
+angle = -0.46 
+Temperature: 32.86
+Accel: X=1.07, Y=0.00, Z=-0.15 (m/s^2)
+jerk = 1153.42 
+angle = -0.45 
+Temperature: 32.91
+Accel: X=1.07, Y=-0.01, Z=-0.15 (m/s^2)
+jerk = 1116.13 
+angle = -0.46 
+Temperature: 32.95
+Accel: X=1.06, Y=-0.02, Z=-0.15 (m/s^2)
+jerk = 512.70 
+angle = -0.46 
+Temperature: 32.95
+Accel: X=1.06, Y=-0.01, Z=-0.15 (m/s^2)
+jerk = 1796.38 
+angle = -0.46 
+Temperature: 32.81
+Accel: X=1.07, Y=-0.01, Z=-0.15 (m/s^2)
+jerk = 638.98 
+angle = -0.46 
+Temperature: 32.86
+Accel: X=1.07, Y=-0.00, Z=-0.16 (m/s^2)
+jerk = 924.84 
+angle = -0.45 

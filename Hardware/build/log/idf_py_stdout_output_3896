@@ -1,0 +1,1309 @@
+[0;33mW (442) spi_flash: Detected size(4096k) larger than the size in the binary imageESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c0dc
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Oct 18 2024 17:31:12[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (33) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (85) esp_image: segment 0: paddr=00010020 vaddr=3c070020 size=1ad10h (109840) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=0002ad38 vaddr=3fc92e00 size=025f8h (  9720) load[0m
+[0;32mI (113) esp_image: segment 2: paddr=0002d338 vaddr=40380000 size=02ce0h ( 11488) load[0m
+[0;32mI (118) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=61848h (399432) map[0m
+[0;32mI (187) esp_image: segment 4: paddr=00091870 vaddr=40382ce0 size=0ff40h ( 65344) load[0m
+[0;32mI (205) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (206) boot: Disabling RNG early entropy source...[0m
+[0;32mI (217) cpu_start: Unicore app[0m
+D (217) cpu_start: Pro cpu up[0m
+D (225) clk: RTC_SLOW_CLK calibration value: 3609152[0m
+[0;32mI (231) cpu_start: Pro cpu start user code[0m
+[0;32mI (231) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (231) cpu_start: Application information:[0m
+[0;32mI (234) cpu_start: Project name:     app-template[0m
+[0;32mI (239) cpu_start: App version:      9f1355b-dirty[0m
+[0;32mI (245) cpu_start: Compile time:     Oct 30 2024 02:31:34[0m
+[0;32mI (251) cpu_start: ELF file SHA256:  2efb62009...[0m
+[0;32mI (256) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (262) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (266) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (271) cpu_start: Chip rev:         v0.4[0m
+D (276) memory_layout: Checking 5 reserved memory ranges:[0m
+D (281) memory_layout: Reserved memory range 0x3fc80000 - 0x3fc92e00[0m
+D (288) memory_layout: Reserved memory range 0x3fc92e00 - 0x3fc98160[0m
+D (294) memory_layout: Reserved memory range 0x3fcdf060 - 0x3fce0000[0m
+D (301) memory_layout: Reserved memory range 0x50000000 - 0x50000010[0m
+D (307) memory_layout: Reserved memory range 0x50001fe8 - 0x50002000[0m
+D (313) memory_layout: Building list of available memory regions:[0m
+D (320) memory_layout: Available memory region 0x3fc98160 - 0x3fca0000[0m
+D (326) memory_layout: Available memory region 0x3fca0000 - 0x3fcc0000[0m
+D (333) memory_layout: Available memory region 0x3fcc0000 - 0x3fcdc710[0m
+D (339) memory_layout: Available memory region 0x3fcdc710 - 0x3fcdf060[0m
+D (346) memory_layout: Available memory region 0x50000010 - 0x50001fe8[0m
+[0;32mI (353) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (360) heap_init: New heap initialised at 0x3fc98160[0m
+[0;32mI (365) heap_init: At 3FC98160 len 00027EA0 (159 KiB): RAM[0m
+D (371) heap_init: New heap initialised at 0x3fcc0000[0m
+[0;32mI (376) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (383) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+D (390) heap_init: New heap initialised at 0x50000010[0m
+[0;32mI (395) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+D (402) intr_alloc: Connected src 27 to int 2 (cpu 0)[0m
+D (407) spi_flash: trying chip: issi[0m
+D (410) spi_flash: trying chip: gd[0m
+D (414) spi_flash: trying chip: mxic[0m
+D (417) spi_flash: trying chip: winbond[0m
+D (421) spi_flash: trying chip: boya[0m
+D (425) spi_flash: trying chip: th[0m
+D (428) spi_flash: trying chip: generic[0m
+[0;32mI (432) spi_flash: detected chip: generic[0m
+[0;32mI (437) spi_flash: flash io: dio[0m
+[0;33mW (441) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+D (454) cpu_start: calling init function: 0x4204b7c6[0m
+D (459) cpu_start: calling init function: 0x4204b74a[0m
+D (464) cpu_start: calling init function: 0x4204b28e[0m
+D (469) cpu_start: calling init function: 0x42034936[0m
+[0;33mW (474) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+D (485) cpu_start: calling init function: 0x40389ba2[0m
+D (490) cpu_start: calling init function: 0x4200002a[0m
+D (495) cpu_start: calling init function: 0x42005886 on core: 0[0m
+D (501) intr_alloc: Connected src 39 to int 3 (cpu 0)[0m
+D (506) cpu_start: calling init function: 0x42001c1a on core: 0[0m
+D (512) cpu_start: calling init function: 0x42003550 on core: 0[0m
+[0;32mI (518) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (525) sleep: Enable automatic switching of GPIO sleep configuration[0m
+D (532) cpu_start: calling init function: 0x42001430 on core: 0[0m
+[0;32mI (538) coexist: coex firmware version: d96c1e51f[0m
+[0;32mI (543) coexist: coexist rom version 9387209[0m
+D (548) intr_alloc: Connected src 50 to int 4 (cpu 0)[0m
+D (553) app_start: Starting scheduler on CPU0[0m
+D (558) intr_alloc: Connected src 37 to int 7 (cpu 0)[0m
+[0;32mI (558) main_task: Started on CPU0[0m
+D (558) heap_init: New heap initialised at 0x3fcdc710[0m
+D (558) intr_alloc: Connected src 33 to int 9 (cpu 0)[0m
+[0;32mI (568) main_task: Calling app_main()[0m
+D (568) intr_alloc: Connected src 29 to int 10 (cpu 0)[0m
+[0;32mI (588) BLE_INIT: BT controller compile version [c23ab4c][0m
+D (588) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (588) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (598) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (608) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (608) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (618) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+[0;32mI (628) BLE_INIT: Bluetooth MAC: 34:b7:da:f6:47:7e[0m
+[0;32mI (628) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+D (638) phy_init: loading PHY init data from application binary[0m
+D (648) nvs: nvs_open_from_partition phy 0[0m
+D (648) nvs: nvs_get cal_version 4[0m
+D (648) nvs: nvs_get_str_or_blob cal_mac[0m
+D (658) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (658) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (668) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (678) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (678) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (688) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (698) nvs: nvs_get_str_or_blob cal_data[0m
+D (698) nvs: nvs_close 1[0m
+D (708) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (708) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (718) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (728) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (728) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (738) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (758) temperature_sensor: range changed, change to index 2[0m
+D (778) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (778) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (778) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (788) nvs: nvs_close 2[0m
+D (788) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (788) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (798) nvs: nvs_get_str_or_blob our_sec_2[0m
+D (798) nvs: nvs_close 3[0m
+D (798) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (808) nvs: nvs_get_str_or_blob our_sec_3[0m
+D (808) nvs: nvs_close 4[0m
+D (818) NIMBLE_NVS: ble_store_config_our_secs restored 1 bonds[0m
+D (818) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (828) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (828) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (838) nvs: nvs_close 5[0m
+D (838) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (838) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (848) nvs: nvs_get_str_or_blob peer_sec_2[0m
+D (848) nvs: nvs_close 6[0m
+D (858) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (858) nvs: nvs_get_str_or_blob peer_sec_3[0m
+D (868) nvs: nvs_close 7[0m
+D (868) NIMBLE_NVS: ble_store_config_peer_secs restored 1 bonds[0m
+D (868) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (878) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (878) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (888) nvs: nvs_close 8[0m
+D (888) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 1[0m
+D (898) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (898) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (898) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (908) nvs: nvs_close 9[0m
+D (908) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 2[0m
+D (918) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (918) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (928) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (928) nvs: nvs_close 10[0m
+D (928) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 3[0m
+D (938) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (938) nvs: nvs_get_str_or_blob cccd_sec_4[0m
+D (948) nvs: nvs_close 11[0m
+D (948) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (958) nvs: nvs_get_str_or_blob cccd_sec_5[0m
+D (958) nvs: nvs_close 12[0m
+D (958) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (968) nvs: nvs_get_str_or_blob cccd_sec_6[0m
+D (968) nvs: nvs_close 13[0m
+D (978) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (978) nvs: nvs_get_str_or_blob cccd_sec_7[0m
+D (978) nvs: nvs_close 14[0m
+D (988) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (988) nvs: nvs_get_str_or_blob cccd_sec_8[0m
+D (998) nvs: nvs_close 15[0m
+D (998) NIMBLE_NVS: ble_store_config_cccds restored 3 bonds[0m
+D (998) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1008) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (1008) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (1018) nvs: nvs_close 16[0m
+D (1018) NIMBLE_NVS: Local IRK in RAM is filled up from NVS index = 1[0m
+D (1028) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1028) nvs: nvs_get_str_or_blob local_irk_2[0m
+D (1038) nvs: nvs_close 17[0m
+D (1038) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1038) nvs: nvs_get_str_or_blob local_irk_3[0m
+D (1048) nvs: nvs_close 18[0m
+D (1048) NIMBLE_NVS: ble_store_config_local_irks restored 1 irks[0m
+D (1058) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1058) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (1068) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (1068) nvs: nvs_close 19[0m
+D (1068) NIMBLE_NVS: RPA_REC in RAM is filled up from NVS index = 1[0m
+D (1078) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1088) nvs: nvs_get_str_or_blob rpa_rec_2[0m
+D (1088) nvs: nvs_close 20[0m
+D (1088) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1098) nvs: nvs_get_str_or_blob rpa_rec_3[0m
+D (1098) nvs: nvs_close 21[0m
+D (1098) NIMBLE_NVS: ble_store_config_rpa_recs restored 1 bonds[0m
+[0;32mI (1108) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1118) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1118) NimBLE: Device Address: [0m
+[0;32mI (1128) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (1128) NimBLE: 
+[0m
+[0;32mI (1128) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1138) NimBLE: disc_mode=2[0m
+[0;32mI (1138) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1148) NimBLE: 
+[0m
+[0;32mI (1158) main_task: Returned from app_main()[0m
+Temperature: 32.44
+Accel: X=1.06, Y=0.13, Z=-0.20 (m/s^2)
+jerk = 11127.83 
+Temperature: 32.39
+Accel: X=1.06, Y=0.13, Z=-0.21 (m/s^2)
+jerk = 43.82 
+Temperature: 32.29
+Accel: X=1.06, Y=0.13, Z=-0.22 (m/s^2)
+jerk = 136.56 
+Temperature: 32.29
+Accel: X=1.05, Y=0.12, Z=-0.21 (m/s^2)
+jerk = 169.27 
+Temperature: 32.34
+Accel: X=1.05, Y=0.13, Z=-0.20 (m/s^2)
+jerk = 106.29 
+Temperature: 32.34
+Accel: X=1.06, Y=0.12, Z=-0.19 (m/s^2)
+jerk = 197.00 
+Temperature: 32.29
+Accel: X=1.06, Y=0.12, Z=-0.19 (m/s^2)
+jerk = 77.47 
+Temperature: 32.39
+Accel: X=1.06, Y=0.12, Z=-0.19 (m/s^2)
+jerk = 45.14 
+Temperature: 32.29
+Accel: X=1.06, Y=0.12, Z=-0.20 (m/s^2)
+jerk = 120.85 
+Temperature: 32.34
+Accel: X=1.05, Y=0.12, Z=-0.19 (m/s^2)
+jerk = 178.72 
+Temperature: 32.44
+Accel: X=1.06, Y=0.12, Z=-0.20 (m/s^2)
+jerk = 131.99 
+Temperature: 32.39
+Accel: X=1.05, Y=0.08, Z=-0.34 (m/s^2)
+jerk = 1559.28 
+Temperature: 32.29
+Accel: X=1.61, Y=0.29, Z=-0.15 (m/s^2)
+jerk = 6442.90 
+Temperature: 32.39
+Accel: X=1.69, Y=0.32, Z=-0.09 (m/s^2)
+jerk = 984.19 
+Temperature: 32.34
+Accel: X=1.17, Y=0.17, Z=-0.16 (m/s^2)
+jerk = 5589.53 
+Temperature: 32.34
+Accel: X=0.31, Y=-0.29, Z=-0.16 (m/s^2)
+jerk = 9891.44 
+Temperature: 32.29
+Accel: X=-0.28, Y=-0.69, Z=0.09 (m/s^2)
+jerk = 7695.20 
+Temperature: 32.29
+Accel: X=-0.27, Y=-0.78, Z=0.35 (m/s^2)
+jerk = 2804.80 
+Temperature: 32.29
+Accel: X=-0.59, Y=-0.75, Z=0.36 (m/s^2)
+jerk = 3317.34 
+Temperature: 32.34
+Accel: X=-0.13, Y=-0.55, Z=0.19 (m/s^2)
+jerk = 5347.03 
+Temperature: 32.34
+Accel: X=0.39, Y=-0.22, Z=-0.13 (m/s^2)
+jerk = 7137.68 
+Temperature: 32.34
+Accel: X=1.25, Y=0.31, Z=-0.19 (m/s^2)
+jerk = 10267.64 
+Temperature: 32.44
+Accel: X=1.93, Y=0.57, Z=0.09 (m/s^2)
+jerk = 7904.75 
+Temperature: 32.44
+Accel: X=2.00, Y=0.71, Z=0.21 (m/s^2)
+jerk = 1999.07 
+Temperature: 32.34
+Accel: X=1.52, Y=0.59, Z=-0.40 (m/s^2)
+jerk = 7976.08 
+Temperature: 32.39
+Accel: X=0.33, Y=0.03, Z=-0.25 (m/s^2)
+jerk = 13427.89 
+Temperature: 32.48
+Accel: X=-0.65, Y=-0.52, Z=0.24 (m/s^2)
+jerk = 12513.52 
+Temperature: 32.39
+Accel: X=-0.76, Y=-0.63, Z=0.47 (m/s^2)
+jerk = 2914.81 
+Temperature: 32.44
+Accel: X=-0.57, Y=-0.34, Z=0.41 (m/s^2)
+jerk = 3572.77 
+Temperature: 32.34
+Accel: X=0.40, Y=-0.02, Z=-0.22 (m/s^2)
+jerk = 12253.28 
+Temperature: 32.34
+Accel: X=1.15, Y=0.31, Z=-0.01 (m/s^2)
+jerk = 8649.83 
+Temperature: 32.34
+Accel: X=2.00, Y=0.65, Z=0.45 (m/s^2)
+jerk = 10444.31 
+Temperature: 32.39
+Accel: X=2.00, Y=0.67, Z=0.39 (m/s^2)
+jerk = 598.78 
+Temperature: 32.29
+Accel: X=1.50, Y=0.49, Z=-0.41 (m/s^2)
+jerk = 9833.98 
+Temperature: 32.34
+Accel: X=-0.00, Y=-0.02, Z=-0.18 (m/s^2)
+jerk = 16307.35 
+Temperature: 32.34
+Accel: X=-0.79, Y=-0.43, Z=0.35 (m/s^2)
+jerk = 10540.76 
+Temperature: 32.34
+Accel: X=-1.39, Y=-0.54, Z=0.62 (m/s^2)
+jerk = 6827.07 
+Temperature: 32.29
+Accel: X=-0.74, Y=-0.04, Z=0.16 (m/s^2)
+jerk = 9629.37 
+Temperature: 32.39
+Accel: X=0.66, Y=0.64, Z=-0.11 (m/s^2)
+jerk = 16089.62 
+Temperature: 32.29
+Accel: X=2.00, Y=0.88, Z=-0.29 (m/s^2)
+jerk = 13984.41 
+Temperature: 32.34
+Accel: X=2.00, Y=0.70, Z=0.35 (m/s^2)
+jerk = 6765.61 
+Temperature: 32.44
+Accel: X=1.94, Y=0.47, Z=-0.33 (m/s^2)
+jerk = 7425.25 
+Temperature: 32.39
+Accel: X=0.32, Y=0.18, Z=-0.32 (m/s^2)
+jerk = 16734.97 
+Temperature: 32.39
+Accel: X=-0.69, Y=-0.22, Z=0.32 (m/s^2)
+jerk = 12822.32 
+Temperature: 32.39
+Accel: X=-1.30, Y=-0.50, Z=0.74 (m/s^2)
+jerk = 8134.33 
+Temperature: 32.34
+Accel: X=-1.14, Y=-0.15, Z=0.36 (m/s^2)
+jerk = 5518.87 
+Temperature: 32.34
+Accel: X=0.60, Y=0.32, Z=-0.16 (m/s^2)
+jerk = 19152.98 
+Temperature: 32.39
+Accel: X=1.53, Y=0.76, Z=-0.18 (m/s^2)
+jerk = 10521.12 
+Temperature: 32.39
+Accel: X=2.00, Y=0.73, Z=0.36 (m/s^2)
+jerk = 7353.34 
+Temperature: 32.44
+Accel: X=2.00, Y=0.54, Z=0.16 (m/s^2)
+jerk = 2825.79 
+Temperature: 32.34
+Accel: X=1.15, Y=0.42, Z=-0.19 (m/s^2)
+jerk = 9425.85 
+Temperature: 32.39
+Accel: X=-0.20, Y=-0.15, Z=-0.02 (m/s^2)
+jerk = 15088.58 
+Temperature: 32.29
+Accel: X=-0.70, Y=-0.65, Z=0.37 (m/s^2)
+jerk = 8246.40 
+Temperature: 32.44
+Accel: X=-1.07, Y=-0.70, Z=0.42 (m/s^2)
+jerk = 3840.11 
+Temperature: 32.34
+Accel: X=-0.67, Y=-0.27, Z=0.15 (m/s^2)
+jerk = 6560.79 
+Temperature: 32.44
+Accel: X=0.61, Y=0.19, Z=-0.13 (m/s^2)
+jerk = 14180.24 
+Temperature: 32.39
+Accel: X=2.00, Y=0.67, Z=-0.43 (m/s^2)
+jerk = 15328.06 
+Temperature: 32.29
+Accel: X=2.00, Y=0.72, Z=0.59 (m/s^2)
+jerk = 10462.46 
+Temperature: 32.44
+Accel: X=1.63, Y=0.51, Z=-0.13 (m/s^2)
+jerk = 8531.94 
+Temperature: 32.44
+Accel: X=0.33, Y=0.09, Z=-0.44 (m/s^2)
+jerk = 14358.87 
+Temperature: 32.34
+Accel: X=-0.66, Y=-0.41, Z=0.06 (m/s^2)
+jerk = 12355.59 
+Temperature: 32.34
+Accel: X=-1.03, Y=-0.57, Z=0.67 (m/s^2)
+jerk = 7446.96 
+Temperature: 32.39
+Accel: X=-1.50, Y=-0.44, Z=0.59 (m/s^2)
+jerk = 4976.68 
+Temperature: 32.39
+Accel: X=-0.00, Y=0.22, Z=0.08 (m/s^2)
+jerk = 17482.22 
+Temperature: 32.48
+Accel: X=1.14, Y=0.25, Z=-0.41 (m/s^2)
+jerk = 12643.80 
+Temperature: 32.39
+Accel: X=2.00, Y=0.39, Z=-0.03 (m/s^2)
+jerk = 9702.59 
+Temperature: 32.39
+Accel: X=2.00, Y=0.47, Z=0.40 (m/s^2)
+jerk = 4502.63 
+Temperature: 32.29
+Accel: X=1.73, Y=0.35, Z=-0.26 (m/s^2)
+jerk = 7379.72 
+Temperature: 32.44
+Accel: X=0.46, Y=0.07, Z=-0.43 (m/s^2)
+jerk = 13436.69 
+Temperature: 32.34
+Accel: X=-0.48, Y=-0.41, Z=0.02 (m/s^2)
+jerk = 11740.67 
+Temperature: 32.39
+Accel: X=-1.10, Y=-0.54, Z=0.55 (m/s^2)
+jerk = 8371.62 
+Temperature: 32.44
+Accel: X=-1.24, Y=-0.48, Z=0.57 (m/s^2)
+jerk = 1599.43 
+Temperature: 32.44
+Accel: X=-0.54, Y=-0.07, Z=0.06 (m/s^2)
+jerk = 9800.25 
+Temperature: 32.34
+Accel: X=0.90, Y=0.11, Z=-0.30 (m/s^2)
+jerk = 15166.54 
+Temperature: 32.39
+Accel: X=1.95, Y=0.16, Z=-0.25 (m/s^2)
+jerk = 10733.62 
+Temperature: 32.29
+Accel: X=2.00, Y=0.26, Z=0.19 (m/s^2)
+jerk = 4595.69 
+Temperature: 32.39
+Accel: X=1.88, Y=0.20, Z=0.05 (m/s^2)
+jerk = 1993.52 
+Temperature: 32.39
+Accel: X=1.07, Y=0.04, Z=-0.33 (m/s^2)
+jerk = 9278.65 
+Temperature: 32.44
+Accel: X=-0.26, Y=-0.25, Z=-0.10 (m/s^2)
+jerk = 13974.06 
+Temperature: 32.34
+Accel: X=-0.91, Y=-0.42, Z=0.33 (m/s^2)
+jerk = 8160.24 
+Temperature: 32.44
+Accel: X=-1.41, Y=-0.53, Z=0.28 (m/s^2)
+jerk = 5280.56 
+Temperature: 32.34
+Accel: X=-0.70, Y=-0.33, Z=-0.06 (m/s^2)
+jerk = 8261.04 
+Temperature: 32.34
+Accel: X=0.58, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 13600.12 
+Temperature: 32.44
+Accel: X=1.55, Y=0.33, Z=-0.12 (m/s^2)
+jerk = 10505.38 
+Temperature: 32.39
+Accel: X=1.97, Y=0.25, Z=0.18 (m/s^2)
+jerk = 5334.01 
+Temperature: 32.39
+Accel: X=0.90, Y=0.10, Z=-0.04 (m/s^2)
+jerk = 11179.88 
+Temperature: 32.48
+Accel: X=1.17, Y=0.16, Z=-0.19 (m/s^2)
+jerk = 3239.00 
+Temperature: 32.29
+Accel: X=1.08, Y=0.20, Z=-0.09 (m/s^2)
+jerk = 1399.94 
+Temperature: 32.39
+Accel: X=1.00, Y=0.04, Z=-0.13 (m/s^2)
+jerk = 1846.48 
+Temperature: 32.44
+Accel: X=1.09, Y=0.08, Z=-0.01 (m/s^2)
+jerk = 1519.50 
+Temperature: 32.44
+Accel: X=0.96, Y=-0.03, Z=-0.31 (m/s^2)
+jerk = 3413.15 
+Temperature: 32.44
+Accel: X=1.08, Y=-0.00, Z=-0.22 (m/s^2)
+jerk = 1429.47 
+Temperature: 32.39
+Accel: X=1.04, Y=-0.01, Z=-0.23 (m/s^2)
+jerk = 423.76 
+Temperature: 32.44
+Accel: X=1.07, Y=-0.02, Z=-0.24 (m/s^2)
+jerk = 323.38 
+Temperature: 32.44
+Accel: X=1.08, Y=-0.03, Z=-0.15 (m/s^2)
+jerk = 936.70 
+Temperature: 32.44
+Accel: X=1.07, Y=-0.02, Z=-0.22 (m/s^2)
+jerk = 738.14 
+Temperature: 32.39
+Accel: X=1.06, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 220.43 
+Temperature: 32.44
+Accel: X=1.09, Y=-0.01, Z=-0.23 (m/s^2)
+jerk = 367.70 
+Temperature: 32.44
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 351.29 
+Temperature: 32.44
+Accel: X=1.07, Y=-0.01, Z=-0.22 (m/s^2)
+jerk = 200.55 
+Temperature: 32.48
+Accel: X=1.08, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 163.69 
+Temperature: 32.39
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 154.70 
+Temperature: 32.39
+Accel: X=1.06, Y=-0.02, Z=-0.19 (m/s^2)
+jerk = 102.58 
+Temperature: 32.34
+Accel: X=1.07, Y=-0.01, Z=-0.21 (m/s^2)
+jerk = 180.94 
+Temperature: 32.44
+Accel: X=1.07, Y=-0.02, Z=-0.19 (m/s^2)
+jerk = 260.96 
+Temperature: 32.44
+Accel: X=1.06, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 143.25 
+Temperature: 32.48
+Accel: X=1.06, Y=-0.01, Z=-0.21 (m/s^2)
+jerk = 123.08 
+Temperature: 32.48
+Accel: X=1.03, Y=-0.01, Z=-0.19 (m/s^2)
+jerk = 326.47 
+Temperature: 32.48
+Accel: X=1.07, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 401.14 
+Temperature: 32.44
+Accel: X=1.08, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 155.36 
+Temperature: 32.44
+Accel: X=1.08, Y=-0.02, Z=-0.21 (m/s^2)
+jerk = 99.36 
+Temperature: 32.39
+Accel: X=1.08, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 61.87 
+Temperature: 32.44
+Accel: X=1.06, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 189.08 
+Temperature: 32.44
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 38.87 
+Temperature: 32.39
+Accel: X=1.06, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 72.73 
+Temperature: 32.48
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 106.46 
+Temperature: 32.48
+Accel: X=1.07, Y=-0.02, Z=-0.18 (m/s^2)
+jerk = 170.63 
+Temperature: 32.48
+Accel: X=1.05, Y=-0.01, Z=-0.21 (m/s^2)
+jerk = 345.30 
+Temperature: 32.53
+Accel: X=1.05, Y=-0.02, Z=-0.19 (m/s^2)
+jerk = 230.59 
+Temperature: 32.44
+Accel: X=1.06, Y=-0.02, Z=-0.21 (m/s^2)
+jerk = 156.79 
+Temperature: 32.34
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 57.94 
+Temperature: 32.44
+Accel: X=1.08, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 74.91 
+Temperature: 32.34
+Accel: X=1.08, Y=-0.02, Z=-0.19 (m/s^2)
+jerk = 135.83 
+Temperature: 32.44
+Accel: X=1.07, Y=-0.02, Z=-0.21 (m/s^2)
+jerk = 196.64 
+Temperature: 32.48
+Accel: X=1.06, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 122.07 
+Temperature: 32.39
+Accel: X=1.06, Y=-0.02, Z=-0.19 (m/s^2)
+jerk = 59.99 
+Temperature: 32.39
+Accel: X=1.06, Y=-0.01, Z=-0.19 (m/s^2)
+jerk = 99.33 
+Temperature: 32.48
+Accel: X=1.05, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 87.14 
+Temperature: 32.44
+Accel: X=1.07, Y=-0.01, Z=-0.21 (m/s^2)
+jerk = 207.34 
+Temperature: 32.44
+Accel: X=1.07, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 85.78 
+Temperature: 32.44
+Accel: X=1.06, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 81.79 
+Temperature: 32.44
+Accel: X=1.06, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 21.98 
+Temperature: 32.48
+Accel: X=1.07, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 86.93 
+Temperature: 32.39
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 70.17 
+Temperature: 32.48
+Accel: X=1.06, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 129.94 
+Temperature: 32.48
+Accel: X=1.08, Y=-0.02, Z=-0.19 (m/s^2)
+jerk = 199.75 
+Temperature: 32.53
+Accel: X=1.06, Y=-0.01, Z=-0.21 (m/s^2)
+jerk = 228.36 
+Temperature: 32.44
+Accel: X=1.06, Y=-0.01, Z=-0.19 (m/s^2)
+jerk = 161.25 
+Temperature: 32.44
+Accel: X=1.08, Y=-0.00, Z=-0.20 (m/s^2)
+jerk = 168.74 
+Temperature: 32.44
+Accel: X=1.08, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 149.36 
+Temperature: 32.48
+Accel: X=1.07, Y=-0.01, Z=-0.21 (m/s^2)
+jerk = 166.65 
+Temperature: 32.39
+Accel: X=1.07, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 38.07 
+Temperature: 32.48
+Accel: X=1.06, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 113.09 
+Temperature: 32.39
+Accel: X=1.06, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 60.60 
+Temperature: 32.34
+Accel: X=1.06, Y=-0.02, Z=-0.19 (m/s^2)
+jerk = 99.39 
+Temperature: 32.34
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 142.73 
+Temperature: 32.34
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 41.42 
+Temperature: 32.48
+Accel: X=1.07, Y=-0.02, Z=-0.19 (m/s^2)
+jerk = 122.78 
+Temperature: 32.39
+Accel: X=1.07, Y=-0.01, Z=-0.19 (m/s^2)
+jerk = 86.68 
+Temperature: 32.39
+Accel: X=1.06, Y=-0.02, Z=-0.21 (m/s^2)
+jerk = 162.83 
+Temperature: 32.44
+Accel: X=1.08, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 187.58 
+Temperature: 32.34
+Accel: X=1.07, Y=-0.00, Z=-0.21 (m/s^2)
+jerk = 229.14 
+Temperature: 32.44
+Accel: X=1.07, Y=-0.01, Z=-0.19 (m/s^2)
+jerk = 258.27 
+Temperature: 32.44
+Accel: X=1.06, Y=-0.02, Z=-0.21 (m/s^2)
+jerk = 171.65 
+Temperature: 32.39
+Accel: X=1.05, Y=-0.02, Z=-0.21 (m/s^2)
+jerk = 139.50 
+Temperature: 32.39
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 199.42 
+Temperature: 32.48
+Accel: X=1.08, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 137.08 
+Temperature: 32.48
+Accel: X=1.09, Y=-0.01, Z=-0.19 (m/s^2)
+jerk = 109.16 
+Temperature: 32.44
+Accel: X=1.08, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 127.14 
+Temperature: 32.44
+Accel: X=1.07, Y=-0.01, Z=-0.18 (m/s^2)
+jerk = 225.10 
+Temperature: 32.44
+Accel: X=1.06, Y=-0.01, Z=-0.21 (m/s^2)
+jerk = 332.80 
+Temperature: 32.44
+Accel: X=1.06, Y=-0.03, Z=-0.20 (m/s^2)
+jerk = 215.43 
+Temperature: 32.39
+Accel: X=1.07, Y=-0.01, Z=-0.21 (m/s^2)
+jerk = 207.76 
+Temperature: 32.48
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 90.90 
+Temperature: 32.39
+Accel: X=1.07, Y=-0.01, Z=-0.22 (m/s^2)
+jerk = 184.16 
+Temperature: 32.48
+Accel: X=1.06, Y=-0.01, Z=-0.21 (m/s^2)
+jerk = 120.70 
+Temperature: 32.39
+Accel: X=1.06, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 124.53 
+Temperature: 32.44
+Accel: X=1.07, Y=-0.02, Z=-0.19 (m/s^2)
+jerk = 84.03 
+Temperature: 32.53
+Accel: X=1.08, Y=-0.03, Z=-0.19 (m/s^2)
+jerk = 141.96 
+Temperature: 32.39
+Accel: X=1.07, Y=-0.02, Z=-0.19 (m/s^2)
+jerk = 145.58 
+Temperature: 32.48
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 75.03 
+Temperature: 32.48
+Accel: X=1.06, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 138.39 
+Temperature: 32.44
+Accel: X=1.06, Y=-0.02, Z=-0.21 (m/s^2)
+jerk = 117.58 
+Temperature: 32.34
+Accel: X=1.06, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 93.45 
+Temperature: 32.39
+Accel: X=1.07, Y=-0.01, Z=-0.21 (m/s^2)
+jerk = 103.57 
+Temperature: 32.48
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 103.03 
+Temperature: 32.34
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 84.54 
+Temperature: 32.44
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 87.14 
+Temperature: 32.48
+Accel: X=1.07, Y=-0.02, Z=-0.21 (m/s^2)
+jerk = 64.37 
+Temperature: 32.39
+Accel: X=1.06, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 106.52 
+Temperature: 32.39
+Accel: X=1.06, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 61.52 
+Temperature: 32.48
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 90.25 
+Temperature: 32.53
+Accel: X=1.07, Y=-0.01, Z=-0.18 (m/s^2)
+jerk = 189.06 
+Temperature: 32.44
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 170.27 
+Temperature: 32.39
+Accel: X=1.07, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 53.95 
+Temperature: 32.39
+Accel: X=1.07, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 80.99 
+Temperature: 32.39
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 129.15 
+Temperature: 32.34
+Accel: X=1.06, Y=-0.03, Z=-0.20 (m/s^2)
+jerk = 82.13 
+Temperature: 32.53
+Accel: X=1.07, Y=-0.02, Z=-0.19 (m/s^2)
+jerk = 91.95 
+Temperature: 32.39
+Accel: X=1.06, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 61.26 
+Temperature: 32.48
+Accel: X=1.06, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 110.63 
+Temperature: 32.48
+Accel: X=1.05, Y=-0.02, Z=-0.18 (m/s^2)
+jerk = 290.85 
+Temperature: 32.44
+Accel: X=1.05, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 267.97 
+Temperature: 32.44
+Accel: X=1.05, Y=-0.03, Z=-0.19 (m/s^2)
+jerk = 214.82 
+Temperature: 32.48
+Accel: X=1.08, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 405.35 
+Temperature: 32.48
+Accel: X=1.09, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 141.33 
+Temperature: 32.48
+Accel: X=1.09, Y=-0.01, Z=-0.19 (m/s^2)
+jerk = 93.65 
+Temperature: 32.53
+Accel: X=1.07, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 160.94 
+Temperature: 32.44
+Accel: X=1.07, Y=-0.02, Z=-0.21 (m/s^2)
+jerk = 208.01 
+Temperature: 32.48
+Accel: X=1.07, Y=-0.01, Z=-0.22 (m/s^2)
+jerk = 108.45 
+Temperature: 32.39
+Accel: X=1.06, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 294.77 
+Temperature: 32.48
+Accel: X=1.07, Y=-0.01, Z=-0.18 (m/s^2)
+jerk = 232.85 
+Temperature: 32.44
+Accel: X=1.08, Y=-0.01, Z=-0.19 (m/s^2)
+jerk = 134.71 
+Temperature: 32.44
+Accel: X=1.07, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 154.40 
+Temperature: 32.44
+Accel: X=1.07, Y=-0.01, Z=-0.22 (m/s^2)
+jerk = 134.25 
+Temperature: 32.48
+Accel: X=1.08, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 156.49 
+Temperature: 32.39
+Accel: X=1.07, Y=-0.02, Z=-0.19 (m/s^2)
+jerk = 159.22 
+Temperature: 32.39
+Accel: X=1.08, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 193.45 
+Temperature: 32.44
+Accel: X=1.07, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 122.68 
+Temperature: 32.44
+Accel: X=1.08, Y=-0.01, Z=-0.21 (m/s^2)
+jerk = 144.47 
+Temperature: 32.48
+Accel: X=1.06, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 204.88 
+Temperature: 32.39
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 110.63 
+Temperature: 32.44
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 89.52 
+Temperature: 32.44
+Accel: X=1.06, Y=-0.01, Z=-0.21 (m/s^2)
+jerk = 104.58 
+Temperature: 32.44
+Accel: X=1.07, Y=-0.01, Z=-0.21 (m/s^2)
+jerk = 114.02 
+Temperature: 32.48
+Accel: X=1.07, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 76.34 
+Temperature: 32.48
+Accel: X=1.08, Y=-0.01, Z=-0.19 (m/s^2)
+jerk = 91.81 
+Temperature: 32.44
+Accel: X=1.07, Y=-0.01, Z=-0.21 (m/s^2)
+jerk = 178.93 
+Temperature: 32.44
+Accel: X=1.06, Y=-0.00, Z=-0.20 (m/s^2)
+jerk = 225.83 
+Temperature: 32.44
+Accel: X=1.05, Y=-0.01, Z=-0.23 (m/s^2)
+jerk = 227.93 
+Temperature: 32.44
+Accel: X=1.06, Y=-0.02, Z=-0.19 (m/s^2)
+jerk = 343.27 
+Temperature: 32.48
+Accel: X=1.07, Y=-0.02, Z=-0.21 (m/s^2)
+jerk = 144.67 
+Temperature: 32.48
+Accel: X=1.07, Y=-0.03, Z=-0.20 (m/s^2)
+jerk = 130.58 
+Temperature: 32.48
+Accel: X=1.06, Y=-0.01, Z=-0.21 (m/s^2)
+jerk = 241.40 
+Temperature: 32.53
+Accel: X=1.06, Y=-0.02, Z=-0.21 (m/s^2)
+jerk = 93.12 
+Temperature: 32.48
+Accel: X=1.07, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 173.39 
+Temperature: 32.53
+Accel: X=1.07, Y=-0.01, Z=-0.19 (m/s^2)
+jerk = 105.38 
+Temperature: 32.48
+Accel: X=1.08, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 196.39 
+Temperature: 32.48
+Accel: X=1.07, Y=-0.01, Z=-0.22 (m/s^2)
+jerk = 278.52 
+Temperature: 32.48
+Accel: X=1.07, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 155.10 
+Temperature: 32.48
+Accel: X=1.07, Y=-0.01, Z=-0.19 (m/s^2)
+jerk = 137.06 
+Temperature: 32.53
+Accel: X=1.06, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 200.43 
+Temperature: 32.53
+Accel: X=1.07, Y=-0.01, Z=-0.21 (m/s^2)
+jerk = 103.63 
+Temperature: 32.48
+Accel: X=1.06, Y=-0.02, Z=-0.21 (m/s^2)
+jerk = 56.97 
+Temperature: 32.58
+Accel: X=1.06, Y=-0.03, Z=-0.20 (m/s^2)
+jerk = 140.36 
+Temperature: 32.58
+Accel: X=1.06, Y=-0.02, Z=-0.19 (m/s^2)
+jerk = 158.75 
+Temperature: 32.44
+Accel: X=1.07, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 141.09 
+Temperature: 32.53
+Accel: X=1.08, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 137.26 
+Temperature: 32.48
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 186.78 
+Temperature: 32.58
+Accel: X=1.07, Y=-0.03, Z=-0.20 (m/s^2)
+jerk = 51.31 
+Temperature: 32.48
+Accel: X=1.07, Y=-0.03, Z=-0.20 (m/s^2)
+jerk = 80.41 
+Temperature: 32.44
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 194.99 
+Temperature: 32.53
+Accel: X=1.07, Y=-0.02, Z=-0.19 (m/s^2)
+jerk = 87.42 
+Temperature: 32.53
+Accel: X=1.08, Y=-0.02, Z=-0.19 (m/s^2)
+jerk = 71.66 
+Temperature: 32.48
+Accel: X=1.05, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 270.67 
+Temperature: 32.48
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 174.14 
+Temperature: 32.48
+Accel: X=1.08, Y=-0.02, Z=-0.19 (m/s^2)
+jerk = 142.44 
+Temperature: 32.53
+Accel: X=1.06, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 156.00 
+Temperature: 32.53
+Accel: X=1.07, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 119.20 
+Temperature: 32.48
+Accel: X=1.06, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 146.73 
+Temperature: 32.48
+Accel: X=1.06, Y=-0.02, Z=-0.21 (m/s^2)
+jerk = 156.65 
+Temperature: 32.53
+Accel: X=1.07, Y=-0.02, Z=-0.21 (m/s^2)
+jerk = 96.19 
+Temperature: 32.53
+Accel: X=1.07, Y=-0.02, Z=-0.21 (m/s^2)
+jerk = 20.52 
+Temperature: 32.53
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 95.87 
+Temperature: 32.58
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 53.14 
+Temperature: 32.48
+Accel: X=1.08, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 85.45 
+Temperature: 32.53
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 57.67 
+Temperature: 32.44
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 42.01 
+Temperature: 32.53
+Accel: X=1.07, Y=-0.02, Z=-0.19 (m/s^2)
+jerk = 99.30 
+Temperature: 32.58
+Accel: X=1.06, Y=-0.01, Z=-0.19 (m/s^2)
+jerk = 108.88 
+Temperature: 32.48
+Accel: X=1.06, Y=-0.01, Z=-0.21 (m/s^2)
+jerk = 166.09 
+Temperature: 32.53
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 95.42 
+Temperature: 32.44
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 111.33 
+Temperature: 32.53
+Accel: X=1.08, Y=-0.02, Z=-0.19 (m/s^2)
+jerk = 94.64 
+Temperature: 32.58
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 146.16 
+Temperature: 32.58
+Accel: X=1.07, Y=-0.02, Z=-0.19 (m/s^2)
+jerk = 157.83 
+Temperature: 32.62
+Accel: X=1.06, Y=-0.03, Z=-0.20 (m/s^2)
+jerk = 197.67 
+Temperature: 32.53
+Accel: X=1.07, Y=-0.01, Z=-0.21 (m/s^2)
+jerk = 171.45 
+Temperature: 32.48
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 141.90 
+Temperature: 32.58
+Accel: X=1.07, Y=-0.02, Z=-0.21 (m/s^2)
+jerk = 138.90 
+Temperature: 32.58
+Accel: X=1.06, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 108.88 
+Temperature: 32.53
+Accel: X=1.06, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 139.68 
+Temperature: 32.48
+Accel: X=1.07, Y=-0.02, Z=-0.19 (m/s^2)
+jerk = 158.36 
+Temperature: 32.58
+Accel: X=1.08, Y=-0.02, Z=-0.19 (m/s^2)
+jerk = 98.64 
+Temperature: 32.48
+Accel: X=1.08, Y=-0.02, Z=-0.19 (m/s^2)
+jerk = 38.95 
+Temperature: 32.48
+Accel: X=1.06, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 207.55 
+Temperature: 32.53
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 62.02 
+Temperature: 32.53
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 30.48 
+Temperature: 32.58
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 42.53 
+Temperature: 32.58
+Accel: X=1.07, Y=-0.02, Z=-0.21 (m/s^2)
+jerk = 86.96 
+Temperature: 32.53
+Accel: X=1.07, Y=-0.01, Z=-0.21 (m/s^2)
+jerk = 64.66 
+Temperature: 32.53
+Accel: X=1.04, Y=-0.03, Z=-0.21 (m/s^2)
+jerk = 354.11 
+Temperature: 32.48
+Accel: X=1.07, Y=-0.02, Z=-0.19 (m/s^2)
+jerk = 299.44 
+Temperature: 32.48
+Accel: X=1.06, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 94.01 
+Temperature: 32.53
+Accel: X=1.06, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 57.62 
+Temperature: 32.53
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 116.60 
+Temperature: 32.48
+Accel: X=1.07, Y=-0.00, Z=-0.22 (m/s^2)
+jerk = 209.79 
+Temperature: 32.48
+Accel: X=1.05, Y=-0.03, Z=-0.20 (m/s^2)
+jerk = 375.23 
+Temperature: 32.58
+Accel: X=1.06, Y=-0.01, Z=-0.21 (m/s^2)
+jerk = 158.87 
+Temperature: 32.53
+Accel: X=1.07, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 151.09 
+Temperature: 32.53
+Accel: X=1.08, Y=-0.01, Z=-0.19 (m/s^2)
+jerk = 124.01 
+Temperature: 32.48
+Accel: X=1.07, Y=-0.01, Z=-0.19 (m/s^2)
+jerk = 88.55 
+Temperature: 32.58
+Accel: X=1.07, Y=-0.03, Z=-0.20 (m/s^2)
+jerk = 211.38 
+Temperature: 32.58
+Accel: X=1.06, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 155.60 
+Temperature: 32.53
+Accel: X=1.05, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 181.54 
+Temperature: 32.44
+Accel: X=1.06, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 166.24 
+Temperature: 32.67
+Accel: X=1.03, Y=-0.03, Z=-0.20 (m/s^2)
+jerk = 261.80 
+Temperature: 32.58
+Accel: X=1.08, Y=-0.02, Z=-0.19 (m/s^2)
+jerk = 454.57 
+Temperature: 32.58
+Accel: X=1.05, Y=-0.03, Z=-0.19 (m/s^2)
+jerk = 289.69 
+Temperature: 32.62
+Accel: X=1.08, Y=-0.01, Z=-0.19 (m/s^2)
+jerk = 325.61 
+Temperature: 32.53
+Accel: X=1.07, Y=-0.00, Z=-0.21 (m/s^2)
+jerk = 155.44 
+Temperature: 32.53
+Accel: X=1.07, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 80.26 
+Temperature: 32.58
+Accel: X=1.08, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 97.12 
+Temperature: 32.62
+Accel: X=1.08, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 52.56 
+Temperature: 32.58
+Accel: X=1.06, Y=-0.02, Z=-0.21 (m/s^2)
+jerk = 162.76 
+Temperature: 32.58
+Accel: X=1.08, Y=0.00, Z=-0.20 (m/s^2)
+jerk = 270.56 
+Temperature: 32.62
+Accel: X=1.06, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 255.01 
+Temperature: 32.58
+Accel: X=1.06, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 91.30 
+Temperature: 32.62
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 116.78 
+Temperature: 32.62
+Accel: X=1.07, Y=-0.02, Z=-0.21 (m/s^2)
+jerk = 63.40 
+Temperature: 32.58
+Accel: X=1.07, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 87.95 
+Temperature: 32.58
+Accel: X=1.06, Y=-0.02, Z=-0.21 (m/s^2)
+jerk = 153.68 
+Temperature: 32.58
+Accel: X=1.12, Y=0.00, Z=-0.18 (m/s^2)
+jerk = 739.10 
+Temperature: 32.53
+Accel: X=1.05, Y=-0.02, Z=-0.19 (m/s^2)
+jerk = 740.36 
+Temperature: 32.62
+Accel: X=1.05, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 105.29 
+Temperature: 32.62
+Accel: X=1.08, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 287.58 
+Temperature: 32.72
+Accel: X=1.08, Y=-0.02, Z=-0.19 (m/s^2)
+jerk = 182.30 
+Temperature: 32.58
+Accel: X=1.08, Y=-0.02, Z=-0.19 (m/s^2)
+jerk = 77.63 
+Temperature: 32.58
+Accel: X=1.07, Y=-0.01, Z=-0.21 (m/s^2)
+jerk = 285.17 
+Temperature: 32.48
+Accel: X=1.07, Y=-0.01, Z=-0.21 (m/s^2)
+jerk = 43.82 
+Temperature: 32.62
+Accel: X=1.06, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 179.50 
+Temperature: 32.48
+Accel: X=1.06, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 95.42 
+Temperature: 32.53
+Accel: X=1.06, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 95.39 
+Temperature: 32.53
+Accel: X=1.06, Y=-0.02, Z=-0.18 (m/s^2)
+jerk = 143.96 
+Temperature: 32.58
+Accel: X=1.06, Y=-0.03, Z=-0.19 (m/s^2)
+jerk = 126.39 
+Temperature: 32.67
+Accel: X=1.07, Y=-0.01, Z=-0.19 (m/s^2)
+jerk = 185.04 
+Temperature: 32.58
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 140.08 
+Temperature: 32.58
+Accel: X=1.08, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 82.88 
+Temperature: 32.62
+Accel: X=1.07, Y=-0.01, Z=-0.21 (m/s^2)
+jerk = 110.99 
+Temperature: 32.53
+Accel: X=1.06, Y=-0.01, Z=-0.21 (m/s^2)
+jerk = 121.67 
+Temperature: 32.62
+Accel: X=1.06, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 171.74 
+Temperature: 32.48
+Accel: X=1.06, Y=-0.01, Z=-0.21 (m/s^2)
+jerk = 166.00 
+Temperature: 32.48
+Accel: X=1.06, Y=-0.02, Z=-0.19 (m/s^2)
+jerk = 201.52 
+Temperature: 32.58
+Accel: X=1.07, Y=-0.02, Z=-0.19 (m/s^2)
+jerk = 127.73 
+Temperature: 32.53
+Accel: X=1.07, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 171.29 
+Temperature: 32.53
+Accel: X=1.07, Y=-0.02, Z=-0.21 (m/s^2)
+jerk = 122.60 
+Temperature: 32.53
+Accel: X=1.06, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 166.43 
+Temperature: 32.67
+Accel: X=1.06, Y=-0.02, Z=-0.19 (m/s^2)
+jerk = 103.96 
+Temperature: 32.58
+Accel: X=1.06, Y=-0.02, Z=-0.21 (m/s^2)
+jerk = 149.01 
+Temperature: 32.58
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 62.61 
+Temperature: 32.58
+Accel: X=1.08, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 105.41 
+Temperature: 32.62
+Accel: X=1.07, Y=-0.02, Z=-0.19 (m/s^2)
+jerk = 119.56 
+Temperature: 32.62
+Accel: X=1.07, Y=-0.02, Z=-0.21 (m/s^2)
+jerk = 179.82 
+Temperature: 32.58
+Accel: X=1.06, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 193.21 
+Temperature: 32.48
+Accel: X=1.07, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 136.42 
+Temperature: 32.58
+Accel: X=1.10, Y=-0.01, Z=-0.21 (m/s^2)
+jerk = 304.28 
+Temperature: 32.62
+Accel: X=1.07, Y=-0.01, Z=-0.22 (m/s^2)
+jerk = 281.98 
+Temperature: 32.44
+Accel: X=1.04, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 437.73 
+Temperature: 32.72
+Accel: X=1.05, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 147.93 
+Temperature: 32.58
+Accel: X=1.05, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 99.11 
+Temperature: 32.58
+Accel: X=1.06, Y=-0.02, Z=-0.18 (m/s^2)
+jerk = 225.00 
+Temperature: 32.58
+Accel: X=1.07, Y=-0.02, Z=-0.19 (m/s^2)
+jerk = 199.86 
+Temperature: 32.53
+Accel: X=1.09, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 180.49 
+Temperature: 32.62
+Accel: X=1.08, Y=-0.01, Z=-0.21 (m/s^2)
+jerk = 152.83 
+Temperature: 32.62
+Accel: X=1.08, Y=-0.01, Z=-0.22 (m/s^2)
+jerk = 76.06 
+Temperature: 32.58
+Accel: X=1.07, Y=-0.03, Z=-0.20 (m/s^2)
+jerk = 262.37 
+Temperature: 32.58
+Accel: X=1.07, Y=-0.03, Z=-0.20 (m/s^2)
+jerk = 74.37 
+Temperature: 32.62
+Accel: X=1.07, Y=-0.01, Z=-0.19 (m/s^2)
+jerk = 131.74 
+Temperature: 32.58
+Accel: X=1.07, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 141.24 
+Temperature: 32.58
+Accel: X=1.05, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 205.28 
+Temperature: 32.53
+Accel: X=1.06, Y=-0.01, Z=-0.20 (m/s^2)
+jerk = 128.28 
+Temperature: 32.58
+Accel: X=1.07, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 94.73 
+Temperature: 32.62
+Accel: X=1.08, Y=-0.02, Z=-0.20 (m/s^2)
+jerk = 113.53 

@@ -1,0 +1,1984 @@
+D (422) spi_flash: trying chip: boya[0m
+D (426ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c0d4
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Oct 18 2024 17:31:12[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (33) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (85) esp_image: segment 0: paddr=00010020 vaddr=3c070020 size=1ad10h (109840) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=0002ad38 vaddr=3fc92e00 size=025f8h (  9720) load[0m
+[0;32mI (113) esp_image: segment 2: paddr=0002d338 vaddr=40380000 size=02ce0h ( 11488) load[0m
+[0;32mI (118) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=61854h (399444) map[0m
+[0;32mI (187) esp_image: segment 4: paddr=0009187c vaddr=40382ce0 size=0ff40h ( 65344) load[0m
+[0;32mI (205) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (206) boot: Disabling RNG early entropy source...[0m
+[0;32mI (217) cpu_start: Unicore app[0m
+D (217) cpu_start: Pro cpu up[0m
+D (225) clk: RTC_SLOW_CLK calibration value: 3630221[0m
+[0;32mI (231) cpu_start: Pro cpu start user code[0m
+[0;32mI (231) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (231) cpu_start: Application information:[0m
+[0;32mI (234) cpu_start: Project name:     app-template[0m
+[0;32mI (239) cpu_start: App version:      9f1355b-dirty[0m
+[0;32mI (245) cpu_start: Compile time:     Nov 20 2024 15:23:26[0m
+[0;32mI (251) cpu_start: ELF file SHA256:  d75669c3f...[0m
+[0;32mI (256) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (262) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (266) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (271) cpu_start: Chip rev:         v0.4[0m
+D (276) memory_layout: Checking 5 reserved memory ranges:[0m
+D (281) memory_layout: Reserved memory range 0x3fc80000 - 0x3fc92e00[0m
+D (288) memory_layout: Reserved memory range 0x3fc92e00 - 0x3fc98160[0m
+D (294) memory_layout: Reserved memory range 0x3fcdf060 - 0x3fce0000[0m
+D (301) memory_layout: Reserved memory range 0x50000000 - 0x50000010[0m
+D (307) memory_layout: Reserved memory range 0x50001fe8 - 0x50002000[0m
+D (313) memory_layout: Building list of available memory regions:[0m
+D (320) memory_layout: Available memory region 0x3fc98160 - 0x3fca0000[0m
+D (326) memory_layout: Available memory region 0x3fca0000 - 0x3fcc0000[0m
+D (333) memory_layout: Available memory region 0x3fcc0000 - 0x3fcdc710[0m
+D (339) memory_layout: Available memory region 0x3fcdc710 - 0x3fcdf060[0m
+D (346) memory_layout: Available memory region 0x50000010 - 0x50001fe8[0m
+[0;32mI (353) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (360) heap_init: New heap initialised at 0x3fc98160[0m
+[0;32mI (365) heap_init: At 3FC98160 len 00027EA0 (159 KiB): RAM[0m
+D (371) heap_init: New heap initialised at 0x3fcc0000[0m
+[0;32mI (376) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (383) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+D (390) heap_init: New heap initialised at 0x50000010[0m
+[0;32mI (395) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+D (402) intr_alloc: Connected src 27 to int 2 (cpu 0)[0m
+D (407) spi_flash: trying chip: issi[0m
+D (410) spi_flash: trying chip: gd[0m
+D (414) spi_flash: trying chip: mxic[0m
+D (417) spi_flash: trying chip: winbond[0m
+D (421) spi_flash: trying chip: boya[0m
+D (425) spi_flash: trying chip: th[0m
+D (428) spi_flash: trying chip: generic[0m
+[0;32mI (432) spi_flash: detected chip: generic[0m
+[0;32mI (437) spi_flash: flash io: dio[0m
+[0;33mW (441) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+D (454) cpu_start: calling init function: 0x4204b7d4[0m
+D (459) cpu_start: calling init function: 0x4204b758[0m
+D (464) cpu_start: calling init function: 0x4204b29c[0m
+D (469) cpu_start: calling init function: 0x42034944[0m
+[0;33mW (474) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+D (485) cpu_start: calling init function: 0x40389ba2[0m
+D (490) cpu_start: calling init function: 0x4200002a[0m
+D (495) cpu_start: calling init function: 0x42005886 on core: 0[0m
+D (501) intr_alloc: Connected src 39 to int 3 (cpu 0)[0m
+D (506) cpu_start: calling init function: 0x42001c1a on core: 0[0m
+D (512) cpu_start: calling init function: 0x42003550 on core: 0[0m
+[0;32mI (518) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (525) sleep: Enable automatic switching of GPIO sleep configuration[0m
+D (532) cpu_start: calling init function: 0x42001430 on core: 0[0m
+[0;32mI (538) coexist: coex firmware version: d96c1e51f[0m
+[0;32mI (543) coexist: coexist rom version 9387209[0m
+D (549) intr_alloc: Connected src 50 to int 4 (cpu 0)[0m
+D (553) app_start: Starting scheduler on CPU0[0m
+D (558) intr_alloc: Connected src 37 to int 7 (cpu 0)[0m
+[0;32mI (558) main_task: Started on CPU0[0m
+D (558) heap_init: New heap initialised at 0x3fcdc710[0m
+D (558) intr_alloc: Connected src 33 to int 9 (cpu 0)[0m
+[0;32mI (568) main_task: Calling app_main()[0m
+D (568) intr_alloc: Connected src 29 to int 10 (cpu 0)[0m
+[0;32mI (588) BLE_INIT: BT controller compile version [c23ab4c][0m
+D (588) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (588) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (598) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (608) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (608) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (618) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+[0;32mI (628) BLE_INIT: Bluetooth MAC: 34:b7:da:f6:47:7e[0m
+[0;32mI (628) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+D (638) phy_init: loading PHY init data from application binary[0m
+D (648) nvs: nvs_open_from_partition phy 0[0m
+D (648) nvs: nvs_get cal_version 4[0m
+D (648) nvs: nvs_get_str_or_blob cal_mac[0m
+D (658) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (658) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (668) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (678) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (678) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (688) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (698) nvs: nvs_get_str_or_blob cal_data[0m
+D (698) nvs: nvs_close 1[0m
+D (708) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (708) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (718) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (728) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (728) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (738) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (758) temperature_sensor: range changed, change to index 2[0m
+D (778) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (778) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (788) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (788) nvs: nvs_close 2[0m
+D (788) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (798) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (798) nvs: nvs_get_str_or_blob our_sec_2[0m
+D (798) nvs: nvs_close 3[0m
+D (808) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (808) nvs: nvs_get_str_or_blob our_sec_3[0m
+D (818) nvs: nvs_close 4[0m
+D (818) NIMBLE_NVS: ble_store_config_our_secs restored 1 bonds[0m
+D (818) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (828) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (828) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (838) nvs: nvs_close 5[0m
+D (838) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (848) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (848) nvs: nvs_get_str_or_blob peer_sec_2[0m
+D (858) nvs: nvs_close 6[0m
+D (858) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (858) nvs: nvs_get_str_or_blob peer_sec_3[0m
+D (868) nvs: nvs_close 7[0m
+D (868) NIMBLE_NVS: ble_store_config_peer_secs restored 1 bonds[0m
+D (878) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (878) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (888) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (888) nvs: nvs_close 8[0m
+D (888) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 1[0m
+D (898) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (898) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (908) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (908) nvs: nvs_close 9[0m
+D (908) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 2[0m
+D (918) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (918) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (928) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (928) nvs: nvs_close 10[0m
+D (938) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 3[0m
+D (938) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (948) nvs: nvs_get_str_or_blob cccd_sec_4[0m
+D (948) nvs: nvs_close 11[0m
+D (948) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (958) nvs: nvs_get_str_or_blob cccd_sec_5[0m
+D (958) nvs: nvs_close 12[0m
+D (968) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (968) nvs: nvs_get_str_or_blob cccd_sec_6[0m
+D (968) nvs: nvs_close 13[0m
+D (978) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (978) nvs: nvs_get_str_or_blob cccd_sec_7[0m
+D (988) nvs: nvs_close 14[0m
+D (988) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (988) nvs: nvs_get_str_or_blob cccd_sec_8[0m
+D (998) nvs: nvs_close 15[0m
+D (998) NIMBLE_NVS: ble_store_config_cccds restored 3 bonds[0m
+D (1008) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1008) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (1018) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (1018) nvs: nvs_close 16[0m
+D (1018) NIMBLE_NVS: Local IRK in RAM is filled up from NVS index = 1[0m
+D (1028) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1028) nvs: nvs_get_str_or_blob local_irk_2[0m
+D (1038) nvs: nvs_close 17[0m
+D (1038) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1048) nvs: nvs_get_str_or_blob local_irk_3[0m
+D (1048) nvs: nvs_close 18[0m
+D (1048) NIMBLE_NVS: ble_store_config_local_irks restored 1 irks[0m
+D (1058) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1058) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (1068) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (1068) nvs: nvs_close 19[0m
+D (1078) NIMBLE_NVS: RPA_REC in RAM is filled up from NVS index = 1[0m
+D (1078) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1088) nvs: nvs_get_str_or_blob rpa_rec_2[0m
+D (1088) nvs: nvs_close 20[0m
+D (1088) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1098) nvs: nvs_get_str_or_blob rpa_rec_3[0m
+D (1098) nvs: nvs_close 21[0m
+D (1108) NIMBLE_NVS: ble_store_config_rpa_recs restored 1 bonds[0m
+[0;32mI (1118) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1118) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1128) NimBLE: Device Address: [0m
+[0;32mI (1128) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (1128) NimBLE: 
+[0m
+[0;32mI (1138) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1138) NimBLE: disc_mode=2[0m
+[0;32mI (1148) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1158) NimBLE: 
+[0m
+Stop Button Pressed!
+Off led buz[0;32mI (1158) main_task: Returned from app_main()[0m
+jerk = 10888.82 
+Stop Button Pressed!
+Off led buzjerk = 139.59 
+Stop Button Pressed!
+Off led buzjerk = 63.01 
+Stop Button Pressed!
+Off led buzjerk = 147.09 
+Stop Button Pressed!
+Off led buzjerk = 43.18 
+Stop Button Pressed!
+Off led buzjerk = 174.51 
+jerk = 97.63 
+Stop Button Pressed!
+Off led buzjerk = 114.51 
+jerk = 153.59 
+Stop Button Pressed!
+Off led buzjerk = 107.04 
+Stop Button Pressed!
+Off led buzjerk = 65.51 
+Stop Button Pressed!
+Off led buzjerk = 77.15 
+Stop Button Pressed!
+Off led buzjerk = 171.76 
+Stop Button Pressed!
+Off led buzjerk = 23.48 
+jerk = 57.73 
+jerk = 73.91 
+Stop Button Pressed!
+Off led buzjerk = 139.59 
+Stop Button Pressed!
+Off led buzjerk = 180.31 
+jerk = 113.58 
+Stop Button Pressed!
+Off led buzjerk = 119.69 
+jerk = 107.30 
+jerk = 124.78 
+Stop Button Pressed!
+Off led buzjerk = 118.76 
+Stop Button Pressed!
+Off led buzjerk = 106.58 
+jerk = 109.95 
+Stop Button Pressed!
+Off led buzjerk = 107.25 
+jerk = 89.73 
+Stop Button Pressed!
+Off led buzjerk = 133.14 
+Stop Button Pressed!
+Off led buzjerk = 157.65 
+Stop Button Pressed!
+Off led buzjerk = 179.06 
+Stop Button Pressed!
+Off led buzjerk = 53.78 
+jerk = 165.25 
+Stop Button Pressed!
+Off led buzjerk = 213.43 
+Stop Button Pressed!
+Off led buzjerk = 164.12 
+jerk = 113.56 
+Stop Button Pressed!
+Off led buzjerk = 109.45 
+jerk = 97.82 
+Stop Button Pressed!
+Off led buzjerk = 91.41 
+Stop Button Pressed!
+Off led buzjerk = 178.93 
+jerk = 120.93 
+Stop Button Pressed!
+Off led buzjerk = 94.57 
+jerk = 153.03 
+Stop Button Pressed!
+Off led buzjerk = 176.59 
+Stop Button Pressed!
+Off led buzjerk = 81.10 
+Stop Button Pressed!
+Off led buzjerk = 58.31 
+jerk = 151.24 
+jerk = 141.20 
+jerk = 88.51 
+jerk = 97.19 
+Stop Button Pressed!
+Off led buzjerk = 125.13 
+jerk = 138.77 
+Stop Button Pressed!
+Off led buzjerk = 137.80 
+Stop Button Pressed!
+Off led buzjerk = 169.49 
+jerk = 116.38 
+Stop Button Pressed!
+Off led buzjerk = 88.37 
+jerk = 135.81 
+Stop Button Pressed!
+Off led buzjerk = 83.99 
+jerk = 109.90 
+jerk = 124.41 
+Stop Button Pressed!
+Off led buzjerk = 56.04 
+Stop Button Pressed!
+Off led buzjerk = 69.51 
+Stop Button Pressed!
+Off led buzjerk = 66.69 
+jerk = 38.15 
+jerk = 47.61 
+Stop Button Pressed!
+Off led buzjerk = 40.44 
+jerk = 47.81 
+Stop Button Pressed!
+Off led buzjerk = 60.19 
+Stop Button Pressed!
+Off led buzjerk = 52.73 
+jerk = 38.71 
+Stop Button Pressed!
+Off led buzjerk = 144.79 
+Stop Button Pressed!
+Off led buzjerk = 69.90 
+jerk = 139.59 
+jerk = 161.77 
+jerk = 40.82 
+Stop Button Pressed!
+Off led buzjerk = 126.34 
+jerk = 24.76 
+jerk = 94.64 
+jerk = 142.83 
+Stop Button Pressed!
+Off led buzjerk = 70.30 
+Stop Button Pressed!
+Off led buzjerk = 55.98 
+Stop Button Pressed!
+Off led buzjerk = 140.12 
+Stop Button Pressed!
+Off led buzjerk = 195.25 
+Stop Button Pressed!
+Off led buzjerk = 173.30 
+Stop Button Pressed!
+Off led buzjerk = 190.07 
+jerk = 208.96 
+Stop Button Pressed!
+Off led buzjerk = 220.77 
+Stop Button Pressed!
+Off led buzjerk = 88.13 
+jerk = 34.66 
+Stop Button Pressed!
+Off led buzjerk = 102.49 
+Stop Button Pressed!
+Off led buzjerk = 148.61 
+jerk = 148.16 
+Stop Button Pressed!
+Off led buzjerk = 125.38 
+jerk = 131.76 
+jerk = 162.47 
+jerk = 48.39 
+Stop Button Pressed!
+Off led buzjerk = 107.73 
+jerk = 118.73 
+jerk = 139.43 
+jerk = 176.92 
+Stop Button Pressed!
+Off led buzjerk = 152.73 
+jerk = 116.54 
+Stop Button Pressed!
+Off led buzjerk = 171.52 
+Stop Button Pressed!
+Off led buzjerk = 119.51 
+jerk = 86.82 
+jerk = 78.19 
+jerk = 98.58 
+Stop Button Pressed!
+Off led buzjerk = 87.10 
+jerk = 115.88 
+Stop Button Pressed!
+Off led buzjerk = 84.10 
+Stop Button Pressed!
+Off led buzjerk = 126.02 
+Stop Button Pressed!
+Off led buzjerk = 126.26 
+Stop Button Pressed!
+Off led buzjerk = 53.32 
+Stop Button Pressed!
+Off led buzjerk = 151.14 
+Stop Button Pressed!
+Off led buzjerk = 226.28 
+Stop Button Pressed!
+Off led buzjerk = 107.27 
+Stop Button Pressed!
+Off led buzjerk = 32.26 
+jerk = 75.20 
+jerk = 70.79 
+jerk = 111.33 
+Stop Button Pressed!
+Off led buzjerk = 132.14 
+Stop Button Pressed!
+Off led buzjerk = 79.40 
+Stop Button Pressed!
+Off led buzjerk = 144.84 
+Stop Button Pressed!
+Off led buzjerk = 122.68 
+Stop Button Pressed!
+Off led buzjerk = 116.17 
+Stop Button Pressed!
+Off led buzjerk = 117.18 
+Stop Button Pressed!
+Off led buzjerk = 158.54 
+jerk = 140.47 
+jerk = 104.91 
+Stop Button Pressed!
+Off led buzjerk = 112.54 
+jerk = 84.87 
+Stop Button Pressed!
+Off led buzjerk = 101.82 
+Stop Button Pressed!
+Off led buzjerk = 152.99 
+Stop Button Pressed!
+Off led buzjerk = 124.09 
+Stop Button Pressed!
+Off led buzjerk = 114.61 
+jerk = 188.25 
+Stop Button Pressed!
+Off led buzjerk = 35.98 
+Stop Button Pressed!
+Off led buzjerk = 139.92 
+Stop Button Pressed!
+Off led buzjerk = 134.04 
+jerk = 77.35 
+Stop Button Pressed!
+Off led buzjerk = 115.02 
+Stop Button Pressed!
+Off led buzjerk = 165.83 
+Stop Button Pressed!
+Off led buzjerk = 133.12 
+jerk = 121.74 
+Stop Button Pressed!
+Off led buzjerk = 77.31 
+Stop Button Pressed!
+Off led buzjerk = 221.77 
+Stop Button Pressed!
+Off led buzjerk = 183.32 
+jerk = 76.06 
+jerk = 66.13 
+Stop Button Pressed!
+Off led buzjerk = 106.90 
+Stop Button Pressed!
+Off led buzjerk = 78.86 
+jerk = 210.31 
+Stop Button Pressed!
+Off led buzjerk = 165.94 
+Stop Button Pressed!
+Off led buzjerk = 67.19 
+Stop Button Pressed!
+Off led buzjerk = 122.96 
+jerk = 112.05 
+Stop Button Pressed!
+Off led buzjerk = 180.53 
+jerk = 96.68 
+Stop Button Pressed!
+Off led buzjerk = 81.98 
+Stop Button Pressed!
+Off led buzjerk = 129.22 
+Stop Button Pressed!
+Off led buzjerk = 99.61 
+Stop Button Pressed!
+Off led buzjerk = 112.95 
+jerk = 115.69 
+jerk = 81.98 
+Stop Button Pressed!
+Off led buzjerk = 57.51 
+Stop Button Pressed!
+Off led buzjerk = 165.17 
+Stop Button Pressed!
+Off led buzjerk = 187.63 
+Stop Button Pressed!
+Off led buzjerk = 89.66 
+jerk = 20.22 
+jerk = 132.56 
+jerk = 169.54 
+Stop Button Pressed!
+Off led buzjerk = 55.87 
+jerk = 122.35 
+Stop Button Pressed!
+Off led buzjerk = 112.43 
+Stop Button Pressed!
+Off led buzjerk = 99.20 
+Stop Button Pressed!
+Off led buzjerk = 136.24 
+Stop Button Pressed!
+Off led buzjerk = 100.20 
+Stop Button Pressed!
+Off led buzjerk = 152.87 
+jerk = 94.47 
+Stop Button Pressed!
+Off led buzjerk = 56.59 
+jerk = 147.95 
+jerk = 118.68 
+Stop Button Pressed!
+Off led buzjerk = 122.58 
+Stop Button Pressed!
+Off led buzjerk = 69.46 
+Stop Button Pressed!
+Off led buzjerk = 81.67 
+jerk = 102.73 
+jerk = 127.31 
+Stop Button Pressed!
+Off led buzjerk = 98.74 
+Stop Button Pressed!
+Off led buzjerk = 102.16 
+Stop Button Pressed!
+Off led buzjerk = 157.20 
+Stop Button Pressed!
+Off led buzjerk = 62.27 
+jerk = 159.32 
+Stop Button Pressed!
+Off led buzjerk = 209.54 
+Stop Button Pressed!
+Off led buzjerk = 98.36 
+jerk = 47.22 
+jerk = 13.40 
+Stop Button Pressed!
+Off led buzjerk = 127.12 
+Stop Button Pressed!
+Off led buzjerk = 127.34 
+Stop Button Pressed!
+Off led buzjerk = 128.31 
+jerk = 50.08 
+Stop Button Pressed!
+Off led buzjerk = 107.96 
+Stop Button Pressed!
+Off led buzjerk = 86.82 
+jerk = 104.91 
+jerk = 52.20 
+Stop Button Pressed!
+Off led buzjerk = 155.34 
+jerk = 52.38 
+Stop Button Pressed!
+Off led buzjerk = 151.16 
+Stop Button Pressed!
+Off led buzjerk = 77.19 
+jerk = 191.05 
+jerk = 40.05 
+Stop Button Pressed!
+Off led buzjerk = 153.21 
+Stop Button Pressed!
+Off led buzjerk = 193.33 
+Stop Button Pressed!
+Off led buzjerk = 120.10 
+jerk = 111.21 
+Stop Button Pressed!
+Off led buzjerk = 73.24 
+jerk = 155.54 
+Stop Button Pressed!
+Off led buzjerk = 133.42 
+Stop Button Pressed!
+Off led buzjerk = 159.14 
+Stop Button Pressed!
+Off led buzjerk = 122.76 
+jerk = 23.61 
+Stop Button Pressed!
+Off led buzjerk = 192.95 
+jerk = 181.74 
+Stop Button Pressed!
+Off led buzjerk = 98.07 
+Stop Button Pressed!
+Off led buzjerk = 142.73 
+Stop Button Pressed!
+Off led buzjerk = 114.40 
+jerk = 133.39 
+jerk = 119.12 
+Stop Button Pressed!
+Off led buzjerk = 247.35 
+Stop Button Pressed!
+Off led buzjerk = 133.81 
+Stop Button Pressed!
+Off led buzjerk = 55.31 
+Stop Button Pressed!
+Off led buzjerk = 38.95 
+jerk = 72.86 
+Stop Button Pressed!
+Off led buzjerk = 71.66 
+jerk = 175.80 
+Stop Button Pressed!
+Off led buzjerk = 118.44 
+jerk = 117.10 
+jerk = 104.73 
+Stop Button Pressed!
+Off led buzjerk = 150.40 
+Stop Button Pressed!
+Off led buzjerk = 44.93 
+Stop Button Pressed!
+Off led buzjerk = 77.95 
+Stop Button Pressed!
+Off led buzjerk = 137.35 
+jerk = 237.28 
+Stop Button Pressed!
+Off led buzjerk = 120.23 
+jerk = 152.79 
+Stop Button Pressed!
+Off led buzjerk = 118.05 
+jerk = 159.37 
+Stop Button Pressed!
+Off led buzjerk = 40.59 
+Stop Button Pressed!
+Off led buzjerk = 53.95 
+Stop Button Pressed!
+Off led buzjerk = 110.01 
+Stop Button Pressed!
+Off led buzjerk = 120.44 
+jerk = 85.09 
+jerk = 135.17 
+Stop Button Pressed!
+Off led buzjerk = 81.41 
+Stop Button Pressed!
+Off led buzjerk = 140.72 
+Stop Button Pressed!
+Off led buzjerk = 173.16 
+Stop Button Pressed!
+Off led buzjerk = 75.73 
+jerk = 160.48 
+Stop Button Pressed!
+Off led buzjerk = 182.29 
+Stop Button Pressed!
+Off led buzjerk = 165.72 
+Stop Button Pressed!
+Off led buzjerk = 94.11 
+jerk = 112.46 
+Stop Button Pressed!
+Off led buzjerk = 76.87 
+Stop Button Pressed!
+Off led buzjerk = 90.62 
+Stop Button Pressed!
+Off led buzjerk = 38.23 
+Stop Button Pressed!
+Off led buzjerk = 118.91 
+jerk = 55.65 
+Stop Button Pressed!
+Off led buzjerk = 163.78 
+Stop Button Pressed!
+Off led buzjerk = 56.86 
+jerk = 87.99 
+Stop Button Pressed!
+Off led buzjerk = 226.94 
+jerk = 151.57 
+Stop Button Pressed!
+Off led buzjerk = 142.55 
+jerk = 148.39 
+Stop Button Pressed!
+Off led buzjerk = 82.80 
+Stop Button Pressed!
+Off led buzjerk = 99.20 
+jerk = 39.43 
+Stop Button Pressed!
+Off led buzjerk = 58.10 
+Stop Button Pressed!
+Off led buzjerk = 100.60 
+jerk = 94.44 
+jerk = 45.28 
+Stop Button Pressed!
+Off led buzjerk = 62.66 
+Stop Button Pressed!
+Off led buzjerk = 56.04 
+Stop Button Pressed!
+Off led buzjerk = 89.97 
+jerk = 181.54 
+Stop Button Pressed!
+Off led buzjerk = 130.60 
+Stop Button Pressed!
+Off led buzjerk = 37.58 
+jerk = 120.00 
+Stop Button Pressed!
+Off led buzjerk = 125.55 
+jerk = 151.69 
+jerk = 88.83 
+jerk = 68.34 
+Stop Button Pressed!
+Off led buzjerk = 123.16 
+jerk = 94.90 
+Stop Button Pressed!
+Off led buzjerk = 161.59 
+jerk = 109.59 
+Stop Button Pressed!
+Off led buzjerk = 10.26 
+Stop Button Pressed!
+Off led buzjerk = 37.50 
+jerk = 161.80 
+Stop Button Pressed!
+Off led buzjerk = 120.13 
+Stop Button Pressed!
+Off led buzjerk = 74.37 
+jerk = 161.46 
+jerk = 168.81 
+Stop Button Pressed!
+Off led buzjerk = 189.57 
+jerk = 213.13 
+jerk = 150.83 
+jerk = 162.53 
+jerk = 431.61 
+Stop Button Pressed!
+Off led buzjerk = 456.56 
+jerk = 1090.04 
+Stop Button Pressed!
+Off led buzjerk = 1385.26 
+jerk = 2088.90 
+jerk = 4271.44 
+jerk = 2503.55 
+Stop Button Pressed!
+Off led buzjerk = 2860.77 
+Stop Button Pressed!
+Off led buzjerk = 10332.55 
+jerk = 17364.39 
+Fallen detected!
+Stop Button Pressed!
+Off led buzjerk = 11187.39 
+jerk = 1496.67 
+Stop Button Pressed!
+Off led buzjerk = 3167.88 
+Stop Button Pressed!
+Off led buzjerk = 1294.54 
+Stop Button Pressed!
+Off led buzjerk = 1177.54 
+Stop Button Pressed!
+Off led buzjerk = 3588.30 
+jerk = 3472.19 
+Stop Button Pressed!
+Off led buzjerk = 2214.26 
+Stop Button Pressed!
+Off led buzjerk = 6220.03 
+jerk = 6513.69 
+Stop Button Pressed!
+Off led buzjerk = 7444.76 
+Stop Button Pressed!
+Off led buzjerk = 2018.60 
+Stop Button Pressed!
+Off led buzjerk = 2578.73 
+Stop Button Pressed!
+Off led buzjerk = 2424.98 
+jerk = 1516.64 
+jerk = 1075.88 
+Stop Button Pressed!
+Off led buzjerk = 4045.80 
+Stop Button Pressed!
+Off led buzjerk = 6443.57 
+jerk = 5077.59 
+jerk = 4614.82 
+Stop Button Pressed!
+Off led buzjerk = 4030.87 
+jerk = 7011.09 
+jerk = 3386.60 
+jerk = 1119.44 
+Stop Button Pressed!
+Off led buzjerk = 1348.34 
+Stop Button Pressed!
+Off led buzjerk = 3116.34 
+jerk = 1358.95 
+Stop Button Pressed!
+Off led buzjerk = 2301.71 
+jerk = 440.96 
+Stop Button Pressed!
+Off led buzjerk = 1306.51 
+Stop Button Pressed!
+Off led buzjerk = 2121.07 
+Stop Button Pressed!
+Off led buzjerk = 1684.45 
+Stop Button Pressed!
+Off led buzjerk = 501.27 
+jerk = 3761.35 
+Stop Button Pressed!
+Off led buzjerk = 5837.03 
+Stop Button Pressed!
+Off led buzjerk = 4945.96 
+jerk = 2975.19 
+Stop Button Pressed!
+Off led buzjerk = 1589.50 
+jerk = 753.76 
+jerk = 886.98 
+jerk = 546.87 
+Stop Button Pressed!
+Off led buzjerk = 1143.80 
+jerk = 2560.08 
+jerk = 3001.53 
+jerk = 7637.01 
+Stop Button Pressed!
+Off led buzjerk = 2906.34 
+Stop Button Pressed!
+Off led buzjerk = 6901.02 
+jerk = 2942.57 
+Stop Button Pressed!
+Off led buzjerk = 853.16 
+Stop Button Pressed!
+Off led buzjerk = 442.02 
+Stop Button Pressed!
+Off led buzjerk = 3185.75 
+jerk = 1332.39 
+Stop Button Pressed!
+Off led buzjerk = 2278.98 
+jerk = 815.34 
+Stop Button Pressed!
+Off led buzjerk = 1085.19 
+Stop Button Pressed!
+Off led buzjerk = 4395.34 
+Stop Button Pressed!
+Off led buzjerk = 2388.26 
+Stop Button Pressed!
+Off led buzjerk = 569.21 
+jerk = 431.02 
+Stop Button Pressed!
+Off led buzjerk = 264.17 
+Stop Button Pressed!
+Off led buzjerk = 614.85 
+Stop Button Pressed!
+Off led buzjerk = 56.04 
+Stop Button Pressed!
+Off led buzjerk = 102.04 
+Stop Button Pressed!
+Off led buzjerk = 173.94 
+Stop Button Pressed!
+Off led buzjerk = 125.67 
+jerk = 94.54 
+jerk = 44.59 
+jerk = 20.82 
+Stop Button Pressed!
+Off led buzjerk = 129.44 
+Stop Button Pressed!
+Off led buzjerk = 63.64 
+Stop Button Pressed!
+Off led buzjerk = 210.26 
+Stop Button Pressed!
+Off led buzjerk = 207.83 
+Stop Button Pressed!
+Off led buzjerk = 178.16 
+jerk = 321.85 
+Stop Button Pressed!
+Off led buzjerk = 255.90 
+Stop Button Pressed!
+Off led buzjerk = 100.82 
+Stop Button Pressed!
+Off led buzjerk = 108.54 
+Stop Button Pressed!
+Off led buzjerk = 100.57 
+Stop Button Pressed!
+Off led buzjerk = 132.30 
+Stop Button Pressed!
+Off led buzjerk = 105.85 
+jerk = 147.93 
+jerk = 105.06 
+Stop Button Pressed!
+Off led buzjerk = 163.59 
+jerk = 86.61 
+jerk = 176.15 
+jerk = 243.87 
+Stop Button Pressed!
+Off led buzjerk = 80.30 
+jerk = 245.11 
+Stop Button Pressed!
+Off led buzjerk = 182.64 
+Stop Button Pressed!
+Off led buzjerk = 112.98 
+Stop Button Pressed!
+Off led buzjerk = 193.72 
+jerk = 142.90 
+Stop Button Pressed!
+Off led buzjerk = 114.21 
+Stop Button Pressed!
+Off led buzjerk = 201.86 
+Stop Button Pressed!
+Off led buzjerk = 176.77 
+Stop Button Pressed!
+Off led buzjerk = 317.35 
+jerk = 279.22 
+Stop Button Pressed!
+Off led buzjerk = 179.36 
+jerk = 96.84 
+Stop Button Pressed!
+Off led buzjerk = 91.41 
+Stop Button Pressed!
+Off led buzjerk = 116.33 
+Stop Button Pressed!
+Off led buzjerk = 233.21 
+jerk = 232.01 
+jerk = 144.77 
+jerk = 81.52 
+jerk = 243.97 
+Stop Button Pressed!
+Off led buzjerk = 285.21 
+jerk = 339.08 
+jerk = 311.33 
+jerk = 240.65 
+Stop Button Pressed!
+Off led buzjerk = 255.08 
+jerk = 133.70 
+jerk = 88.97 
+jerk = 170.51 
+jerk = 87.53 
+Stop Button Pressed!
+Off led buzjerk = 118.02 
+Stop Button Pressed!
+Off led buzjerk = 234.65 
+Stop Button Pressed!
+Off led buzjerk = 93.98 
+jerk = 90.49 
+jerk = 36.15 
+jerk = 51.31 
+Stop Button Pressed!
+Off led buzjerk = 88.30 
+Stop Button Pressed!
+Off led buzjerk = 92.12 
+jerk = 754.42 
+Stop Button Pressed!
+Off led buzjerk = 752.28 
+Stop Button Pressed!
+Off led buzjerk = 219.95 
+Stop Button Pressed!
+Off led buzjerk = 161.30 
+Stop Button Pressed!
+Off led buzjerk = 53.78 
+jerk = 146.26 
+Stop Button Pressed!
+Off led buzjerk = 123.54 
+Stop Button Pressed!
+Off led buzjerk = 161.40 
+Stop Button Pressed!
+Off led buzjerk = 128.48 
+jerk = 157.65 
+jerk = 242.87 
+Stop Button Pressed!
+Off led buzjerk = 36.83 
+Stop Button Pressed!
+Off led buzjerk = 205.42 
+Stop Button Pressed!
+Off led buzjerk = 205.06 
+Stop Button Pressed!
+Off led buzjerk = 144.15 
+jerk = 104.70 
+jerk = 139.79 
+Stop Button Pressed!
+Off led buzjerk = 87.81 
+jerk = 236.60 
+jerk = 163.14 
+Stop Button Pressed!
+Off led buzjerk = 167.39 
+Stop Button Pressed!
+Off led buzjerk = 198.30 
+Stop Button Pressed!
+Off led buzjerk = 174.23 
+jerk = 102.88 
+Stop Button Pressed!
+Off led buzjerk = 101.34 
+Stop Button Pressed!
+Off led buzjerk = 73.62 
+jerk = 142.42 
+jerk = 211.26 
+Stop Button Pressed!
+Off led buzjerk = 75.73 
+Stop Button Pressed!
+Off led buzjerk = 123.26 
+Stop Button Pressed!
+Off led buzjerk = 56.81 
+Stop Button Pressed!
+Off led buzjerk = 102.88 
+jerk = 113.45 
+jerk = 61.21 
+Stop Button Pressed!
+Off led buzjerk = 44.87 
+jerk = 139.26 
+jerk = 228.00 
+jerk = 73.36 
+Stop Button Pressed!
+Off led buzjerk = 149.88 
+jerk = 94.11 
+Stop Button Pressed!
+Off led buzjerk = 187.69 
+Stop Button Pressed!
+Off led buzjerk = 49.65 
+Stop Button Pressed!
+Off led buzjerk = 114.97 
+Stop Button Pressed!
+Off led buzjerk = 58.05 
+Stop Button Pressed!
+Off led buzjerk = 116.36 
+jerk = 136.58 
+Stop Button Pressed!
+Off led buzjerk = 194.48 
+Stop Button Pressed!
+Off led buzjerk = 116.30 
+Stop Button Pressed!
+Off led buzjerk = 118.70 
+jerk = 57.02 
+Stop Button Pressed!
+Off led buzjerk = 47.35 
+Stop Button Pressed!
+Off led buzjerk = 132.58 
+jerk = 117.84 
+jerk = 202.70 
+Stop Button Pressed!
+Off led buzjerk = 148.43 
+jerk = 131.81 
+Stop Button Pressed!
+Off led buzjerk = 119.59 
+jerk = 92.65 
+jerk = 77.83 
+Stop Button Pressed!
+Off led buzjerk = 135.35 
+Stop Button Pressed!
+Off led buzjerk = 113.75 
+Stop Button Pressed!
+Off led buzjerk = 154.08 
+Stop Button Pressed!
+Off led buzjerk = 118.44 
+Stop Button Pressed!
+Off led buzjerk = 50.45 
+Stop Button Pressed!
+Off led buzjerk = 48.00 
+jerk = 98.20 
+Stop Button Pressed!
+Off led buzjerk = 163.61 
+jerk = 276.21 
+Stop Button Pressed!
+Off led buzjerk = 210.91 
+jerk = 62.27 
+Stop Button Pressed!
+Off led buzjerk = 125.35 
+Stop Button Pressed!
+Off led buzjerk = 131.34 
+jerk = 232.21 
+Stop Button Pressed!
+Off led buzjerk = 164.74 
+Stop Button Pressed!
+Off led buzjerk = 156.53 
+Stop Button Pressed!
+Off led buzjerk = 99.33 
+Stop Button Pressed!
+Off led buzjerk = 101.37 
+Stop Button Pressed!
+Off led buzjerk = 74.41 
+Stop Button Pressed!
+Off led buzjerk = 144.19 
+Stop Button Pressed!
+Off led buzjerk = 221.38 
+jerk = 151.36 
+Stop Button Pressed!
+Off led buzjerk = 187.50 
+jerk = 212.27 
+Stop Button Pressed!
+Off led buzjerk = 247.73 
+jerk = 52.85 
+Stop Button Pressed!
+Off led buzjerk = 151.59 
+jerk = 147.76 
+Stop Button Pressed!
+Off led buzjerk = 48.64 
+jerk = 133.09 
+jerk = 140.14 
+Stop Button Pressed!
+Off led buzjerk = 114.21 
+jerk = 71.35 
+Stop Button Pressed!
+Off led buzjerk = 250.56 
+Stop Button Pressed!
+Off led buzjerk = 92.92 
+Stop Button Pressed!
+Off led buzjerk = 77.31 
+Stop Button Pressed!
+Off led buzjerk = 177.71 
+Stop Button Pressed!
+Off led buzjerk = 188.58 
+Stop Button Pressed!
+Off led buzjerk = 159.18 
+Stop Button Pressed!
+Off led buzjerk = 132.02 
+Stop Button Pressed!
+Off led buzjerk = 122.05 
+Stop Button Pressed!
+Off led buzjerk = 116.22 
+Stop Button Pressed!
+Off led buzjerk = 169.25 
+jerk = 82.01 
+Stop Button Pressed!
+Off led buzjerk = 82.99 
+Stop Button Pressed!
+Off led buzjerk = 108.51 
+jerk = 161.69 
+jerk = 149.43 
+jerk = 70.26 
+Stop Button Pressed!
+Off led buzjerk = 160.28 
+Stop Button Pressed!
+Off led buzjerk = 97.31 
+Stop Button Pressed!
+Off led buzjerk = 143.63 
+jerk = 158.67 
+Stop Button Pressed!
+Off led buzjerk = 139.81 
+Stop Button Pressed!
+Off led buzjerk = 124.66 
+Stop Button Pressed!
+Off led buzjerk = 48.45 
+Stop Button Pressed!
+Off led buzjerk = 36.24 
+jerk = 139.48 
+Stop Button Pressed!
+Off led buzjerk = 113.53 
+Stop Button Pressed!
+Off led buzjerk = 208.23 
+jerk = 224.71 
+Stop Button Pressed!
+Off led buzjerk = 263.72 
+jerk = 169.27 
+Stop Button Pressed!
+Off led buzjerk = 116.20 
+jerk = 143.29 
+Stop Button Pressed!
+Off led buzjerk = 85.74 
+Stop Button Pressed!
+Off led buzjerk = 93.32 
+Stop Button Pressed!
+Off led buzjerk = 54.24 
+Stop Button Pressed!
+Off led buzjerk = 81.41 
+jerk = 159.99 
+jerk = 139.59 
+jerk = 139.61 
+jerk = 178.96 
+jerk = 166.98 
+Stop Button Pressed!
+Off led buzjerk = 79.44 
+Stop Button Pressed!
+Off led buzjerk = 246.54 
+Stop Button Pressed!
+Off led buzjerk = 65.18 
+Stop Button Pressed!
+Off led buzjerk = 103.24 
+Stop Button Pressed!
+Off led buzjerk = 134.76 
+Stop Button Pressed!
+Off led buzjerk = 95.77 
+Stop Button Pressed!
+Off led buzjerk = 134.85 
+jerk = 162.60 
+Stop Button Pressed!
+Off led buzjerk = 241.92 
+jerk = 93.02 
+jerk = 68.88 
+Stop Button Pressed!
+Off led buzjerk = 111.10 
+Stop Button Pressed!
+Off led buzjerk = 78.70 
+jerk = 83.70 
+jerk = 112.79 
+Stop Button Pressed!
+Off led buzjerk = 107.16 
+Stop Button Pressed!
+Off led buzjerk = 162.41 
+Stop Button Pressed!
+Off led buzjerk = 146.01 
+jerk = 130.60 
+Stop Button Pressed!
+Off led buzjerk = 130.03 
+Stop Button Pressed!
+Off led buzjerk = 133.21 
+jerk = 84.58 
+jerk = 150.33 
+jerk = 198.13 
+jerk = 52.79 
+Stop Button Pressed!
+Off led buzjerk = 35.98 
+Stop Button Pressed!
+Off led buzjerk = 109.22 
+jerk = 117.71 
+Stop Button Pressed!
+Off led buzjerk = 85.38 
+jerk = 137.78 
+Stop Button Pressed!
+Off led buzjerk = 169.41 
+Stop Button Pressed!
+Off led buzjerk = 186.14 
+Stop Button Pressed!
+Off led buzjerk = 221.55 
+Stop Button Pressed!
+Off led buzjerk = 188.40 
+Stop Button Pressed!
+Off led buzjerk = 94.54 
+Stop Button Pressed!
+Off led buzjerk = 59.36 
+jerk = 125.57 
+jerk = 194.18 
+Stop Button Pressed!
+Off led buzjerk = 142.73 
+Stop Button Pressed!
+Off led buzjerk = 182.22 
+Stop Button Pressed!
+Off led buzjerk = 120.23 
+Stop Button Pressed!
+Off led buzjerk = 185.07 
+jerk = 38.80 
+Stop Button Pressed!
+Off led buzjerk = 190.64 
+Stop Button Pressed!
+Off led buzjerk = 141.44 
+Stop Button Pressed!
+Off led buzjerk = 58.47 
+Stop Button Pressed!
+Off led buzjerk = 63.11 
+Stop Button Pressed!
+Off led buzjerk = 99.39 
+jerk = 161.04 
+Stop Button Pressed!
+Off led buzjerk = 164.87 
+jerk = 89.11 
+Stop Button Pressed!
+Off led buzjerk = 117.73 
+Stop Button Pressed!
+Off led buzjerk = 181.98 
+Stop Button Pressed!
+Off led buzjerk = 100.72 
+Stop Button Pressed!
+Off led buzjerk = 135.42 
+Stop Button Pressed!
+Off led buzjerk = 224.11 
+Stop Button Pressed!
+Off led buzjerk = 104.67 
+Stop Button Pressed!
+Off led buzjerk = 598.29 
+Stop Button Pressed!
+Off led buzjerk = 166.33 
+jerk = 591.19 
+jerk = 422.24 
+Stop Button Pressed!
+Off led buzjerk = 442.43 
+jerk = 3321.54 
+Stop Button Pressed!
+Off led buzjerk = 2285.95 
+Stop Button Pressed!
+Off led buzjerk = 3833.58 
+jerk = 4531.35 
+Stop Button Pressed!
+Off led buzjerk = 3342.12 
+jerk = 1633.90 
+Stop Button Pressed!
+Off led buzjerk = 2483.46 
+jerk = 1301.04 
+Stop Button Pressed!
+Off led buzjerk = 1564.68 
+jerk = 971.00 
+Stop Button Pressed!
+Off led buzjerk = 1974.12 
+Stop Button Pressed!
+Off led buzjerk = 1681.54 
+jerk = 1060.13 
+jerk = 922.32 
+Stop Button Pressed!
+Off led buzjerk = 296.71 
+Stop Button Pressed!
+Off led buzjerk = 1251.42 
+Stop Button Pressed!
+Off led buzjerk = 670.15 
+Stop Button Pressed!
+Off led buzjerk = 931.89 
+jerk = 459.27 
+Stop Button Pressed!
+Off led buzjerk = 199.65 
+Stop Button Pressed!
+Off led buzjerk = 1130.30 
+jerk = 631.81 
+jerk = 500.98 
+Stop Button Pressed!
+Off led buzjerk = 252.60 
+jerk = 375.11 
+Stop Button Pressed!
+Off led buzjerk = 641.60 
+Stop Button Pressed!
+Off led buzjerk = 254.54 
+Stop Button Pressed!
+Off led buzjerk = 267.28 
+jerk = 326.57 
+jerk = 248.13 
+jerk = 317.18 
+Stop Button Pressed!
+Off led buzjerk = 241.93 
+Stop Button Pressed!
+Off led buzjerk = 275.90 
+Stop Button Pressed!
+Off led buzjerk = 181.81 
+jerk = 400.20 
+jerk = 535.02 
+Stop Button Pressed!
+Off led buzjerk = 228.61 
+Stop Button Pressed!
+Off led buzjerk = 164.72 
+Stop Button Pressed!
+Off led buzjerk = 502.81 
+jerk = 234.78 
+jerk = 334.51 
+Stop Button Pressed!
+Off led buzjerk = 624.04 
+Stop Button Pressed!
+Off led buzjerk = 534.33 
+Stop Button Pressed!
+Off led buzjerk = 282.74 
+jerk = 196.98 
+jerk = 163.97 
+Stop Button Pressed!
+Off led buzjerk = 253.38 
+jerk = 467.72 
+jerk = 527.47 
+Stop Button Pressed!
+Off led buzjerk = 475.08 
+Stop Button Pressed!
+Off led buzjerk = 511.41 
+Stop Button Pressed!
+Off led buzjerk = 463.25 
+jerk = 343.34 
+Stop Button Pressed!
+Off led buzjerk = 188.40 
+Stop Button Pressed!
+Off led buzjerk = 84.17 
+Stop Button Pressed!
+Off led buzjerk = 244.58 
+jerk = 166.76 
+jerk = 80.68 
+jerk = 24.64 
+Stop Button Pressed!
+Off led buzjerk = 460.98 
+Stop Button Pressed!
+Off led buzjerk = 1729.43 
+Stop Button Pressed!
+Off led buzjerk = 622.90 
+Stop Button Pressed!
+Off led buzjerk = 3174.03 
+Stop Button Pressed!
+Off led buzjerk = 2969.04 
+Stop Button Pressed!
+Off led buzjerk = 1684.04 
+Stop Button Pressed!
+Off led buzjerk = 3507.73 
+jerk = 2621.39 
+Stop Button Pressed!
+Off led buzjerk = 4476.97 
+Stop Button Pressed!
+Off led buzjerk = 5396.14 
+Stop Button Pressed!
+Off led buzjerk = 7898.11 
+Stop Button Pressed!
+Off led buzjerk = 1462.68 
+Stop Button Pressed!
+Off led buzjerk = 1674.30 
+jerk = 1050.23 
+jerk = 1571.64 
+Stop Button Pressed!
+Off led buzjerk = 1616.85 
+Stop Button Pressed!
+Off led buzjerk = 951.06 
+Stop Button Pressed!
+Off led buzjerk = 930.31 
+Stop Button Pressed!
+Off led buzjerk = 912.24 
+Stop Button Pressed!
+Off led buzjerk = 2623.23 
+Stop Button Pressed!
+Off led buzjerk = 4560.26 
+jerk = 2450.47 
+Stop Button Pressed!
+Off led buzjerk = 1572.13 
+Stop Button Pressed!
+Off led buzjerk = 2332.76 
+Stop Button Pressed!
+Off led buzjerk = 516.39 
+jerk = 428.13 
+Stop Button Pressed!
+Off led buzjerk = 1291.17 
+jerk = 334.41 
+Stop Button Pressed!
+Off led buzjerk = 612.51 
+Stop Button Pressed!
+Off led buzjerk = 1556.78 
+jerk = 543.50 
+jerk = 1737.92 
+Stop Button Pressed!
+Off led buzjerk = 1381.72 
+Stop Button Pressed!
+Off led buzjerk = 350.72 
+jerk = 1266.58 
+jerk = 478.87 
+Stop Button Pressed!
+Off led buzjerk = 424.54 
+jerk = 280.39 
+Stop Button Pressed!
+Off led buzjerk = 868.88 
+Stop Button Pressed!
+Off led buzjerk = 220.67 
+Stop Button Pressed!
+Off led buzjerk = 110.01 
+jerk = 589.90 
+Stop Button Pressed!
+Off led buzjerk = 363.12 
+Stop Button Pressed!
+Off led buzjerk = 201.03 
+Stop Button Pressed!
+Off led buzjerk = 258.22 
+Stop Button Pressed!
+Off led buzjerk = 561.90 
+jerk = 577.99 
+Stop Button Pressed!
+Off led buzjerk = 584.26 
+jerk = 179.22 
+Stop Button Pressed!
+Off led buzjerk = 251.97 
+Stop Button Pressed!
+Off led buzjerk = 284.82 
+Stop Button Pressed!
+Off led buzjerk = 302.93 
+Stop Button Pressed!
+Off led buzjerk = 214.97 
+jerk = 359.39 
+jerk = 668.62 
+Stop Button Pressed!
+Off led buzjerk = 771.64 
+Stop Button Pressed!
+Off led buzjerk = 298.92 
+Stop Button Pressed!
+Off led buzjerk = 181.83 
+Stop Button Pressed!
+Off led buzjerk = 189.11 
+Stop Button Pressed!
+Off led buzjerk = 128.67 
+jerk = 243.55 
+Stop Button Pressed!
+Off led buzjerk = 83.32 
+Stop Button Pressed!
+Off led buzjerk = 298.18 
+Stop Button Pressed!
+Off led buzjerk = 590.50 
+Stop Button Pressed!
+Off led buzjerk = 1760.44 
+Stop Button Pressed!
+Off led buzjerk = 1068.68 
+jerk = 478.25 
+Stop Button Pressed!
+Off led buzjerk = 712.56 
+jerk = 610.88 
+Stop Button Pressed!
+Off led buzjerk = 1632.58 
+jerk = 264.05 
+jerk = 848.38 
+Stop Button Pressed!
+Off led buzjerk = 1133.49 
+Stop Button Pressed!
+Off led buzjerk = 350.42 
+Stop Button Pressed!
+Off led buzjerk = 579.19 
+jerk = 426.26 
+Stop Button Pressed!
+Off led buzjerk = 344.31 
+Stop Button Pressed!
+Off led buzjerk = 229.50 
+jerk = 585.88 
+Stop Button Pressed!
+Off led buzjerk = 1074.56 
+Stop Button Pressed!
+Off led buzjerk = 653.30 
+Stop Button Pressed!
+Off led buzjerk = 887.10 
+jerk = 1330.65 
+jerk = 238.93 
+Stop Button Pressed!
+Off led buzjerk = 529.41 
+Stop Button Pressed!
+Off led buzjerk = 252.89 
+Stop Button Pressed!
+Off led buzjerk = 301.83 
+Stop Button Pressed!
+Off led buzjerk = 266.01 
+Stop Button Pressed!
+Off led buzjerk = 392.16 
+Stop Button Pressed!
+Off led buzjerk = 427.22 
+jerk = 730.78 
+Stop Button Pressed!
+Off led buzjerk = 840.38 
+Stop Button Pressed!
+Off led buzjerk = 542.48 
+jerk = 1290.44 
+Stop Button Pressed!
+Off led buzjerk = 1212.98 
+jerk = 169.47 
+Stop Button Pressed!
+Off led buzjerk = 1690.11 
+jerk = 1639.00 
+jerk = 487.29 
+Stop Button Pressed!
+Off led buzjerk = 1009.67 
+Stop Button Pressed!
+Off led buzjerk = 797.85 
+jerk = 1970.28 
+Stop Button Pressed!
+Off led buzjerk = 1634.13 
+jerk = 1977.56 
+Stop Button Pressed!
+Off led buzjerk = 1858.33 
+jerk = 1681.67 
+Stop Button Pressed!
+Off led buzjerk = 330.13 
+jerk = 1335.45 
+jerk = 705.44 
+jerk = 1595.19 
+Stop Button Pressed!
+Off led buzjerk = 1292.13 
+jerk = 1471.45 
+jerk = 1012.14 
+Stop Button Pressed!
+Off led buzjerk = 1981.93 
+Stop Button Pressed!
+Off led buzjerk = 1650.33 
+Stop Button Pressed!
+Off led buzjerk = 1922.83 
+Stop Button Pressed!
+Off led buzjerk = 2024.36 
+Stop Button Pressed!
+Off led buzjerk = 2394.96 
+jerk = 3669.05 
+Stop Button Pressed!
+Off led buzjerk = 2178.62 
+jerk = 2981.86 
+Stop Button Pressed!
+Off led buzjerk = 3142.65 
+jerk = 3073.16 
+jerk = 2736.46 
+Stop Button Pressed!
+Off led buzjerk = 1563.79 
+jerk = 742.76 
+Stop Button Pressed!
+Off led buzjerk = 361.77 
+jerk = 542.61 
+Stop Button Pressed!
+Off led buzjerk = 668.79 
+jerk = 278.64 
+Stop Button Pressed!
+Off led buzjerk = 397.40 
+Stop Button Pressed!
+Off led buzjerk = 644.32 
+Stop Button Pressed!
+Off led buzjerk = 994.01 
+jerk = 790.02 
+Stop Button Pressed!
+Off led buzjerk = 1468.38 
+Stop Button Pressed!
+Off led buzjerk = 673.16 
+Stop Button Pressed!
+Off led buzjerk = 2013.37 
+Stop Button Pressed!
+Off led buzjerk = 1250.47 
+Stop Button Pressed!
+Off led buzjerk = 1332.55 
+jerk = 2013.09 
+jerk = 2353.85 
+jerk = 2605.77 
+jerk = 416.69 
+jerk = 805.53 
+Stop Button Pressed!
+Off led buzjerk = 181.01 
+jerk = 665.43 
+jerk = 503.05 
+Stop Button Pressed!
+Off led buzjerk = 886.44 
+Stop Button Pressed!
+Off led buzjerk = 818.81 
+Stop Button Pressed!
+Off led buzjerk = 789.83 
+Stop Button Pressed!
+Off led buzjerk = 1029.47 
+Stop Button Pressed!
+Off led buzjerk = 1270.40 
+Stop Button Pressed!
+Off led buzjerk = 801.58 
+jerk = 164.82 
+Stop Button Pressed!
+Off led buzjerk = 389.45 
+Stop Button Pressed!
+Off led buzjerk = 579.03 
+jerk = 175.27 
+Stop Button Pressed!
+Off led buzjerk = 589.82 
+Stop Button Pressed!
+Off led buzjerk = 53.26 
+jerk = 367.33 
+Stop Button Pressed!
+Off led buzjerk = 673.31 
+jerk = 238.56 
+Stop Button Pressed!
+Off led buzjerk = 392.16 
+Stop Button Pressed!
+Off led buzjerk = 221.28 
+Stop Button Pressed!
+Off led buzjerk = 1147.26 
+Stop Button Pressed!
+Off led buzjerk = 1066.84 
+Stop Button Pressed!
+Off led buzjerk = 898.79 
+Stop Button Pressed!
+Off led buzjerk = 465.33 
+jerk = 352.53 
+jerk = 847.91 
+jerk = 291.36 
+Stop Button Pressed!
+Off led buzjerk = 886.38 
+Stop Button Pressed!
+Off led buzjerk = 496.72 
+Stop Button Pressed!
+Off led buzjerk = 603.88 
+Stop Button Pressed!
+Off led buzjerk = 290.11 
+jerk = 199.22 
+jerk = 382.60 
+Stop Button Pressed!
+Off led buzjerk = 351.08 
+Stop Button Pressed!
+Off led buzjerk = 493.40 
+Stop Button Pressed!
+Off led buzjerk = 369.65 
+Stop Button Pressed!
+Off led buzjerk = 290.76 
+jerk = 304.27 
+jerk = 109.87 
+Stop Button Pressed!
+Off led buzjerk = 207.89 
+Stop Button Pressed!
+Off led buzjerk = 469.07 
+jerk = 347.04 
+Stop Button Pressed!
+Off led buzjerk = 282.37 
+jerk = 488.98 
+Stop Button Pressed!
+Off led buzjerk = 290.71 
+Stop Button Pressed!
+Off led buzjerk = 502.57 
+jerk = 377.12 
+Stop Button Pressed!
+Off led buzjerk = 766.36 
+jerk = 3118.13 
+jerk = 1830.43 
+Stop Button Pressed!
+Off led buzjerk = 350.42 
+Stop Button Pressed!
+Off led buzjerk = 394.71 
+Stop Button Pressed!
+Off led buzjerk = 406.53 
+Stop Button Pressed!
+Off led buzjerk = 1340.34 
+Stop Button Pressed!
+Off led buzjerk = 3418.94 
+Stop Button Pressed!
+Off led buzjerk = 727.11 
+jerk = 2482.28 
+Stop Button Pressed!
+Off led buzjerk = 2609.32 
+Stop Button Pressed!
+Off led buzjerk = 1132.82 
+Stop Button Pressed!
+Off led buzjerk = 2885.22 
+Stop Button Pressed!
+Off led buzjerk = 1199.56 
+Stop Button Pressed!
+Off led buzjerk = 2235.99 
+Stop Button Pressed!
+Off led buzjerk = 2289.43 
+Stop Button Pressed!
+Off led buzjerk = 3425.69 
+Stop Button Pressed!
+Off led buzjerk = 2491.20 
+jerk = 1222.41 
+Stop Button Pressed!
+Off led buzjerk = 386.38 
+jerk = 378.90 
+jerk = 570.52 
+jerk = 486.57 
+jerk = 459.02 
+jerk = 894.13 
+jerk = 349.21 
+Stop Button Pressed!
+Off led buzjerk = 523.72 
+Stop Button Pressed!
+Off led buzjerk = 267.00 
+jerk = 1181.77 
+Stop Button Pressed!
+Off led buzjerk = 1074.86 
+jerk = 1144.07 
+Stop Button Pressed!
+Off led buzjerk = 1163.53 
+jerk = 641.47 
+Stop Button Pressed!
+Off led buzjerk = 343.21 
+jerk = 890.28 
+Stop Button Pressed!
+Off led buzjerk = 283.25 
+Stop Button Pressed!
+Off led buzjerk = 324.19 
+jerk = 170.42 
+Stop Button Pressed!
+Off led buzjerk = 977.65 
+jerk = 903.27 
+jerk = 155.14 
+Stop Button Pressed!
+Off led buzjerk = 1480.60 
+Stop Button Pressed!
+Off led buzjerk = 284.84 
+jerk = 214.22 
+Stop Button Pressed!
+Off led buzjerk = 599.64 
+jerk = 900.96 
+jerk = 633.61 
+Stop Button Pressed!
+Off led buzjerk = 259.70 
+Stop Button Pressed!
+Off led buzjerk = 455.02 
+jerk = 517.25 
+jerk = 352.01 
+Stop Button Pressed!
+Off led buzjerk = 561.68 
+Stop Button Pressed!
+Off led buzjerk = 978.92 
+jerk = 635.28 
+jerk = 1262.54 
+Stop Button Pressed!
+Off led buzjerk = 2114.13 
+Stop Button Pressed!
+Off led buzjerk = 987.78 
+jerk = 277.42 
+jerk = 372.63 
+Stop Button Pressed!
+Off led buzjerk = 536.10 
+jerk = 573.14 
+Stop Button Pressed!
+Off led buzjerk = 1214.69 
+Stop Button Pressed!
+Off led buzjerk = 1255.58 
+Stop Button Pressed!
+Off led buzjerk = 1736.99 
+jerk = 133.97 
+Stop Button Pressed!
+Off led buzjerk = 111.41 
+Stop Button Pressed!
+Off led buzjerk = 747.47 
+Stop Button Pressed!
+Off led buzjerk = 382.47 
+jerk = 875.84 
+Stop Button Pressed!
+Off led buzjerk = 1288.03 
+Stop Button Pressed!
+Off led buzjerk = 642.03 
+Stop Button Pressed!
+Off led buzjerk = 795.55 
+Stop Button Pressed!
+Off led buzjerk = 503.76 
+jerk = 590.43 
+Stop Button Pressed!
+Off led buzjerk = 676.61 
+Stop Button Pressed!
+Off led buzjerk = 1522.00 
+jerk = 1458.62 
+Stop Button Pressed!
+Off led buzjerk = 2074.82 
+Stop Button Pressed!
+Off led buzjerk = 1076.73 
+jerk = 1303.05 
+Stop Button Pressed!
+Off led buzjerk = 661.89 
+Stop Button Pressed!
+Off led buzjerk = 1089.47 
+Stop Button Pressed!
+Off led buzjerk = 1522.57 
+Stop Button Pressed!
+Off led buzjerk = 195.86 
+Stop Button Pressed!
+Off led buzjerk = 368.23 
+Stop Button Pressed!
+Off led buzjerk = 631.88 
+jerk = 895.76 
+Stop Button Pressed!
+Off led buzjerk = 302.93 
+Stop Button Pressed!
+Off led buzjerk = 99.67 
+jerk = 701.50 
+Stop Button Pressed!
+Off led buzjerk = 1862.99 
+Stop Button Pressed!
+Off led buzjerk = 674.53 
+Stop Button Pressed!
+Off led buzjerk = 480.91 
+jerk = 962.69 
+jerk = 3582.56 
+Stop Button Pressed!
+Off led buzjerk = 446.23 
+Stop Button Pressed!
+Off led buzjerk = 149.11 
+Stop Button Pressed!
+Off led buzjerk = 3784.91 
+Stop Button Pressed!
+Off led buzjerk = 3741.50 
+Stop Button Pressed!
+Off led buzjerk = 2363.46 
+jerk = 4038.55 
+jerk = 1381.58 
+Stop Button Pressed!
+Off led buzjerk = 2178.64 
+Stop Button Pressed!
+Off led buzjerk = 1933.95 
+Stop Button Pressed!
+Off led buzjerk = 3291.57 
+Stop Button Pressed!
+Off led buzjerk = 2203.57 
+Stop Button Pressed!
+Off led buzjerk = 2717.24 
+Stop Button Pressed!
+Off led buzjerk = 855.93 
+Stop Button Pressed!
+Off led buzjerk = 962.66 
+Stop Button Pressed!
+Off led buzjerk = 3009.28 
+Stop Button Pressed!
+Off led buzjerk = 1497.22 
+Stop Button Pressed!
+Off led buzjerk = 1596.22 
+jerk = 6889.32 
+Stop Button Pressed!
+Off led buzjerk = 4039.26 
+jerk = 230.80 
+Stop Button Pressed!
+Off led buzjerk = 253.28 
+Stop Button Pressed!
+Off led buzjerk = 115.18 
+Stop Button Pressed!
+Off led buzjerk = 118.02 
+Stop Button Pressed!
+Off led buzjerk = 160.88 
+Stop Button Pressed!
+Off led buzjerk = 207.65 
+jerk = 105.62 
+Stop Button Pressed!
+Off led buzjerk = 127.92 
+Stop Button Pressed!
+Off led buzjerk = 188.58 
+jerk = 100.32 
+Stop Button Pressed!
+Off led buzjerk = 55.03 
+Stop Button Pressed!
+Off led buzjerk = 226.21 
+Stop Button Pressed!
+Off led buzjerk = 162.70 
+jerk = 70.79 
+Stop Button Pressed!
+Off led buzjerk = 99.45 
+Stop Button Pressed!
+Off led buzjerk = 87.14 
+Stop Button Pressed!
+Off led buzjerk = 77.63 
+Stop Button Pressed!
+Off led buzjerk = 131.45 
+jerk = 26.80 
+Stop Button Pressed!
+Off led buzjerk = 152.56 
+Stop Button Pressed!
+Off led buzjerk = 82.88 
+jerk = 53.03 
+Stop Button Pressed!
+Off led buzjerk = 69.86 
+Stop Button Pressed!
+Off led buzjerk = 80.03 
+Stop Button Pressed!
+Off led buzjerk = 87.67 
+Stop Button Pressed!
+Off led buzjerk = 91.27 
+Stop Button Pressed!
+Off led buzjerk = 99.58 
+Stop Button Pressed!
+Off led buzjerk = 205.98 
+Stop Button Pressed!
+Off led buzjerk = 166.76 
+Stop Button Pressed!
+Off led buzjerk = 78.19 
+Stop Button Pressed!
+Off led buzjerk = 160.79 
+Stop Button Pressed!
+Off led buzjerk = 134.96 
+jerk = 180.53 
+Stop Button Pressed!
+Off led buzjerk = 554.60 
+Stop Button Pressed!
+Off led buzjerk = 200.35 
+Stop Button Pressed!
+Off led buzjerk = 119.20 
+Stop Button Pressed!
+Off led buzjerk = 276.05 
+Stop Button Pressed!
+Off led buzjerk = 69.37 
+Stop Button Pressed!
+Off led buzjerk = 155.40 
+Stop Button Pressed!
+Off led buzjerk = 144.62 
+Stop Button Pressed!
+Off led buzjerk = 89.66 
+Stop Button Pressed!
+Off led buzjerk = 121.13 
+jerk = 95.61 
+Stop Button Pressed!
+Off led buzjerk = 219.70 
+Stop Button Pressed!
+Off led buzjerk = 258.84 
+jerk = 199.17 
+Stop Button Pressed!
+Off led buzjerk = 234.97 
+Stop Button Pressed!
+Off led buzjerk = 284.29 
+Stop Button Pressed!
+Off led buzjerk = 164.99 
+Stop Button Pressed!
+Off led buzjerk = 101.27 
+Stop Button Pressed!
+Off led buzjerk = 102.76 
+jerk = 126.02 
+Stop Button Pressed!
+Off led buzjerk = 142.55 
+Stop Button Pressed!
+Off led buzjerk = 133.39 
+jerk = 103.87 
+Stop Button Pressed!
+Off led buzjerk = 109.36 
+Stop Button Pressed!
+Off led buzjerk = 116.20 
+Stop Button Pressed!
+Off led buzjerk = 114.89 
+Stop Button Pressed!
+Off led buzjerk = 53.20 
+Stop Button Pressed!
+Off led buzjerk = 162.38 
+jerk = 77.95 
+Stop Button Pressed!
+Off led buzjerk = 271.94 
+Stop Button Pressed!
+Off led buzjerk = 213.01 
+Stop Button Pressed!
+Off led buzjerk = 131.81 
+Stop Button Pressed!
+Off led buzjerk = 79.37 
+Stop Button Pressed!
+Off led buzjerk = 245.70 
+Stop Button Pressed!
+Off led buzjerk = 74.24 
+Stop Button Pressed!
+Off led buzjerk = 128.98 
+Stop Button Pressed!
+Off led buzjerk = 179.91 
+Stop Button Pressed!
+Off led buzjerk = 101.58 
+jerk = 117.63 
+Stop Button Pressed!
+Off led buzjerk = 52.38 
+Stop Button Pressed!
+Off led buzjerk = 74.83 
+Stop Button Pressed!
+Off led buzjerk = 97.09 
+Stop Button Pressed!
+Off led buzjerk = 95.87 
+Stop Button Pressed!
+Off led buzjerk = 45.21 
+Stop Button Pressed!
+Off led buzjerk = 131.43 
+Stop Button Pressed!
+Off led buzjerk = 79.68 

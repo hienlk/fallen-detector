@@ -1,0 +1,2406 @@
+D (425) spi_flash: trying chip: th[0mESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c0d4
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Oct 18 2024 17:31:12[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (33) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (85) esp_image: segment 0: paddr=00010020 vaddr=3c070020 size=1aac0h (109248) map[0m
+[0;32mI (110) esp_image: segment 1: paddr=0002aae8 vaddr=3fc92e00 size=025f8h (  9720) load[0m
+[0;32mI (113) esp_image: segment 2: paddr=0002d0e8 vaddr=40380000 size=02f30h ( 12080) load[0m
+[0;32mI (119) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=60d18h (396568) map[0m
+[0;32mI (187) esp_image: segment 4: paddr=00090d40 vaddr=40382f30 size=0fcf0h ( 64752) load[0m
+[0;32mI (205) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Unicore app[0m
+D (216) cpu_start: Pro cpu up[0m
+D (225) clk: RTC_SLOW_CLK calibration value: 3631680[0m
+[0;32mI (230) cpu_start: Pro cpu start user code[0m
+[0;32mI (230) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (230) cpu_start: Application information:[0m
+[0;32mI (233) cpu_start: Project name:     app-template[0m
+[0;32mI (238) cpu_start: App version:      f9edcbe-dirty[0m
+[0;32mI (244) cpu_start: Compile time:     Oct 18 2024 17:30:59[0m
+[0;32mI (250) cpu_start: ELF file SHA256:  2accff058...[0m
+[0;32mI (255) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (261) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (265) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (270) cpu_start: Chip rev:         v0.4[0m
+D (275) memory_layout: Checking 5 reserved memory ranges:[0m
+D (280) memory_layout: Reserved memory range 0x3fc80000 - 0x3fc92e00[0m
+D (287) memory_layout: Reserved memory range 0x3fc92e00 - 0x3fc98160[0m
+D (293) memory_layout: Reserved memory range 0x3fcdf060 - 0x3fce0000[0m
+D (300) memory_layout: Reserved memory range 0x50000000 - 0x50000010[0m
+D (306) memory_layout: Reserved memory range 0x50001fe8 - 0x50002000[0m
+D (313) memory_layout: Building list of available memory regions:[0m
+D (319) memory_layout: Available memory region 0x3fc98160 - 0x3fca0000[0m
+D (325) memory_layout: Available memory region 0x3fca0000 - 0x3fcc0000[0m
+D (332) memory_layout: Available memory region 0x3fcc0000 - 0x3fcdc710[0m
+D (339) memory_layout: Available memory region 0x3fcdc710 - 0x3fcdf060[0m
+D (345) memory_layout: Available memory region 0x50000010 - 0x50001fe8[0m
+[0;32mI (352) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (359) heap_init: New heap initialised at 0x3fc98160[0m
+[0;32mI (364) heap_init: At 3FC98160 len 00027EA0 (159 KiB): RAM[0m
+D (370) heap_init: New heap initialised at 0x3fcc0000[0m
+[0;32mI (375) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (382) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+D (389) heap_init: New heap initialised at 0x50000010[0m
+[0;32mI (394) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+D (401) intr_alloc: Connected src 27 to int 2 (cpu 0)[0m
+D (406) spi_flash: trying chip: issi[0m
+D (409) spi_flash: trying chip: gd[0m
+D (413) spi_flash: trying chip: mxic[0m
+D (417) spi_flash: trying chip: winbond[0m
+D (420) spi_flash: trying chip: boya[0m
+D (424) spi_flash: trying chip: th[0m
+D (428) spi_flash: trying chip: generic[0m
+[0;32mI (431) spi_flash: detected chip: generic[0m
+[0;32mI (436) spi_flash: flash io: dio[0m
+[0;33mW (440) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+D (453) cpu_start: calling init function: 0x4204ac96[0m
+D (458) cpu_start: calling init function: 0x4204ac1a[0m
+D (463) cpu_start: calling init function: 0x4204a75e[0m
+D (468) cpu_start: calling init function: 0x42033e06[0m
+[0;33mW (473) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+D (484) cpu_start: calling init function: 0x40389ba2[0m
+D (489) cpu_start: calling init function: 0x4200002a[0m
+D (494) cpu_start: calling init function: 0x42005886 on core: 0[0m
+D (500) intr_alloc: Connected src 39 to int 3 (cpu 0)[0m
+D (505) cpu_start: calling init function: 0x42001c1a on core: 0[0m
+D (511) cpu_start: calling init function: 0x42003550 on core: 0[0m
+[0;32mI (517) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (524) sleep: Enable automatic switching of GPIO sleep configuration[0m
+D (531) cpu_start: calling init function: 0x42001430 on core: 0[0m
+[0;32mI (537) coexist: coex firmware version: d96c1e51f[0m
+[0;32mI (543) coexist: coexist rom version 9387209[0m
+D (548) intr_alloc: Connected src 50 to int 4 (cpu 0)[0m
+D (552) app_start: Starting scheduler on CPU0[0m
+D (557) intr_alloc: Connected src 37 to int 7 (cpu 0)[0m
+[0;32mI (557) main_task: Started on CPU0[0m
+D (557) heap_init: New heap initialised at 0x3fcdc710[0m
+D (557) intr_alloc: Connected src 33 to int 9 (cpu 0)[0m
+[0;32mI (567) main_task: Calling app_main()[0m
+D (567) intr_alloc: Connected src 29 to int 10 (cpu 0)[0m
+[0;32mI (587) BLE_INIT: BT controller compile version [c23ab4c][0m
+D (587) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (587) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (597) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (607) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (607) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (617) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+[0;32mI (627) BLE_INIT: Bluetooth MAC: 34:b7:da:f6:47:7e[0m
+[0;32mI (627) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+D (637) phy_init: loading PHY init data from application binary[0m
+D (647) nvs: nvs_open_from_partition phy 0[0m
+D (647) nvs: nvs_get cal_version 4[0m
+D (647) nvs: nvs_get_str_or_blob cal_mac[0m
+D (657) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (657) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (667) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (677) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (677) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (687) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (697) nvs: nvs_get_str_or_blob cal_data[0m
+D (697) nvs: nvs_close 1[0m
+D (707) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (707) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (717) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (727) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (727) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (737) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (757) temperature_sensor: range changed, change to index 2[0m
+D (777) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (777) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (777) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (787) nvs: nvs_close 2[0m
+D (787) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (787) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (797) nvs: nvs_get_str_or_blob our_sec_2[0m
+D (797) nvs: nvs_close 3[0m
+D (807) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (807) nvs: nvs_get_str_or_blob our_sec_3[0m
+D (807) nvs: nvs_close 4[0m
+D (817) NIMBLE_NVS: ble_store_config_our_secs restored 1 bonds[0m
+D (817) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (827) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (827) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (837) nvs: nvs_close 5[0m
+D (837) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (847) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (847) nvs: nvs_get_str_or_blob peer_sec_2[0m
+D (847) nvs: nvs_close 6[0m
+D (857) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (857) nvs: nvs_get_str_or_blob peer_sec_3[0m
+D (867) nvs: nvs_close 7[0m
+D (867) NIMBLE_NVS: ble_store_config_peer_secs restored 1 bonds[0m
+D (867) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (877) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (877) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (887) nvs: nvs_close 8[0m
+D (887) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 1[0m
+D (897) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (897) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (907) nvs: nvs_close 9[0m
+D (907) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (907) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (917) nvs: nvs_close 10[0m
+D (917) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (927) nvs: nvs_get_str_or_blob cccd_sec_4[0m
+D (927) nvs: nvs_close 11[0m
+D (927) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (937) nvs: nvs_get_str_or_blob cccd_sec_5[0m
+D (937) nvs: nvs_close 12[0m
+D (937) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (947) nvs: nvs_get_str_or_blob cccd_sec_6[0m
+D (947) nvs: nvs_close 13[0m
+D (957) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (957) nvs: nvs_get_str_or_blob cccd_sec_7[0m
+D (957) nvs: nvs_close 14[0m
+D (967) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (967) nvs: nvs_get_str_or_blob cccd_sec_8[0m
+D (977) nvs: nvs_close 15[0m
+D (977) NIMBLE_NVS: ble_store_config_cccds restored 1 bonds[0m
+D (977) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (987) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (987) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (997) nvs: nvs_close 16[0m
+D (997) NIMBLE_NVS: Local IRK in RAM is filled up from NVS index = 1[0m
+D (1007) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1007) nvs: nvs_get_str_or_blob local_irk_2[0m
+D (1017) nvs: nvs_close 17[0m
+D (1017) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1017) nvs: nvs_get_str_or_blob local_irk_3[0m
+D (1027) nvs: nvs_close 18[0m
+D (1027) NIMBLE_NVS: ble_store_config_local_irks restored 1 irks[0m
+D (1037) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1037) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (1047) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (1047) nvs: nvs_close 19[0m
+D (1047) NIMBLE_NVS: RPA_REC in RAM is filled up from NVS index = 1[0m
+D (1057) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1067) nvs: nvs_get_str_or_blob rpa_rec_2[0m
+D (1067) nvs: nvs_close 20[0m
+D (1067) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1077) nvs: nvs_get_str_or_blob rpa_rec_3[0m
+D (1077) nvs: nvs_close 21[0m
+D (1077) NIMBLE_NVS: ble_store_config_rpa_recs restored 1 bonds[0m
+[0;32mI (1087) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1097) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1097) NimBLE: Device Address: [0m
+[0;32mI (1107) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (1107) NimBLE: 
+[0m
+[0;32mI (1107) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1117) NimBLE: disc_mode=2[0m
+[0;32mI (1117) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1127) NimBLE: 
+[0m
+[0;32mI (1137) main_task: Returned from app_main()[0m
+Temperature: 30.55
+jerk = 0.00 
+angle = 0.00 
+Temperature: 30.51
+jerk = 53.47 
+angle = -0.03 
+Temperature: 30.69
+jerk = 0.74 
+angle = -0.03 
+Temperature: 30.60
+jerk = 0.85 
+angle = -0.03 
+Temperature: 30.65
+jerk = 0.70 
+angle = -0.03 
+Temperature: 30.55
+jerk = 0.54 
+angle = -0.03 
+Temperature: 30.55
+jerk = 0.30 
+angle = -0.03 
+Temperature: 30.55
+jerk = 0.79 
+angle = -0.03 
+Temperature: 30.46
+jerk = 0.78 
+angle = -0.03 
+Temperature: 30.65
+jerk = 1.30 
+angle = -0.03 
+Temperature: 30.55
+jerk = 0.67 
+angle = -0.03 
+Temperature: 30.60
+jerk = 0.34 
+angle = -0.03 
+Temperature: 30.51
+jerk = 0.66 
+angle = -0.03 
+Temperature: 30.60
+jerk = 0.25 
+angle = -0.03 
+Temperature: 30.55
+jerk = 0.60 
+angle = -0.03 
+Temperature: 30.55
+jerk = 1.27 
+angle = -0.03 
+Temperature: 30.65
+jerk = 1.02 
+angle = -0.04 
+Temperature: 30.60
+jerk = 0.49 
+angle = -0.04 
+Temperature: 30.60
+jerk = 0.50 
+angle = -0.03 
+Temperature: 30.60
+jerk = 0.39 
+angle = -0.04 
+Temperature: 30.51
+jerk = 0.51 
+angle = -0.04 
+Temperature: 30.55
+jerk = 0.11 
+angle = -0.04 
+Temperature: 30.55
+jerk = 0.72 
+angle = -0.03 
+Temperature: 30.55
+jerk = 0.85 
+angle = -0.04 
+Temperature: 30.55
+jerk = 0.33 
+angle = -0.04 
+Temperature: 30.55
+jerk = 0.19 
+angle = -0.04 
+Temperature: 30.69
+jerk = 0.56 
+angle = -0.04 
+Temperature: 30.65
+jerk = 1.04 
+angle = -0.04 
+Temperature: 30.60
+jerk = 0.99 
+angle = -0.03 
+Temperature: 30.51
+jerk = 0.51 
+angle = -0.04 
+Temperature: 30.51
+jerk = 0.59 
+angle = -0.03 
+Temperature: 30.51
+jerk = 0.66 
+angle = -0.04 
+Temperature: 30.51
+jerk = 0.96 
+angle = -0.04 
+Temperature: 30.51
+jerk = 0.47 
+angle = -0.04 
+[0;32mI (4467) BLE-Test-Sever: BLE GAP EVENT CONNECT OK[0m
+[0;32mI (4467) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (4477) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (4477) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (4477) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (4487) NimBLE:  peer_ota_addr_type=1 peer_ota_addr=[0m
+[0;32mI (4487) NimBLE: 4e:48:51:c9:d4:79[0m
+[0;32mI (4497) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (4497) NimBLE: 9c:5a:81:68:4b:7b[0m
+[0;32mI (4507) NimBLE:  conn_itvl=39 conn_latency=0 supervision_timeout=500 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (4517) BLE-Test-Sever: Security initiate result: 0[0m
+[0;32mI (4537) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (4537) NimBLE: att_handle=16
+[0m
+[0;32mI (4537) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (4537) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (4547) NimBLE: att_handle=19
+[0m
+[0;32mI (4547) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.49 
+angle = -0.04 
+[0;32mI (4657) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (4657) NimBLE: att_handle=16
+[0m
+[0;32mI (4657) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (4657) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (4667) NimBLE: att_handle=19
+[0m
+[0;32mI (4667) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.51
+jerk = 0.31 
+angle = -0.04 
+[0;32mI (4777) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (4777) NimBLE: att_handle=16
+[0m
+[0;32mI (4777) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (4777) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (4787) NimBLE: att_handle=19
+[0m
+[0;32mI (4787) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+[0;32mI (4797) BLE-Test-Sever: BLE GAP EVENT ENC CHANGE: status=0[0m
+[0;32mI (4807) BLE-Test-Sever: Encryption change: encrypted=1, authenticated=0, bonded=1, key_size=16[0m
+[0;32mI (4817) NimBLE: subscribe event; conn_handle=1 attr_handle=8 reason=3 prevn=0 curn=0 previ=0 curi=1
+[0m
+jerk = 0.37 
+angle = -0.04 
+[0;32mI (4897) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (4897) NimBLE: att_handle=16
+[0m
+[0;32mI (4897) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (4897) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (4907) NimBLE: att_handle=19
+[0m
+[0;32mI (4907) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.51
+jerk = 0.67 
+angle = -0.04 
+[0;32mI (5017) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (5017) NimBLE: att_handle=16
+[0m
+[0;32mI (5017) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (5017) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (5027) NimBLE: att_handle=19
+[0m
+[0;32mI (5027) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.51
+jerk = 0.59 
+angle = -0.05 
+[0;32mI (5137) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (5137) NimBLE: att_handle=16
+[0m
+[0;32mI (5137) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (5137) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (5147) BLE-Test-Sever: Connection update: status=0 [0m
+[0;32mI (5147) BLE-Test-Sever: Connection parameters updated successfully[0m
+[0;32mI (5157) NimBLE: att_handle=19
+[0m
+[0;32mI (5167) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.51
+jerk = 0.53 
+angle = -0.05 
+[0;32mI (5267) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (5267) NimBLE: att_handle=16
+[0m
+[0;32mI (5267) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (5267) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (5277) NimBLE: att_handle=19
+[0m
+[0;32mI (5277) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.72 
+angle = -0.05 
+[0;32mI (5387) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (5387) NimBLE: att_handle=16
+[0m
+[0;32mI (5387) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (5387) BLE-Test-Sever: Connection update: status=0 [0m
+[0;32mI (5397) BLE-Test-Sever: Connection parameters updated successfully[0m
+[0;32mI (5407) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (5407) NimBLE: att_handle=19
+[0m
+[0;32mI (5417) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.84 
+angle = -0.05 
+[0;32mI (5517) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (5517) NimBLE: att_handle=16
+[0m
+[0;32mI (5517) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (5517) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (5527) NimBLE: att_handle=19
+[0m
+[0;32mI (5527) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 1.26 
+angle = -0.04 
+[0;32mI (5637) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (5637) NimBLE: att_handle=16
+[0m
+[0;32mI (5637) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (5637) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (5647) NimBLE: att_handle=19
+[0m
+[0;32mI (5647) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.51
+jerk = 0.42 
+angle = -0.04 
+[0;32mI (5757) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (5757) NimBLE: att_handle=16
+[0m
+[0;32mI (5757) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (5757) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (5767) NimBLE: att_handle=19
+[0m
+[0;32mI (5767) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.83 
+angle = -0.04 
+[0;32mI (5877) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (5877) NimBLE: att_handle=16
+[0m
+[0;32mI (5877) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (5877) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (5887) NimBLE: att_handle=19
+[0m
+[0;32mI (5887) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 0.26 
+angle = -0.05 
+[0;32mI (5997) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (5997) NimBLE: att_handle=16
+[0m
+[0;32mI (5997) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (5997) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (6007) NimBLE: att_handle=19
+[0m
+[0;32mI (6007) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.51
+jerk = 0.57 
+angle = -0.04 
+[0;32mI (6117) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (6117) NimBLE: att_handle=16
+[0m
+[0;32mI (6117) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (6117) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (6127) NimBLE: att_handle=19
+[0m
+[0;32mI (6127) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.51
+jerk = 0.77 
+angle = -0.05 
+[0;32mI (6237) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (6237) NimBLE: att_handle=16
+[0m
+[0;32mI (6237) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (6237) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (6247) NimBLE: att_handle=19
+[0m
+[0;32mI (6247) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.23 
+angle = -0.05 
+[0;32mI (6357) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (6357) NimBLE: att_handle=16
+[0m
+[0;32mI (6357) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (6357) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (6367) NimBLE: att_handle=19
+[0m
+[0;32mI (6367) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.73 
+angle = -0.04 
+[0;32mI (6477) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (6477) NimBLE: att_handle=16
+[0m
+[0;32mI (6477) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (6477) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (6487) NimBLE: att_handle=19
+[0m
+[0;32mI (6487) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 0.36 
+angle = -0.05 
+[0;32mI (6597) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (6597) NimBLE: att_handle=16
+[0m
+[0;32mI (6597) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (6597) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (6607) NimBLE: att_handle=19
+[0m
+[0;32mI (6607) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.63 
+angle = -0.05 
+[0;32mI (6717) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (6717) NimBLE: att_handle=16
+[0m
+[0;32mI (6717) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (6717) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (6727) NimBLE: att_handle=19
+[0m
+[0;32mI (6727) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.16 
+angle = -0.05 
+[0;32mI (6837) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (6837) NimBLE: att_handle=16
+[0m
+[0;32mI (6837) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (6837) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (6847) NimBLE: att_handle=19
+[0m
+[0;32mI (6847) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.28 
+angle = -0.05 
+[0;32mI (6957) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (6957) NimBLE: att_handle=16
+[0m
+[0;32mI (6957) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (6957) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (6967) NimBLE: att_handle=19
+[0m
+[0;32mI (6967) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 0.35 
+angle = -0.04 
+[0;32mI (7077) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (7077) NimBLE: att_handle=16
+[0m
+[0;32mI (7077) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (7077) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (7087) NimBLE: att_handle=19
+[0m
+[0;32mI (7087) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.69
+jerk = 0.78 
+angle = -0.04 
+[0;32mI (7197) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (7197) NimBLE: att_handle=16
+[0m
+[0;32mI (7197) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (7197) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (7207) NimBLE: att_handle=19
+[0m
+[0;32mI (7207) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.51
+jerk = 0.71 
+angle = -0.06 
+[0;32mI (7317) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (7317) NimBLE: att_handle=16
+[0m
+[0;32mI (7317) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (7317) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (7327) NimBLE: att_handle=19
+[0m
+[0;32mI (7327) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.81 
+angle = -0.04 
+[0;32mI (7437) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (7437) NimBLE: att_handle=16
+[0m
+[0;32mI (7437) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (7437) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (7447) NimBLE: att_handle=19
+[0m
+[0;32mI (7447) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.67 
+angle = -0.04 
+[0;32mI (7557) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (7557) NimBLE: att_handle=16
+[0m
+[0;32mI (7557) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (7557) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (7567) NimBLE: att_handle=19
+[0m
+[0;32mI (7567) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.57 
+angle = -0.05 
+[0;32mI (7677) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (7677) NimBLE: att_handle=16
+[0m
+[0;32mI (7677) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (7677) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (7687) NimBLE: att_handle=19
+[0m
+[0;32mI (7687) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.51
+jerk = 0.49 
+angle = -0.05 
+[0;32mI (7797) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (7797) NimBLE: att_handle=16
+[0m
+[0;32mI (7797) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (7797) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (7807) NimBLE: att_handle=19
+[0m
+[0;32mI (7807) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.46
+jerk = 0.71 
+angle = -0.05 
+[0;32mI (7917) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (7917) NimBLE: att_handle=16
+[0m
+[0;32mI (7917) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (7917) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (7927) NimBLE: att_handle=19
+[0m
+[0;32mI (7927) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.83 
+angle = -0.05 
+[0;32mI (8037) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (8037) NimBLE: att_handle=16
+[0m
+[0;32mI (8037) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (8037) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (8047) NimBLE: att_handle=19
+[0m
+[0;32mI (8047) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.66 
+angle = -0.04 
+[0;32mI (8157) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (8157) NimBLE: att_handle=16
+[0m
+[0;32mI (8157) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (8157) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (8167) NimBLE: att_handle=19
+[0m
+[0;32mI (8167) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.78 
+angle = -0.04 
+[0;32mI (8277) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (8277) NimBLE: att_handle=16
+[0m
+[0;32mI (8277) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (8277) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (8287) NimBLE: att_handle=19
+[0m
+[0;32mI (8287) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.62 
+angle = -0.04 
+[0;32mI (8397) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (8397) NimBLE: att_handle=16
+[0m
+[0;32mI (8397) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (8397) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (8407) NimBLE: att_handle=19
+[0m
+[0;32mI (8407) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 1.14 
+angle = -0.05 
+[0;32mI (8517) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (8517) NimBLE: att_handle=16
+[0m
+[0;32mI (8517) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (8517) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (8527) NimBLE: att_handle=19
+[0m
+[0;32mI (8527) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.51
+jerk = 1.28 
+angle = -0.04 
+[0;32mI (8637) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (8637) NimBLE: att_handle=16
+[0m
+[0;32mI (8637) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (8637) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (8647) NimBLE: att_handle=19
+[0m
+[0;32mI (8647) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.51
+jerk = 0.85 
+angle = -0.06 
+[0;32mI (8757) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (8757) NimBLE: att_handle=16
+[0m
+[0;32mI (8757) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (8757) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (8767) NimBLE: att_handle=19
+[0m
+[0;32mI (8767) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.37 
+angle = -0.05 
+[0;32mI (8877) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (8877) NimBLE: att_handle=16
+[0m
+[0;32mI (8877) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (8877) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (8887) NimBLE: att_handle=19
+[0m
+[0;32mI (8887) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.40 
+angle = -0.04 
+[0;32mI (8997) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (8997) NimBLE: att_handle=16
+[0m
+[0;32mI (8997) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (8997) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (9007) NimBLE: att_handle=19
+[0m
+[0;32mI (9007) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 0.81 
+angle = -0.05 
+[0;32mI (9117) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (9117) NimBLE: att_handle=16
+[0m
+[0;32mI (9117) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (9117) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (9127) NimBLE: att_handle=19
+[0m
+[0;32mI (9127) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 0.96 
+angle = -0.05 
+[0;32mI (9237) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (9237) NimBLE: att_handle=16
+[0m
+[0;32mI (9237) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (9237) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (9247) NimBLE: att_handle=19
+[0m
+[0;32mI (9247) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.60 
+angle = -0.05 
+[0;32mI (9357) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (9357) NimBLE: att_handle=16
+[0m
+[0;32mI (9357) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (9357) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (9367) NimBLE: att_handle=19
+[0m
+[0;32mI (9367) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 0.73 
+angle = -0.05 
+[0;32mI (9477) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (9477) NimBLE: att_handle=16
+[0m
+[0;32mI (9477) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (9477) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (9487) NimBLE: att_handle=19
+[0m
+[0;32mI (9487) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.53 
+angle = -0.05 
+[0;32mI (9597) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (9597) NimBLE: att_handle=16
+[0m
+[0;32mI (9597) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (9597) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (9607) NimBLE: att_handle=19
+[0m
+[0;32mI (9607) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.21 
+angle = -0.05 
+[0;32mI (9717) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (9717) NimBLE: att_handle=16
+[0m
+[0;32mI (9717) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (9717) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (9727) NimBLE: att_handle=19
+[0m
+[0;32mI (9727) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.56 
+angle = -0.05 
+[0;32mI (9837) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (9837) NimBLE: att_handle=16
+[0m
+[0;32mI (9837) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (9837) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (9847) NimBLE: att_handle=19
+[0m
+[0;32mI (9847) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.66 
+angle = -0.05 
+[0;32mI (9957) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (9957) NimBLE: att_handle=16
+[0m
+[0;32mI (9957) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (9957) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (9967) NimBLE: att_handle=19
+[0m
+[0;32mI (9967) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.82 
+angle = -0.05 
+[0;32mI (10077) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (10077) NimBLE: att_handle=16
+[0m
+[0;32mI (10077) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (10077) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (10087) NimBLE: att_handle=19
+[0m
+[0;32mI (10087) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 1.14 
+angle = -0.05 
+[0;32mI (10197) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (10197) NimBLE: att_handle=16
+[0m
+[0;32mI (10197) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (10197) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (10207) NimBLE: att_handle=19
+[0m
+[0;32mI (10207) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.72 
+angle = -0.06 
+[0;32mI (10317) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (10317) NimBLE: att_handle=16
+[0m
+[0;32mI (10317) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (10317) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (10327) NimBLE: att_handle=19
+[0m
+[0;32mI (10327) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 0.60 
+angle = -0.05 
+[0;32mI (10437) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (10437) NimBLE: att_handle=16
+[0m
+[0;32mI (10437) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (10437) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (10447) NimBLE: att_handle=19
+[0m
+[0;32mI (10447) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.94 
+angle = -0.06 
+[0;32mI (10557) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (10557) NimBLE: att_handle=16
+[0m
+[0;32mI (10557) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (10557) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (10567) NimBLE: att_handle=19
+[0m
+[0;32mI (10567) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.51
+jerk = 0.68 
+angle = -0.05 
+[0;32mI (10677) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (10677) NimBLE: att_handle=16
+[0m
+[0;32mI (10677) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (10677) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (10687) NimBLE: att_handle=19
+[0m
+[0;32mI (10687) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.31 
+angle = -0.05 
+[0;32mI (10797) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (10797) NimBLE: att_handle=16
+[0m
+[0;32mI (10797) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (10797) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (10807) NimBLE: att_handle=19
+[0m
+[0;32mI (10807) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.46
+jerk = 0.70 
+angle = -0.05 
+[0;32mI (10917) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (10917) NimBLE: att_handle=16
+[0m
+[0;32mI (10917) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (10917) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (10927) NimBLE: att_handle=19
+[0m
+[0;32mI (10927) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.83 
+angle = -0.05 
+[0;32mI (11037) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (11037) NimBLE: att_handle=16
+[0m
+[0;32mI (11037) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (11037) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (11047) NimBLE: att_handle=19
+[0m
+[0;32mI (11047) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.61 
+angle = -0.06 
+[0;32mI (11157) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (11157) NimBLE: att_handle=16
+[0m
+[0;32mI (11157) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (11157) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (11167) NimBLE: att_handle=19
+[0m
+[0;32mI (11167) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 0.94 
+angle = -0.05 
+[0;32mI (11277) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (11277) NimBLE: att_handle=16
+[0m
+[0;32mI (11277) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (11277) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (11287) NimBLE: att_handle=19
+[0m
+[0;32mI (11287) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.88 
+angle = -0.06 
+[0;32mI (11397) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (11397) NimBLE: att_handle=16
+[0m
+[0;32mI (11397) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (11397) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (11407) NimBLE: att_handle=19
+[0m
+[0;32mI (11407) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.51
+jerk = 0.50 
+angle = -0.07 
+[0;32mI (11517) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (11517) NimBLE: att_handle=16
+[0m
+[0;32mI (11517) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (11517) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (11527) NimBLE: att_handle=19
+[0m
+[0;32mI (11527) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 0.60 
+angle = -0.06 
+[0;32mI (11637) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (11637) NimBLE: att_handle=16
+[0m
+[0;32mI (11637) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (11637) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (11647) NimBLE: att_handle=19
+[0m
+[0;32mI (11647) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.46
+jerk = 0.58 
+angle = -0.06 
+[0;32mI (11757) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (11757) NimBLE: att_handle=16
+[0m
+[0;32mI (11757) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (11757) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (11767) NimBLE: att_handle=19
+[0m
+[0;32mI (11767) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.44 
+angle = -0.06 
+[0;32mI (11877) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (11877) NimBLE: att_handle=16
+[0m
+[0;32mI (11877) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (11877) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (11887) NimBLE: att_handle=19
+[0m
+[0;32mI (11887) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.37 
+angle = -0.06 
+[0;32mI (11997) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (11997) NimBLE: att_handle=16
+[0m
+[0;32mI (11997) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (11997) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (12007) NimBLE: att_handle=19
+[0m
+[0;32mI (12007) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 0.89 
+angle = -0.05 
+[0;32mI (12117) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (12117) NimBLE: att_handle=16
+[0m
+[0;32mI (12117) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (12117) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (12127) NimBLE: att_handle=19
+[0m
+[0;32mI (12127) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.19 
+angle = -0.05 
+[0;32mI (12237) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (12237) NimBLE: att_handle=16
+[0m
+[0;32mI (12237) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (12237) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (12247) NimBLE: att_handle=19
+[0m
+[0;32mI (12247) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.69
+jerk = 0.84 
+angle = -0.06 
+[0;32mI (12357) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (12357) NimBLE: att_handle=16
+[0m
+[0;32mI (12357) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (12357) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (12367) NimBLE: att_handle=19
+[0m
+[0;32mI (12367) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 0.70 
+angle = -0.05 
+[0;32mI (12477) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (12477) NimBLE: att_handle=16
+[0m
+[0;32mI (12477) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (12477) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (12487) NimBLE: att_handle=19
+[0m
+[0;32mI (12487) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.51
+jerk = 1.07 
+angle = -0.06 
+[0;32mI (12597) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (12597) NimBLE: att_handle=16
+[0m
+[0;32mI (12597) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (12597) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (12607) NimBLE: att_handle=19
+[0m
+[0;32mI (12607) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.72 
+angle = -0.07 
+[0;32mI (12717) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (12717) NimBLE: att_handle=16
+[0m
+[0;32mI (12717) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (12717) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (12727) NimBLE: att_handle=19
+[0m
+[0;32mI (12727) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.93 
+angle = -0.06 
+[0;32mI (12837) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (12837) NimBLE: att_handle=16
+[0m
+[0;32mI (12837) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (12837) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (12847) NimBLE: att_handle=19
+[0m
+[0;32mI (12847) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.71 
+angle = -0.07 
+[0;32mI (12957) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (12957) NimBLE: att_handle=16
+[0m
+[0;32mI (12957) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (12957) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (12967) NimBLE: att_handle=19
+[0m
+[0;32mI (12967) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.34 
+angle = -0.07 
+[0;32mI (13077) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13077) NimBLE: att_handle=16
+[0m
+[0;32mI (13077) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (13077) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13087) NimBLE: att_handle=19
+[0m
+[0;32mI (13087) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 0.71 
+angle = -0.06 
+[0;32mI (13197) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13197) NimBLE: att_handle=16
+[0m
+[0;32mI (13197) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (13197) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13207) NimBLE: att_handle=19
+[0m
+[0;32mI (13207) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.51
+jerk = 0.61 
+angle = -0.07 
+[0;32mI (13317) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13317) NimBLE: att_handle=16
+[0m
+[0;32mI (13317) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (13317) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13327) NimBLE: att_handle=19
+[0m
+[0;32mI (13327) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.77 
+angle = -0.06 
+[0;32mI (13437) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13437) NimBLE: att_handle=16
+[0m
+[0;32mI (13437) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (13437) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13447) NimBLE: att_handle=19
+[0m
+[0;32mI (13447) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.31 
+angle = -0.06 
+[0;32mI (13557) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13557) NimBLE: att_handle=16
+[0m
+[0;32mI (13557) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (13557) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13567) NimBLE: att_handle=19
+[0m
+[0;32mI (13567) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.51
+jerk = 0.22 
+angle = -0.06 
+[0;32mI (13677) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13677) NimBLE: att_handle=16
+[0m
+[0;32mI (13677) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (13677) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13687) NimBLE: att_handle=19
+[0m
+[0;32mI (13687) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.27 
+angle = -0.06 
+[0;32mI (13797) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13797) NimBLE: att_handle=16
+[0m
+[0;32mI (13797) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (13797) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13807) NimBLE: att_handle=19
+[0m
+[0;32mI (13807) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 0.47 
+angle = -0.05 
+[0;32mI (13917) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13917) NimBLE: att_handle=16
+[0m
+[0;32mI (13917) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (13917) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13927) NimBLE: att_handle=19
+[0m
+[0;32mI (13927) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.69
+jerk = 0.61 
+angle = -0.06 
+[0;32mI (14037) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14037) NimBLE: att_handle=16
+[0m
+[0;32mI (14037) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (14037) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14047) NimBLE: att_handle=19
+[0m
+[0;32mI (14047) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.49 
+angle = -0.07 
+[0;32mI (14157) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14157) NimBLE: att_handle=16
+[0m
+[0;32mI (14157) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (14157) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14167) NimBLE: att_handle=19
+[0m
+[0;32mI (14167) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 0.77 
+angle = -0.06 
+[0;32mI (14277) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14277) NimBLE: att_handle=16
+[0m
+[0;32mI (14277) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (14277) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14287) NimBLE: att_handle=19
+[0m
+[0;32mI (14287) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 0.33 
+angle = -0.06 
+[0;32mI (14397) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14397) NimBLE: att_handle=16
+[0m
+[0;32mI (14397) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (14397) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14407) NimBLE: att_handle=19
+[0m
+[0;32mI (14407) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.79 
+angle = -0.07 
+[0;32mI (14517) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14517) NimBLE: att_handle=16
+[0m
+[0;32mI (14517) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (14517) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14527) NimBLE: att_handle=19
+[0m
+[0;32mI (14527) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.51
+jerk = 0.82 
+angle = -0.06 
+[0;32mI (14637) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14637) NimBLE: att_handle=16
+[0m
+[0;32mI (14637) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (14637) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14647) NimBLE: att_handle=19
+[0m
+[0;32mI (14647) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 0.46 
+angle = -0.07 
+[0;32mI (14757) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14757) NimBLE: att_handle=16
+[0m
+[0;32mI (14757) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (14757) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14767) NimBLE: att_handle=19
+[0m
+[0;32mI (14767) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.60 
+angle = -0.07 
+[0;32mI (14877) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14877) NimBLE: att_handle=16
+[0m
+[0;32mI (14877) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (14877) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14887) NimBLE: att_handle=19
+[0m
+[0;32mI (14887) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 1.04 
+angle = -0.06 
+[0;32mI (14997) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14997) NimBLE: att_handle=16
+[0m
+[0;32mI (14997) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (14997) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15007) NimBLE: att_handle=19
+[0m
+[0;32mI (15007) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.25 
+angle = -0.07 
+[0;32mI (15117) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15117) NimBLE: att_handle=16
+[0m
+[0;32mI (15117) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (15117) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15127) NimBLE: att_handle=19
+[0m
+[0;32mI (15127) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.34 
+angle = -0.07 
+[0;32mI (15237) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15237) NimBLE: att_handle=16
+[0m
+[0;32mI (15237) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (15237) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15247) NimBLE: att_handle=19
+[0m
+[0;32mI (15247) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.24 
+angle = -0.07 
+[0;32mI (15357) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15357) NimBLE: att_handle=16
+[0m
+[0;32mI (15357) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (15357) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15367) NimBLE: att_handle=19
+[0m
+[0;32mI (15367) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.67 
+angle = -0.06 
+[0;32mI (15477) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15477) NimBLE: att_handle=16
+[0m
+[0;32mI (15477) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (15477) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15487) NimBLE: att_handle=19
+[0m
+[0;32mI (15487) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.82 
+angle = -0.08 
+[0;32mI (15597) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15597) NimBLE: att_handle=16
+[0m
+[0;32mI (15597) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (15597) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15607) NimBLE: att_handle=19
+[0m
+[0;32mI (15607) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 0.57 
+angle = -0.07 
+[0;32mI (15717) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15717) NimBLE: att_handle=16
+[0m
+[0;32mI (15717) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (15717) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15727) NimBLE: att_handle=19
+[0m
+[0;32mI (15727) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.51
+jerk = 0.48 
+angle = -0.06 
+[0;32mI (15837) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15837) NimBLE: att_handle=16
+[0m
+[0;32mI (15837) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (15837) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15847) NimBLE: att_handle=19
+[0m
+[0;32mI (15847) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.51
+jerk = 0.94 
+angle = -0.08 
+[0;32mI (15957) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15957) NimBLE: att_handle=16
+[0m
+[0;32mI (15957) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (15957) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15967) NimBLE: att_handle=19
+[0m
+[0;32mI (15967) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 0.82 
+angle = -0.06 
+[0;32mI (16077) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16077) NimBLE: att_handle=16
+[0m
+[0;32mI (16077) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (16077) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16087) NimBLE: att_handle=19
+[0m
+[0;32mI (16087) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.51
+jerk = 0.91 
+angle = -0.07 
+[0;32mI (16197) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16197) NimBLE: att_handle=16
+[0m
+[0;32mI (16197) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (16197) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16207) NimBLE: att_handle=19
+[0m
+[0;32mI (16207) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 1.47 
+angle = -0.06 
+[0;32mI (16317) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16317) NimBLE: att_handle=16
+[0m
+[0;32mI (16317) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (16317) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16327) NimBLE: att_handle=19
+[0m
+[0;32mI (16327) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.51
+jerk = 1.48 
+angle = -0.07 
+[0;32mI (16437) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16437) NimBLE: att_handle=16
+[0m
+[0;32mI (16437) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (16437) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16447) NimBLE: att_handle=19
+[0m
+[0;32mI (16447) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.43 
+angle = -0.07 
+[0;32mI (16557) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16557) NimBLE: att_handle=16
+[0m
+[0;32mI (16557) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (16557) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16567) NimBLE: att_handle=19
+[0m
+[0;32mI (16567) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.44 
+angle = -0.07 
+[0;32mI (16677) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16677) NimBLE: att_handle=16
+[0m
+[0;32mI (16677) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (16677) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16687) NimBLE: att_handle=19
+[0m
+[0;32mI (16687) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.51
+jerk = 0.37 
+angle = -0.07 
+[0;32mI (16797) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16797) NimBLE: att_handle=16
+[0m
+[0;32mI (16797) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (16797) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16807) NimBLE: att_handle=19
+[0m
+[0;32mI (16807) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.97 
+angle = -0.08 
+[0;32mI (16917) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16917) NimBLE: att_handle=16
+[0m
+[0;32mI (16917) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (16917) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16927) NimBLE: att_handle=19
+[0m
+[0;32mI (16927) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.51
+jerk = 0.65 
+angle = -0.07 
+[0;32mI (17037) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17037) NimBLE: att_handle=16
+[0m
+[0;32mI (17037) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (17037) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17047) NimBLE: att_handle=19
+[0m
+[0;32mI (17047) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.51
+jerk = 0.59 
+angle = -0.07 
+[0;32mI (17157) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17157) NimBLE: att_handle=16
+[0m
+[0;32mI (17157) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (17157) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17167) NimBLE: att_handle=19
+[0m
+[0;32mI (17167) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 1.20 
+angle = -0.06 
+[0;32mI (17277) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17277) NimBLE: att_handle=16
+[0m
+[0;32mI (17277) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (17277) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17287) NimBLE: att_handle=19
+[0m
+[0;32mI (17287) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 1.13 
+angle = -0.06 
+[0;32mI (17397) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17397) NimBLE: att_handle=16
+[0m
+[0;32mI (17397) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (17397) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17407) NimBLE: att_handle=19
+[0m
+[0;32mI (17407) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.90 
+angle = -0.08 
+[0;32mI (17517) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17517) NimBLE: att_handle=16
+[0m
+[0;32mI (17517) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (17517) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17527) NimBLE: att_handle=19
+[0m
+[0;32mI (17527) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.51
+jerk = 0.57 
+angle = -0.07 
+[0;32mI (17637) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17637) NimBLE: att_handle=16
+[0m
+[0;32mI (17637) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (17637) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17647) NimBLE: att_handle=19
+[0m
+[0;32mI (17647) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.45 
+angle = -0.08 
+[0;32mI (17757) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17757) NimBLE: att_handle=16
+[0m
+[0;32mI (17757) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (17757) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17767) NimBLE: att_handle=19
+[0m
+[0;32mI (17767) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.44 
+angle = -0.07 
+[0;32mI (17877) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17877) NimBLE: att_handle=16
+[0m
+[0;32mI (17877) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (17877) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17887) NimBLE: att_handle=19
+[0m
+[0;32mI (17887) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 0.55 
+angle = -0.08 
+[0;32mI (17997) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17997) NimBLE: att_handle=16
+[0m
+[0;32mI (17997) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (17997) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18007) NimBLE: att_handle=19
+[0m
+[0;32mI (18007) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 0.70 
+angle = -0.07 
+[0;32mI (18117) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18117) NimBLE: att_handle=16
+[0m
+[0;32mI (18117) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (18117) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18127) NimBLE: att_handle=19
+[0m
+[0;32mI (18127) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 1.07 
+angle = -0.08 
+[0;32mI (18237) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18237) NimBLE: att_handle=16
+[0m
+[0;32mI (18237) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (18237) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18247) NimBLE: att_handle=19
+[0m
+[0;32mI (18247) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.46
+jerk = 0.28 
+angle = -0.08 
+[0;32mI (18357) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18357) NimBLE: att_handle=16
+[0m
+[0;32mI (18357) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (18357) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18367) NimBLE: att_handle=19
+[0m
+[0;32mI (18367) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.58 
+angle = -0.07 
+[0;32mI (18477) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18477) NimBLE: att_handle=16
+[0m
+[0;32mI (18477) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (18477) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18487) NimBLE: att_handle=19
+[0m
+[0;32mI (18487) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 0.12 
+angle = -0.07 
+[0;32mI (18597) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18597) NimBLE: att_handle=16
+[0m
+[0;32mI (18597) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (18597) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18607) NimBLE: att_handle=19
+[0m
+[0;32mI (18607) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.73 
+angle = -0.07 
+[0;32mI (18717) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18717) NimBLE: att_handle=16
+[0m
+[0;32mI (18717) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (18717) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18727) NimBLE: att_handle=19
+[0m
+[0;32mI (18727) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.41 
+angle = -0.07 
+[0;32mI (18837) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18837) NimBLE: att_handle=16
+[0m
+[0;32mI (18837) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (18837) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18847) NimBLE: att_handle=19
+[0m
+[0;32mI (18847) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 0.61 
+angle = -0.08 
+[0;32mI (18957) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18957) NimBLE: att_handle=16
+[0m
+[0;32mI (18957) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (18957) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18967) NimBLE: att_handle=19
+[0m
+[0;32mI (18967) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.48 
+angle = -0.07 
+[0;32mI (19077) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19077) NimBLE: att_handle=16
+[0m
+[0;32mI (19077) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (19077) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19087) NimBLE: att_handle=19
+[0m
+[0;32mI (19087) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 1.31 
+angle = -0.09 
+[0;32mI (19197) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19197) NimBLE: att_handle=16
+[0m
+[0;32mI (19197) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (19197) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19207) NimBLE: att_handle=19
+[0m
+[0;32mI (19207) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.76 
+angle = -0.08 
+[0;32mI (19317) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19317) NimBLE: att_handle=16
+[0m
+[0;32mI (19317) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (19317) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19327) NimBLE: att_handle=19
+[0m
+[0;32mI (19327) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.43 
+angle = -0.07 
+[0;32mI (19437) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19437) NimBLE: att_handle=16
+[0m
+[0;32mI (19437) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (19437) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19447) NimBLE: att_handle=19
+[0m
+[0;32mI (19447) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.67 
+angle = -0.07 
+[0;32mI (19557) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19557) NimBLE: att_handle=16
+[0m
+[0;32mI (19557) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (19557) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19567) NimBLE: att_handle=19
+[0m
+[0;32mI (19567) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.46
+jerk = 0.31 
+angle = -0.08 
+[0;32mI (19677) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19677) NimBLE: att_handle=16
+[0m
+[0;32mI (19677) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (19677) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19687) NimBLE: att_handle=19
+[0m
+[0;32mI (19687) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 0.44 
+angle = -0.08 
+[0;32mI (19797) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19797) NimBLE: att_handle=16
+[0m
+[0;32mI (19797) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (19797) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19807) NimBLE: att_handle=19
+[0m
+[0;32mI (19807) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.46
+jerk = 0.35 
+angle = -0.07 
+[0;32mI (19917) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19917) NimBLE: att_handle=16
+[0m
+[0;32mI (19917) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (19917) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19927) NimBLE: att_handle=19
+[0m
+[0;32mI (19927) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.46
+jerk = 0.67 
+angle = -0.08 
+[0;32mI (20037) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20037) NimBLE: att_handle=16
+[0m
+[0;32mI (20037) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (20037) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20047) NimBLE: att_handle=19
+[0m
+[0;32mI (20047) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.40 
+angle = -0.07 
+[0;32mI (20157) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20157) NimBLE: att_handle=16
+[0m
+[0;32mI (20157) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (20157) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20167) NimBLE: att_handle=19
+[0m
+[0;32mI (20167) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.48 
+angle = -0.08 
+[0;32mI (20277) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20277) NimBLE: att_handle=16
+[0m
+[0;32mI (20277) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (20277) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20287) NimBLE: att_handle=19
+[0m
+[0;32mI (20287) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 0.55 
+angle = -0.08 
+[0;32mI (20397) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20397) NimBLE: att_handle=16
+[0m
+[0;32mI (20397) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (20397) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20407) NimBLE: att_handle=19
+[0m
+[0;32mI (20407) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.27 
+angle = -0.08 
+[0;32mI (20517) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20517) NimBLE: att_handle=16
+[0m
+[0;32mI (20517) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (20517) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20527) NimBLE: att_handle=19
+[0m
+[0;32mI (20527) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.15 
+angle = -0.08 
+[0;32mI (20637) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20637) NimBLE: att_handle=16
+[0m
+[0;32mI (20637) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (20637) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20647) NimBLE: att_handle=19
+[0m
+[0;32mI (20647) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 0.25 
+angle = -0.08 
+[0;32mI (20757) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20757) NimBLE: att_handle=16
+[0m
+[0;32mI (20757) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (20757) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20767) NimBLE: att_handle=19
+[0m
+[0;32mI (20767) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.51
+jerk = 0.73 
+angle = -0.08 
+[0;32mI (20877) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20877) NimBLE: att_handle=16
+[0m
+[0;32mI (20877) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (20877) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20887) NimBLE: att_handle=19
+[0m
+[0;32mI (20887) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 1.91 
+angle = -0.10 
+[0;32mI (20997) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20997) NimBLE: att_handle=16
+[0m
+[0;32mI (20997) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (20997) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21007) NimBLE: att_handle=19
+[0m
+[0;32mI (21007) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 3.35 
+angle = -0.08 
+[0;32mI (21117) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21117) NimBLE: att_handle=16
+[0m
+[0;32mI (21117) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (21117) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21127) NimBLE: att_handle=19
+[0m
+[0;32mI (21127) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.51
+jerk = 1.76 
+angle = -0.09 
+[0;32mI (21237) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21237) NimBLE: att_handle=16
+[0m
+[0;32mI (21237) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (21237) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21247) NimBLE: att_handle=19
+[0m
+[0;32mI (21247) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 1.48 
+angle = -0.08 
+[0;32mI (21357) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21357) NimBLE: att_handle=16
+[0m
+[0;32mI (21357) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (21357) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21367) NimBLE: att_handle=19
+[0m
+[0;32mI (21367) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.69
+jerk = 1.07 
+angle = -0.08 
+[0;32mI (21477) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21477) NimBLE: att_handle=16
+[0m
+[0;32mI (21477) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (21477) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21487) NimBLE: att_handle=19
+[0m
+[0;32mI (21487) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.48 
+angle = -0.08 
+[0;32mI (21597) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21597) NimBLE: att_handle=16
+[0m
+[0;32mI (21597) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (21597) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21607) NimBLE: att_handle=19
+[0m
+[0;32mI (21607) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.54 
+angle = -0.08 
+[0;32mI (21717) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21717) NimBLE: att_handle=16
+[0m
+[0;32mI (21717) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (21717) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21727) NimBLE: att_handle=19
+[0m
+[0;32mI (21727) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.92 
+angle = -0.09 
+[0;32mI (21837) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21837) NimBLE: att_handle=16
+[0m
+[0;32mI (21837) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (21837) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21847) NimBLE: att_handle=19
+[0m
+[0;32mI (21847) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.41 
+angle = -0.09 
+[0;32mI (21957) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21957) NimBLE: att_handle=16
+[0m
+[0;32mI (21957) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (21957) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21967) NimBLE: att_handle=19
+[0m
+[0;32mI (21967) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 0.70 
+angle = -0.08 
+[0;32mI (22077) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22077) NimBLE: att_handle=16
+[0m
+[0;32mI (22077) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (22077) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22087) NimBLE: att_handle=19
+[0m
+[0;32mI (22087) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 0.34 
+angle = -0.08 
+[0;32mI (22197) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22197) NimBLE: att_handle=16
+[0m
+[0;32mI (22197) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (22197) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22207) NimBLE: att_handle=19
+[0m
+[0;32mI (22207) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.56 
+angle = -0.09 
+[0;32mI (22317) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22317) NimBLE: att_handle=16
+[0m
+[0;32mI (22317) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (22317) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22327) NimBLE: att_handle=19
+[0m
+[0;32mI (22327) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 0.70 
+angle = -0.08 
+[0;32mI (22437) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22437) NimBLE: att_handle=16
+[0m
+[0;32mI (22437) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (22437) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22447) NimBLE: att_handle=19
+[0m
+[0;32mI (22447) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.76 
+angle = -0.09 
+[0;32mI (22557) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22557) NimBLE: att_handle=16
+[0m
+[0;32mI (22557) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (22557) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22567) NimBLE: att_handle=19
+[0m
+[0;32mI (22567) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.20 
+angle = -0.09 
+[0;32mI (22677) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22677) NimBLE: att_handle=16
+[0m
+[0;32mI (22677) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (22677) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22687) NimBLE: att_handle=19
+[0m
+[0;32mI (22687) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.65 
+angle = -0.09 
+[0;32mI (22797) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22797) NimBLE: att_handle=16
+[0m
+[0;32mI (22797) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (22797) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22807) NimBLE: att_handle=19
+[0m
+[0;32mI (22807) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.35 
+angle = -0.08 
+[0;32mI (22917) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22917) NimBLE: att_handle=16
+[0m
+[0;32mI (22917) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (22917) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22927) NimBLE: att_handle=19
+[0m
+[0;32mI (22927) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 1.23 
+angle = -0.08 
+[0;32mI (23037) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23037) NimBLE: att_handle=16
+[0m
+[0;32mI (23037) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (23037) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23047) NimBLE: att_handle=19
+[0m
+[0;32mI (23047) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 1.18 
+angle = -0.10 
+[0;32mI (23157) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23157) NimBLE: att_handle=16
+[0m
+[0;32mI (23157) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (23157) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23167) NimBLE: att_handle=19
+[0m
+[0;32mI (23167) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 1.48 
+angle = -0.07 
+[0;32mI (23277) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23277) NimBLE: att_handle=16
+[0m
+[0;32mI (23277) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (23277) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23287) NimBLE: att_handle=19
+[0m
+[0;32mI (23287) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 0.92 
+angle = -0.09 
+[0;32mI (23397) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23397) NimBLE: att_handle=16
+[0m
+[0;32mI (23397) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (23397) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23407) NimBLE: att_handle=19
+[0m
+[0;32mI (23407) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.51 
+angle = -0.09 
+[0;32mI (23517) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23517) NimBLE: att_handle=16
+[0m
+[0;32mI (23517) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (23517) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23527) NimBLE: att_handle=19
+[0m
+[0;32mI (23527) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.73 
+angle = -0.08 
+[0;32mI (23637) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23637) NimBLE: att_handle=16
+[0m
+[0;32mI (23637) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (23637) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23647) NimBLE: att_handle=19
+[0m
+[0;32mI (23647) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.88 
+angle = -0.10 
+[0;32mI (23757) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23757) NimBLE: att_handle=16
+[0m
+[0;32mI (23757) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (23757) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23767) NimBLE: att_handle=19
+[0m
+[0;32mI (23767) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.45 
+angle = -0.09 
+[0;32mI (23877) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23877) NimBLE: att_handle=16
+[0m
+[0;32mI (23877) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (23877) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23887) NimBLE: att_handle=19
+[0m
+[0;32mI (23887) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.74
+jerk = 0.39 
+angle = -0.09 
+[0;32mI (23997) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23997) NimBLE: att_handle=16
+[0m
+[0;32mI (23997) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (23997) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24007) NimBLE: att_handle=19
+[0m
+[0;32mI (24007) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.51
+jerk = 0.21 
+angle = -0.09 
+[0;32mI (24117) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24117) NimBLE: att_handle=16
+[0m
+[0;32mI (24117) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (24117) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24127) NimBLE: att_handle=19
+[0m
+[0;32mI (24127) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.58 
+angle = -0.08 
+[0;32mI (24237) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24237) NimBLE: att_handle=16
+[0m
+[0;32mI (24237) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (24237) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24247) NimBLE: att_handle=19
+[0m
+[0;32mI (24247) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.87 
+angle = -0.09 
+[0;32mI (24357) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24357) NimBLE: att_handle=16
+[0m
+[0;32mI (24357) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (24357) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24367) NimBLE: att_handle=19
+[0m
+[0;32mI (24367) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.51
+jerk = 0.88 
+angle = -0.08 
+[0;32mI (24477) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24477) NimBLE: att_handle=16
+[0m
+[0;32mI (24477) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (24477) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24487) NimBLE: att_handle=19
+[0m
+[0;32mI (24487) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.56 
+angle = -0.09 
+[0;32mI (24597) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24597) NimBLE: att_handle=16
+[0m
+[0;32mI (24597) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (24597) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24607) NimBLE: att_handle=19
+[0m
+[0;32mI (24607) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.51
+jerk = 0.36 
+angle = -0.09 
+[0;32mI (24717) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24717) NimBLE: att_handle=16
+[0m
+[0;32mI (24717) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (24717) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24727) NimBLE: att_handle=19
+[0m
+[0;32mI (24727) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.45 
+angle = -0.09 
+[0;32mI (24837) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24837) NimBLE: att_handle=16
+[0m
+[0;32mI (24837) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (24837) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24847) NimBLE: att_handle=19
+[0m
+[0;32mI (24847) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.69 
+angle = -0.10 
+[0;32mI (24957) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24957) NimBLE: att_handle=16
+[0m
+[0;32mI (24957) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (24957) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24967) NimBLE: att_handle=19
+[0m
+[0;32mI (24967) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 1.14 
+angle = -0.09 
+[0;32mI (25077) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25077) NimBLE: att_handle=16
+[0m
+[0;32mI (25077) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (25077) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25087) NimBLE: att_handle=19
+[0m
+[0;32mI (25087) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.51
+jerk = 1.05 
+angle = -0.09 
+[0;32mI (25197) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25197) NimBLE: att_handle=16
+[0m
+[0;32mI (25197) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (25197) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25207) NimBLE: att_handle=19
+[0m
+[0;32mI (25207) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 0.71 
+angle = -0.09 
+[0;32mI (25317) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25317) NimBLE: att_handle=16
+[0m
+[0;32mI (25317) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (25317) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25327) NimBLE: att_handle=19
+[0m
+[0;32mI (25327) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.75 
+angle = -0.09 
+[0;32mI (25437) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25437) NimBLE: att_handle=16
+[0m
+[0;32mI (25437) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (25437) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25447) NimBLE: att_handle=19
+[0m
+[0;32mI (25447) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 1.43 
+angle = -0.09 
+[0;32mI (25557) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25557) NimBLE: att_handle=16
+[0m
+[0;32mI (25557) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (25557) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25567) NimBLE: att_handle=19
+[0m
+[0;32mI (25567) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.49 
+angle = -0.08 
+[0;32mI (25677) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25677) NimBLE: att_handle=16
+[0m
+[0;32mI (25677) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (25677) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25687) NimBLE: att_handle=19
+[0m
+[0;32mI (25687) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.83 
+angle = -0.09 
+[0;32mI (25797) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25797) NimBLE: att_handle=16
+[0m
+[0;32mI (25797) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (25797) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25807) NimBLE: att_handle=19
+[0m
+[0;32mI (25807) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.34 
+angle = -0.09 
+[0;32mI (25917) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25917) NimBLE: att_handle=16
+[0m
+[0;32mI (25917) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (25917) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25927) NimBLE: att_handle=19
+[0m
+[0;32mI (25927) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 0.84 
+angle = -0.09 
+[0;32mI (26037) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26037) NimBLE: att_handle=16
+[0m
+[0;32mI (26037) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (26037) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26047) NimBLE: att_handle=19
+[0m
+[0;32mI (26047) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.98 
+angle = -0.10 
+[0;32mI (26157) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26157) NimBLE: att_handle=16
+[0m
+[0;32mI (26157) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (26157) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26167) NimBLE: att_handle=19
+[0m
+[0;32mI (26167) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.53 
+angle = -0.09 
+[0;32mI (26277) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26277) NimBLE: att_handle=16
+[0m
+[0;32mI (26277) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (26277) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26287) NimBLE: att_handle=19
+[0m
+[0;32mI (26287) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 0.90 
+angle = -0.09 
+[0;32mI (26397) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26397) NimBLE: att_handle=16
+[0m
+[0;32mI (26397) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (26397) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26407) NimBLE: att_handle=19
+[0m
+[0;32mI (26407) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.51
+jerk = 0.23 
+angle = -0.09 
+[0;32mI (26517) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26517) NimBLE: att_handle=16
+[0m
+[0;32mI (26517) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (26517) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26527) NimBLE: att_handle=19
+[0m
+[0;32mI (26527) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 0.34 
+angle = -0.09 
+[0;32mI (26637) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26637) NimBLE: att_handle=16
+[0m
+[0;32mI (26637) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (26637) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26647) NimBLE: att_handle=19
+[0m
+[0;32mI (26647) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.55
+jerk = 0.93 
+angle = -0.10 
+[0;32mI (26757) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26757) NimBLE: att_handle=16
+[0m
+[0;32mI (26757) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (26757) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26767) NimBLE: att_handle=19
+[0m
+[0;32mI (26767) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.96 
+angle = -0.10 
+[0;32mI (26877) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26877) NimBLE: att_handle=16
+[0m
+[0;32mI (26877) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (26877) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26887) NimBLE: att_handle=19
+[0m
+[0;32mI (26887) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.65
+jerk = 0.29 
+angle = -0.10 
+[0;32mI (26997) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26997) NimBLE: att_handle=16
+[0m
+[0;32mI (26997) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (26997) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27007) NimBLE: att_handle=19
+[0m
+[0;32mI (27007) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 30.60
+jerk = 0.26 
+angle = -0.09 

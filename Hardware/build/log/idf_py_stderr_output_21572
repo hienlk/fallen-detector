@@ -1,0 +1,65 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM3 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM3 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x4004c0d4: uart_tx_one_char_uart.part.0 in ROM
+[0m
+[0;33m--- 0x4204ac96: _GLOBAL__sub_I__ZN10__cxxabiv111__terminateEPFvvE at eh_terminate.cc:?
+[0m
+[0;33m--- 0x4204ac1a: _GLOBAL__sub_I__ZN17__eh_globals_init7_S_initE at eh_globals.cc:?
+[0m
+[0;33m--- 0x4204a75e: _GLOBAL__sub_I__ZSt7nothrow at new_handler.cc:?
+[0m
+[0;33m--- 0x42033e06: check_i2c_driver_conflict at E:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/i2c/i2c.c:1654
+[0m
+[0;33m--- 0x40389ba2: enable_timer_group0_for_calibration at E:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/port/esp32c3/rtc_time.c:200
+[0m
+[0;33m--- 0x4200002a: esp_app_format_init_elf_sha256 at E:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_app_format/esp_app_desc.c:69
+[0m
+[0;33m--- 0x42005886: __esp_system_init_fn_esp_timer_startup_init at E:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_timer/src/esp_timer.c:578
+[0m
+[0;33m--- 0x42001c1a: __esp_system_init_fn_esp_hw_stack_guard_init at E:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/hw_stack_guard.c:15
+[0m
+[0;33m--- 0x42003550: __esp_system_init_fn_esp_sleep_startup_init at E:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/sleep_gpio.c:189
+[0m
+[0;33m--- 0x42001430: __esp_system_init_fn_init_components0 at E:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/startup.c:493
+[0m
+[0;33m--- 0x4038d688: xTaskPriorityDisinherit at E:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/tasks.c:5093
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x4038d69e: xTaskPriorityDisinherit at E:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/tasks.c:5108
+0x4038b0cc: prvCopyDataToQueue at E:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/queue.c:2470
+[0m
+[0;33m--- 0x40380a44: heap_caps_calloc_base at E:/Espressif/frameworks/esp-idf-v5.2.2/components/heap/heap_caps.c:520
+[0m
+[0;33m--- 0x42006554: console_write at E:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:71
+[0m
+[0;33m--- 0x40380001: _vector_table at ??:?
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'E:\\workspace\\v1\\build\\app-template.elf', '-ex', 'target remote | "E:\\Espressif\\python_env\\idf5.2_py3.11_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\dinhb\\AppData\\Local\\Temp\\tmptdwixyc2"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'E:\\Espressif\\python_env\\idf5.2_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\dinhb\\AppData\\Local\\Temp\\tmptdwixyc2': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x403806ec: esp_restart_noos at E:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/soc/esp32c3/system_internal.c:111
+[0m
+[0;33m--- 0x4204ac96: _GLOBAL__sub_I__ZN10__cxxabiv111__terminateEPFvvE at eh_terminate.cc:?
+[0m
+[0;33m--- 0x4204ac1a: _GLOBAL__sub_I__ZN17__eh_globals_init7_S_initE at eh_globals.cc:?
+[0m
+[0;33m--- 0x4204a75e: _GLOBAL__sub_I__ZSt7nothrow at new_handler.cc:?
+[0m
+[0;33m--- 0x42033e06: check_i2c_driver_conflict at E:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/i2c/i2c.c:1654
+[0m
+[0;33m--- 0x40389ba2: enable_timer_group0_for_calibration at E:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/port/esp32c3/rtc_time.c:200
+[0m
+[0;33m--- 0x4200002a: esp_app_format_init_elf_sha256 at E:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_app_format/esp_app_desc.c:69
+[0m
+[0;33m--- 0x42005886: __esp_system_init_fn_esp_timer_startup_init at E:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_timer/src/esp_timer.c:578
+[0m
+[0;33m--- 0x42001c1a: __esp_system_init_fn_esp_hw_stack_guard_init at E:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/hw_stack_guard.c:15
+[0m
+[0;33m--- 0x42003550: __esp_system_init_fn_esp_sleep_startup_init at E:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/sleep_gpio.c:189
+[0m
+[0;33m--- 0x42001430: __esp_system_init_fn_init_components0 at E:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/startup.c:493
+[0m
+[0m

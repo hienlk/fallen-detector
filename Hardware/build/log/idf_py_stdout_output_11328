@@ -1,0 +1,2606 @@
+D (411) spi_flash: trying chip: gd[0ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c0d6
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Oct 18 2024 17:31:12[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (33) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (85) esp_image: segment 0: paddr=00010020 vaddr=3c070020 size=1acf8h (109816) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=0002ad20 vaddr=3fc92e00 size=025f8h (  9720) load[0m
+[0;32mI (113) esp_image: segment 2: paddr=0002d320 vaddr=40380000 size=02cf8h ( 11512) load[0m
+[0;32mI (118) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=617f0h (399344) map[0m
+[0;32mI (187) esp_image: segment 4: paddr=00091818 vaddr=40382cf8 size=0ff28h ( 65320) load[0m
+[0;32mI (205) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (206) boot: Disabling RNG early entropy source...[0m
+[0;32mI (217) cpu_start: Unicore app[0m
+D (217) cpu_start: Pro cpu up[0m
+D (225) clk: RTC_SLOW_CLK calibration value: 3614272[0m
+[0;32mI (231) cpu_start: Pro cpu start user code[0m
+[0;32mI (231) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (231) cpu_start: Application information:[0m
+[0;32mI (234) cpu_start: Project name:     app-template[0m
+[0;32mI (239) cpu_start: App version:      a74f263-dirty[0m
+[0;32mI (245) cpu_start: Compile time:     Oct 18 2024 19:13:20[0m
+[0;32mI (251) cpu_start: ELF file SHA256:  ab2af2369...[0m
+[0;32mI (256) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (262) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (266) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (271) cpu_start: Chip rev:         v0.4[0m
+D (276) memory_layout: Checking 5 reserved memory ranges:[0m
+D (281) memory_layout: Reserved memory range 0x3fc80000 - 0x3fc92e00[0m
+D (288) memory_layout: Reserved memory range 0x3fc92e00 - 0x3fc98160[0m
+D (294) memory_layout: Reserved memory range 0x3fcdf060 - 0x3fce0000[0m
+D (301) memory_layout: Reserved memory range 0x50000000 - 0x50000010[0m
+D (307) memory_layout: Reserved memory range 0x50001fe8 - 0x50002000[0m
+D (313) memory_layout: Building list of available memory regions:[0m
+D (320) memory_layout: Available memory region 0x3fc98160 - 0x3fca0000[0m
+D (326) memory_layout: Available memory region 0x3fca0000 - 0x3fcc0000[0m
+D (333) memory_layout: Available memory region 0x3fcc0000 - 0x3fcdc710[0m
+D (339) memory_layout: Available memory region 0x3fcdc710 - 0x3fcdf060[0m
+D (346) memory_layout: Available memory region 0x50000010 - 0x50001fe8[0m
+[0;32mI (353) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (360) heap_init: New heap initialised at 0x3fc98160[0m
+[0;32mI (365) heap_init: At 3FC98160 len 00027EA0 (159 KiB): RAM[0m
+D (371) heap_init: New heap initialised at 0x3fcc0000[0m
+[0;32mI (376) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (383) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+D (390) heap_init: New heap initialised at 0x50000010[0m
+[0;32mI (395) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+D (402) intr_alloc: Connected src 27 to int 2 (cpu 0)[0m
+D (407) spi_flash: trying chip: issi[0m
+D (410) spi_flash: trying chip: gd[0m
+D (414) spi_flash: trying chip: mxic[0m
+D (417) spi_flash: trying chip: winbond[0m
+D (421) spi_flash: trying chip: boya[0m
+D (425) spi_flash: trying chip: th[0m
+D (428) spi_flash: trying chip: generic[0m
+[0;32mI (432) spi_flash: detected chip: generic[0m
+[0;32mI (437) spi_flash: flash io: dio[0m
+[0;33mW (441) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+D (454) cpu_start: calling init function: 0x4204b76e[0m
+D (459) cpu_start: calling init function: 0x4204b6f2[0m
+D (464) cpu_start: calling init function: 0x4204b236[0m
+D (469) cpu_start: calling init function: 0x420348de[0m
+[0;33mW (474) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+D (485) cpu_start: calling init function: 0x40389ba2[0m
+D (490) cpu_start: calling init function: 0x4200002a[0m
+D (495) cpu_start: calling init function: 0x42005886 on core: 0[0m
+D (501) intr_alloc: Connected src 39 to int 3 (cpu 0)[0m
+D (506) cpu_start: calling init function: 0x42001c1a on core: 0[0m
+D (512) cpu_start: calling init function: 0x42003550 on core: 0[0m
+[0;32mI (518) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (525) sleep: Enable automatic switching of GPIO sleep configuration[0m
+D (532) cpu_start: calling init function: 0x42001430 on core: 0[0m
+[0;32mI (538) coexist: coex firmware version: d96c1e51f[0m
+[0;32mI (543) coexist: coexist rom version 9387209[0m
+D (548) intr_alloc: Connected src 50 to int 4 (cpu 0)[0m
+D (553) app_start: Starting scheduler on CPU0[0m
+D (558) intr_alloc: Connected src 37 to int 7 (cpu 0)[0m
+[0;32mI (558) main_task: Started on CPU0[0m
+D (558) heap_init: New heap initialised at 0x3fcdc710[0m
+D (558) intr_alloc: Connected src 33 to int 9 (cpu 0)[0m
+[0;32mI (568) main_task: Calling app_main()[0m
+D (568) intr_alloc: Connected src 29 to int 10 (cpu 0)[0m
+[0;32mI (588) BLE_INIT: BT controller compile version [c23ab4c][0m
+D (588) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (588) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (598) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (608) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (608) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (618) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+[0;32mI (628) BLE_INIT: Bluetooth MAC: 34:b7:da:f6:47:7e[0m
+[0;32mI (628) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+D (638) phy_init: loading PHY init data from application binary[0m
+D (648) nvs: nvs_open_from_partition phy 0[0m
+D (648) nvs: nvs_get cal_version 4[0m
+D (648) nvs: nvs_get_str_or_blob cal_mac[0m
+D (658) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (658) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (668) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (678) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (678) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (688) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (698) nvs: nvs_get_str_or_blob cal_data[0m
+D (698) nvs: nvs_close 1[0m
+D (708) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (708) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (718) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (728) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (728) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (738) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (758) temperature_sensor: range changed, change to index 2[0m
+D (788) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (788) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (788) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (788) nvs: nvs_close 2[0m
+D (788) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (798) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (798) nvs: nvs_get_str_or_blob our_sec_2[0m
+D (808) nvs: nvs_close 3[0m
+D (808) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (818) nvs: nvs_get_str_or_blob our_sec_3[0m
+D (818) nvs: nvs_close 4[0m
+D (818) NIMBLE_NVS: ble_store_config_our_secs restored 1 bonds[0m
+D (828) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (828) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (838) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (838) nvs: nvs_close 5[0m
+D (838) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (848) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (848) nvs: nvs_get_str_or_blob peer_sec_2[0m
+D (858) nvs: nvs_close 6[0m
+D (858) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (868) nvs: nvs_get_str_or_blob peer_sec_3[0m
+D (868) nvs: nvs_close 7[0m
+D (868) NIMBLE_NVS: ble_store_config_peer_secs restored 1 bonds[0m
+D (878) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (878) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (888) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (888) nvs: nvs_close 8[0m
+D (898) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 1[0m
+D (898) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (908) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (908) nvs: nvs_close 9[0m
+D (908) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (918) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (918) nvs: nvs_close 10[0m
+D (918) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (928) nvs: nvs_get_str_or_blob cccd_sec_4[0m
+D (928) nvs: nvs_close 11[0m
+D (938) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (938) nvs: nvs_get_str_or_blob cccd_sec_5[0m
+D (948) nvs: nvs_close 12[0m
+D (948) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (948) nvs: nvs_get_str_or_blob cccd_sec_6[0m
+D (958) nvs: nvs_close 13[0m
+D (958) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (958) nvs: nvs_get_str_or_blob cccd_sec_7[0m
+D (968) nvs: nvs_close 14[0m
+D (968) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (978) nvs: nvs_get_str_or_blob cccd_sec_8[0m
+D (978) nvs: nvs_close 15[0m
+D (978) NIMBLE_NVS: ble_store_config_cccds restored 1 bonds[0m
+D (988) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (988) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (998) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (998) nvs: nvs_close 16[0m
+D (1008) NIMBLE_NVS: Local IRK in RAM is filled up from NVS index = 1[0m
+D (1008) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1018) nvs: nvs_get_str_or_blob local_irk_2[0m
+D (1018) nvs: nvs_close 17[0m
+D (1018) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1028) nvs: nvs_get_str_or_blob local_irk_3[0m
+D (1028) nvs: nvs_close 18[0m
+D (1038) NIMBLE_NVS: ble_store_config_local_irks restored 1 irks[0m
+D (1038) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1048) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (1048) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (1058) nvs: nvs_close 19[0m
+D (1058) NIMBLE_NVS: RPA_REC in RAM is filled up from NVS index = 1[0m
+D (1068) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1068) nvs: nvs_get_str_or_blob rpa_rec_2[0m
+D (1068) nvs: nvs_close 20[0m
+D (1078) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1078) nvs: nvs_get_str_or_blob rpa_rec_3[0m
+D (1088) nvs: nvs_close 21[0m
+D (1088) NIMBLE_NVS: ble_store_config_rpa_recs restored 1 bonds[0m
+[0;32mI (1098) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1098) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1108) NimBLE: Device Address: [0m
+[0;32mI (1108) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (1118) NimBLE: 
+[0m
+[0;32mI (1118) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1118) NimBLE: disc_mode=2[0m
+[0;32mI (1128) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1138) NimBLE: 
+[0m
+[0;32mI (1138) main_task: Returned from app_main()[0m
+Temperature: 30.79
+jerk = 0.00 
+angle = 0.00 
+Enable/Disable Button Pressed!
+Stopping NimBLE stack...
+[0;32mI (1238) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+D (1238) Timer: Timer not stopped[0m
+[0;32mI (1238) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+D (1248) Timer: Timer not stopped[0m
+NimBLE stack stopped
+Temperature: 30.84
+jerk = 53.10 
+angle = -0.03 
+Temperature: 30.84
+jerk = 0.53 
+angle = -0.03 
+Temperature: 30.88
+jerk = 0.61 
+angle = -0.04 
+Temperature: 30.93
+jerk = 0.62 
+angle = -0.03 
+Temperature: 30.88
+jerk = 0.46 
+angle = -0.03 
+Temperature: 30.79
+jerk = 0.50 
+angle = -0.03 
+Temperature: 30.88
+jerk = 0.84 
+angle = -0.03 
+Temperature: 30.88
+jerk = 0.92 
+angle = -0.04 
+Temperature: 30.84
+jerk = 0.41 
+angle = -0.04 
+Temperature: 30.88
+jerk = 0.33 
+angle = -0.04 
+Temperature: 30.84
+jerk = 0.29 
+angle = -0.03 
+Temperature: 30.88
+jerk = 0.54 
+angle = -0.04 
+Temperature: 30.93
+jerk = 0.59 
+angle = -0.03 
+Enable/Disable Button Pressed!
+Starting NimBLE stack...
+[0;32mI (2548) BLE_INIT: BT controller compile version [c23ab4c][0m
+[0;32mI (2548) BLE_INIT: Bluetooth MAC: 34:b7:da:f6:47:7e[0m
+D (2558) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (2558) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (2558) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (2558) nvs: nvs_close 22[0m
+D (2568) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (2568) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (2578) nvs: nvs_get_str_or_blob our_sec_2[0m
+D (2578) nvs: nvs_close 23[0m
+D (2578) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (2588) nvs: nvs_get_str_or_blob our_sec_3[0m
+D (2588) nvs: nvs_close 24[0m
+D (2598) NIMBLE_NVS: ble_store_config_our_secs restored 1 bonds[0m
+D (2598) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (2608) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (2608) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (2618) nvs: nvs_close 25[0m
+D (2618) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (2628) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (2628) nvs: nvs_get_str_or_blob peer_sec_2[0m
+D (2628) nvs: nvs_close 26[0m
+D (2638) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (2638) nvs: nvs_get_str_or_blob peer_sec_3[0m
+D (2648) nvs: nvs_close 27[0m
+D (2648) NIMBLE_NVS: ble_store_config_peer_secs restored 1 bonds[0m
+D (2658) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (2658) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (2658) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (2668) nvs: nvs_close 28[0m
+D (2668) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 1[0m
+D (2678) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (2678) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (2688) nvs: nvs_close 29[0m
+D (2688) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (2698) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (2698) nvs: nvs_close 30[0m
+D (2698) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (2708) nvs: nvs_get_str_or_blob cccd_sec_4[0m
+D (2708) nvs: nvs_close 31[0m
+D (2708) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (2718) nvs: nvs_get_str_or_blob cccd_sec_5[0m
+D (2718) nvs: nvs_close 32[0m
+D (2728) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (2728) nvs: nvs_get_str_or_blob cccd_sec_6[0m
+D (2738) nvs: nvs_close 33[0m
+D (2738) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (2738) nvs: nvs_get_str_or_blob cccd_sec_7[0m
+D (2748) nvs: nvs_close 34[0m
+D (2748) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (2758) nvs: nvs_get_str_or_blob cccd_sec_8[0m
+D (2758) nvs: nvs_close 35[0m
+D (2758) NIMBLE_NVS: ble_store_config_cccds restored 1 bonds[0m
+D (2768) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (2768) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (2778) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (2778) nvs: nvs_close 36[0m
+D (2778) NIMBLE_NVS: Local IRK in RAM is filled up from NVS index = 1[0m
+D (2788) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (2798) nvs: nvs_get_str_or_blob local_irk_2[0m
+D (2798) nvs: nvs_close 37[0m
+D (2798) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (2808) nvs: nvs_get_str_or_blob local_irk_3[0m
+D (2808) nvs: nvs_close 38[0m
+D (2818) NIMBLE_NVS: ble_store_config_local_irks restored 1 irks[0m
+D (2818) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (2828) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (2828) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (2838) nvs: nvs_close 39[0m
+D (2838) NIMBLE_NVS: RPA_REC in RAM is filled up from NVS index = 1[0m
+D (2838) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (2848) nvs: nvs_get_str_or_blob rpa_rec_2[0m
+D (2848) nvs: nvs_close 40[0m
+D (2858) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (2858) nvs: nvs_get_str_or_blob rpa_rec_3[0m
+D (2868) nvs: nvs_close 41[0m
+D (2868) NIMBLE_NVS: ble_store_config_rpa_recs restored 1 bonds[0m
+[0;32mI (2878) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (2878) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (2888) NimBLE: Device Address: [0m
+[0;32mI (2888) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (2898) NimBLE: 
+[0m
+[0;32mI (2898) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (2898) NimBLE: disc_mode=2[0m
+[0;32mI (2908) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (2918) NimBLE: 
+[0m
+Temperature: 30.93
+jerk = 1.00 
+angle = -0.03 
+Temperature: 30.88
+jerk = 1.22 
+angle = -0.04 
+Temperature: 30.93
+jerk = 0.57 
+angle = -0.03 
+Temperature: 30.88
+jerk = 0.12 
+angle = -0.03 
+Temperature: 30.84
+jerk = 0.83 
+angle = -0.02 
+Temperature: 30.79
+jerk = 0.76 
+angle = -0.03 
+Temperature: 30.93
+jerk = 0.84 
+angle = -0.03 
+Temperature: 30.88
+jerk = 0.45 
+angle = -0.03 
+Temperature: 30.88
+jerk = 0.60 
+angle = -0.02 
+Temperature: 30.93
+jerk = 0.52 
+angle = -0.03 
+Temperature: 30.88
+jerk = 0.49 
+angle = -0.03 
+Temperature: 30.93
+jerk = 0.35 
+angle = -0.03 
+Temperature: 30.98
+jerk = 0.75 
+angle = -0.03 
+Enable/Disable Button Pressed!
+Stopping NimBLE stack...
+[0;32mI (4218) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+D (4218) Timer: Timer not stopped[0m
+[0;32mI (4218) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+D (4228) Timer: Timer not stopped[0m
+NimBLE stack stopped
+Temperature: 30.74
+jerk = 0.27 
+angle = -0.04 
+Temperature: 30.84
+jerk = 0.63 
+angle = -0.04 
+Temperature: 30.88
+jerk = 0.84 
+angle = -0.03 
+Temperature: 30.84
+jerk = 0.66 
+angle = -0.03 
+Temperature: 30.79
+jerk = 0.36 
+angle = -0.03 
+Temperature: 30.88
+jerk = 0.41 
+angle = -0.03 
+Temperature: 30.84
+jerk = 0.57 
+angle = -0.03 
+Temperature: 30.88
+jerk = 0.50 
+angle = -0.02 
+Temperature: 30.84
+jerk = 1.14 
+angle = -0.04 
+Temperature: 30.88
+jerk = 0.57 
+angle = -0.03 
+Temperature: 30.88
+jerk = 0.49 
+angle = -0.03 
+Temperature: 30.84
+jerk = 0.68 
+angle = -0.04 
+Temperature: 30.88
+jerk = 0.16 
+angle = -0.04 
+Temperature: 30.84
+jerk = 0.44 
+angle = -0.04 
+Temperature: 30.98
+jerk = 0.39 
+angle = -0.03 
+Enable/Disable Button Pressed!
+Starting NimBLE stack...
+[0;32mI (5728) BLE_INIT: BT controller compile version [c23ab4c][0m
+[0;32mI (5728) BLE_INIT: Bluetooth MAC: 34:b7:da:f6:47:7e[0m
+D (5738) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (5738) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (5738) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (5738) nvs: nvs_close 42[0m
+D (5748) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (5748) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (5758) nvs: nvs_get_str_or_blob our_sec_2[0m
+D (5758) nvs: nvs_close 43[0m
+D (5758) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (5768) nvs: nvs_get_str_or_blob our_sec_3[0m
+D (5768) nvs: nvs_close 44[0m
+D (5778) NIMBLE_NVS: ble_store_config_our_secs restored 1 bonds[0m
+D (5778) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (5788) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (5788) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (5798) nvs: nvs_close 45[0m
+D (5798) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (5808) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (5808) nvs: nvs_get_str_or_blob peer_sec_2[0m
+D (5808) nvs: nvs_close 46[0m
+D (5818) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (5818) nvs: nvs_get_str_or_blob peer_sec_3[0m
+D (5828) nvs: nvs_close 47[0m
+D (5828) NIMBLE_NVS: ble_store_config_peer_secs restored 1 bonds[0m
+D (5838) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (5838) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (5838) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (5848) nvs: nvs_close 48[0m
+D (5848) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 1[0m
+D (5858) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (5858) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (5868) nvs: nvs_close 49[0m
+D (5868) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (5878) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (5878) nvs: nvs_close 50[0m
+D (5878) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (5888) nvs: nvs_get_str_or_blob cccd_sec_4[0m
+D (5888) nvs: nvs_close 51[0m
+D (5888) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (5898) nvs: nvs_get_str_or_blob cccd_sec_5[0m
+D (5898) nvs: nvs_close 52[0m
+D (5908) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (5908) nvs: nvs_get_str_or_blob cccd_sec_6[0m
+D (5918) nvs: nvs_close 53[0m
+D (5918) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (5918) nvs: nvs_get_str_or_blob cccd_sec_7[0m
+D (5928) nvs: nvs_close 54[0m
+D (5928) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (5938) nvs: nvs_get_str_or_blob cccd_sec_8[0m
+D (5938) nvs: nvs_close 55[0m
+D (5938) NIMBLE_NVS: ble_store_config_cccds restored 1 bonds[0m
+D (5948) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (5948) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (5958) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (5958) nvs: nvs_close 56[0m
+D (5958) NIMBLE_NVS: Local IRK in RAM is filled up from NVS index = 1[0m
+D (5968) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (5978) nvs: nvs_get_str_or_blob local_irk_2[0m
+D (5978) nvs: nvs_close 57[0m
+D (5978) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (5988) nvs: nvs_get_str_or_blob local_irk_3[0m
+D (5988) nvs: nvs_close 58[0m
+D (5998) NIMBLE_NVS: ble_store_config_local_irks restored 1 irks[0m
+D (5998) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (6008) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (6008) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (6018) nvs: nvs_close 59[0m
+D (6018) NIMBLE_NVS: RPA_REC in RAM is filled up from NVS index = 1[0m
+D (6018) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (6028) nvs: nvs_get_str_or_blob rpa_rec_2[0m
+D (6028) nvs: nvs_close 60[0m
+D (6038) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (6038) nvs: nvs_get_str_or_blob rpa_rec_3[0m
+D (6048) nvs: nvs_close 61[0m
+D (6048) NIMBLE_NVS: ble_store_config_rpa_recs restored 1 bonds[0m
+[0;32mI (6058) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (6058) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (6068) NimBLE: Device Address: [0m
+[0;32mI (6068) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (6078) NimBLE: 
+[0m
+[0;32mI (6078) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (6078) NimBLE: disc_mode=2[0m
+[0;32mI (6088) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (6098) NimBLE: 
+[0m
+Temperature: 30.84
+jerk = 0.55 
+angle = -0.03 
+Temperature: 30.93
+jerk = 2.43 
+angle = -0.03 
+Temperature: 30.88
+jerk = 4.02 
+angle = -0.04 
+Temperature: 30.88
+jerk = 1.98 
+angle = -0.05 
+Temperature: 30.88
+jerk = 1.91 
+angle = -0.04 
+Temperature: 30.84
+jerk = 1.46 
+angle = -0.05 
+Temperature: 30.84
+jerk = 2.55 
+angle = -0.05 
+Temperature: 30.88
+jerk = 2.97 
+angle = -0.04 
+Temperature: 30.98
+jerk = 4.47 
+angle = -0.04 
+Temperature: 30.84
+jerk = 3.99 
+angle = -0.04 
+Temperature: 30.84
+jerk = 3.69 
+angle = -0.05 
+Enable/Disable Button Pressed!
+Stopping NimBLE stack...
+[0;32mI (7198) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+D (7198) Timer: Timer not stopped[0m
+[0;32mI (7198) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+D (7208) Timer: Timer not stopped[0m
+NimBLE stack stopped
+Temperature: 30.98
+jerk = 2.98 
+angle = -0.06 
+Temperature: 30.84
+jerk = 2.11 
+angle = -0.05 
+Temperature: 30.88
+jerk = 1.30 
+angle = -0.04 
+Temperature: 30.88
+jerk = 1.00 
+angle = -0.05 
+Temperature: 30.88
+jerk = 1.37 
+angle = -0.05 
+Temperature: 30.84
+jerk = 1.09 
+angle = -0.04 
+Temperature: 30.84
+jerk = 1.12 
+angle = -0.04 
+Temperature: 30.88
+jerk = 1.34 
+angle = -0.05 
+Temperature: 30.88
+jerk = 1.17 
+angle = -0.05 
+Temperature: 30.79
+jerk = 0.75 
+angle = -0.05 
+Temperature: 30.84
+jerk = 0.87 
+angle = -0.05 
+Enable/Disable Button Pressed!
+Starting NimBLE stack...
+[0;32mI (8308) BLE_INIT: BT controller compile version [c23ab4c][0m
+[0;32mI (8308) BLE_INIT: Bluetooth MAC: 34:b7:da:f6:47:7e[0m
+D (8318) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (8318) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (8318) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (8318) nvs: nvs_close 62[0m
+D (8328) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (8328) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (8338) nvs: nvs_get_str_or_blob our_sec_2[0m
+D (8338) nvs: nvs_close 63[0m
+D (8338) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (8348) nvs: nvs_get_str_or_blob our_sec_3[0m
+D (8348) nvs: nvs_close 64[0m
+D (8358) NIMBLE_NVS: ble_store_config_our_secs restored 1 bonds[0m
+D (8358) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (8368) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (8368) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (8378) nvs: nvs_close 65[0m
+D (8378) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (8388) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (8388) nvs: nvs_get_str_or_blob peer_sec_2[0m
+D (8388) nvs: nvs_close 66[0m
+D (8398) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (8398) nvs: nvs_get_str_or_blob peer_sec_3[0m
+D (8408) nvs: nvs_close 67[0m
+D (8408) NIMBLE_NVS: ble_store_config_peer_secs restored 1 bonds[0m
+D (8418) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (8418) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (8418) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (8428) nvs: nvs_close 68[0m
+D (8428) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 1[0m
+D (8438) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (8438) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (8448) nvs: nvs_close 69[0m
+D (8448) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (8458) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (8458) nvs: nvs_close 70[0m
+D (8458) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (8468) nvs: nvs_get_str_or_blob cccd_sec_4[0m
+D (8468) nvs: nvs_close 71[0m
+D (8468) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (8478) nvs: nvs_get_str_or_blob cccd_sec_5[0m
+D (8478) nvs: nvs_close 72[0m
+D (8488) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (8488) nvs: nvs_get_str_or_blob cccd_sec_6[0m
+D (8498) nvs: nvs_close 73[0m
+D (8498) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (8498) nvs: nvs_get_str_or_blob cccd_sec_7[0m
+D (8508) nvs: nvs_close 74[0m
+D (8508) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (8518) nvs: nvs_get_str_or_blob cccd_sec_8[0m
+D (8518) nvs: nvs_close 75[0m
+D (8518) NIMBLE_NVS: ble_store_config_cccds restored 1 bonds[0m
+D (8528) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (8528) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (8538) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (8538) nvs: nvs_close 76[0m
+D (8538) NIMBLE_NVS: Local IRK in RAM is filled up from NVS index = 1[0m
+D (8548) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (8558) nvs: nvs_get_str_or_blob local_irk_2[0m
+D (8558) nvs: nvs_close 77[0m
+D (8558) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (8568) nvs: nvs_get_str_or_blob local_irk_3[0m
+D (8568) nvs: nvs_close 78[0m
+D (8578) NIMBLE_NVS: ble_store_config_local_irks restored 1 irks[0m
+D (8578) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (8588) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (8588) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (8598) nvs: nvs_close 79[0m
+D (8598) NIMBLE_NVS: RPA_REC in RAM is filled up from NVS index = 1[0m
+D (8598) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (8608) nvs: nvs_get_str_or_blob rpa_rec_2[0m
+D (8608) nvs: nvs_close 80[0m
+D (8618) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (8618) nvs: nvs_get_str_or_blob rpa_rec_3[0m
+D (8628) nvs: nvs_close 81[0m
+D (8628) NIMBLE_NVS: ble_store_config_rpa_recs restored 1 bonds[0m
+[0;32mI (8638) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (8638) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (8648) NimBLE: Device Address: [0m
+[0;32mI (8648) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (8658) NimBLE: 
+[0m
+[0;32mI (8658) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (8658) NimBLE: disc_mode=2[0m
+[0;32mI (8668) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (8678) NimBLE: 
+[0m
+Temperature: 30.88
+jerk = 0.74 
+angle = -0.06 
+Temperature: 30.79
+jerk = 1.47 
+angle = -0.04 
+Temperature: 30.88
+jerk = 0.73 
+angle = -0.04 
+Temperature: 30.84
+jerk = 0.63 
+angle = -0.05 
+Temperature: 30.79
+jerk = 0.18 
+angle = -0.05 
+Temperature: 30.88
+jerk = 0.72 
+angle = -0.04 
+Temperature: 30.84
+jerk = 0.73 
+angle = -0.04 
+Temperature: 30.88
+jerk = 0.27 
+angle = -0.04 
+Temperature: 30.88
+jerk = 0.50 
+angle = -0.04 
+Temperature: 30.88
+jerk = 0.43 
+angle = -0.04 
+Temperature: 30.93
+jerk = 0.15 
+angle = -0.04 
+Temperature: 30.88
+jerk = 0.69 
+angle = -0.05 
+Enable/Disable Button Pressed!
+Stopping NimBLE stack...
+[0;32mI (9878) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+D (9878) Timer: Timer not stopped[0m
+[0;32mI (9878) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+D (9888) Timer: Timer not stopped[0m
+NimBLE stack stopped
+Temperature: 30.84
+jerk = 0.55 
+angle = -0.04 
+Temperature: 30.88
+jerk = 0.14 
+angle = -0.04 
+Temperature: 30.84
+jerk = 0.48 
+angle = -0.05 
+Temperature: 30.88
+jerk = 0.24 
+angle = -0.05 
+Temperature: 30.88
+jerk = 0.23 
+angle = -0.05 
+Temperature: 30.84
+jerk = 0.41 
+angle = -0.05 
+Temperature: 30.84
+jerk = 0.48 
+angle = -0.04 
+Temperature: 30.88
+jerk = 0.65 
+angle = -0.06 
+Temperature: 30.88
+jerk = 0.24 
+angle = -0.06 
+Temperature: 30.88
+jerk = 0.92 
+angle = -0.06 
+Temperature: 30.93
+jerk = 0.96 
+angle = -0.05 
+Temperature: 30.84
+jerk = 0.29 
+angle = -0.05 
+Temperature: 30.79
+jerk = 0.41 
+angle = -0.06 
+Temperature: 30.88
+jerk = 0.74 
+angle = -0.05 
+Temperature: 30.93
+jerk = 0.62 
+angle = -0.06 
+Enable/Disable Button Pressed!
+Starting NimBLE stack...
+[0;32mI (11388) BLE_INIT: BT controller compile version [c23ab4c][0m
+[0;32mI (11388) BLE_INIT: Bluetooth MAC: 34:b7:da:f6:47:7e[0m
+D (11398) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (11398) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (11398) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (11398) nvs: nvs_close 82[0m
+D (11408) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (11408) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (11418) nvs: nvs_get_str_or_blob our_sec_2[0m
+D (11418) nvs: nvs_close 83[0m
+D (11428) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (11428) nvs: nvs_get_str_or_blob our_sec_3[0m
+D (11438) nvs: nvs_close 84[0m
+D (11438) NIMBLE_NVS: ble_store_config_our_secs restored 1 bonds[0m
+D (11438) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (11448) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (11448) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (11458) nvs: nvs_close 85[0m
+D (11458) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (11468) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (11468) nvs: nvs_get_str_or_blob peer_sec_2[0m
+D (11478) nvs: nvs_close 86[0m
+D (11478) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (11478) nvs: nvs_get_str_or_blob peer_sec_3[0m
+D (11488) nvs: nvs_close 87[0m
+D (11488) NIMBLE_NVS: ble_store_config_peer_secs restored 1 bonds[0m
+D (11498) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (11498) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (11508) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (11508) nvs: nvs_close 88[0m
+D (11508) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 1[0m
+D (11518) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (11528) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (11528) nvs: nvs_close 89[0m
+D (11528) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (11538) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (11538) nvs: nvs_close 90[0m
+D (11548) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (11548) nvs: nvs_get_str_or_blob cccd_sec_4[0m
+D (11548) nvs: nvs_close 91[0m
+D (11558) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (11558) nvs: nvs_get_str_or_blob cccd_sec_5[0m
+D (11568) nvs: nvs_close 92[0m
+D (11568) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (11578) nvs: nvs_get_str_or_blob cccd_sec_6[0m
+D (11578) nvs: nvs_close 93[0m
+D (11578) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (11588) nvs: nvs_get_str_or_blob cccd_sec_7[0m
+D (11588) nvs: nvs_close 94[0m
+D (11588) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (11598) nvs: nvs_get_str_or_blob cccd_sec_8[0m
+D (11598) nvs: nvs_close 95[0m
+D (11608) NIMBLE_NVS: ble_store_config_cccds restored 1 bonds[0m
+D (11608) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (11618) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (11618) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (11628) nvs: nvs_close 96[0m
+D (11628) NIMBLE_NVS: Local IRK in RAM is filled up from NVS index = 1[0m
+D (11638) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (11638) nvs: nvs_get_str_or_blob local_irk_2[0m
+D (11648) nvs: nvs_close 97[0m
+D (11648) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (11648) nvs: nvs_get_str_or_blob local_irk_3[0m
+D (11658) nvs: nvs_close 98[0m
+D (11658) NIMBLE_NVS: ble_store_config_local_irks restored 1 irks[0m
+D (11668) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (11668) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (11678) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (11678) nvs: nvs_close 99[0m
+D (11678) NIMBLE_NVS: RPA_REC in RAM is filled up from NVS index = 1[0m
+D (11688) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (11698) nvs: nvs_get_str_or_blob rpa_rec_2[0m
+D (11698) nvs: nvs_close 100[0m
+D (11698) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (11708) nvs: nvs_get_str_or_blob rpa_rec_3[0m
+D (11708) nvs: nvs_close 101[0m
+D (11708) NIMBLE_NVS: ble_store_config_rpa_recs restored 1 bonds[0m
+[0;32mI (11718) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (11728) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (11728) NimBLE: Device Address: [0m
+[0;32mI (11738) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (11738) NimBLE: 
+[0m
+[0;32mI (11748) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (11748) NimBLE: disc_mode=2[0m
+[0;32mI (11748) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (11758) NimBLE: 
+[0m
+Temperature: 30.84
+jerk = 0.36 
+angle = -0.05 
+Temperature: 30.88
+jerk = 1.24 
+angle = -0.06 
+Temperature: 30.84
+jerk = 0.45 
+angle = -0.06 
+Temperature: 30.84
+jerk = 0.98 
+angle = -0.05 
+Temperature: 30.88
+jerk = 1.34 
+angle = -0.04 
+Temperature: 30.84
+jerk = 0.54 
+angle = -0.05 
+Temperature: 30.84
+jerk = 0.33 
+angle = -0.05 
+Temperature: 30.88
+jerk = 0.41 
+angle = -0.06 
+Temperature: 30.88
+jerk = 0.39 
+angle = -0.06 
+Temperature: 30.93
+jerk = 0.33 
+angle = -0.05 
+Temperature: 30.88
+jerk = 0.42 
+angle = -0.05 
+Temperature: 30.79
+jerk = 0.53 
+angle = -0.06 
+Temperature: 30.84
+jerk = 0.27 
+angle = -0.06 
+Temperature: 30.93
+jerk = 0.31 
+angle = -0.05 
+Temperature: 31.07
+jerk = 0.94 
+angle = -0.06 
+Enable/Disable Button Pressed!
+Stopping NimBLE stack...
+[0;32mI (13268) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+D (13268) Timer: Timer not stopped[0m
+[0;32mI (13268) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+D (13278) Timer: Timer not stopped[0m
+NimBLE stack stopped
+Temperature: 30.88
+jerk = 0.82 
+angle = -0.06 
+Temperature: 30.93
+jerk = 0.36 
+angle = -0.07 
+Temperature: 30.88
+jerk = 0.73 
+angle = -0.06 
+Temperature: 30.88
+jerk = 1.09 
+angle = -0.05 
+Temperature: 30.93
+jerk = 1.28 
+angle = -0.06 
+Temperature: 30.93
+jerk = 0.97 
+angle = -0.06 
+Temperature: 30.88
+jerk = 0.76 
+angle = -0.05 
+Temperature: 30.88
+jerk = 0.90 
+angle = -0.05 
+Temperature: 30.88
+jerk = 0.45 
+angle = -0.06 
+Temperature: 30.98
+jerk = 0.69 
+angle = -0.05 
+Temperature: 30.93
+jerk = 0.41 
+angle = -0.06 
+Temperature: 30.98
+jerk = 0.81 
+angle = -0.06 
+Temperature: 30.93
+jerk = 0.46 
+angle = -0.07 
+Temperature: 30.88
+jerk = 0.62 
+angle = -0.06 
+Temperature: 30.88
+jerk = 0.54 
+angle = -0.06 
+Enable/Disable Button Pressed!
+Starting NimBLE stack...
+[0;32mI (14778) BLE_INIT: BT controller compile version [c23ab4c][0m
+[0;32mI (14778) BLE_INIT: Bluetooth MAC: 34:b7:da:f6:47:7e[0m
+D (14788) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (14788) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (14788) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (14788) nvs: nvs_close 102[0m
+D (14798) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (14798) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (14808) nvs: nvs_get_str_or_blob our_sec_2[0m
+D (14808) nvs: nvs_close 103[0m
+D (14818) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (14818) nvs: nvs_get_str_or_blob our_sec_3[0m
+D (14828) nvs: nvs_close 104[0m
+D (14828) NIMBLE_NVS: ble_store_config_our_secs restored 1 bonds[0m
+D (14828) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (14838) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (14838) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (14848) nvs: nvs_close 105[0m
+D (14848) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (14858) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (14858) nvs: nvs_get_str_or_blob peer_sec_2[0m
+D (14868) nvs: nvs_close 106[0m
+D (14868) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (14868) nvs: nvs_get_str_or_blob peer_sec_3[0m
+D (14878) nvs: nvs_close 107[0m
+D (14878) NIMBLE_NVS: ble_store_config_peer_secs restored 1 bonds[0m
+D (14888) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (14888) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (14898) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (14898) nvs: nvs_close 108[0m
+D (14908) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 1[0m
+D (14908) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (14918) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (14918) nvs: nvs_close 109[0m
+D (14918) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (14928) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (14928) nvs: nvs_close 110[0m
+D (14938) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (14938) nvs: nvs_get_str_or_blob cccd_sec_4[0m
+D (14948) nvs: nvs_close 111[0m
+D (14948) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (14948) nvs: nvs_get_str_or_blob cccd_sec_5[0m
+D (14958) nvs: nvs_close 112[0m
+D (14958) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (14968) nvs: nvs_get_str_or_blob cccd_sec_6[0m
+D (14968) nvs: nvs_close 113[0m
+D (14968) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (14978) nvs: nvs_get_str_or_blob cccd_sec_7[0m
+D (14978) nvs: nvs_close 114[0m
+D (14988) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (14988) nvs: nvs_get_str_or_blob cccd_sec_8[0m
+D (14998) nvs: nvs_close 115[0m
+D (14998) NIMBLE_NVS: ble_store_config_cccds restored 1 bonds[0m
+D (14998) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (15008) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (15008) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (15018) nvs: nvs_close 116[0m
+D (15018) NIMBLE_NVS: Local IRK in RAM is filled up from NVS index = 1[0m
+D (15028) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (15028) nvs: nvs_get_str_or_blob local_irk_2[0m
+D (15038) nvs: nvs_close 117[0m
+D (15038) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (15048) nvs: nvs_get_str_or_blob local_irk_3[0m
+D (15048) nvs: nvs_close 118[0m
+D (15048) NIMBLE_NVS: ble_store_config_local_irks restored 1 irks[0m
+D (15058) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (15058) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (15068) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (15068) nvs: nvs_close 119[0m
+D (15078) NIMBLE_NVS: RPA_REC in RAM is filled up from NVS index = 1[0m
+D (15078) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (15088) nvs: nvs_get_str_or_blob rpa_rec_2[0m
+D (15088) nvs: nvs_close 120[0m
+D (15088) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (15098) nvs: nvs_get_str_or_blob rpa_rec_3[0m
+D (15098) nvs: nvs_close 121[0m
+D (15108) NIMBLE_NVS: ble_store_config_rpa_recs restored 1 bonds[0m
+[0;32mI (15118) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (15118) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (15128) NimBLE: Device Address: [0m
+[0;32mI (15128) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (15128) NimBLE: 
+[0m
+[0;32mI (15138) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (15138) NimBLE: disc_mode=2[0m
+[0;32mI (15148) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (15158) NimBLE: 
+[0m
+Temperature: 30.84
+jerk = 0.55 
+angle = -0.06 
+Temperature: 30.93
+jerk = 0.95 
+angle = -0.06 
+Temperature: 30.79
+jerk = 1.17 
+angle = -0.07 
+Temperature: 30.88
+jerk = 0.18 
+angle = -0.07 
+Temperature: 30.84
+jerk = 1.05 
+angle = -0.06 
+Temperature: 30.88
+jerk = 0.78 
+angle = -0.06 
+Temperature: 30.93
+jerk = 0.69 
+angle = -0.07 
+Temperature: 30.98
+jerk = 0.49 
+angle = -0.07 
+Temperature: 30.93
+jerk = 3.38 
+angle = -0.06 
+Temperature: 30.88
+jerk = 2.38 
+angle = -0.03 
+Temperature: 30.93
+jerk = 3.19 
+angle = -0.04 
+Temperature: 30.93
+jerk = 2.95 
+angle = -0.06 
+Temperature: 30.98
+jerk = 5.34 
+angle = -0.05 
+Enable/Disable Button Pressed!
+Stopping NimBLE stack...
+[0;32mI (16458) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+D (16458) Timer: Timer not stopped[0m
+[0;32mI (16458) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+D (16468) Timer: Timer not stopped[0m
+NimBLE stack stopped
+Temperature: 30.93
+jerk = 5.54 
+angle = -0.06 
+Temperature: 30.88
+jerk = 0.53 
+angle = -0.05 
+Temperature: 30.93
+jerk = 0.51 
+angle = -0.05 
+Temperature: 30.93
+jerk = 0.94 
+angle = -0.05 
+Temperature: 30.88
+jerk = 4.38 
+angle = -0.05 
+Temperature: 30.98
+jerk = 6.93 
+angle = -0.02 
+Temperature: 31.02
+jerk = 3.98 
+angle = -0.10 
+Temperature: 30.98
+jerk = 5.83 
+angle = -0.13 
+Temperature: 31.02
+jerk = 5.09 
+angle = -0.11 
+Temperature: 31.02
+jerk = 8.79 
+angle = 0.03 
+Temperature: 30.88
+jerk = 9.94 
+angle = 0.08 
+Enable/Disable Button Pressed!
+Starting NimBLE stack...
+[0;32mI (17568) BLE_INIT: BT controller compile version [c23ab4c][0m
+[0;32mI (17568) BLE_INIT: Bluetooth MAC: 34:b7:da:f6:47:7e[0m
+D (17578) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (17578) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (17578) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (17578) nvs: nvs_close 122[0m
+D (17588) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (17588) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (17598) nvs: nvs_get_str_or_blob our_sec_2[0m
+D (17598) nvs: nvs_close 123[0m
+D (17608) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (17608) nvs: nvs_get_str_or_blob our_sec_3[0m
+D (17618) nvs: nvs_close 124[0m
+D (17618) NIMBLE_NVS: ble_store_config_our_secs restored 1 bonds[0m
+D (17618) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (17628) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (17628) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (17638) nvs: nvs_close 125[0m
+D (17638) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (17648) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (17648) nvs: nvs_get_str_or_blob peer_sec_2[0m
+D (17658) nvs: nvs_close 126[0m
+D (17658) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (17658) nvs: nvs_get_str_or_blob peer_sec_3[0m
+D (17668) nvs: nvs_close 127[0m
+D (17668) NIMBLE_NVS: ble_store_config_peer_secs restored 1 bonds[0m
+D (17678) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (17678) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (17688) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (17688) nvs: nvs_close 128[0m
+D (17698) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 1[0m
+D (17698) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (17708) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (17708) nvs: nvs_close 129[0m
+D (17708) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (17718) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (17718) nvs: nvs_close 130[0m
+D (17728) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (17728) nvs: nvs_get_str_or_blob cccd_sec_4[0m
+D (17738) nvs: nvs_close 131[0m
+D (17738) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (17738) nvs: nvs_get_str_or_blob cccd_sec_5[0m
+D (17748) nvs: nvs_close 132[0m
+D (17748) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (17758) nvs: nvs_get_str_or_blob cccd_sec_6[0m
+D (17758) nvs: nvs_close 133[0m
+D (17758) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (17768) nvs: nvs_get_str_or_blob cccd_sec_7[0m
+D (17768) nvs: nvs_close 134[0m
+D (17778) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (17778) nvs: nvs_get_str_or_blob cccd_sec_8[0m
+D (17788) nvs: nvs_close 135[0m
+D (17788) NIMBLE_NVS: ble_store_config_cccds restored 1 bonds[0m
+D (17788) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (17798) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (17798) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (17808) nvs: nvs_close 136[0m
+D (17808) NIMBLE_NVS: Local IRK in RAM is filled up from NVS index = 1[0m
+D (17818) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (17818) nvs: nvs_get_str_or_blob local_irk_2[0m
+D (17828) nvs: nvs_close 137[0m
+D (17828) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (17838) nvs: nvs_get_str_or_blob local_irk_3[0m
+D (17838) nvs: nvs_close 138[0m
+D (17838) NIMBLE_NVS: ble_store_config_local_irks restored 1 irks[0m
+D (17848) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (17848) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (17858) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (17858) nvs: nvs_close 139[0m
+D (17868) NIMBLE_NVS: RPA_REC in RAM is filled up from NVS index = 1[0m
+D (17868) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (17878) nvs: nvs_get_str_or_blob rpa_rec_2[0m
+D (17878) nvs: nvs_close 140[0m
+D (17878) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (17888) nvs: nvs_get_str_or_blob rpa_rec_3[0m
+D (17888) nvs: nvs_close 141[0m
+D (17898) NIMBLE_NVS: ble_store_config_rpa_recs restored 1 bonds[0m
+[0;32mI (17908) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (17908) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (17918) NimBLE: Device Address: [0m
+[0;32mI (17918) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (17918) NimBLE: 
+[0m
+[0;32mI (17928) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (17928) NimBLE: disc_mode=2[0m
+[0;32mI (17938) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (17948) NimBLE: 
+[0m
+Temperature: 30.88
+jerk = 2.46 
+angle = 0.06 
+Temperature: 30.88
+jerk = 11.24 
+angle = -0.16 
+Temperature: 30.93
+jerk = 8.52 
+angle = -0.03 
+Temperature: 30.98
+jerk = 7.24 
+angle = -0.04 
+Temperature: 30.93
+jerk = 7.58 
+angle = -0.12 
+Temperature: 30.88
+jerk = 1.77 
+angle = -0.12 
+Temperature: 30.88
+jerk = 8.98 
+angle = -0.28 
+Temperature: 30.88
+jerk = 13.49 
+angle = -0.26 
+Temperature: 31.02
+jerk = 15.58 
+angle = -0.40 
+Temperature: 30.93
+jerk = 11.27 
+angle = -0.18 
+Temperature: 30.88
+jerk = 8.35 
+angle = -0.30 
+Temperature: 31.02
+jerk = 4.71 
+angle = -0.32 
+Temperature: 30.98
+jerk = 18.40 
+angle = -0.25 
+Enable/Disable Button Pressed!
+Stopping NimBLE stack...
+[0;32mI (19248) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+D (19248) Timer: Timer not stopped[0m
+[0;32mI (19248) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+D (19258) Timer: Timer not stopped[0m
+NimBLE stack stopped
+Temperature: 31.02
+jerk = 2.78 
+angle = -0.28 
+Temperature: 30.93
+jerk = 10.45 
+angle = -0.22 
+Temperature: 30.98
+jerk = 10.66 
+angle = -0.27 
+Temperature: 30.98
+jerk = 4.66 
+angle = -0.35 
+Temperature: 30.93
+jerk = 4.70 
+angle = -0.37 
+Temperature: 30.98
+jerk = 2.24 
+angle = -0.39 
+Temperature: 31.02
+jerk = 4.81 
+angle = -0.38 
+Temperature: 31.02
+jerk = 1.93 
+angle = -0.36 
+Temperature: 30.88
+jerk = 5.80 
+angle = -0.28 
+Temperature: 31.02
+jerk = 0.89 
+angle = -0.27 
+Temperature: 30.88
+jerk = 3.06 
+angle = -0.21 
+Enable/Disable Button Pressed!
+Starting NimBLE stack...
+[0;32mI (20358) BLE_INIT: BT controller compile version [c23ab4c][0m
+[0;32mI (20358) BLE_INIT: Bluetooth MAC: 34:b7:da:f6:47:7e[0m
+D (20368) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (20368) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (20368) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (20368) nvs: nvs_close 142[0m
+D (20378) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (20378) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (20388) nvs: nvs_get_str_or_blob our_sec_2[0m
+D (20388) nvs: nvs_close 143[0m
+D (20398) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (20398) nvs: nvs_get_str_or_blob our_sec_3[0m
+D (20408) nvs: nvs_close 144[0m
+D (20408) NIMBLE_NVS: ble_store_config_our_secs restored 1 bonds[0m
+D (20408) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (20418) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (20418) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (20428) nvs: nvs_close 145[0m
+D (20428) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (20438) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (20438) nvs: nvs_get_str_or_blob peer_sec_2[0m
+D (20448) nvs: nvs_close 146[0m
+D (20448) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (20448) nvs: nvs_get_str_or_blob peer_sec_3[0m
+D (20458) nvs: nvs_close 147[0m
+D (20458) NIMBLE_NVS: ble_store_config_peer_secs restored 1 bonds[0m
+D (20468) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (20468) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (20478) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (20478) nvs: nvs_close 148[0m
+D (20488) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 1[0m
+D (20488) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (20498) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (20498) nvs: nvs_close 149[0m
+D (20498) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (20508) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (20508) nvs: nvs_close 150[0m
+D (20518) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (20518) nvs: nvs_get_str_or_blob cccd_sec_4[0m
+D (20528) nvs: nvs_close 151[0m
+D (20528) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (20528) nvs: nvs_get_str_or_blob cccd_sec_5[0m
+D (20538) nvs: nvs_close 152[0m
+D (20538) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (20548) nvs: nvs_get_str_or_blob cccd_sec_6[0m
+D (20548) nvs: nvs_close 153[0m
+D (20548) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (20558) nvs: nvs_get_str_or_blob cccd_sec_7[0m
+D (20558) nvs: nvs_close 154[0m
+D (20568) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (20568) nvs: nvs_get_str_or_blob cccd_sec_8[0m
+D (20578) nvs: nvs_close 155[0m
+D (20578) NIMBLE_NVS: ble_store_config_cccds restored 1 bonds[0m
+D (20578) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (20588) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (20588) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (20598) nvs: nvs_close 156[0m
+D (20598) NIMBLE_NVS: Local IRK in RAM is filled up from NVS index = 1[0m
+D (20608) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (20608) nvs: nvs_get_str_or_blob local_irk_2[0m
+D (20618) nvs: nvs_close 157[0m
+D (20618) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (20628) nvs: nvs_get_str_or_blob local_irk_3[0m
+D (20628) nvs: nvs_close 158[0m
+D (20628) NIMBLE_NVS: ble_store_config_local_irks restored 1 irks[0m
+D (20638) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (20638) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (20648) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (20648) nvs: nvs_close 159[0m
+D (20658) NIMBLE_NVS: RPA_REC in RAM is filled up from NVS index = 1[0m
+D (20658) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (20668) nvs: nvs_get_str_or_blob rpa_rec_2[0m
+D (20668) nvs: nvs_close 160[0m
+D (20668) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (20678) nvs: nvs_get_str_or_blob rpa_rec_3[0m
+D (20678) nvs: nvs_close 161[0m
+D (20688) NIMBLE_NVS: ble_store_config_rpa_recs restored 1 bonds[0m
+[0;32mI (20698) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (20698) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (20708) NimBLE: Device Address: [0m
+[0;32mI (20708) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (20708) NimBLE: 
+[0m
+[0;32mI (20718) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (20718) NimBLE: disc_mode=2[0m
+[0;32mI (20728) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (20738) NimBLE: 
+[0m
+Temperature: 30.98
+jerk = 2.79 
+angle = -0.20 
+Temperature: 31.02
+jerk = 12.66 
+angle = -0.46 
+Temperature: 31.02
+jerk = 4.47 
+angle = -0.48 
+Temperature: 30.98
+jerk = 2.28 
+angle = -0.49 
+Temperature: 30.93
+jerk = 3.24 
+angle = -0.55 
+Temperature: 30.98
+jerk = 3.21 
+angle = -0.49 
+Temperature: 31.02
+jerk = 4.74 
+angle = -0.41 
+Temperature: 30.98
+jerk = 2.97 
+angle = -0.40 
+Temperature: 30.93
+jerk = 1.51 
+angle = -0.41 
+Temperature: 30.93
+jerk = 1.96 
+angle = -0.44 
+Temperature: 30.98
+jerk = 0.47 
+angle = -0.44 
+Enable/Disable Button Pressed!
+Stopping NimBLE stack...
+[0;32mI (21838) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+D (21838) Timer: Timer not stopped[0m
+[0;32mI (21838) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+D (21848) Timer: Timer not stopped[0m
+NimBLE stack stopped
+Temperature: 30.93
+jerk = 3.16 
+angle = -0.44 
+Enable/Disable Button Pressed!
+Starting NimBLE stack...
+[0;32mI (22948) BLE_INIT: BT controller compile version [c23ab4c][0m
+[0;32mI (22948) BLE_INIT: Bluetooth MAC: 34:b7:da:f6:47:7e[0m
+D (22958) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (22958) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (22958) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (22958) nvs: nvs_close 162[0m
+D (22968) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (22968) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (22978) nvs: nvs_get_str_or_blob our_sec_2[0m
+D (22978) nvs: nvs_close 163[0m
+D (22988) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (22988) nvs: nvs_get_str_or_blob our_sec_3[0m
+D (22998) nvs: nvs_close 164[0m
+D (22998) NIMBLE_NVS: ble_store_config_our_secs restored 1 bonds[0m
+D (22998) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (23008) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (23008) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (23018) nvs: nvs_close 165[0m
+D (23018) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (23028) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (23028) nvs: nvs_get_str_or_blob peer_sec_2[0m
+D (23038) nvs: nvs_close 166[0m
+D (23038) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (23038) nvs: nvs_get_str_or_blob peer_sec_3[0m
+D (23048) nvs: nvs_close 167[0m
+D (23048) NIMBLE_NVS: ble_store_config_peer_secs restored 1 bonds[0m
+D (23058) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (23058) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (23068) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (23068) nvs: nvs_close 168[0m
+D (23078) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 1[0m
+D (23078) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (23088) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (23088) nvs: nvs_close 169[0m
+D (23088) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (23098) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (23098) nvs: nvs_close 170[0m
+D (23108) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (23108) nvs: nvs_get_str_or_blob cccd_sec_4[0m
+D (23118) nvs: nvs_close 171[0m
+D (23118) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (23118) nvs: nvs_get_str_or_blob cccd_sec_5[0m
+D (23128) nvs: nvs_close 172[0m
+D (23128) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (23138) nvs: nvs_get_str_or_blob cccd_sec_6[0m
+D (23138) nvs: nvs_close 173[0m
+D (23138) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (23148) nvs: nvs_get_str_or_blob cccd_sec_7[0m
+D (23148) nvs: nvs_close 174[0m
+D (23158) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (23158) nvs: nvs_get_str_or_blob cccd_sec_8[0m
+D (23168) nvs: nvs_close 175[0m
+D (23168) NIMBLE_NVS: ble_store_config_cccds restored 1 bonds[0m
+D (23168) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (23178) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (23178) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (23188) nvs: nvs_close 176[0m
+D (23188) NIMBLE_NVS: Local IRK in RAM is filled up from NVS index = 1[0m
+D (23198) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (23198) nvs: nvs_get_str_or_blob local_irk_2[0m
+D (23208) nvs: nvs_close 177[0m
+D (23208) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (23218) nvs: nvs_get_str_or_blob local_irk_3[0m
+D (23218) nvs: nvs_close 178[0m
+D (23218) NIMBLE_NVS: ble_store_config_local_irks restored 1 irks[0m
+D (23228) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (23228) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (23238) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (23238) nvs: nvs_close 179[0m
+D (23248) NIMBLE_NVS: RPA_REC in RAM is filled up from NVS index = 1[0m
+D (23248) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (23258) nvs: nvs_get_str_or_blob rpa_rec_2[0m
+D (23258) nvs: nvs_close 180[0m
+D (23258) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (23268) nvs: nvs_get_str_or_blob rpa_rec_3[0m
+D (23268) nvs: nvs_close 181[0m
+D (23278) NIMBLE_NVS: ble_store_config_rpa_recs restored 1 bonds[0m
+[0;32mI (23288) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (23288) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (23298) NimBLE: Device Address: [0m
+[0;32mI (23298) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (23298) NimBLE: 
+[0m
+[0;32mI (23308) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (23308) NimBLE: disc_mode=2[0m
+[0;32mI (23318) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (23328) NimBLE: 
+[0m
+Temperature: 31.02
+jerk = 10.23 
+angle = -0.29 
+Temperature: 30.93
+jerk = 5.44 
+angle = -0.18 
+Temperature: 30.98
+jerk = 3.19 
+angle = -0.15 
+Temperature: 30.98
+jerk = 1.91 
+angle = -0.16 
+Temperature: 31.02
+jerk = 2.17 
+angle = -0.13 
+Temperature: 30.93
+jerk = 2.47 
+angle = -0.16 
+Temperature: 30.93
+jerk = 6.43 
+angle = -0.21 
+Temperature: 30.98
+jerk = 4.73 
+angle = -0.21 
+Temperature: 30.98
+jerk = 2.87 
+angle = -0.19 
+Temperature: 31.02
+jerk = 4.06 
+angle = -0.25 
+Temperature: 30.98
+jerk = 1.88 
+angle = -0.24 
+Temperature: 30.98
+jerk = 7.41 
+angle = -0.22 
+Temperature: 30.98
+jerk = 3.17 
+angle = -0.20 
+Temperature: 30.93
+jerk = 4.35 
+angle = -0.18 
+Temperature: 30.88
+jerk = 3.37 
+angle = -0.20 
+Enable/Disable Button Pressed!
+Stopping NimBLE stack...
+[0;32mI (24828) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+D (24828) Timer: Timer not stopped[0m
+[0;32mI (24828) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+D (24838) Timer: Timer not stopped[0m
+NimBLE stack stopped
+Temperature: 30.93
+jerk = 0.99 
+angle = -0.21 
+Temperature: 30.88
+jerk = 1.56 
+angle = -0.18 
+Temperature: 30.93
+jerk = 0.86 
+angle = -0.19 
+Temperature: 30.93
+jerk = 0.97 
+angle = -0.18 
+Temperature: 30.98
+jerk = 0.42 
+angle = -0.18 
+Temperature: 30.98
+jerk = 0.42 
+angle = -0.19 
+Temperature: 30.88
+jerk = 1.19 
+angle = -0.18 
+Temperature: 30.98
+jerk = 2.22 
+angle = -0.14 
+Temperature: 31.02
+jerk = 0.55 
+angle = -0.15 
+Temperature: 30.98
+jerk = 1.17 
+angle = -0.16 
+Temperature: 31.02
+jerk = 1.96 
+angle = -0.13 
+Enable/Disable Button Pressed!
+Starting NimBLE stack...
+[0;32mI (25938) BLE_INIT: BT controller compile version [c23ab4c][0m
+[0;32mI (25938) BLE_INIT: Bluetooth MAC: 34:b7:da:f6:47:7e[0m
+D (25948) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (25948) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (25948) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (25948) nvs: nvs_close 182[0m
+D (25958) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (25958) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (25968) nvs: nvs_get_str_or_blob our_sec_2[0m
+D (25968) nvs: nvs_close 183[0m
+D (25978) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (25978) nvs: nvs_get_str_or_blob our_sec_3[0m
+D (25988) nvs: nvs_close 184[0m
+D (25988) NIMBLE_NVS: ble_store_config_our_secs restored 1 bonds[0m
+D (25988) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (25998) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (25998) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (26008) nvs: nvs_close 185[0m
+D (26008) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (26018) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (26018) nvs: nvs_get_str_or_blob peer_sec_2[0m
+D (26028) nvs: nvs_close 186[0m
+D (26028) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (26028) nvs: nvs_get_str_or_blob peer_sec_3[0m
+D (26038) nvs: nvs_close 187[0m
+D (26038) NIMBLE_NVS: ble_store_config_peer_secs restored 1 bonds[0m
+D (26048) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (26048) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (26058) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (26058) nvs: nvs_close 188[0m
+D (26068) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 1[0m
+D (26068) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (26078) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (26078) nvs: nvs_close 189[0m
+D (26078) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (26088) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (26088) nvs: nvs_close 190[0m
+D (26098) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (26098) nvs: nvs_get_str_or_blob cccd_sec_4[0m
+D (26108) nvs: nvs_close 191[0m
+D (26108) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (26108) nvs: nvs_get_str_or_blob cccd_sec_5[0m
+D (26118) nvs: nvs_close 192[0m
+D (26118) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (26128) nvs: nvs_get_str_or_blob cccd_sec_6[0m
+D (26128) nvs: nvs_close 193[0m
+D (26128) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (26138) nvs: nvs_get_str_or_blob cccd_sec_7[0m
+D (26138) nvs: nvs_close 194[0m
+D (26148) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (26148) nvs: nvs_get_str_or_blob cccd_sec_8[0m
+D (26158) nvs: nvs_close 195[0m
+D (26158) NIMBLE_NVS: ble_store_config_cccds restored 1 bonds[0m
+D (26158) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (26168) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (26168) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (26178) nvs: nvs_close 196[0m
+D (26178) NIMBLE_NVS: Local IRK in RAM is filled up from NVS index = 1[0m
+D (26188) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (26188) nvs: nvs_get_str_or_blob local_irk_2[0m
+D (26198) nvs: nvs_close 197[0m
+D (26198) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (26208) nvs: nvs_get_str_or_blob local_irk_3[0m
+D (26208) nvs: nvs_close 198[0m
+D (26208) NIMBLE_NVS: ble_store_config_local_irks restored 1 irks[0m
+D (26218) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (26218) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (26228) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (26228) nvs: nvs_close 199[0m
+D (26238) NIMBLE_NVS: RPA_REC in RAM is filled up from NVS index = 1[0m
+D (26238) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (26248) nvs: nvs_get_str_or_blob rpa_rec_2[0m
+D (26248) nvs: nvs_close 200[0m
+D (26248) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (26258) nvs: nvs_get_str_or_blob rpa_rec_3[0m
+D (26258) nvs: nvs_close 201[0m
+D (26268) NIMBLE_NVS: ble_store_config_rpa_recs restored 1 bonds[0m
+[0;32mI (26278) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (26278) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (26288) NimBLE: Device Address: [0m
+[0;32mI (26288) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (26288) NimBLE: 
+[0m
+[0;32mI (26298) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (26298) NimBLE: disc_mode=2[0m
+[0;32mI (26308) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (26318) NimBLE: 
+[0m
+Temperature: 31.02
+jerk = 0.81 
+angle = -0.13 
+Temperature: 30.98
+jerk = 0.36 
+angle = -0.14 
+Temperature: 30.98
+jerk = 0.17 
+angle = -0.14 
+Temperature: 31.02
+jerk = 0.67 
+angle = -0.13 
+Temperature: 30.98
+jerk = 0.26 
+angle = -0.13 
+Temperature: 30.98
+jerk = 1.29 
+angle = -0.15 
+Temperature: 31.02
+jerk = 0.68 
+angle = -0.14 
+Temperature: 30.98
+jerk = 0.96 
+angle = -0.14 
+Temperature: 30.98
+jerk = 0.80 
+angle = -0.12 
+Temperature: 30.93
+jerk = 1.21 
+angle = -0.14 
+Temperature: 30.93
+jerk = 0.76 
+angle = -0.13 
+Enable/Disable Button Pressed!
+Stopping NimBLE stack...
+[0;32mI (27418) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+D (27418) Timer: Timer not stopped[0m
+[0;32mI (27418) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+D (27428) Timer: Timer not stopped[0m
+NimBLE stack stopped
+Temperature: 30.98
+jerk = 0.34 
+angle = -0.12 
+Temperature: 31.07
+jerk = 1.52 
+angle = -0.13 
+Temperature: 30.93
+jerk = 1.39 
+angle = -0.12 
+Temperature: 31.12
+jerk = 0.82 
+angle = -0.13 
+Temperature: 30.98
+jerk = 0.52 
+angle = -0.12 
+Temperature: 30.98
+jerk = 0.61 
+angle = -0.12 
+Temperature: 30.93
+jerk = 1.16 
+angle = -0.14 
+Temperature: 31.02
+jerk = 1.28 
+angle = -0.14 
+Temperature: 30.98
+jerk = 1.04 
+angle = -0.13 
+Temperature: 31.02
+jerk = 1.04 
+angle = -0.12 
+Temperature: 30.93
+jerk = 1.46 
+angle = -0.14 
+Enable/Disable Button Pressed!
+Starting NimBLE stack...
+[0;32mI (28528) BLE_INIT: BT controller compile version [c23ab4c][0m
+[0;32mI (28528) BLE_INIT: Bluetooth MAC: 34:b7:da:f6:47:7e[0m
+D (28538) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (28538) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (28538) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (28538) nvs: nvs_close 202[0m
+D (28548) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (28548) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (28558) nvs: nvs_get_str_or_blob our_sec_2[0m
+D (28558) nvs: nvs_close 203[0m
+D (28568) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (28568) nvs: nvs_get_str_or_blob our_sec_3[0m
+D (28578) nvs: nvs_close 204[0m
+D (28578) NIMBLE_NVS: ble_store_config_our_secs restored 1 bonds[0m
+D (28578) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (28588) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (28588) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (28598) nvs: nvs_close 205[0m
+D (28598) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (28608) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (28608) nvs: nvs_get_str_or_blob peer_sec_2[0m
+D (28618) nvs: nvs_close 206[0m
+D (28618) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (28618) nvs: nvs_get_str_or_blob peer_sec_3[0m
+D (28628) nvs: nvs_close 207[0m
+D (28628) NIMBLE_NVS: ble_store_config_peer_secs restored 1 bonds[0m
+D (28638) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (28638) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (28648) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (28648) nvs: nvs_close 208[0m
+D (28658) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 1[0m
+D (28658) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (28668) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (28668) nvs: nvs_close 209[0m
+D (28668) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (28678) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (28678) nvs: nvs_close 210[0m
+D (28688) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (28688) nvs: nvs_get_str_or_blob cccd_sec_4[0m
+D (28698) nvs: nvs_close 211[0m
+D (28698) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (28698) nvs: nvs_get_str_or_blob cccd_sec_5[0m
+D (28708) nvs: nvs_close 212[0m
+D (28708) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (28718) nvs: nvs_get_str_or_blob cccd_sec_6[0m
+D (28718) nvs: nvs_close 213[0m
+D (28718) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (28728) nvs: nvs_get_str_or_blob cccd_sec_7[0m
+D (28728) nvs: nvs_close 214[0m
+D (28738) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (28738) nvs: nvs_get_str_or_blob cccd_sec_8[0m
+D (28748) nvs: nvs_close 215[0m
+D (28748) NIMBLE_NVS: ble_store_config_cccds restored 1 bonds[0m
+D (28748) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (28758) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (28758) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (28768) nvs: nvs_close 216[0m
+D (28768) NIMBLE_NVS: Local IRK in RAM is filled up from NVS index = 1[0m
+D (28778) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (28778) nvs: nvs_get_str_or_blob local_irk_2[0m
+D (28788) nvs: nvs_close 217[0m
+D (28788) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (28798) nvs: nvs_get_str_or_blob local_irk_3[0m
+D (28798) nvs: nvs_close 218[0m
+D (28798) NIMBLE_NVS: ble_store_config_local_irks restored 1 irks[0m
+D (28808) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (28808) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (28818) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (28818) nvs: nvs_close 219[0m
+D (28828) NIMBLE_NVS: RPA_REC in RAM is filled up from NVS index = 1[0m
+D (28828) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (28838) nvs: nvs_get_str_or_blob rpa_rec_2[0m
+D (28838) nvs: nvs_close 220[0m
+D (28838) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (28848) nvs: nvs_get_str_or_blob rpa_rec_3[0m
+D (28848) nvs: nvs_close 221[0m
+D (28858) NIMBLE_NVS: ble_store_config_rpa_recs restored 1 bonds[0m
+[0;32mI (28868) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (28868) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (28878) NimBLE: Device Address: [0m
+[0;32mI (28878) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (28878) NimBLE: 
+[0m
+[0;32mI (28888) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (28888) NimBLE: disc_mode=2[0m
+[0;32mI (28898) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (28908) NimBLE: 
+[0m
+Temperature: 30.98
+jerk = 0.75 
+angle = -0.14 
+Temperature: 30.93
+jerk = 0.59 
+angle = -0.14 
+Temperature: 30.88
+jerk = 0.79 
+angle = -0.15 
+Temperature: 31.02
+jerk = 1.52 
+angle = -0.13 
+Temperature: 31.07
+jerk = 0.68 
+angle = -0.13 
+Temperature: 31.02
+jerk = 1.62 
+angle = -0.15 
+Temperature: 30.88
+jerk = 0.74 
+angle = -0.14 
+Temperature: 31.02
+jerk = 0.67 
+angle = -0.15 
+Temperature: 30.88
+jerk = 2.09 
+angle = -0.13 
+Temperature: 31.02
+jerk = 1.90 
+angle = -0.12 
+Temperature: 30.88
+jerk = 2.26 
+angle = -0.14 
+Enable/Disable Button Pressed!
+Stopping NimBLE stack...
+[0;32mI (30008) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+D (30008) Timer: Timer not stopped[0m
+[0;32mI (30008) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+D (30018) Timer: Timer not stopped[0m
+NimBLE stack stopped
+Temperature: 30.98
+jerk = 0.75 
+angle = -0.14 
+Temperature: 30.93
+jerk = 1.71 
+angle = -0.12 
+Temperature: 30.98
+jerk = 3.70 
+angle = -0.17 
+Temperature: 30.93
+jerk = 4.66 
+angle = -0.17 
+Temperature: 30.88
+jerk = 5.87 
+angle = -0.19 
+Temperature: 30.93
+jerk = 3.50 
+angle = -0.19 
+Temperature: 30.98
+jerk = 3.62 
+angle = -0.23 
+Temperature: 31.02
+jerk = 4.85 
+angle = -0.25 
+Temperature: 30.98
+jerk = 2.16 
+angle = -0.27 
+Temperature: 30.93
+jerk = 1.66 
+angle = -0.30 
+Temperature: 31.17
+jerk = 3.42 
+angle = -0.34 
+Enable/Disable Button Pressed!
+Starting NimBLE stack...
+[0;32mI (31118) BLE_INIT: BT controller compile version [c23ab4c][0m
+[0;32mI (31118) BLE_INIT: Bluetooth MAC: 34:b7:da:f6:47:7e[0m
+D (31128) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (31128) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (31128) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (31128) nvs: nvs_close 222[0m
+D (31138) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (31138) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (31148) nvs: nvs_get_str_or_blob our_sec_2[0m
+D (31148) nvs: nvs_close 223[0m
+D (31158) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (31158) nvs: nvs_get_str_or_blob our_sec_3[0m
+D (31168) nvs: nvs_close 224[0m
+D (31168) NIMBLE_NVS: ble_store_config_our_secs restored 1 bonds[0m
+D (31168) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (31178) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (31178) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (31188) nvs: nvs_close 225[0m
+D (31188) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (31198) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (31198) nvs: nvs_get_str_or_blob peer_sec_2[0m
+D (31208) nvs: nvs_close 226[0m
+D (31208) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (31208) nvs: nvs_get_str_or_blob peer_sec_3[0m
+D (31218) nvs: nvs_close 227[0m
+D (31218) NIMBLE_NVS: ble_store_config_peer_secs restored 1 bonds[0m
+D (31228) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (31228) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (31238) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (31238) nvs: nvs_close 228[0m
+D (31248) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 1[0m
+D (31248) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (31258) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (31258) nvs: nvs_close 229[0m
+D (31258) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (31268) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (31268) nvs: nvs_close 230[0m
+D (31278) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (31278) nvs: nvs_get_str_or_blob cccd_sec_4[0m
+D (31288) nvs: nvs_close 231[0m
+D (31288) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (31288) nvs: nvs_get_str_or_blob cccd_sec_5[0m
+D (31298) nvs: nvs_close 232[0m
+D (31298) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (31308) nvs: nvs_get_str_or_blob cccd_sec_6[0m
+D (31308) nvs: nvs_close 233[0m
+D (31308) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (31318) nvs: nvs_get_str_or_blob cccd_sec_7[0m
+D (31318) nvs: nvs_close 234[0m
+D (31328) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (31328) nvs: nvs_get_str_or_blob cccd_sec_8[0m
+D (31338) nvs: nvs_close 235[0m
+D (31338) NIMBLE_NVS: ble_store_config_cccds restored 1 bonds[0m
+D (31338) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (31348) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (31348) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (31358) nvs: nvs_close 236[0m
+D (31358) NIMBLE_NVS: Local IRK in RAM is filled up from NVS index = 1[0m
+D (31368) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (31368) nvs: nvs_get_str_or_blob local_irk_2[0m
+D (31378) nvs: nvs_close 237[0m
+D (31378) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (31388) nvs: nvs_get_str_or_blob local_irk_3[0m
+D (31388) nvs: nvs_close 238[0m
+D (31388) NIMBLE_NVS: ble_store_config_local_irks restored 1 irks[0m
+D (31398) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (31398) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (31408) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (31408) nvs: nvs_close 239[0m
+D (31418) NIMBLE_NVS: RPA_REC in RAM is filled up from NVS index = 1[0m
+D (31418) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (31428) nvs: nvs_get_str_or_blob rpa_rec_2[0m
+D (31428) nvs: nvs_close 240[0m
+D (31428) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (31438) nvs: nvs_get_str_or_blob rpa_rec_3[0m
+D (31438) nvs: nvs_close 241[0m
+D (31448) NIMBLE_NVS: ble_store_config_rpa_recs restored 1 bonds[0m
+[0;32mI (31458) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (31458) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (31468) NimBLE: Device Address: [0m
+[0;32mI (31468) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (31468) NimBLE: 
+[0m
+[0;32mI (31478) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (31478) NimBLE: disc_mode=2[0m
+[0;32mI (31488) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (31498) NimBLE: 
+[0m
+Temperature: 30.98
+jerk = 3.71 
+angle = -0.32 
+Temperature: 31.02
+jerk = 15.91 
+angle = -0.19 
+Temperature: 30.93
+jerk = 5.14 
+angle = -0.15 
+Temperature: 30.98
+jerk = 3.07 
+angle = -0.15 
+Temperature: 31.02
+jerk = 0.66 
+angle = -0.16 
+Temperature: 30.98
+jerk = 1.19 
+angle = -0.17 
+Temperature: 30.98
+jerk = 1.82 
+angle = -0.19 
+Temperature: 30.93
+jerk = 2.00 
+angle = -0.22 
+Temperature: 31.02
+jerk = 1.75 
+angle = -0.25 
+Temperature: 30.98
+jerk = 1.84 
+angle = -0.26 
+Temperature: 31.07
+jerk = 0.90 
+angle = -0.25 
+Temperature: 31.02
+jerk = 0.74 
+angle = -0.26 
+Temperature: 31.07
+jerk = 0.83 
+angle = -0.26 
+Temperature: 31.02
+jerk = 1.36 
+angle = -0.24 
+Enable/Disable Button Pressed!
+Stopping NimBLE stack...
+[0;32mI (32898) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+D (32898) Timer: Timer not stopped[0m
+[0;32mI (32898) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+D (32908) Timer: Timer not stopped[0m
+NimBLE stack stopped
+Temperature: 31.07
+jerk = 2.31 
+angle = -0.27 
+Temperature: 31.07
+jerk = 2.32 
+angle = -0.24 
+Temperature: 30.98
+jerk = 1.50 
+angle = -0.27 
+Temperature: 30.98
+jerk = 1.13 
+angle = -0.24 
+Temperature: 31.02
+jerk = 0.35 
+angle = -0.24 
+Temperature: 30.98
+jerk = 0.69 
+angle = -0.24 
+Temperature: 31.12
+jerk = 0.59 
+angle = -0.23 
+Temperature: 31.07
+jerk = 0.73 
+angle = -0.24 
+Temperature: 30.93
+jerk = 1.00 
+angle = -0.26 
+Temperature: 30.93
+jerk = 0.52 
+angle = -0.25 
+Temperature: 31.07
+jerk = 0.31 
+angle = -0.25 
+Temperature: 30.98
+jerk = 1.16 
+angle = -0.24 
+Enable/Disable Button Pressed!
+Starting NimBLE stack...
+[0;32mI (34108) BLE_INIT: BT controller compile version [c23ab4c][0m
+[0;32mI (34108) BLE_INIT: Bluetooth MAC: 34:b7:da:f6:47:7e[0m
+D (34118) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (34118) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (34118) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (34118) nvs: nvs_close 242[0m
+D (34128) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (34128) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (34138) nvs: nvs_get_str_or_blob our_sec_2[0m
+D (34138) nvs: nvs_close 243[0m
+D (34148) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (34148) nvs: nvs_get_str_or_blob our_sec_3[0m
+D (34158) nvs: nvs_close 244[0m
+D (34158) NIMBLE_NVS: ble_store_config_our_secs restored 1 bonds[0m
+D (34158) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (34168) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (34168) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (34178) nvs: nvs_close 245[0m
+D (34178) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (34188) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (34188) nvs: nvs_get_str_or_blob peer_sec_2[0m
+D (34198) nvs: nvs_close 246[0m
+D (34198) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (34198) nvs: nvs_get_str_or_blob peer_sec_3[0m
+D (34208) nvs: nvs_close 247[0m
+D (34208) NIMBLE_NVS: ble_store_config_peer_secs restored 1 bonds[0m
+D (34218) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (34218) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (34228) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (34228) nvs: nvs_close 248[0m
+D (34238) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 1[0m
+D (34238) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (34248) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (34248) nvs: nvs_close 249[0m
+D (34248) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (34258) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (34258) nvs: nvs_close 250[0m
+D (34268) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (34268) nvs: nvs_get_str_or_blob cccd_sec_4[0m
+D (34278) nvs: nvs_close 251[0m
+D (34278) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (34278) nvs: nvs_get_str_or_blob cccd_sec_5[0m
+D (34288) nvs: nvs_close 252[0m
+D (34288) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (34298) nvs: nvs_get_str_or_blob cccd_sec_6[0m
+D (34298) nvs: nvs_close 253[0m
+D (34298) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (34308) nvs: nvs_get_str_or_blob cccd_sec_7[0m
+D (34308) nvs: nvs_close 254[0m
+D (34318) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (34318) nvs: nvs_get_str_or_blob cccd_sec_8[0m
+D (34328) nvs: nvs_close 255[0m
+D (34328) NIMBLE_NVS: ble_store_config_cccds restored 1 bonds[0m
+D (34328) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (34338) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (34338) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (34348) nvs: nvs_close 256[0m
+D (34348) NIMBLE_NVS: Local IRK in RAM is filled up from NVS index = 1[0m
+D (34358) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (34358) nvs: nvs_get_str_or_blob local_irk_2[0m
+D (34368) nvs: nvs_close 257[0m
+D (34368) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (34378) nvs: nvs_get_str_or_blob local_irk_3[0m
+D (34378) nvs: nvs_close 258[0m
+D (34378) NIMBLE_NVS: ble_store_config_local_irks restored 1 irks[0m
+D (34388) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (34388) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (34398) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (34398) nvs: nvs_close 259[0m
+D (34408) NIMBLE_NVS: RPA_REC in RAM is filled up from NVS index = 1[0m
+D (34408) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (34418) nvs: nvs_get_str_or_blob rpa_rec_2[0m
+D (34418) nvs: nvs_close 260[0m
+D (34418) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (34428) nvs: nvs_get_str_or_blob rpa_rec_3[0m
+D (34428) nvs: nvs_close 261[0m
+D (34438) NIMBLE_NVS: ble_store_config_rpa_recs restored 1 bonds[0m
+[0;32mI (34448) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (34448) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (34458) NimBLE: Device Address: [0m
+[0;32mI (34458) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (34458) NimBLE: 
+[0m
+[0;32mI (34468) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (34468) NimBLE: disc_mode=2[0m
+[0;32mI (34478) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (34488) NimBLE: 
+[0m
+Temperature: 31.02
+jerk = 1.08 
+angle = -0.26 
+Temperature: 30.93
+jerk = 1.01 
+angle = -0.25 
+Temperature: 31.07
+jerk = 0.96 
+angle = -0.25 
+Temperature: 30.98
+jerk = 0.88 
+angle = -0.26 
+Temperature: 31.07
+jerk = 0.81 
+angle = -0.25 
+Temperature: 31.07
+jerk = 1.42 
+angle = -0.24 
+Temperature: 30.98
+jerk = 1.14 
+angle = -0.26 
+Temperature: 31.02
+jerk = 6.30 
+angle = -0.38 
+Temperature: 31.07
+jerk = 8.62 
+angle = -0.22 
+Temperature: 30.98
+jerk = 12.85 
+angle = -0.28 
+Temperature: 30.93
+jerk = 10.07 
+angle = -0.14 
+Enable/Disable Button Pressed!
+Stopping NimBLE stack...
+[0;32mI (35588) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+D (35588) Timer: Timer not stopped[0m
+[0;32mI (35588) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+D (35598) Timer: Timer not stopped[0m
+NimBLE stack stopped
+Temperature: 30.98
+jerk = 14.69 
+angle = -0.27 
+Temperature: 31.07
+jerk = 18.93 
+angle = -0.25 
+Temperature: 31.02
+jerk = 17.95 
+angle = -0.33 
+Temperature: 30.93
+jerk = 2.16 
+angle = -0.35 
+Temperature: 30.98
+jerk = 10.19 
+angle = -0.21 
+Temperature: 31.07
+jerk = 5.78 
+angle = -0.28 
+Temperature: 30.98
+jerk = 12.71 
+angle = -0.12 
+Temperature: 30.98
+jerk = 67.87 
+angle = 0.01 
+Temperature: 31.02
+jerk = 51.80 
+angle = -0.15 
+Temperature: 30.98
+jerk = 2.16 
+angle = -0.14 
+Temperature: 30.98
+jerk = 1.08 
+angle = -0.13 
+Enable/Disable Button Pressed!
+Starting NimBLE stack...
+[0;32mI (36698) BLE_INIT: BT controller compile version [c23ab4c][0m
+[0;32mI (36698) BLE_INIT: Bluetooth MAC: 34:b7:da:f6:47:7e[0m
+D (36708) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (36708) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (36708) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (36708) nvs: nvs_close 262[0m
+D (36718) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (36718) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (36728) nvs: nvs_get_str_or_blob our_sec_2[0m
+D (36728) nvs: nvs_close 263[0m
+D (36738) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (36738) nvs: nvs_get_str_or_blob our_sec_3[0m
+D (36748) nvs: nvs_close 264[0m
+D (36748) NIMBLE_NVS: ble_store_config_our_secs restored 1 bonds[0m
+D (36748) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (36758) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (36758) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (36768) nvs: nvs_close 265[0m
+D (36768) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (36778) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (36778) nvs: nvs_get_str_or_blob peer_sec_2[0m
+D (36788) nvs: nvs_close 266[0m
+D (36788) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (36788) nvs: nvs_get_str_or_blob peer_sec_3[0m
+D (36798) nvs: nvs_close 267[0m
+D (36798) NIMBLE_NVS: ble_store_config_peer_secs restored 1 bonds[0m
+D (36808) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (36808) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (36818) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (36818) nvs: nvs_close 268[0m
+D (36828) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 1[0m
+D (36828) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (36838) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (36838) nvs: nvs_close 269[0m
+D (36838) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (36848) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (36848) nvs: nvs_close 270[0m
+D (36858) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (36858) nvs: nvs_get_str_or_blob cccd_sec_4[0m
+D (36868) nvs: nvs_close 271[0m
+D (36868) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (36868) nvs: nvs_get_str_or_blob cccd_sec_5[0m
+D (36878) nvs: nvs_close 272[0m
+D (36878) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (36888) nvs: nvs_get_str_or_blob cccd_sec_6[0m
+D (36888) nvs: nvs_close 273[0m
+D (36888) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (36898) nvs: nvs_get_str_or_blob cccd_sec_7[0m
+D (36898) nvs: nvs_close 274[0m
+D (36908) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (36908) nvs: nvs_get_str_or_blob cccd_sec_8[0m
+D (36918) nvs: nvs_close 275[0m
+D (36918) NIMBLE_NVS: ble_store_config_cccds restored 1 bonds[0m
+D (36918) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (36928) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (36928) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (36938) nvs: nvs_close 276[0m
+D (36938) NIMBLE_NVS: Local IRK in RAM is filled up from NVS index = 1[0m
+D (36948) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (36948) nvs: nvs_get_str_or_blob local_irk_2[0m
+D (36958) nvs: nvs_close 277[0m
+D (36958) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (36968) nvs: nvs_get_str_or_blob local_irk_3[0m
+D (36968) nvs: nvs_close 278[0m
+D (36968) NIMBLE_NVS: ble_store_config_local_irks restored 1 irks[0m
+D (36978) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (36978) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (36988) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (36988) nvs: nvs_close 279[0m
+D (36998) NIMBLE_NVS: RPA_REC in RAM is filled up from NVS index = 1[0m
+D (36998) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (37008) nvs: nvs_get_str_or_blob rpa_rec_2[0m
+D (37008) nvs: nvs_close 280[0m
+D (37008) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (37018) nvs: nvs_get_str_or_blob rpa_rec_3[0m
+D (37018) nvs: nvs_close 281[0m
+D (37028) NIMBLE_NVS: ble_store_config_rpa_recs restored 1 bonds[0m
+[0;32mI (37038) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (37038) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (37048) NimBLE: Device Address: [0m
+[0;32mI (37048) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (37048) NimBLE: 
+[0m
+[0;32mI (37058) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (37058) NimBLE: disc_mode=2[0m
+[0;32mI (37068) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (37078) NimBLE: 
+[0m
+Temperature: 31.07
+jerk = 1.36 
+angle = -0.14 
+Temperature: 30.98
+jerk = 0.80 
+angle = -0.14 
+Temperature: 30.98
+jerk = 0.36 
+angle = -0.14 
+Temperature: 30.98
+jerk = 0.94 
+angle = -0.13 
+Temperature: 31.02
+jerk = 0.66 
+angle = -0.13 
+Temperature: 30.98
+jerk = 0.28 
+angle = -0.12 
+Temperature: 31.07
+jerk = 0.93 
+angle = -0.14 
+Temperature: 31.02
+jerk = 0.89 
+angle = -0.13 
+Temperature: 31.07
+jerk = 0.60 
+angle = -0.14 
+Temperature: 31.07
+jerk = 0.49 
+angle = -0.14 
+Temperature: 31.07
+jerk = 0.42 
+angle = -0.14 
+Enable/Disable Button Pressed!
+Stopping NimBLE stack...
+[0;32mI (38178) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+D (38178) Timer: Timer not stopped[0m
+[0;32mI (38178) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+D (38188) Timer: Timer not stopped[0m
+NimBLE stack stopped
+Temperature: 31.02
+jerk = 0.25 
+angle = -0.14 
+Temperature: 31.07
+jerk = 0.26 
+angle = -0.14 
+Temperature: 31.07
+jerk = 1.51 
+angle = -0.15 
+Temperature: 31.12
+jerk = 4.29 
+angle = -0.16 
+Temperature: 31.02
+jerk = 3.20 
+angle = -0.14 
+Temperature: 31.02
+jerk = 0.55 
+angle = -0.14 
+Temperature: 31.07
+jerk = 1.04 
+angle = -0.13 
+Temperature: 30.98
+jerk = 0.59 
+angle = -0.14 
+Temperature: 31.02
+jerk = 0.31 
+angle = -0.14 
+Temperature: 30.98
+jerk = 0.85 
+angle = -0.14 
+Temperature: 30.98
+jerk = 0.57 
+angle = -0.14 
+Enable/Disable Button Pressed!
+Starting NimBLE stack...
+[0;32mI (39288) BLE_INIT: BT controller compile version [c23ab4c][0m
+[0;32mI (39288) BLE_INIT: Bluetooth MAC: 34:b7:da:f6:47:7e[0m
+D (39298) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (39298) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (39298) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (39298) nvs: nvs_close 282[0m
+D (39308) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (39308) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (39318) nvs: nvs_get_str_or_blob our_sec_2[0m
+D (39318) nvs: nvs_close 283[0m
+D (39328) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (39328) nvs: nvs_get_str_or_blob our_sec_3[0m
+D (39338) nvs: nvs_close 284[0m
+D (39338) NIMBLE_NVS: ble_store_config_our_secs restored 1 bonds[0m
+D (39338) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (39348) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (39348) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (39358) nvs: nvs_close 285[0m
+D (39358) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (39368) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (39368) nvs: nvs_get_str_or_blob peer_sec_2[0m
+D (39378) nvs: nvs_close 286[0m
+D (39378) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (39378) nvs: nvs_get_str_or_blob peer_sec_3[0m
+D (39388) nvs: nvs_close 287[0m
+D (39388) NIMBLE_NVS: ble_store_config_peer_secs restored 1 bonds[0m
+D (39398) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (39398) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (39408) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (39408) nvs: nvs_close 288[0m
+D (39418) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 1[0m
+D (39418) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (39428) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (39428) nvs: nvs_close 289[0m
+D (39428) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (39438) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (39438) nvs: nvs_close 290[0m
+D (39448) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (39448) nvs: nvs_get_str_or_blob cccd_sec_4[0m
+D (39458) nvs: nvs_close 291[0m
+D (39458) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (39458) nvs: nvs_get_str_or_blob cccd_sec_5[0m
+D (39468) nvs: nvs_close 292[0m
+D (39468) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (39478) nvs: nvs_get_str_or_blob cccd_sec_6[0m
+D (39478) nvs: nvs_close 293[0m
+D (39478) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (39488) nvs: nvs_get_str_or_blob cccd_sec_7[0m
+D (39488) nvs: nvs_close 294[0m
+D (39498) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (39498) nvs: nvs_get_str_or_blob cccd_sec_8[0m
+D (39508) nvs: nvs_close 295[0m
+D (39508) NIMBLE_NVS: ble_store_config_cccds restored 1 bonds[0m
+D (39508) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (39518) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (39518) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (39528) nvs: nvs_close 296[0m
+D (39528) NIMBLE_NVS: Local IRK in RAM is filled up from NVS index = 1[0m
+D (39538) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (39538) nvs: nvs_get_str_or_blob local_irk_2[0m
+D (39548) nvs: nvs_close 297[0m
+D (39548) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (39558) nvs: nvs_get_str_or_blob local_irk_3[0m
+D (39558) nvs: nvs_close 298[0m
+D (39558) NIMBLE_NVS: ble_store_config_local_irks restored 1 irks[0m
+D (39568) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (39568) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (39578) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (39578) nvs: nvs_close 299[0m
+D (39588) NIMBLE_NVS: RPA_REC in RAM is filled up from NVS index = 1[0m
+D (39588) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (39598) nvs: nvs_get_str_or_blob rpa_rec_2[0m
+D (39598) nvs: nvs_close 300[0m
+D (39598) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (39608) nvs: nvs_get_str_or_blob rpa_rec_3[0m
+D (39608) nvs: nvs_close 301[0m
+D (39618) NIMBLE_NVS: ble_store_config_rpa_recs restored 1 bonds[0m
+[0;32mI (39628) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (39628) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (39638) NimBLE: Device Address: [0m
+[0;32mI (39638) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (39638) NimBLE: 
+[0m
+[0;32mI (39648) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (39648) NimBLE: disc_mode=2[0m
+[0;32mI (39658) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (39668) NimBLE: 
+[0m
+Temperature: 30.98
+jerk = 0.48 
+angle = -0.14 
+Temperature: 30.93
+jerk = 0.55 
+angle = -0.14 
+Temperature: 30.98
+jerk = 0.48 
+angle = -0.15 
+Temperature: 30.88
+jerk = 0.69 
+angle = -0.14 
+Temperature: 30.98

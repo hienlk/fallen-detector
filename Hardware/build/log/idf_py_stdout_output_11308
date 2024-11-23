@@ -1,0 +1,780 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42006d10
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Oct 18 2024 17:31:12[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (33) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (85) esp_image: segment 0: paddr=00010020 vaddr=3c070020 size=1ace8h (109800) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=0002ad10 vaddr=3fc92e00 size=025f8h (  9720) load[0m
+[0;32mI (113) esp_image: segment 2: paddr=0002d310 vaddr=40380000 size=02d08h ( 11528) load[0m
+[0;32mI (118) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=617e8h (399336) map[0m
+[0;32mI (187) esp_image: segment 4: paddr=00091810 vaddr=40382d08 size=0ff18h ( 65304) load[0m
+[0;32mI (205) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (206) boot: Disabling RNG early entropy source...[0m
+[0;32mI (217) cpu_start: Unicore app[0m
+D (217) cpu_start: Pro cpu up[0m
+D (225) clk: RTC_SLOW_CLK calibration value: 3621824[0m
+[0;32mI (231) cpu_start: Pro cpu start user code[0m
+[0;32mI (231) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (231) cpu_start: Application information:[0m
+[0;32mI (234) cpu_start: Project name:     app-template[0m
+[0;32mI (239) cpu_start: App version:      9f1355b-dirty[0m
+[0;32mI (245) cpu_start: Compile time:     Nov 20 2024 15:23:26[0m
+[0;32mI (251) cpu_start: ELF file SHA256:  e912cc303...[0m
+[0;32mI (256) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (262) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (266) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (271) cpu_start: Chip rev:         v0.4[0m
+D (276) memory_layout: Checking 5 reserved memory ranges:[0m
+D (281) memory_layout: Reserved memory range 0x3fc80000 - 0x3fc92e00[0m
+D (288) memory_layout: Reserved memory range 0x3fc92e00 - 0x3fc98160[0m
+D (294) memory_layout: Reserved memory range 0x3fcdf060 - 0x3fce0000[0m
+D (301) memory_layout: Reserved memory range 0x50000000 - 0x50000010[0m
+D (307) memory_layout: Reserved memory range 0x50001fe8 - 0x50002000[0m
+D (313) memory_layout: Building list of available memory regions:[0m
+D (320) memory_layout: Available memory region 0x3fc98160 - 0x3fca0000[0m
+D (326) memory_layout: Available memory region 0x3fca0000 - 0x3fcc0000[0m
+D (333) memory_layout: Available memory region 0x3fcc0000 - 0x3fcdc710[0m
+D (339) memory_layout: Available memory region 0x3fcdc710 - 0x3fcdf060[0m
+D (346) memory_layout: Available memory region 0x50000010 - 0x50001fe8[0m
+[0;32mI (353) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (360) heap_init: New heap initialised at 0x3fc98160[0m
+[0;32mI (365) heap_init: At 3FC98160 len 00027EA0 (159 KiB): RAM[0m
+D (371) heap_init: New heap initialised at 0x3fcc0000[0m
+[0;32mI (376) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (383) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+D (390) heap_init: New heap initialised at 0x50000010[0m
+[0;32mI (395) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+D (402) intr_alloc: Connected src 27 to int 2 (cpu 0)[0m
+D (407) spi_flash: trying chip: issi[0m
+D (410) spi_flash: trying chip: gd[0m
+D (414) spi_flash: trying chip: mxic[0m
+D (417) spi_flash: trying chip: winbond[0m
+D (421) spi_flash: trying chip: boya[0m
+D (425) spi_flash: trying chip: th[0m
+D (428) spi_flash: trying chip: generic[0m
+[0;32mI (432) spi_flash: detected chip: generic[0m
+[0;32mI (437) spi_flash: flash io: dio[0m
+[0;33mW (441) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+D (454) cpu_start: calling init function: 0x4204b766[0m
+D (459) cpu_start: calling init function: 0x4204b6ea[0m
+D (464) cpu_start: calling init function: 0x4204b22e[0m
+D (469) cpu_start: calling init function: 0x420348d6[0m
+[0;33mW (474) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+D (485) cpu_start: calling init function: 0x40389ba2[0m
+D (490) cpu_start: calling init function: 0x4200002a[0m
+D (495) cpu_start: calling init function: 0x42005886 on core: 0[0m
+D (501) intr_alloc: Connected src 39 to int 3 (cpu 0)[0m
+D (506) cpu_start: calling init function: 0x42001c1a on core: 0[0m
+D (512) cpu_start: calling init function: 0x42003550 on core: 0[0m
+[0;32mI (518) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (525) sleep: Enable automatic switching of GPIO sleep configuration[0m
+D (532) cpu_start: calling init function: 0x42001430 on core: 0[0m
+[0;32mI (538) coexist: coex firmware version: d96c1e51f[0m
+[0;32mI (543) coexist: coexist rom version 9387209[0m
+D (548) intr_alloc: Connected src 50 to int 4 (cpu 0)[0m
+D (553) app_start: Starting scheduler on CPU0[0m
+D (558) intr_alloc: Connected src 37 to int 7 (cpu 0)[0m
+[0;32mI (558) main_task: Started on CPU0[0m
+D (558) heap_init: New heap initialised at 0x3fcdc710[0m
+D (558) intr_alloc: Connected src 33 to int 9 (cpu 0)[0m
+[0;32mI (568) main_task: Calling app_main()[0m
+D (568) intr_alloc: Connected src 29 to int 10 (cpu 0)[0m
+[0;32mI (588) BLE_INIT: BT controller compile version [c23ab4c][0m
+D (588) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (588) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (598) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (608) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (608) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (618) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+[0;32mI (628) BLE_INIT: Bluetooth MAC: 34:b7:da:f6:47:7e[0m
+[0;32mI (628) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+D (638) phy_init: loading PHY init data from application binary[0m
+D (648) nvs: nvs_open_from_partition phy 0[0m
+D (648) nvs: nvs_get cal_version 4[0m
+D (648) nvs: nvs_get_str_or_blob cal_mac[0m
+D (658) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (658) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (668) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (678) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (678) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (688) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (698) nvs: nvs_get_str_or_blob cal_data[0m
+D (698) nvs: nvs_close 1[0m
+D (708) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (708) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (718) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (728) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (728) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (738) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (758) temperature_sensor: range changed, change to index 2[0m
+D (788) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (788) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (788) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (788) nvs: nvs_close 2[0m
+D (788) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (798) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (798) nvs: nvs_get_str_or_blob our_sec_2[0m
+D (808) nvs: nvs_close 3[0m
+D (808) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (808) nvs: nvs_get_str_or_blob our_sec_3[0m
+D (818) nvs: nvs_close 4[0m
+D (818) NIMBLE_NVS: ble_store_config_our_secs restored 1 bonds[0m
+D (828) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (828) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (838) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (838) nvs: nvs_close 5[0m
+D (838) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (848) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (848) nvs: nvs_get_str_or_blob peer_sec_2[0m
+D (858) nvs: nvs_close 6[0m
+D (858) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (868) nvs: nvs_get_str_or_blob peer_sec_3[0m
+D (868) nvs: nvs_close 7[0m
+D (868) NIMBLE_NVS: ble_store_config_peer_secs restored 1 bonds[0m
+D (878) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (878) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (888) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (888) nvs: nvs_close 8[0m
+D (888) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 1[0m
+D (898) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (908) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (908) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (908) nvs: nvs_close 9[0m
+D (918) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 2[0m
+D (918) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (928) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (928) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (938) nvs: nvs_close 10[0m
+D (938) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 3[0m
+D (938) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (948) nvs: nvs_get_str_or_blob cccd_sec_4[0m
+D (948) nvs: nvs_close 11[0m
+D (958) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (958) nvs: nvs_get_str_or_blob cccd_sec_5[0m
+D (968) nvs: nvs_close 12[0m
+D (968) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (968) nvs: nvs_get_str_or_blob cccd_sec_6[0m
+D (978) nvs: nvs_close 13[0m
+D (978) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (988) nvs: nvs_get_str_or_blob cccd_sec_7[0m
+D (988) nvs: nvs_close 14[0m
+D (988) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (998) nvs: nvs_get_str_or_blob cccd_sec_8[0m
+D (998) nvs: nvs_close 15[0m
+D (998) NIMBLE_NVS: ble_store_config_cccds restored 3 bonds[0m
+D (1008) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1008) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (1018) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (1018) nvs: nvs_close 16[0m
+D (1028) NIMBLE_NVS: Local IRK in RAM is filled up from NVS index = 1[0m
+D (1028) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1038) nvs: nvs_get_str_or_blob local_irk_2[0m
+D (1038) nvs: nvs_close 17[0m
+D (1038) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1048) nvs: nvs_get_str_or_blob local_irk_3[0m
+D (1048) nvs: nvs_close 18[0m
+D (1058) NIMBLE_NVS: ble_store_config_local_irks restored 1 irks[0m
+D (1058) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1068) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (1068) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (1078) nvs: nvs_close 19[0m
+D (1078) NIMBLE_NVS: RPA_REC in RAM is filled up from NVS index = 1[0m
+D (1088) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1088) nvs: nvs_get_str_or_blob rpa_rec_2[0m
+D (1088) nvs: nvs_close 20[0m
+D (1098) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1098) nvs: nvs_get_str_or_blob rpa_rec_3[0m
+D (1108) nvs: nvs_close 21[0m
+D (1108) NIMBLE_NVS: ble_store_config_rpa_recs restored 1 bonds[0m
+[0;32mI (1118) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1118) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1128) NimBLE: Device Address: [0m
+[0;32mI (1128) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (1138) NimBLE: 
+[0m
+[0;32mI (1138) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1138) NimBLE: disc_mode=2[0m
+[0;32mI (1148) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1158) NimBLE: 
+[0m
+[0;32mI (1158) main_task: Returned from app_main()[0m
+Temperature: 32.81
+jerk = 10903.23 
+Temperature: 32.81
+jerk = 359.73 
+Temperature: 32.81
+jerk = 210.82 
+Temperature: 32.81
+jerk = 154.32 
+Temperature: 32.72
+jerk = 117.81 
+Temperature: 32.77
+jerk = 389.80 
+Temperature: 32.86
+jerk = 248.00 
+Temperature: 32.77
+jerk = 209.55 
+Temperature: 32.77
+jerk = 138.25 
+Temperature: 32.77
+jerk = 92.48 
+Temperature: 32.91
+jerk = 541.20 
+Temperature: 32.81
+jerk = 1141.89 
+Temperature: 32.81
+jerk = 3104.92 
+Temperature: 32.77
+jerk = 3731.51 
+Temperature: 32.77
+jerk = 1060.37 
+Temperature: 32.77
+jerk = 1596.89 
+Temperature: 32.86
+jerk = 450.63 
+Temperature: 32.72
+jerk = 1667.17 
+Temperature: 32.81
+jerk = 3193.65 
+Temperature: 32.81
+jerk = 616.76 
+Temperature: 32.91
+jerk = 1986.42 
+Temperature: 32.86
+jerk = 1490.36 
+Temperature: 32.86
+jerk = 7132.83 
+Temperature: 32.77
+jerk = 7533.92 
+Temperature: 32.86
+jerk = 6625.75 
+Temperature: 32.86
+jerk = 10131.06 
+Temperature: 32.81
+jerk = 8346.25 
+Temperature: 32.81
+jerk = 11732.48 
+Temperature: 32.86
+jerk = 11696.38 
+Temperature: 32.77
+jerk = 10631.99 
+Temperature: 32.86
+jerk = 6333.15 
+Temperature: 32.91
+jerk = 12629.06 
+Temperature: 32.81
+jerk = 21228.12 
+Temperature: 32.77
+jerk = 18622.04 
+Temperature: 32.86
+jerk = 3207.88 
+Temperature: 32.77
+jerk = 22710.07 
+Temperature: 32.86
+jerk = 22366.28 
+Temperature: 32.81
+jerk = 12853.09 
+Temperature: 32.81
+jerk = 8252.96 
+Temperature: 32.86
+jerk = 24654.41 
+Temperature: 32.77
+jerk = 22668.59 
+Temperature: 32.86
+jerk = 5421.67 
+Temperature: 32.86
+jerk = 23619.83 
+Temperature: 32.81
+jerk = 19231.86 
+Temperature: 32.81
+jerk = 14651.54 
+Temperature: 32.72
+jerk = 5118.32 
+Temperature: 32.86
+jerk = 17545.44 
+Temperature: 32.77
+jerk = 17425.09 
+Temperature: 32.86
+jerk = 14361.97 
+Temperature: 32.91
+jerk = 14205.31 
+Temperature: 32.81
+jerk = 11542.68 
+Temperature: 32.77
+jerk = 21221.31 
+Temperature: 32.86
+jerk = 6688.22 
+Temperature: 32.77
+jerk = 12336.52 
+Temperature: 32.77
+jerk = 15906.49 
+Temperature: 32.81
+jerk = 18373.96 
+Temperature: 32.77
+jerk = 8839.34 
+Temperature: 32.86
+jerk = 24593.43 
+Temperature: 32.77
+jerk = 27055.84 
+Temperature: 32.72
+jerk = 17750.12 
+Temperature: 32.81
+jerk = 13459.12 
+Temperature: 32.77
+jerk = 18797.04 
+Temperature: 32.86
+jerk = 19104.75 
+Temperature: 32.77
+jerk = 8603.33 
+Temperature: 32.95
+jerk = 38771.96 
+Temperature: 32.81
+jerk = 24794.85 
+Temperature: 32.81
+jerk = 12848.31 
+Temperature: 32.67
+jerk = 29368.45 
+Temperature: 32.86
+jerk = 22278.77 
+Temperature: 32.86
+jerk = 21017.88 
+Temperature: 32.81
+jerk = 37523.68 
+Temperature: 32.72
+jerk = 5746.32 
+Temperature: 32.72
+jerk = 25228.77 
+Temperature: 32.86
+jerk = 19061.76 
+Temperature: 32.86
+jerk = 12609.86 
+Temperature: 32.86
+jerk = 42059.63 
+Temperature: 32.86
+jerk = 37795.54 
+Temperature: 32.81
+jerk = 22311.81 
+Temperature: 32.81
+jerk = 3278.66 
+Temperature: 32.81
+jerk = 23075.24 
+Temperature: 32.81
+jerk = 9847.00 
+Temperature: 32.77
+jerk = 38872.70 
+Temperature: 32.77
+jerk = 39600.55 
+Temperature: 32.77
+jerk = 20962.42 
+Temperature: 32.72
+jerk = 24758.32 
+Temperature: 32.72
+jerk = 24159.24 
+Temperature: 32.72
+jerk = 44674.71 
+Temperature: 32.67
+jerk = 40334.03 
+Temperature: 32.77
+jerk = 17433.83 
+Temperature: 32.77
+jerk = 12893.27 
+Temperature: 32.77
+jerk = 30312.60 
+Temperature: 32.67
+jerk = 25271.19 
+Temperature: 32.67
+jerk = 41034.57 
+Temperature: 32.77
+jerk = 9789.82 
+Temperature: 32.67
+jerk = 22769.83 
+Temperature: 32.77
+jerk = 11760.12 
+Temperature: 32.67
+jerk = 17050.19 
+Temperature: 32.72
+jerk = 50477.81 
+Temperature: 32.72
+jerk = 23564.46 
+Temperature: 32.81
+jerk = 15390.80 
+Temperature: 32.81
+jerk = 3073.05 
+Temperature: 32.81
+jerk = 3268.72 
+Temperature: 32.77
+jerk = 2679.09 
+Temperature: 32.77
+jerk = 792.19 
+Temperature: 32.77
+jerk = 3243.71 
+Temperature: 32.77
+jerk = 2918.96 
+Temperature: 32.77
+jerk = 2583.48 
+Temperature: 32.77
+jerk = 3162.64 
+Temperature: 32.81
+jerk = 4104.64 
+Temperature: 32.67
+jerk = 859.27 
+Temperature: 32.72
+jerk = 1145.26 
+Temperature: 32.81
+jerk = 3790.36 
+Temperature: 32.77
+jerk = 3002.73 
+Temperature: 32.67
+jerk = 1363.09 
+Temperature: 32.67
+jerk = 238.78 
+Temperature: 32.81
+jerk = 150.85 
+Temperature: 32.81
+jerk = 120.21 
+Temperature: 32.72
+jerk = 146.92 
+Temperature: 32.72
+jerk = 128.11 
+Temperature: 32.86
+jerk = 87.53 
+Temperature: 32.77
+jerk = 51.12 
+Temperature: 32.86
+jerk = 120.39 
+Temperature: 32.77
+jerk = 150.77 
+Temperature: 32.77
+jerk = 164.87 
+Temperature: 32.72
+jerk = 130.51 
+Temperature: 32.91
+jerk = 151.42 
+Temperature: 32.77
+jerk = 209.09 
+Temperature: 32.86
+jerk = 167.43 
+Temperature: 32.77
+jerk = 254.48 
+Temperature: 32.72
+jerk = 243.41 
+Temperature: 32.81
+jerk = 125.57 
+Temperature: 32.81
+jerk = 139.66 
+Temperature: 32.81
+jerk = 147.67 
+Temperature: 32.77
+jerk = 258.93 
+Temperature: 32.77
+jerk = 297.67 
+Temperature: 32.77
+jerk = 364.05 
+Temperature: 32.77
+jerk = 126.24 
+Temperature: 32.86
+jerk = 168.94 
+Temperature: 32.81
+jerk = 62.07 
+Temperature: 32.81
+jerk = 89.25 
+Temperature: 32.81
+jerk = 149.36 
+Temperature: 32.81
+jerk = 145.22 
+Temperature: 32.86
+jerk = 122.60 
+Temperature: 32.86
+jerk = 34.03 
+Temperature: 32.77
+jerk = 137.08 
+Temperature: 32.62
+jerk = 173.59 
+Temperature: 32.81
+jerk = 52.79 
+Temperature: 32.81
+jerk = 182.69 
+Temperature: 32.86
+jerk = 78.15 
+Temperature: 32.77
+jerk = 91.00 
+Temperature: 32.77
+jerk = 157.18 
+Temperature: 32.77
+jerk = 185.52 
+Temperature: 32.81
+jerk = 187.13 
+Temperature: 32.81
+jerk = 63.98 
+Temperature: 32.77
+jerk = 134.41 
+Temperature: 32.67
+jerk = 144.13 
+Temperature: 32.86
+jerk = 168.02 
+Temperature: 32.72
+jerk = 178.09 
+Temperature: 32.72
+jerk = 82.91 
+Temperature: 32.81
+jerk = 108.91 
+Temperature: 32.77
+jerk = 18.12 
+Temperature: 32.86
+jerk = 128.67 
+Temperature: 32.86
+jerk = 103.30 
+Temperature: 32.77
+jerk = 140.10 
+Temperature: 32.81
+jerk = 185.25 
+Temperature: 32.81
+jerk = 53.03 
+Temperature: 32.72
+jerk = 9.31 
+Temperature: 32.86
+jerk = 142.29 
+Temperature: 32.86
+jerk = 93.45 
+Temperature: 32.86
+jerk = 88.37 
+Temperature: 32.86
+jerk = 138.14 
+Temperature: 32.81
+jerk = 73.36 
+Temperature: 32.72
+jerk = 118.28 
+Temperature: 32.77
+jerk = 104.55 
+Temperature: 32.77
+jerk = 155.20 
+Temperature: 32.86
+jerk = 95.77 
+Temperature: 32.72
+jerk = 160.92 
+Temperature: 32.77
+jerk = 95.64 
+Temperature: 32.86
+jerk = 152.32 
+Temperature: 32.81
+jerk = 93.72 
+Temperature: 32.91
+jerk = 174.86 
+Temperature: 32.86
+jerk = 134.34 
+Temperature: 32.77
+jerk = 50.64 
+Temperature: 32.72
+jerk = 57.72 
+Temperature: 32.77
+jerk = 111.07 
+Temperature: 32.77
+jerk = 120.70 
+Temperature: 32.81
+jerk = 152.70 
+Temperature: 32.77
+jerk = 94.47 
+Temperature: 32.86
+jerk = 335.02 
+Temperature: 32.81
+jerk = 368.74 
+Temperature: 32.86
+jerk = 293.69 
+Temperature: 32.77
+jerk = 327.95 
+Temperature: 32.77
+jerk = 150.85 
+Temperature: 32.81
+jerk = 196.29 
+Temperature: 32.77
+jerk = 92.52 
+Temperature: 32.67
+jerk = 173.78 
+Temperature: 32.72
+jerk = 175.92 
+Temperature: 32.81
+jerk = 151.59 
+Temperature: 32.77
+jerk = 121.64 
+Temperature: 32.77
+jerk = 101.82 
+Temperature: 32.86
+jerk = 100.78 
+Temperature: 32.86
+jerk = 114.97 
+Temperature: 32.77
+jerk = 90.79 
+Temperature: 32.81
+jerk = 87.42 
+Temperature: 32.81
+jerk = 162.68 
+Temperature: 32.77
+jerk = 444.28 
+Temperature: 32.77
+jerk = 483.02 
+Temperature: 32.77
+jerk = 554.69 
+Temperature: 32.86
+jerk = 137.78 
+Temperature: 32.81
+jerk = 178.13 
+Temperature: 32.81
+jerk = 42.45 
+Temperature: 32.81
+jerk = 190.33 
+Temperature: 32.77
+jerk = 125.18 
+Temperature: 32.91
+jerk = 143.01 
+Temperature: 32.81
+jerk = 76.34 
+Temperature: 32.81
+jerk = 130.39 
+Temperature: 32.81
+jerk = 149.07 
+Temperature: 32.86
+jerk = 215.71 
+Temperature: 32.86
+jerk = 161.61 
+Temperature: 32.77
+jerk = 64.80 
+Temperature: 32.81
+jerk = 88.55 
+Temperature: 32.81
+jerk = 176.56 
+Temperature: 32.81
+jerk = 141.00 
+Temperature: 32.86
+jerk = 20.22 
+Temperature: 32.77
+jerk = 154.58 
+Temperature: 32.77
+jerk = 79.40 
+Temperature: 32.77
+jerk = 98.36 
+Temperature: 32.81
+jerk = 78.94 
+Temperature: 32.86
+jerk = 100.97 
+Temperature: 32.86
+jerk = 86.10 
+Temperature: 32.77
+jerk = 121.21 
+Temperature: 32.81
+jerk = 350.70 
+Temperature: 32.72
+jerk = 236.37 
+Temperature: 32.81
+jerk = 41.12 
+Temperature: 32.77
+jerk = 194.15 
+Temperature: 32.77
+jerk = 135.88 
+Temperature: 32.86
+jerk = 166.02 
+Temperature: 32.81
+jerk = 177.15 
+Temperature: 32.81
+jerk = 291.71 
+Temperature: 32.86
+jerk = 314.66 
+Temperature: 32.77
+jerk = 226.09 
+Temperature: 32.86
+jerk = 168.74 
+Temperature: 32.72
+jerk = 88.37 
+Temperature: 32.81
+jerk = 184.70 
+Temperature: 32.81
+jerk = 105.44 
+Temperature: 32.77
+jerk = 270.10 
+Temperature: 32.86
+jerk = 339.79 
+Temperature: 32.77
+jerk = 145.50 
+Temperature: 32.72
+jerk = 175.78 
+Temperature: 32.81
+jerk = 159.92 
+Temperature: 32.81
+jerk = 225.32 
+Temperature: 32.77
+jerk = 96.80 
+Temperature: 32.86
+jerk = 92.22 
+Temperature: 32.81
+jerk = 121.26 
+Temperature: 32.67
+jerk = 144.19 
+Temperature: 32.81
+jerk = 123.99 
+Temperature: 32.81
+jerk = 273.78 
+Temperature: 32.77
+jerk = 103.24 
+Temperature: 32.77
+jerk = 17.60 
+Temperature: 32.72
+jerk = 59.05 
+Temperature: 32.77
+jerk = 188.45 
+Temperature: 32.86
+jerk = 71.83 
+Temperature: 32.67
+jerk = 75.36 
+Temperature: 32.81
+jerk = 140.56 
+Temperature: 32.81
+jerk = 191.56 
+Temperature: 32.72
+jerk = 103.99 
+Temperature: 32.77
+jerk = 107.73 
+Temperature: 32.77
+jerk = 113.28 
+Temperature: 32.86
+jerk = 187.13 
+Temperature: 32.77
+jerk = 125.75 
+Temperature: 32.81
+jerk = 145.90 
+Temperature: 32.81
+jerk = 215.24 
+Temperature: 32.72
+jerk = 143.59 
+Temperature: 32.86
+jerk = 125.15 
+Temperature: 32.86
+jerk = 206.04 
+Temperature: 32.77
+jerk = 136.92 
+Temperature: 32.67
+jerk = 205.39 
+Temperature: 32.81
+jerk = 233.11 
+Temperature: 32.81
+jerk = 142.99 
+Temperature: 32.81
+jerk = 69.59 

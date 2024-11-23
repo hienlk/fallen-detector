@@ -1,0 +1,3884 @@
+D (411) spi_flash: trying chip: gd[0m
+D (415) spi_flash: trying chip:ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c0d6
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Oct 18 2024 17:31:12[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (33) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (85) esp_image: segment 0: paddr=00010020 vaddr=3c070020 size=1acf8h (109816) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=0002ad20 vaddr=3fc92e00 size=025f8h (  9720) load[0m
+[0;32mI (113) esp_image: segment 2: paddr=0002d320 vaddr=40380000 size=02cf8h ( 11512) load[0m
+[0;32mI (118) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=617f0h (399344) map[0m
+[0;32mI (187) esp_image: segment 4: paddr=00091818 vaddr=40382cf8 size=0ff28h ( 65320) load[0m
+[0;32mI (205) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (206) boot: Disabling RNG early entropy source...[0m
+[0;32mI (217) cpu_start: Unicore app[0m
+D (217) cpu_start: Pro cpu up[0m
+D (225) clk: RTC_SLOW_CLK calibration value: 3610842[0m
+[0;32mI (231) cpu_start: Pro cpu start user code[0m
+[0;32mI (231) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (231) cpu_start: Application information:[0m
+[0;32mI (234) cpu_start: Project name:     app-template[0m
+[0;32mI (239) cpu_start: App version:      a74f263-dirty[0m
+[0;32mI (245) cpu_start: Compile time:     Oct 18 2024 19:13:20[0m
+[0;32mI (251) cpu_start: ELF file SHA256:  cb78fd1e9...[0m
+[0;32mI (256) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (262) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (266) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (271) cpu_start: Chip rev:         v0.4[0m
+D (276) memory_layout: Checking 5 reserved memory ranges:[0m
+D (281) memory_layout: Reserved memory range 0x3fc80000 - 0x3fc92e00[0m
+D (288) memory_layout: Reserved memory range 0x3fc92e00 - 0x3fc98160[0m
+D (294) memory_layout: Reserved memory range 0x3fcdf060 - 0x3fce0000[0m
+D (301) memory_layout: Reserved memory range 0x50000000 - 0x50000010[0m
+D (307) memory_layout: Reserved memory range 0x50001fe8 - 0x50002000[0m
+D (313) memory_layout: Building list of available memory regions:[0m
+D (320) memory_layout: Available memory region 0x3fc98160 - 0x3fca0000[0m
+D (326) memory_layout: Available memory region 0x3fca0000 - 0x3fcc0000[0m
+D (333) memory_layout: Available memory region 0x3fcc0000 - 0x3fcdc710[0m
+D (339) memory_layout: Available memory region 0x3fcdc710 - 0x3fcdf060[0m
+D (346) memory_layout: Available memory region 0x50000010 - 0x50001fe8[0m
+[0;32mI (353) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (360) heap_init: New heap initialised at 0x3fc98160[0m
+[0;32mI (365) heap_init: At 3FC98160 len 00027EA0 (159 KiB): RAM[0m
+D (371) heap_init: New heap initialised at 0x3fcc0000[0m
+[0;32mI (376) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (383) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+D (390) heap_init: New heap initialised at 0x50000010[0m
+[0;32mI (395) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+D (402) intr_alloc: Connected src 27 to int 2 (cpu 0)[0m
+D (407) spi_flash: trying chip: issi[0m
+D (410) spi_flash: trying chip: gd[0m
+D (414) spi_flash: trying chip: mxic[0m
+D (417) spi_flash: trying chip: winbond[0m
+D (421) spi_flash: trying chip: boya[0m
+D (425) spi_flash: trying chip: th[0m
+D (428) spi_flash: trying chip: generic[0m
+[0;32mI (432) spi_flash: detected chip: generic[0m
+[0;32mI (437) spi_flash: flash io: dio[0m
+[0;33mW (441) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+D (454) cpu_start: calling init function: 0x4204b76e[0m
+D (459) cpu_start: calling init function: 0x4204b6f2[0m
+D (464) cpu_start: calling init function: 0x4204b236[0m
+D (469) cpu_start: calling init function: 0x420348de[0m
+[0;33mW (474) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+D (485) cpu_start: calling init function: 0x40389ba2[0m
+D (490) cpu_start: calling init function: 0x4200002a[0m
+D (495) cpu_start: calling init function: 0x42005886 on core: 0[0m
+D (501) intr_alloc: Connected src 39 to int 3 (cpu 0)[0m
+D (506) cpu_start: calling init function: 0x42001c1a on core: 0[0m
+D (512) cpu_start: calling init function: 0x42003550 on core: 0[0m
+[0;32mI (518) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (525) sleep: Enable automatic switching of GPIO sleep configuration[0m
+D (532) cpu_start: calling init function: 0x42001430 on core: 0[0m
+[0;32mI (538) coexist: coex firmware version: d96c1e51f[0m
+[0;32mI (543) coexist: coexist rom version 9387209[0m
+D (548) intr_alloc: Connected src 50 to int 4 (cpu 0)[0m
+D (553) app_start: Starting scheduler on CPU0[0m
+D (558) intr_alloc: Connected src 37 to int 7 (cpu 0)[0m
+[0;32mI (558) main_task: Started on CPU0[0m
+D (558) heap_init: New heap initialised at 0x3fcdc710[0m
+D (558) intr_alloc: Connected src 33 to int 9 (cpu 0)[0m
+[0;32mI (568) main_task: Calling app_main()[0m
+D (568) intr_alloc: Connected src 29 to int 10 (cpu 0)[0m
+[0;32mI (588) BLE_INIT: BT controller compile version [c23ab4c][0m
+D (588) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (588) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (598) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (608) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (608) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (618) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+[0;32mI (628) BLE_INIT: Bluetooth MAC: 34:b7:da:f6:47:7e[0m
+[0;32mI (628) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+D (638) phy_init: loading PHY init data from application binary[0m
+D (648) nvs: nvs_open_from_partition phy 0[0m
+D (648) nvs: nvs_get cal_version 4[0m
+D (648) nvs: nvs_get_str_or_blob cal_mac[0m
+D (658) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (658) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (668) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (678) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (678) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (688) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (698) nvs: nvs_get_str_or_blob cal_data[0m
+D (698) nvs: nvs_close 1[0m
+D (708) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (708) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (718) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (728) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (728) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (738) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (758) temperature_sensor: range changed, change to index 2[0m
+D (828) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (828) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (838) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (838) nvs: nvs_close 2[0m
+D (838) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (848) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (848) nvs: nvs_get_str_or_blob our_sec_2[0m
+D (848) nvs: nvs_close 3[0m
+D (858) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (858) nvs: nvs_get_str_or_blob our_sec_3[0m
+D (868) nvs: nvs_close 4[0m
+D (868) NIMBLE_NVS: ble_store_config_our_secs restored 1 bonds[0m
+D (868) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (878) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (878) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (888) nvs: nvs_close 5[0m
+D (888) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (898) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (898) nvs: nvs_get_str_or_blob peer_sec_2[0m
+D (908) nvs: nvs_close 6[0m
+D (908) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (908) nvs: nvs_get_str_or_blob peer_sec_3[0m
+D (918) nvs: nvs_close 7[0m
+D (918) NIMBLE_NVS: ble_store_config_peer_secs restored 1 bonds[0m
+D (928) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (928) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (928) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (938) nvs: nvs_close 8[0m
+D (938) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 1[0m
+D (948) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (948) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (958) nvs: nvs_close 9[0m
+D (958) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (958) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (968) nvs: nvs_close 10[0m
+D (968) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (978) nvs: nvs_get_str_or_blob cccd_sec_4[0m
+D (978) nvs: nvs_close 11[0m
+D (978) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (988) nvs: nvs_get_str_or_blob cccd_sec_5[0m
+D (988) nvs: nvs_close 12[0m
+D (988) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (998) nvs: nvs_get_str_or_blob cccd_sec_6[0m
+D (998) nvs: nvs_close 13[0m
+D (1008) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1008) nvs: nvs_get_str_or_blob cccd_sec_7[0m
+D (1018) nvs: nvs_close 14[0m
+D (1018) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1018) nvs: nvs_get_str_or_blob cccd_sec_8[0m
+D (1028) nvs: nvs_close 15[0m
+D (1028) NIMBLE_NVS: ble_store_config_cccds restored 1 bonds[0m
+D (1038) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1038) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (1048) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (1048) nvs: nvs_close 16[0m
+D (1048) NIMBLE_NVS: Local IRK in RAM is filled up from NVS index = 1[0m
+D (1058) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1058) nvs: nvs_get_str_or_blob local_irk_2[0m
+D (1068) nvs: nvs_close 17[0m
+D (1068) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1078) nvs: nvs_get_str_or_blob local_irk_3[0m
+D (1078) nvs: nvs_close 18[0m
+D (1078) NIMBLE_NVS: ble_store_config_local_irks restored 1 irks[0m
+D (1088) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1088) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (1098) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (1098) nvs: nvs_close 19[0m
+D (1108) NIMBLE_NVS: RPA_REC in RAM is filled up from NVS index = 1[0m
+D (1108) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1118) nvs: nvs_get_str_or_blob rpa_rec_2[0m
+D (1118) nvs: nvs_close 20[0m
+D (1118) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1128) nvs: nvs_get_str_or_blob rpa_rec_3[0m
+D (1128) nvs: nvs_close 21[0m
+D (1138) NIMBLE_NVS: ble_store_config_rpa_recs restored 1 bonds[0m
+[0;32mI (1148) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1148) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1158) NimBLE: Device Address: [0m
+[0;32mI (1158) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (1158) NimBLE: 
+[0m
+[0;32mI (1168) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1168) NimBLE: disc_mode=2[0m
+[0;32mI (1178) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1188) NimBLE: 
+[0m
+[0;32mI (1188) main_task: Returned from app_main()[0m
+Temperature: 31.31
+jerk = 0.00 
+angle = 0.00 
+Temperature: 31.31
+jerk = 52.65 
+angle = -0.03 
+Temperature: 31.35
+jerk = 0.42 
+angle = -0.02 
+Temperature: 31.31
+jerk = 0.45 
+angle = -0.02 
+Temperature: 31.31
+jerk = 0.76 
+angle = -0.04 
+Temperature: 31.26
+jerk = 0.68 
+angle = -0.03 
+Temperature: 31.31
+jerk = 0.72 
+angle = -0.02 
+Temperature: 31.26
+jerk = 0.54 
+angle = -0.03 
+Temperature: 31.31
+jerk = 0.35 
+angle = -0.03 
+Temperature: 31.31
+jerk = 0.55 
+angle = -0.04 
+Temperature: 31.26
+jerk = 0.48 
+angle = -0.03 
+Temperature: 31.35
+jerk = 0.69 
+angle = -0.03 
+Temperature: 31.31
+jerk = 0.68 
+angle = -0.04 
+Temperature: 31.26
+jerk = 0.78 
+angle = -0.03 
+Temperature: 31.31
+jerk = 0.78 
+angle = -0.03 
+Temperature: 31.31
+jerk = 0.57 
+angle = -0.03 
+Temperature: 31.45
+jerk = 0.28 
+angle = -0.04 
+Temperature: 31.40
+jerk = 1.02 
+angle = -0.04 
+Temperature: 31.21
+jerk = 1.24 
+angle = -0.03 
+Temperature: 31.26
+jerk = 0.61 
+angle = -0.02 
+Temperature: 31.31
+jerk = 0.49 
+angle = -0.03 
+Temperature: 31.31
+jerk = 0.33 
+angle = -0.03 
+Temperature: 31.26
+jerk = 0.87 
+angle = -0.04 
+Temperature: 31.35
+jerk = 0.23 
+angle = -0.03 
+Temperature: 31.40
+jerk = 0.33 
+angle = -0.04 
+Temperature: 31.17
+jerk = 0.55 
+angle = -0.04 
+Temperature: 31.31
+jerk = 0.19 
+angle = -0.04 
+Temperature: 31.31
+jerk = 0.32 
+angle = -0.04 
+Temperature: 31.35
+jerk = 0.46 
+angle = -0.03 
+Temperature: 31.21
+jerk = 0.41 
+angle = -0.04 
+Temperature: 31.31
+jerk = 0.37 
+angle = -0.04 
+Temperature: 31.26
+jerk = 0.51 
+angle = -0.03 
+Temperature: 31.31
+jerk = 0.52 
+angle = -0.04 
+Temperature: 31.26
+jerk = 0.83 
+angle = -0.04 
+Temperature: 31.31
+jerk = 0.28 
+angle = -0.04 
+Temperature: 31.21
+jerk = 0.62 
+angle = -0.04 
+Temperature: 31.26
+jerk = 0.41 
+angle = -0.04 
+Temperature: 31.31
+jerk = 0.28 
+angle = -0.04 
+Temperature: 31.26
+jerk = 0.67 
+angle = -0.04 
+Temperature: 31.35
+jerk = 0.42 
+angle = -0.03 
+Temperature: 31.21
+jerk = 0.81 
+angle = -0.04 
+Temperature: 31.17
+jerk = 0.36 
+angle = -0.04 
+Temperature: 31.26
+jerk = 0.49 
+angle = -0.04 
+Temperature: 31.21
+jerk = 0.44 
+angle = -0.03 
+Temperature: 31.26
+jerk = 0.40 
+angle = -0.03 
+Temperature: 31.26
+jerk = 0.56 
+angle = -0.04 
+Temperature: 31.31
+jerk = 0.36 
+angle = -0.04 
+Temperature: 31.26
+jerk = 0.25 
+angle = -0.05 
+Temperature: 31.21
+jerk = 0.59 
+angle = -0.05 
+Temperature: 31.31
+jerk = 0.98 
+angle = -0.05 
+Temperature: 31.26
+jerk = 0.22 
+angle = -0.04 
+Temperature: 31.31
+jerk = 0.35 
+angle = -0.04 
+Temperature: 31.17
+jerk = 0.21 
+angle = -0.04 
+Temperature: 31.26
+jerk = 0.67 
+angle = -0.04 
+Temperature: 31.31
+jerk = 0.48 
+angle = -0.05 
+Temperature: 31.26
+jerk = 0.46 
+angle = -0.04 
+Temperature: 31.21
+jerk = 0.66 
+angle = -0.05 
+Temperature: 31.17
+jerk = 0.28 
+angle = -0.04 
+Temperature: 31.17
+jerk = 0.77 
+angle = -0.04 
+Temperature: 31.31
+jerk = 0.41 
+angle = -0.05 
+Temperature: 31.17
+jerk = 0.41 
+angle = -0.04 
+Temperature: 31.21
+jerk = 0.72 
+angle = -0.03 
+Temperature: 31.31
+jerk = 0.34 
+angle = -0.04 
+Temperature: 31.35
+jerk = 0.62 
+angle = -0.05 
+Temperature: 31.31
+jerk = 1.41 
+angle = -0.05 
+Temperature: 31.35
+jerk = 0.93 
+angle = -0.06 
+Temperature: 31.21
+jerk = 0.97 
+angle = -0.05 
+Temperature: 31.26
+jerk = 0.53 
+angle = -0.05 
+Temperature: 31.31
+jerk = 0.55 
+angle = -0.05 
+Temperature: 31.31
+jerk = 1.06 
+angle = -0.04 
+Temperature: 31.35
+jerk = 0.71 
+angle = -0.04 
+Temperature: 31.40
+jerk = 0.85 
+angle = -0.04 
+Temperature: 31.35
+jerk = 0.77 
+angle = -0.05 
+Temperature: 31.31
+jerk = 0.78 
+angle = -0.05 
+Temperature: 31.26
+jerk = 0.71 
+angle = -0.04 
+Temperature: 31.21
+jerk = 0.74 
+angle = -0.06 
+Temperature: 31.26
+jerk = 0.63 
+angle = -0.05 
+Temperature: 31.26
+jerk = 0.67 
+angle = -0.05 
+Temperature: 31.31
+jerk = 0.64 
+angle = -0.05 
+Temperature: 31.35
+jerk = 0.55 
+angle = -0.04 
+Temperature: 31.31
+jerk = 0.60 
+angle = -0.05 
+Temperature: 31.26
+jerk = 0.22 
+angle = -0.05 
+Temperature: 31.26
+jerk = 0.09 
+angle = -0.05 
+Temperature: 31.31
+jerk = 0.52 
+angle = -0.06 
+Temperature: 31.35
+jerk = 0.87 
+angle = -0.05 
+Temperature: 31.21
+jerk = 0.63 
+angle = -0.05 
+Temperature: 31.26
+jerk = 0.38 
+angle = -0.05 
+Temperature: 31.31
+jerk = 1.04 
+angle = -0.06 
+Temperature: 31.35
+jerk = 0.69 
+angle = -0.06 
+Temperature: 31.26
+jerk = 0.36 
+angle = -0.05 
+Temperature: 31.26
+jerk = 0.64 
+angle = -0.05 
+Temperature: 31.35
+jerk = 0.74 
+angle = -0.05 
+Temperature: 31.31
+jerk = 0.28 
+angle = -0.06 
+Temperature: 31.31
+jerk = 0.86 
+angle = -0.06 
+Temperature: 31.35
+jerk = 0.71 
+angle = -0.06 
+Temperature: 31.31
+jerk = 0.78 
+angle = -0.05 
+Temperature: 31.26
+jerk = 0.54 
+angle = -0.06 
+Temperature: 31.35
+jerk = 0.43 
+angle = -0.05 
+Temperature: 31.31
+jerk = 0.42 
+angle = -0.05 
+Temperature: 31.26
+jerk = 0.86 
+angle = -0.06 
+Temperature: 31.31
+jerk = 0.77 
+angle = -0.05 
+Temperature: 31.35
+jerk = 0.48 
+angle = -0.06 
+Temperature: 31.31
+jerk = 0.54 
+angle = -0.06 
+Temperature: 31.35
+jerk = 0.99 
+angle = -0.05 
+Temperature: 31.21
+jerk = 0.25 
+angle = -0.06 
+Temperature: 31.35
+jerk = 0.33 
+angle = -0.06 
+Temperature: 31.31
+jerk = 0.20 
+angle = -0.06 
+Temperature: 31.17
+jerk = 0.61 
+angle = -0.06 
+Temperature: 31.31
+jerk = 0.18 
+angle = -0.06 
+Temperature: 31.26
+jerk = 0.46 
+angle = -0.07 
+Temperature: 31.31
+jerk = 0.51 
+angle = -0.06 
+Temperature: 31.26
+jerk = 0.63 
+angle = -0.06 
+Temperature: 31.31
+jerk = 0.58 
+angle = -0.06 
+Temperature: 31.26
+jerk = 0.66 
+angle = -0.06 
+Temperature: 31.31
+jerk = 0.37 
+angle = -0.06 
+Temperature: 31.26
+jerk = 0.72 
+angle = -0.06 
+Temperature: 31.31
+jerk = 0.72 
+angle = -0.06 
+Temperature: 31.31
+jerk = 0.50 
+angle = -0.06 
+Temperature: 31.26
+jerk = 0.41 
+angle = -0.07 
+Temperature: 31.31
+jerk = 0.68 
+angle = -0.06 
+Temperature: 31.17
+jerk = 0.50 
+angle = -0.06 
+Temperature: 31.31
+jerk = 0.52 
+angle = -0.06 
+Temperature: 31.35
+jerk = 0.42 
+angle = -0.06 
+Temperature: 31.26
+jerk = 0.60 
+angle = -0.07 
+Temperature: 31.31
+jerk = 0.43 
+angle = -0.07 
+Temperature: 31.35
+jerk = 0.39 
+angle = -0.07 
+Temperature: 31.26
+jerk = 0.42 
+angle = -0.07 
+Temperature: 31.21
+jerk = 0.67 
+angle = -0.06 
+Temperature: 31.26
+jerk = 0.43 
+angle = -0.06 
+[0;32mI (14028) BLE-Test-Sever: BLE GAP EVENT CONNECT OK[0m
+[0;32mI (14028) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (14028) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (14038) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (14038) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (14048) NimBLE:  peer_ota_addr_type=1 peer_ota_addr=[0m
+[0;32mI (14048) NimBLE: 4f:2b:4f:23:9d:eb[0m
+[0;32mI (14058) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (14058) NimBLE: 9c:5a:81:68:4b:7b[0m
+[0;32mI (14068) NimBLE:  conn_itvl=39 conn_latency=0 supervision_timeout=500 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (14078) BLE-Test-Sever: Security initiate result: 0[0m
+[0;32mI (14088) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14088) NimBLE: att_handle=16
+[0m
+[0;32mI (14088) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (14098) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14108) NimBLE: att_handle=19
+[0m
+[0;32mI (14108) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.17
+jerk = 0.37 
+angle = -0.06 
+[0;32mI (14218) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14218) NimBLE: att_handle=16
+[0m
+[0;32mI (14218) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (14218) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14228) NimBLE: att_handle=19
+[0m
+[0;32mI (14228) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.26
+jerk = 0.73 
+angle = -0.07 
+[0;32mI (14338) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14338) NimBLE: att_handle=16
+[0m
+[0;32mI (14338) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (14338) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14348) NimBLE: att_handle=19
+[0m
+[0;32mI (14348) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.31
+jerk = 0.44 
+angle = -0.07 
+[0;32mI (14368) BLE-Test-Sever: BLE GAP EVENT ENC CHANGE: status=0[0m
+[0;32mI (14368) BLE-Test-Sever: Encryption change: encrypted=1, authenticated=1, bonded=1, key_size=16[0m
+[0;32mI (14378) NimBLE: subscribe event; conn_handle=1 attr_handle=8 reason=3 prevn=0 curn=0 previ=0 curi=1
+[0m
+[0;32mI (14458) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14458) NimBLE: att_handle=16
+[0m
+[0;32mI (14458) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (14458) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14468) NimBLE: att_handle=19
+[0m
+[0;32mI (14468) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.31
+jerk = 0.39 
+angle = -0.07 
+[0;32mI (14578) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14578) NimBLE: att_handle=16
+[0m
+[0;32mI (14578) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (14578) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14588) NimBLE: att_handle=19
+[0m
+[0;32mI (14588) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.21
+jerk = 0.48 
+angle = -0.07 
+[0;32mI (14698) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14698) NimBLE: att_handle=16
+[0m
+[0;32mI (14698) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (14698) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14708) NimBLE: att_handle=19
+[0m
+[0;32mI (14708) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.26
+jerk = 1.14 
+angle = -0.07 
+[0;32mI (14818) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14818) NimBLE: att_handle=16
+[0m
+[0;32mI (14818) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (14818) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14828) NimBLE: att_handle=19
+[0m
+[0;32mI (14828) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.17
+jerk = 0.19 
+angle = -0.07 
+[0;32mI (14938) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14938) NimBLE: att_handle=16
+[0m
+[0;32mI (14938) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (14938) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14948) NimBLE: att_handle=19
+[0m
+[0;32mI (14948) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.31
+jerk = 0.45 
+angle = -0.07 
+[0;32mI (15058) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15058) NimBLE: att_handle=16
+[0m
+[0;32mI (15058) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (15058) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15068) NimBLE: att_handle=19
+[0m
+[0;32mI (15068) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.26
+jerk = 0.78 
+angle = -0.07 
+[0;32mI (15178) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15178) NimBLE: att_handle=16
+[0m
+[0;32mI (15178) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (15178) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15188) NimBLE: att_handle=19
+[0m
+[0;32mI (15188) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.31
+jerk = 0.47 
+angle = -0.06 
+[0;32mI (15298) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15298) NimBLE: att_handle=16
+[0m
+[0;32mI (15298) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (15298) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15308) NimBLE: att_handle=19
+[0m
+[0;32mI (15308) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.26
+jerk = 0.49 
+angle = -0.06 
+[0;32mI (15418) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15418) NimBLE: att_handle=16
+[0m
+[0;32mI (15418) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (15418) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15428) NimBLE: att_handle=19
+[0m
+[0;32mI (15428) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.26
+jerk = 0.77 
+angle = -0.08 
+[0;32mI (15538) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15538) NimBLE: att_handle=16
+[0m
+[0;32mI (15538) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (15538) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15548) NimBLE: att_handle=19
+[0m
+[0;32mI (15548) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.31
+jerk = 0.75 
+angle = -0.07 
+[0;32mI (15658) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15658) NimBLE: att_handle=16
+[0m
+[0;32mI (15658) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (15658) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15668) NimBLE: att_handle=19
+[0m
+[0;32mI (15668) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.31
+jerk = 0.06 
+angle = -0.07 
+[0;32mI (15778) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15778) NimBLE: att_handle=16
+[0m
+[0;32mI (15778) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (15778) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15788) NimBLE: att_handle=19
+[0m
+[0;32mI (15788) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.31
+jerk = 0.35 
+angle = -0.07 
+[0;32mI (15898) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15898) NimBLE: att_handle=16
+[0m
+[0;32mI (15898) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (15898) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15908) NimBLE: att_handle=19
+[0m
+[0;32mI (15908) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.31
+jerk = 0.50 
+angle = -0.07 
+[0;32mI (16018) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16018) NimBLE: att_handle=16
+[0m
+[0;32mI (16018) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (16018) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16028) NimBLE: att_handle=19
+[0m
+[0;32mI (16028) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.17
+jerk = 1.02 
+angle = -0.07 
+[0;32mI (16138) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16138) NimBLE: att_handle=16
+[0m
+[0;32mI (16138) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (16138) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16148) NimBLE: att_handle=19
+[0m
+[0;32mI (16148) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.26
+jerk = 0.53 
+angle = -0.07 
+[0;32mI (16258) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16258) NimBLE: att_handle=16
+[0m
+[0;32mI (16258) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (16258) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16268) NimBLE: att_handle=19
+[0m
+[0;32mI (16268) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.31
+jerk = 0.87 
+angle = -0.07 
+[0;32mI (16378) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16378) NimBLE: att_handle=16
+[0m
+[0;32mI (16378) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (16378) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16388) NimBLE: att_handle=19
+[0m
+[0;32mI (16388) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.31
+jerk = 0.33 
+angle = -0.08 
+[0;32mI (16498) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16498) NimBLE: att_handle=16
+[0m
+[0;32mI (16498) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (16498) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16508) NimBLE: att_handle=19
+[0m
+[0;32mI (16508) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.26
+jerk = 0.46 
+angle = -0.08 
+[0;32mI (16618) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16618) NimBLE: att_handle=16
+[0m
+[0;32mI (16618) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (16618) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16628) NimBLE: att_handle=19
+[0m
+[0;32mI (16628) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.26
+jerk = 0.82 
+angle = -0.06 
+[0;32mI (16738) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16738) NimBLE: att_handle=16
+[0m
+[0;32mI (16738) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (16738) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16748) NimBLE: att_handle=19
+[0m
+[0;32mI (16748) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.21
+jerk = 0.74 
+angle = -0.07 
+[0;32mI (16858) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16858) NimBLE: att_handle=16
+[0m
+[0;32mI (16858) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (16858) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16868) NimBLE: att_handle=19
+[0m
+[0;32mI (16868) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.21
+jerk = 0.53 
+angle = -0.07 
+[0;32mI (16978) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16978) NimBLE: att_handle=16
+[0m
+[0;32mI (16978) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (16978) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16988) NimBLE: att_handle=19
+[0m
+[0;32mI (16988) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.21
+jerk = 0.43 
+angle = -0.08 
+[0;32mI (17098) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17098) NimBLE: att_handle=16
+[0m
+[0;32mI (17098) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (17098) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17108) NimBLE: att_handle=19
+[0m
+[0;32mI (17108) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.31
+jerk = 0.43 
+angle = -0.07 
+[0;32mI (17218) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17218) NimBLE: att_handle=16
+[0m
+[0;32mI (17218) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (17218) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17228) NimBLE: att_handle=19
+[0m
+[0;32mI (17228) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.21
+jerk = 0.70 
+angle = -0.08 
+[0;32mI (17338) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17338) NimBLE: att_handle=16
+[0m
+[0;32mI (17338) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (17338) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17348) NimBLE: att_handle=19
+[0m
+[0;32mI (17348) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.31
+jerk = 0.58 
+angle = -0.08 
+[0;32mI (17458) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17458) NimBLE: att_handle=16
+[0m
+[0;32mI (17458) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (17458) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17468) NimBLE: att_handle=19
+[0m
+[0;32mI (17468) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.21
+jerk = 0.80 
+angle = -0.07 
+[0;32mI (17578) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17578) NimBLE: att_handle=16
+[0m
+[0;32mI (17578) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (17578) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17588) NimBLE: att_handle=19
+[0m
+[0;32mI (17588) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.31
+jerk = 0.82 
+angle = -0.09 
+[0;32mI (17698) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17698) NimBLE: att_handle=16
+[0m
+[0;32mI (17698) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (17698) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17708) NimBLE: att_handle=19
+[0m
+[0;32mI (17708) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.17
+jerk = 0.50 
+angle = -0.08 
+[0;32mI (17818) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17818) NimBLE: att_handle=16
+[0m
+[0;32mI (17818) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (17818) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17828) NimBLE: att_handle=19
+[0m
+[0;32mI (17828) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.17
+jerk = 0.62 
+angle = -0.07 
+[0;32mI (17938) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17938) NimBLE: att_handle=16
+[0m
+[0;32mI (17938) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (17938) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17948) NimBLE: att_handle=19
+[0m
+[0;32mI (17948) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.31
+jerk = 0.75 
+angle = -0.08 
+[0;32mI (18058) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18058) NimBLE: att_handle=16
+[0m
+[0;32mI (18058) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (18058) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18068) NimBLE: att_handle=19
+[0m
+[0;32mI (18068) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.26
+jerk = 1.65 
+angle = -0.08 
+[0;32mI (18178) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18178) NimBLE: att_handle=16
+[0m
+[0;32mI (18178) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (18178) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18188) NimBLE: att_handle=19
+[0m
+[0;32mI (18188) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.17
+jerk = 1.41 
+angle = -0.08 
+[0;32mI (18298) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18298) NimBLE: att_handle=16
+[0m
+[0;32mI (18298) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (18298) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18308) NimBLE: att_handle=19
+[0m
+[0;32mI (18308) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.21
+jerk = 0.82 
+angle = -0.07 
+[0;32mI (18418) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18418) NimBLE: att_handle=16
+[0m
+[0;32mI (18418) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (18418) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18428) NimBLE: att_handle=19
+[0m
+[0;32mI (18428) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.26
+jerk = 0.87 
+angle = -0.08 
+[0;32mI (18538) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18538) NimBLE: att_handle=16
+[0m
+[0;32mI (18538) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (18538) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18548) NimBLE: att_handle=19
+[0m
+[0;32mI (18548) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.26
+jerk = 0.42 
+angle = -0.08 
+[0;32mI (18658) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18658) NimBLE: att_handle=16
+[0m
+[0;32mI (18658) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (18658) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18668) NimBLE: att_handle=19
+[0m
+[0;32mI (18668) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.26
+jerk = 0.27 
+angle = -0.07 
+[0;32mI (18778) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18778) NimBLE: att_handle=16
+[0m
+[0;32mI (18778) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (18778) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18788) NimBLE: att_handle=19
+[0m
+[0;32mI (18788) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.26
+jerk = 0.56 
+angle = -0.08 
+[0;32mI (18898) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18898) NimBLE: att_handle=16
+[0m
+[0;32mI (18898) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (18898) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18908) NimBLE: att_handle=19
+[0m
+[0;32mI (18908) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.35
+jerk = 0.48 
+angle = -0.08 
+[0;32mI (19018) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19018) NimBLE: att_handle=16
+[0m
+[0;32mI (19018) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (19018) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19028) NimBLE: att_handle=19
+[0m
+[0;32mI (19028) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.17
+jerk = 0.43 
+angle = -0.08 
+[0;32mI (19138) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19138) NimBLE: att_handle=16
+[0m
+[0;32mI (19138) NimBLE: notify_tx event; conn_handle=1 attr_handle=16 status=0 is_indication=0[0m
+[0;32mI (19138) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19148) NimBLE: att_handle=19
+[0m
+[0;32mI (19148) NimBLE: notify_tx event; conn_handle=1 attr_handle=19 status=0 is_indication=0[0m
+Temperature: 31.17
+jerk = 0.50 
+angle = -0.09 
+[0;32mI (19188) NimBLE: subscribe event; conn_handle=1 attr_handle=8 reason=2 prevn=0 curn=0 previ=1 curi=0
+[0m
+[0;32mI (19188) BLE-Test-Sever: BLE GAP EVENT DISCONNECT reason=531[0m
+[0;32mI (19198) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (19208) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (19208) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (19218) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (19218) NimBLE:  peer_ota_addr_type=1 peer_ota_addr=[0m
+[0;32mI (19228) NimBLE: 4f:2b:4f:23:9d:eb[0m
+[0;32mI (19228) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (19238) NimBLE: 9c:5a:81:68:4b:7b[0m
+[0;32mI (19238) NimBLE:  conn_itvl=39 conn_latency=0 supervision_timeout=500 encrypted=1 authenticated=1 bonded=1
+[0m
+[0;32mI (19248) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (19258) NimBLE: disc_mode=2[0m
+[0;32mI (19258) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (19268) NimBLE: 
+[0m
+Temperature: 31.31
+jerk = 0.67 
+angle = -0.08 
+Temperature: 31.21
+jerk = 0.41 
+angle = -0.08 
+Temperature: 31.26
+jerk = 0.47 
+angle = -0.09 
+Temperature: 31.21
+jerk = 0.69 
+angle = -0.08 
+Temperature: 31.26
+jerk = 0.68 
+angle = -0.08 
+Temperature: 31.17
+jerk = 0.20 
+angle = -0.09 
+Temperature: 31.31
+jerk = 0.85 
+angle = -0.08 
+Temperature: 31.26
+jerk = 0.47 
+angle = -0.09 
+Temperature: 31.21
+jerk = 0.52 
+angle = -0.09 
+Temperature: 31.17
+jerk = 0.36 
+angle = -0.09 
+Temperature: 31.26
+jerk = 0.65 
+angle = -0.08 
+Temperature: 31.35
+jerk = 0.41 
+angle = -0.08 
+Temperature: 31.21
+jerk = 1.83 
+angle = -0.05 
+Temperature: 31.26
+jerk = 1.86 
+angle = -0.08 
+Temperature: 31.26
+jerk = 0.86 
+angle = -0.09 
+Temperature: 31.31
+jerk = 0.87 
+angle = -0.08 
+Temperature: 31.26
+jerk = 1.27 
+angle = -0.10 
+Temperature: 31.17
+jerk = 0.77 
+angle = -0.09 
+Temperature: 31.21
+jerk = 0.39 
+angle = -0.09 
+Temperature: 31.26
+jerk = 0.88 
+angle = -0.09 
+Temperature: 31.26
+jerk = 2.88 
+angle = -0.09 
+Temperature: 31.21
+jerk = 6.20 
+angle = 0.01 
+Temperature: 31.17
+jerk = 7.97 
+angle = -0.14 
+Temperature: 31.21
+jerk = 4.89 
+angle = -0.07 
+Temperature: 31.31
+jerk = 2.20 
+angle = -0.07 
+Temperature: 31.26
+jerk = 2.44 
+angle = -0.09 
+Temperature: 31.31
+jerk = 3.60 
+angle = -0.06 
+Temperature: 31.17
+jerk = 1.57 
+angle = -0.05 
+Temperature: 31.35
+jerk = 1.50 
+angle = -0.07 
+Temperature: 31.21
+jerk = 3.55 
+angle = -0.03 
+Temperature: 31.17
+jerk = 3.73 
+angle = -0.07 
+Temperature: 31.21
+jerk = 2.29 
+angle = -0.04 
+Temperature: 31.31
+jerk = 1.59 
+angle = -0.05 
+Temperature: 31.26
+jerk = 0.89 
+angle = -0.04 
+Temperature: 31.21
+jerk = 0.82 
+angle = -0.05 
+Temperature: 31.26
+jerk = 0.37 
+angle = -0.05 
+Temperature: 31.17
+jerk = 0.78 
+angle = -0.04 
+Temperature: 31.21
+jerk = 0.88 
+angle = -0.04 
+Temperature: 31.26
+jerk = 0.83 
+angle = -0.05 
+Temperature: 31.26
+jerk = 2.72 
+angle = -0.05 
+Temperature: 31.21
+jerk = 1.93 
+angle = -0.04 
+Temperature: 31.26
+jerk = 1.70 
+angle = -0.05 
+Temperature: 31.31
+jerk = 2.25 
+angle = -0.03 
+Temperature: 31.26
+jerk = 0.56 
+angle = -0.04 
+Temperature: 31.31
+jerk = 0.75 
+angle = -0.03 
+Temperature: 31.17
+jerk = 1.33 
+angle = -0.04 
+Temperature: 31.21
+jerk = 0.93 
+angle = -0.05 
+Temperature: 31.26
+jerk = 1.17 
+angle = -0.05 
+Temperature: 31.26
+jerk = 1.04 
+angle = -0.05 
+Temperature: 31.12
+jerk = 0.86 
+angle = -0.05 
+Enable/Disable Button Pressed!
+Stopping NimBLE stack...
+[0;32mI (24188) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+D (24188) Timer: Timer not stopped[0m
+[0;32mI (24188) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+D (24198) Timer: Timer not stopped[0m
+NimBLE stack stopped
+Temperature: 31.26
+jerk = 1.37 
+angle = -0.04 
+Temperature: 31.21
+jerk = 0.69 
+angle = -0.05 
+Temperature: 31.31
+jerk = 2.34 
+angle = -0.02 
+Temperature: 31.26
+jerk = 3.89 
+angle = -0.05 
+Temperature: 31.21
+jerk = 2.13 
+angle = -0.07 
+Temperature: 31.31
+jerk = 1.92 
+angle = -0.09 
+Temperature: 31.17
+jerk = 2.37 
+angle = -0.07 
+Temperature: 31.17
+jerk = 0.69 
+angle = -0.08 
+Temperature: 31.17
+jerk = 0.62 
+angle = -0.07 
+Temperature: 31.17
+jerk = 0.41 
+angle = -0.08 
+Temperature: 31.21
+jerk = 0.28 
+angle = -0.08 
+Temperature: 31.26
+jerk = 0.26 
+angle = -0.08 
+Temperature: 31.21
+jerk = 0.67 
+angle = -0.08 
+Temperature: 31.17
+jerk = 0.90 
+angle = -0.08 
+Temperature: 31.21
+jerk = 0.99 
+angle = -0.08 
+Temperature: 31.31
+jerk = 2.15 
+angle = -0.09 
+Temperature: 31.26
+jerk = 2.56 
+angle = -0.08 
+Temperature: 31.26
+jerk = 1.18 
+angle = -0.09 
+Temperature: 31.35
+jerk = 0.54 
+angle = -0.08 
+Temperature: 31.21
+jerk = 0.25 
+angle = -0.08 
+Temperature: 31.21
+jerk = 0.30 
+angle = -0.08 
+Temperature: 31.26
+jerk = 0.84 
+angle = -0.08 
+Temperature: 31.31
+jerk = 0.36 
+angle = -0.08 
+Temperature: 31.26
+jerk = 0.39 
+angle = -0.09 
+Temperature: 31.21
+jerk = 0.68 
+angle = -0.08 
+Temperature: 31.17
+jerk = 0.44 
+angle = -0.08 
+Temperature: 31.21
+jerk = 0.29 
+angle = -0.08 
+Temperature: 31.26
+jerk = 0.17 
+angle = -0.08 
+Temperature: 31.31
+jerk = 0.53 
+angle = -0.09 
+Temperature: 31.21
+jerk = 0.54 
+angle = -0.09 
+Temperature: 31.26
+jerk = 0.33 
+angle = -0.08 
+Temperature: 31.31
+jerk = 0.82 
+angle = -0.08 
+Temperature: 31.17
+jerk = 0.86 
+angle = -0.09 
+Temperature: 31.31
+jerk = 0.32 
+angle = -0.08 
+Temperature: 31.26
+jerk = 0.39 
+angle = -0.08 
+Temperature: 31.26
+jerk = 0.92 
+angle = -0.09 
+Temperature: 31.35
+jerk = 0.68 
+angle = -0.10 
+Temperature: 31.26
+jerk = 0.60 
+angle = -0.09 
+Temperature: 31.21
+jerk = 0.83 
+angle = -0.09 
+Temperature: 31.26
+jerk = 0.85 
+angle = -0.08 
+Temperature: 31.31
+jerk = 1.30 
+angle = -0.08 
+Temperature: 31.26
+jerk = 0.64 
+angle = -0.08 
+Temperature: 31.21
+jerk = 0.38 
+angle = -0.09 
+Temperature: 31.31
+jerk = 0.36 
+angle = -0.09 
+Temperature: 31.17
+jerk = 0.62 
+angle = -0.09 
+Temperature: 31.21
+jerk = 0.78 
+angle = -0.09 
+Temperature: 31.26
+jerk = 0.94 
+angle = -0.09 
+Temperature: 31.31
+jerk = 0.58 
+angle = -0.09 
+Temperature: 31.26
+jerk = 0.57 
+angle = -0.09 
+Temperature: 31.17
+jerk = 0.51 
+angle = -0.09 
+Temperature: 31.21
+jerk = 0.15 
+angle = -0.09 
+Temperature: 31.35
+jerk = 0.24 
+angle = -0.09 
+Temperature: 31.21
+jerk = 0.48 
+angle = -0.09 
+Temperature: 31.26
+jerk = 0.48 
+angle = -0.09 
+Temperature: 31.21
+jerk = 0.59 
+angle = -0.09 
+Temperature: 31.21
+jerk = 0.31 
+angle = -0.09 
+Temperature: 31.35
+jerk = 0.51 
+angle = -0.08 
+Temperature: 31.21
+jerk = 0.64 
+angle = -0.10 
+Temperature: 31.35
+jerk = 0.72 
+angle = -0.10 
+Temperature: 31.21
+jerk = 0.71 
+angle = -0.11 
+Temperature: 31.35
+jerk = 0.69 
+angle = -0.10 
+Temperature: 31.31
+jerk = 0.25 
+angle = -0.09 
+Temperature: 31.17
+jerk = 1.85 
+angle = -0.08 
+Temperature: 31.31
+jerk = 1.06 
+angle = -0.09 
+Temperature: 31.26
+jerk = 0.35 
+angle = -0.08 
+Temperature: 31.31
+jerk = 1.04 
+angle = -0.10 
+Temperature: 31.26
+jerk = 0.37 
+angle = -0.10 
+Temperature: 31.26
+jerk = 0.70 
+angle = -0.09 
+Temperature: 31.31
+jerk = 0.43 
+angle = -0.10 
+Temperature: 31.26
+jerk = 0.51 
+angle = -0.10 
+Temperature: 31.21
+jerk = 0.31 
+angle = -0.09 
+Temperature: 31.26
+jerk = 0.33 
+angle = -0.09 
+Temperature: 31.26
+jerk = 0.75 
+angle = -0.09 
+Temperature: 31.21
+jerk = 0.29 
+angle = -0.10 
+Temperature: 31.26
+jerk = 0.44 
+angle = -0.10 
+Temperature: 31.21
+jerk = 0.64 
+angle = -0.10 
+Temperature: 31.31
+jerk = 0.67 
+angle = -0.09 
+Temperature: 31.17
+jerk = 0.53 
+angle = -0.09 
+Temperature: 31.21
+jerk = 0.21 
+angle = -0.10 
+Temperature: 31.26
+jerk = 0.22 
+angle = -0.10 
+Temperature: 31.21
+jerk = 0.25 
+angle = -0.10 
+Temperature: 31.21
+jerk = 0.56 
+angle = -0.11 
+Temperature: 31.26
+jerk = 0.94 
+angle = -0.09 
+Temperature: 31.21
+jerk = 0.32 
+angle = -0.10 
+Temperature: 31.35
+jerk = 0.58 
+angle = -0.11 
+Temperature: 31.21
+jerk = 0.89 
+angle = -0.10 
+Temperature: 31.26
+jerk = 0.34 
+angle = -0.10 
+Temperature: 31.21
+jerk = 0.85 
+angle = -0.10 
+Temperature: 31.17
+jerk = 0.41 
+angle = -0.10 
+Temperature: 31.21
+jerk = 0.85 
+angle = -0.10 
+Temperature: 31.35
+jerk = 0.40 
+angle = -0.11 
+Temperature: 31.26
+jerk = 0.43 
+angle = -0.10 
+Temperature: 31.26
+jerk = 1.05 
+angle = -0.09 
+Temperature: 31.31
+jerk = 0.96 
+angle = -0.10 
+Temperature: 31.26
+jerk = 1.21 
+angle = -0.11 
+Temperature: 31.31
+jerk = 0.51 
+angle = -0.10 
+Temperature: 31.26
+jerk = 0.77 
+angle = -0.11 
+Temperature: 31.26
+jerk = 0.77 
+angle = -0.10 
+Temperature: 31.26
+jerk = 0.78 
+angle = -0.10 
+Temperature: 31.26
+jerk = 0.59 
+angle = -0.11 
+Temperature: 31.31
+jerk = 0.43 
+angle = -0.10 
+Temperature: 31.26
+jerk = 0.52 
+angle = -0.10 
+Temperature: 31.31
+jerk = 0.35 
+angle = -0.11 
+Temperature: 31.26
+jerk = 0.45 
+angle = -0.10 
+Temperature: 31.26
+jerk = 0.35 
+angle = -0.10 
+Temperature: 31.21
+jerk = 0.48 
+angle = -0.11 
+Temperature: 31.26
+jerk = 0.43 
+angle = -0.11 
+Temperature: 31.21
+jerk = 0.30 
+angle = -0.11 
+Temperature: 31.26
+jerk = 0.30 
+angle = -0.11 
+Temperature: 31.35
+jerk = 0.45 
+angle = -0.10 
+Temperature: 31.26
+jerk = 0.49 
+angle = -0.10 
+Temperature: 31.26
+jerk = 0.75 
+angle = -0.10 
+Temperature: 31.21
+jerk = 0.37 
+angle = -0.11 
+Temperature: 31.26
+jerk = 0.68 
+angle = -0.11 
+Temperature: 31.31
+jerk = 0.35 
+angle = -0.11 
+Temperature: 31.35
+jerk = 0.41 
+angle = -0.11 
+Temperature: 31.21
+jerk = 0.49 
+angle = -0.10 
+Temperature: 31.31
+jerk = 0.65 
+angle = -0.11 
+Temperature: 31.17
+jerk = 0.81 
+angle = -0.10 
+Temperature: 31.21
+jerk = 0.37 
+angle = -0.11 
+Temperature: 31.26
+jerk = 0.18 
+angle = -0.11 
+Temperature: 31.21
+jerk = 0.15 
+angle = -0.11 
+Temperature: 31.26
+jerk = 0.46 
+angle = -0.11 
+Temperature: 31.35
+jerk = 0.34 
+angle = -0.11 
+Temperature: 31.21
+jerk = 0.35 
+angle = -0.12 
+Temperature: 31.26
+jerk = 0.90 
+angle = -0.12 
+Temperature: 31.21
+jerk = 0.10 
+angle = -0.11 
+Temperature: 31.26
+jerk = 0.43 
+angle = -0.11 
+Temperature: 31.17
+jerk = 0.33 
+angle = -0.11 
+Temperature: 31.31
+jerk = 0.53 
+angle = -0.11 
+Temperature: 31.26
+jerk = 0.51 
+angle = -0.11 
+Temperature: 31.31
+jerk = 1.26 
+angle = -0.11 
+Temperature: 31.26
+jerk = 0.39 
+angle = -0.12 
+Temperature: 31.21
+jerk = 0.55 
+angle = -0.12 
+Temperature: 31.26
+jerk = 0.31 
+angle = -0.12 
+Temperature: 31.31
+jerk = 0.60 
+angle = -0.11 
+Temperature: 31.26
+jerk = 0.99 
+angle = -0.11 
+Temperature: 31.26
+jerk = 0.80 
+angle = -0.12 
+Temperature: 31.21
+jerk = 0.77 
+angle = -0.11 
+Temperature: 31.26
+jerk = 0.60 
+angle = -0.11 
+Temperature: 31.21
+jerk = 0.77 
+angle = -0.12 
+Temperature: 31.17
+jerk = 0.57 
+angle = -0.11 
+Temperature: 31.26
+jerk = 0.68 
+angle = -0.11 
+Temperature: 31.31
+jerk = 0.31 
+angle = -0.12 
+Temperature: 31.17
+jerk = 0.75 
+angle = -0.11 
+Temperature: 31.31
+jerk = 0.87 
+angle = -0.12 
+Temperature: 31.17
+jerk = 0.20 
+angle = -0.12 
+Temperature: 31.31
+jerk = 0.60 
+angle = -0.11 
+Temperature: 31.17
+jerk = 0.57 
+angle = -0.12 
+Temperature: 31.21
+jerk = 0.48 
+angle = -0.12 
+Temperature: 31.26
+jerk = 0.10 
+angle = -0.12 
+Temperature: 31.12
+jerk = 0.44 
+angle = -0.12 
+Temperature: 31.17
+jerk = 0.57 
+angle = -0.12 
+Temperature: 31.31
+jerk = 0.28 
+angle = -0.13 
+Temperature: 31.17
+jerk = 0.73 
+angle = -0.11 
+Temperature: 31.31
+jerk = 0.66 
+angle = -0.12 
+Temperature: 31.35
+jerk = 0.37 
+angle = -0.12 
+Temperature: 31.21
+jerk = 0.65 
+angle = -0.12 
+Temperature: 31.26
+jerk = 0.99 
+angle = -0.11 
+Temperature: 31.21
+jerk = 0.99 
+angle = -0.12 
+Temperature: 31.26
+jerk = 0.53 
+angle = -0.13 
+Temperature: 31.26
+jerk = 0.72 
+angle = -0.13 
+Temperature: 31.12
+jerk = 0.87 
+angle = -0.13 
+Temperature: 31.26
+jerk = 0.56 
+angle = -0.12 
+Temperature: 31.21
+jerk = 0.15 
+angle = -0.12 
+Temperature: 31.17
+jerk = 0.82 
+angle = -0.12 
+Temperature: 31.21
+jerk = 0.39 
+angle = -0.12 
+Temperature: 31.21
+jerk = 0.33 
+angle = -0.12 
+Temperature: 31.17
+jerk = 0.55 
+angle = -0.13 
+Temperature: 31.12
+jerk = 0.31 
+angle = -0.12 
+Temperature: 31.17
+jerk = 0.33 
+angle = -0.13 
+Temperature: 31.21
+jerk = 0.30 
+angle = -0.13 
+Temperature: 31.17
+jerk = 0.66 
+angle = -0.12 
+Temperature: 31.17
+jerk = 0.84 
+angle = -0.13 
+Temperature: 31.17
+jerk = 0.38 
+angle = -0.12 
+Temperature: 31.21
+jerk = 0.88 
+angle = -0.13 
+Temperature: 31.26
+jerk = 0.44 
+angle = -0.12 
+Temperature: 31.21
+jerk = 0.37 
+angle = -0.12 
+Temperature: 31.26
+jerk = 0.49 
+angle = -0.13 
+Temperature: 31.17
+jerk = 0.39 
+angle = -0.13 
+Temperature: 31.12
+jerk = 0.44 
+angle = -0.12 
+Temperature: 31.26
+jerk = 0.40 
+angle = -0.13 
+Temperature: 31.12
+jerk = 0.27 
+angle = -0.13 
+Temperature: 31.26
+jerk = 0.36 
+angle = -0.13 
+Temperature: 31.21
+jerk = 0.54 
+angle = -0.12 
+Temperature: 31.21
+jerk = 0.45 
+angle = -0.12 
+Temperature: 31.26
+jerk = 0.77 
+angle = -0.13 
+Temperature: 31.21
+jerk = 0.36 
+angle = -0.13 
+Temperature: 31.17
+jerk = 0.72 
+angle = -0.13 
+Temperature: 31.12
+jerk = 0.64 
+angle = -0.13 
+Temperature: 31.17
+jerk = 1.36 
+angle = -0.13 
+Temperature: 31.26
+jerk = 1.16 
+angle = -0.13 
+Temperature: 31.17
+jerk = 0.96 
+angle = -0.14 
+Temperature: 31.26
+jerk = 0.73 
+angle = -0.14 
+Temperature: 31.21
+jerk = 0.63 
+angle = -0.13 
+Temperature: 31.17
+jerk = 0.64 
+angle = -0.13 
+Temperature: 31.21
+jerk = 0.68 
+angle = -0.13 
+Temperature: 31.17
+jerk = 0.27 
+angle = -0.13 
+Temperature: 31.21
+jerk = 0.50 
+angle = -0.13 
+Temperature: 31.17
+jerk = 0.47 
+angle = -0.14 
+Temperature: 31.21
+jerk = 0.36 
+angle = -0.14 
+Temperature: 31.26
+jerk = 0.42 
+angle = -0.13 
+Temperature: 31.21
+jerk = 0.42 
+angle = -0.13 
+Temperature: 31.21
+jerk = 0.40 
+angle = -0.13 
+Temperature: 31.26
+jerk = 0.63 
+angle = -0.14 
+Temperature: 31.12
+jerk = 0.73 
+angle = -0.13 
+Temperature: 31.26
+jerk = 0.37 
+angle = -0.14 
+Temperature: 31.21
+jerk = 0.52 
+angle = -0.14 
+Temperature: 31.26
+jerk = 0.73 
+angle = -0.14 
+Temperature: 31.26
+jerk = 0.23 
+angle = -0.14 
+Temperature: 31.17
+jerk = 0.50 
+angle = -0.14 
+Temperature: 31.21
+jerk = 0.08 
+angle = -0.14 
+Temperature: 31.17
+jerk = 0.48 
+angle = -0.13 
+Temperature: 31.21
+jerk = 0.46 
+angle = -0.13 
+Temperature: 31.21
+jerk = 0.70 
+angle = -0.14 
+Temperature: 31.17
+jerk = 0.29 
+angle = -0.14 
+Temperature: 31.21
+jerk = 0.25 
+angle = -0.14 
+Temperature: 31.17
+jerk = 0.41 
+angle = -0.13 
+Temperature: 31.17
+jerk = 0.43 
+angle = -0.13 
+Temperature: 31.21
+jerk = 0.85 
+angle = -0.13 
+Temperature: 31.17
+jerk = 0.65 
+angle = -0.14 
+Temperature: 31.12
+jerk = 0.44 
+angle = -0.14 
+Temperature: 31.26
+jerk = 0.19 
+angle = -0.14 
+Temperature: 31.31
+jerk = 0.21 
+angle = -0.14 
+Temperature: 31.26
+jerk = 0.76 
+angle = -0.13 
+Temperature: 31.21
+jerk = 0.74 
+angle = -0.15 
+Temperature: 31.17
+jerk = 0.58 
+angle = -0.14 
+Temperature: 31.21
+jerk = 0.71 
+angle = -0.14 
+Temperature: 31.35
+jerk = 1.41 
+angle = -0.14 
+Temperature: 31.21
+jerk = 0.77 
+angle = -0.14 
+Temperature: 31.26
+jerk = 0.69 
+angle = -0.14 
+Temperature: 31.31
+jerk = 0.73 
+angle = -0.14 
+Temperature: 31.35
+jerk = 0.54 
+angle = -0.15 
+Temperature: 31.21
+jerk = 0.69 
+angle = -0.14 
+Temperature: 31.26
+jerk = 0.58 
+angle = -0.14 
+Temperature: 31.21
+jerk = 0.52 
+angle = -0.14 
+Temperature: 31.17
+jerk = 0.69 
+angle = -0.14 
+Temperature: 31.31
+jerk = 0.68 
+angle = -0.13 
+Temperature: 31.17
+jerk = 0.87 
+angle = -0.15 
+Temperature: 31.21
+jerk = 1.04 
+angle = -0.15 
+Temperature: 31.26
+jerk = 0.74 
+angle = -0.15 
+Temperature: 31.21
+jerk = 0.40 
+angle = -0.15 
+Temperature: 31.26
+jerk = 0.45 
+angle = -0.14 
+Temperature: 31.17
+jerk = 0.07 
+angle = -0.14 
+Temperature: 31.21
+jerk = 0.50 
+angle = -0.15 
+Temperature: 31.17
+jerk = 0.77 
+angle = -0.14 
+Temperature: 31.12
+jerk = 0.82 
+angle = -0.15 
+Temperature: 31.21
+jerk = 0.34 
+angle = -0.15 
+Temperature: 31.17
+jerk = 0.23 
+angle = -0.15 
+Temperature: 31.21
+jerk = 1.22 
+angle = -0.13 
+Temperature: 31.17
+jerk = 0.81 
+angle = -0.15 
+Temperature: 31.21
+jerk = 0.57 
+angle = -0.15 
+Temperature: 31.26
+jerk = 0.74 
+angle = -0.15 
+Temperature: 31.21
+jerk = 0.75 
+angle = -0.15 
+Temperature: 31.26
+jerk = 0.50 
+angle = -0.15 
+Temperature: 31.21
+jerk = 0.54 
+angle = -0.15 
+Temperature: 31.17
+jerk = 0.53 
+angle = -0.15 
+Temperature: 31.31
+jerk = 0.41 
+angle = -0.15 
+Temperature: 31.26
+jerk = 0.49 
+angle = -0.15 
+Temperature: 31.31
+jerk = 0.58 
+angle = -0.15 
+Temperature: 31.26
+jerk = 0.51 
+angle = -0.15 
+Temperature: 31.21
+jerk = 0.37 
+angle = -0.15 
+Temperature: 31.26
+jerk = 0.46 
+angle = -0.16 
+Temperature: 31.21
+jerk = 0.32 
+angle = -0.15 
+Temperature: 31.26
+jerk = 0.52 
+angle = -0.15 
+Temperature: 31.31
+jerk = 0.49 
+angle = -0.15 
+Temperature: 31.26
+jerk = 0.49 
+angle = -0.15 
+Temperature: 31.21
+jerk = 0.45 
+angle = -0.15 
+Temperature: 31.17
+jerk = 0.83 
+angle = -0.16 
+Temperature: 31.21
+jerk = 0.27 
+angle = -0.16 
+Temperature: 31.35
+jerk = 0.66 
+angle = -0.16 
+Temperature: 31.26
+jerk = 0.42 
+angle = -0.15 
+Temperature: 31.26
+jerk = 0.51 
+angle = -0.15 
+Temperature: 31.40
+jerk = 0.92 
+angle = -0.16 
+Temperature: 31.26
+jerk = 0.26 
+angle = -0.16 
+Temperature: 31.21
+jerk = 0.72 
+angle = -0.15 
+Temperature: 31.17
+jerk = 0.58 
+angle = -0.16 
+Temperature: 31.26
+jerk = 0.36 
+angle = -0.15 
+Temperature: 31.21
+jerk = 0.14 
+angle = -0.15 
+Temperature: 31.17
+jerk = 0.43 
+angle = -0.15 
+Temperature: 31.21
+jerk = 0.24 
+angle = -0.15 
+Temperature: 31.17
+jerk = 0.60 
+angle = -0.16 
+Temperature: 31.21
+jerk = 0.78 
+angle = -0.16 
+Temperature: 31.26
+jerk = 0.32 
+angle = -0.16 
+Temperature: 31.17
+jerk = 0.45 
+angle = -0.15 
+Temperature: 31.26
+jerk = 0.47 
+angle = -0.15 
+Temperature: 31.21
+jerk = 0.97 
+angle = -0.16 
+Temperature: 31.26
+jerk = 0.58 
+angle = -0.16 
+Temperature: 31.21
+jerk = 0.39 
+angle = -0.16 
+Temperature: 31.21
+jerk = 0.42 
+angle = -0.16 
+Temperature: 31.26
+jerk = 0.54 
+angle = -0.16 
+Temperature: 31.21
+jerk = 0.44 
+angle = -0.16 
+Temperature: 31.26
+jerk = 0.37 
+angle = -0.17 
+Temperature: 31.31
+jerk = 0.32 
+angle = -0.17 
+Temperature: 31.26
+jerk = 1.09 
+angle = -0.16 
+Temperature: 31.12
+jerk = 0.16 
+angle = -0.16 
+Temperature: 31.26
+jerk = 0.29 
+angle = -0.16 
+Temperature: 31.21
+jerk = 0.78 
+angle = -0.15 
+Temperature: 31.26
+jerk = 0.67 
+angle = -0.16 
+Temperature: 31.21
+jerk = 0.79 
+angle = -0.17 
+Temperature: 31.17
+jerk = 0.65 
+angle = -0.16 
+Temperature: 31.31
+jerk = 0.53 
+angle = -0.16 
+Temperature: 31.26
+jerk = 1.02 
+angle = -0.17 
+Temperature: 31.12
+jerk = 0.61 
+angle = -0.16 
+Temperature: 31.17
+jerk = 0.55 
+angle = -0.16 
+Temperature: 31.12
+jerk = 0.15 
+angle = -0.16 
+Temperature: 31.26
+jerk = 0.32 
+angle = -0.16 
+Temperature: 31.21
+jerk = 0.53 
+angle = -0.17 
+Temperature: 31.26
+jerk = 0.51 
+angle = -0.17 
+Temperature: 31.21
+jerk = 0.48 
+angle = -0.16 
+Temperature: 31.21
+jerk = 0.18 
+angle = -0.16 
+Temperature: 31.26
+jerk = 0.43 
+angle = -0.16 
+Temperature: 31.21
+jerk = 0.75 
+angle = -0.17 
+Temperature: 31.26
+jerk = 0.54 
+angle = -0.17 
+Temperature: 31.31
+jerk = 0.39 
+angle = -0.16 
+Temperature: 31.26
+jerk = 0.49 
+angle = -0.17 
+Temperature: 31.26
+jerk = 0.40 
+angle = -0.17 
+Temperature: 31.17
+jerk = 0.21 
+angle = -0.17 
+Temperature: 31.12
+jerk = 0.37 
+angle = -0.16 
+Temperature: 31.26
+jerk = 0.56 
+angle = -0.17 
+Temperature: 31.21
+jerk = 0.48 
+angle = -0.17 
+Temperature: 31.17
+jerk = 0.35 
+angle = -0.17 
+Temperature: 31.21
+jerk = 0.56 
+angle = -0.16 
+Temperature: 31.21
+jerk = 0.45 
+angle = -0.17 
+Temperature: 31.17
+jerk = 0.61 
+angle = -0.17 
+Temperature: 31.26
+jerk = 0.42 
+angle = -0.17 
+Temperature: 31.21
+jerk = 0.36 
+angle = -0.18 
+Temperature: 31.26
+jerk = 0.69 
+angle = -0.17 
+Temperature: 31.21
+jerk = 0.74 
+angle = -0.17 
+Temperature: 31.26
+jerk = 0.62 
+angle = -0.17 
+Temperature: 31.26
+jerk = 0.68 
+angle = -0.18 
+Temperature: 31.21
+jerk = 0.29 
+angle = -0.17 
+Temperature: 31.17
+jerk = 0.30 
+angle = -0.17 
+Temperature: 31.17
+jerk = 0.44 
+angle = -0.16 
+Temperature: 31.31
+jerk = 0.71 
+angle = -0.17 
+Temperature: 31.17
+jerk = 0.37 
+angle = -0.17 
+Temperature: 31.17
+jerk = 0.34 
+angle = -0.18 
+Temperature: 31.21
+jerk = 0.65 
+angle = -0.17 
+Temperature: 31.17
+jerk = 0.19 
+angle = -0.17 
+Temperature: 31.17
+jerk = 1.00 
+angle = -0.17 
+Temperature: 31.21
+jerk = 0.28 
+angle = -0.17 
+Temperature: 31.26
+jerk = 0.39 
+angle = -0.17 
+Temperature: 31.17
+jerk = 1.37 
+angle = -0.17 
+Temperature: 31.21
+jerk = 1.07 
+angle = -0.18 
+Temperature: 31.17
+jerk = 0.87 
+angle = -0.18 
+Temperature: 31.21
+jerk = 0.55 
+angle = -0.18 
+Temperature: 31.12
+jerk = 0.66 
+angle = -0.18 
+Temperature: 31.17
+jerk = 0.68 
+angle = -0.18 
+Temperature: 31.26
+jerk = 0.60 
+angle = -0.17 
+Temperature: 31.21
+jerk = 0.42 
+angle = -0.17 
+Temperature: 31.17
+jerk = 0.28 
+angle = -0.17 
+Temperature: 31.21
+jerk = 0.52 
+angle = -0.17 
+Temperature: 31.17
+jerk = 0.65 
+angle = -0.17 
+Temperature: 31.17
+jerk = 0.76 
+angle = -0.18 
+Temperature: 31.12
+jerk = 0.39 
+angle = -0.18 
+Temperature: 31.17
+jerk = 0.98 
+angle = -0.19 
+Temperature: 31.21
+jerk = 1.22 
+angle = -0.18 
+Temperature: 31.12
+jerk = 0.53 
+angle = -0.18 
+Temperature: 31.26
+jerk = 0.55 
+angle = -0.17 
+Temperature: 31.12
+jerk = 0.64 
+angle = -0.18 
+Temperature: 31.17
+jerk = 0.37 
+angle = -0.18 
+Temperature: 31.26
+jerk = 0.58 
+angle = -0.18 
+Temperature: 31.21
+jerk = 0.65 
+angle = -0.18 
+Temperature: 31.17
+jerk = 0.44 
+angle = -0.19 
+Temperature: 31.17
+jerk = 1.24 
+angle = -0.18 
+Temperature: 31.21
+jerk = 0.83 
+angle = -0.18 
+Temperature: 31.17
+jerk = 0.50 
+angle = -0.18 
+Temperature: 31.21
+jerk = 0.58 
+angle = -0.19 
+Temperature: 31.12
+jerk = 0.41 
+angle = -0.18 
+Temperature: 31.26
+jerk = 0.33 
+angle = -0.18 
+Temperature: 31.17
+jerk = 0.78 
+angle = -0.18 
+Temperature: 31.21
+jerk = 0.44 
+angle = -0.19 
+Temperature: 31.17
+jerk = 0.57 
+angle = -0.18 
+Temperature: 31.26
+jerk = 0.36 
+angle = -0.18 
+Temperature: 31.12
+jerk = 0.46 
+angle = -0.19 
+Temperature: 31.17
+jerk = 0.51 
+angle = -0.18 
+Temperature: 31.21
+jerk = 1.15 
+angle = -0.19 
+Temperature: 31.21
+jerk = 0.59 
+angle = -0.19 
+Temperature: 31.31
+jerk = 0.70 
+angle = -0.18 
+Temperature: 31.26
+jerk = 0.25 
+angle = -0.18 
+Temperature: 31.21
+jerk = 0.38 
+angle = -0.18 
+Temperature: 31.26
+jerk = 0.49 
+angle = -0.18 
+Temperature: 31.21
+jerk = 0.61 
+angle = -0.19 
+Temperature: 31.17
+jerk = 0.49 
+angle = -0.19 
+Temperature: 31.21
+jerk = 0.41 
+angle = -0.19 
+Temperature: 31.17
+jerk = 0.40 
+angle = -0.19 
+Temperature: 31.21
+jerk = 0.17 
+angle = -0.19 
+Temperature: 31.17
+jerk = 0.72 
+angle = -0.18 
+Temperature: 31.21
+jerk = 0.67 
+angle = -0.19 
+Temperature: 31.26
+jerk = 0.45 
+angle = -0.18 
+Temperature: 31.21
+jerk = 0.22 
+angle = -0.18 
+Temperature: 31.26
+jerk = 0.57 
+angle = -0.18 
+Temperature: 31.21
+jerk = 0.60 
+angle = -0.19 
+Temperature: 31.17
+jerk = 0.38 
+angle = -0.19 
+Temperature: 31.12
+jerk = 0.92 
+angle = -0.19 
+Temperature: 31.17
+jerk = 0.58 
+angle = -0.18 
+Temperature: 31.26
+jerk = 0.40 
+angle = -0.19 
+Temperature: 31.12
+jerk = 0.63 
+angle = -0.19 
+Temperature: 31.17
+jerk = 0.29 
+angle = -0.19 
+Temperature: 31.21
+jerk = 0.75 
+angle = -0.19 
+Temperature: 31.26
+jerk = 0.40 
+angle = -0.19 
+Temperature: 31.21
+jerk = 0.15 
+angle = -0.19 
+Temperature: 31.17
+jerk = 0.46 
+angle = -0.19 
+Temperature: 31.21
+jerk = 0.58 
+angle = -0.20 
+Temperature: 31.17
+jerk = 0.72 
+angle = -0.19 
+Temperature: 31.12
+jerk = 0.59 
+angle = -0.19 
+Temperature: 31.17
+jerk = 0.21 
+angle = -0.19 
+Temperature: 31.12
+jerk = 0.37 
+angle = -0.19 
+Temperature: 31.17
+jerk = 0.54 
+angle = -0.19 
+Temperature: 31.21
+jerk = 0.24 
+angle = -0.19 
+Temperature: 31.21
+jerk = 0.57 
+angle = -0.20 
+Temperature: 31.17
+jerk = 0.55 
+angle = -0.19 
+Temperature: 31.17
+jerk = 0.47 
+angle = -0.20 
+Temperature: 31.21
+jerk = 0.29 
+angle = -0.19 
+Temperature: 31.21
+jerk = 0.21 
+angle = -0.20 
+Temperature: 31.21
+jerk = 0.53 
+angle = -0.20 
+Temperature: 31.07
+jerk = 0.55 
+angle = -0.19 
+Temperature: 31.21
+jerk = 0.66 
+angle = -0.20 
+Temperature: 31.17
+jerk = 0.36 
+angle = -0.19 
+Temperature: 31.07
+jerk = 0.84 
+angle = -0.19 
+Temperature: 31.02
+jerk = 0.36 
+angle = -0.18 
+Temperature: 31.17
+jerk = 0.91 
+angle = -0.20 
+Temperature: 31.21
+jerk = 0.39 
+angle = -0.20 
+Temperature: 31.17
+jerk = 1.29 
+angle = -0.20 
+Temperature: 31.17
+jerk = 0.93 
+angle = -0.20 
+Temperature: 31.21
+jerk = 0.65 
+angle = -0.21 
+Temperature: 31.26
+jerk = 0.95 
+angle = -0.19 
+Temperature: 31.17
+jerk = 0.35 
+angle = -0.20 
+Temperature: 31.21
+jerk = 0.25 
+angle = -0.19 
+Temperature: 31.17
+jerk = 0.31 
+angle = -0.20 
+Temperature: 31.21
+jerk = 0.35 
+angle = -0.19 
+Temperature: 31.26
+jerk = 0.60 
+angle = -0.20 
+Temperature: 31.26
+jerk = 0.69 
+angle = -0.20 
+Temperature: 31.21
+jerk = 0.39 
+angle = -0.20 
+Temperature: 31.17
+jerk = 0.33 
+angle = -0.20 
+Temperature: 31.12
+jerk = 1.06 
+angle = -0.21 
+Temperature: 31.17
+jerk = 0.68 
+angle = -0.21 
+Temperature: 31.17
+jerk = 0.41 
+angle = -0.20 
+Temperature: 31.21
+jerk = 0.30 
+angle = -0.20 
+Temperature: 31.17
+jerk = 0.84 
+angle = -0.20 
+Temperature: 31.12
+jerk = 0.69 
+angle = -0.20 
+Temperature: 31.17
+jerk = 0.10 
+angle = -0.20 
+Temperature: 31.17
+jerk = 1.10 
+angle = -0.20 
+Temperature: 31.12
+jerk = 0.54 
+angle = -0.20 
+Temperature: 31.26
+jerk = 0.86 
+angle = -0.20 
+Temperature: 31.31
+jerk = 0.53 
+angle = -0.20 
+Temperature: 31.26
+jerk = 0.40 
+angle = -0.20 
+Temperature: 31.26
+jerk = 0.60 
+angle = -0.21 
+Temperature: 31.21
+jerk = 0.47 
+angle = -0.20 
+Temperature: 31.17
+jerk = 0.48 
+angle = -0.21 
+Temperature: 31.17
+jerk = 0.48 
+angle = -0.20 
+Temperature: 31.21
+jerk = 0.11 
+angle = -0.20 
+Temperature: 31.26
+jerk = 0.67 
+angle = -0.20 
+Temperature: 31.21
+jerk = 1.13 
+angle = -0.20 
+Temperature: 31.21
+jerk = 0.79 
+angle = -0.21 
+Temperature: 31.26
+jerk = 0.64 
+angle = -0.21 
+Temperature: 31.12
+jerk = 0.44 
+angle = -0.20 
+Temperature: 31.21
+jerk = 0.42 
+angle = -0.21 
+Temperature: 31.17
+jerk = 0.75 
+angle = -0.21 
+Temperature: 31.21
+jerk = 0.88 
+angle = -0.21 
+Temperature: 31.26
+jerk = 2.31 
+angle = -0.18 
+Temperature: 31.17
+jerk = 2.55 
+angle = -0.20 
+Temperature: 31.21
+jerk = 1.23 
+angle = -0.20 
+Temperature: 31.26
+jerk = 1.04 
+angle = -0.21 
+Temperature: 31.21
+jerk = 1.23 
+angle = -0.21 
+Temperature: 31.17
+jerk = 1.77 
+angle = -0.23 
+Temperature: 31.21
+jerk = 0.79 
+angle = -0.21 
+Temperature: 31.31
+jerk = 1.51 
+angle = -0.20 
+Temperature: 31.26
+jerk = 3.10 
+angle = -0.22 
+Temperature: 31.26
+jerk = 2.10 
+angle = -0.22 
+Temperature: 31.21
+jerk = 2.54 
+angle = -0.22 
+Temperature: 31.26
+jerk = 1.34 
+angle = -0.22 
+Temperature: 31.21
+jerk = 0.67 
+angle = -0.21 
+Temperature: 31.26
+jerk = 0.68 
+angle = -0.21 
+Temperature: 31.17
+jerk = 1.29 
+angle = -0.22 
+Temperature: 31.31
+jerk = 0.78 
+angle = -0.21 
+Temperature: 31.26
+jerk = 0.73 
+angle = -0.23 
+Temperature: 31.12
+jerk = 0.80 
+angle = -0.21 
+Temperature: 31.17
+jerk = 0.78 
+angle = -0.21 
+Temperature: 31.17
+jerk = 0.52 
+angle = -0.21 
+Temperature: 31.21
+jerk = 1.15 
+angle = -0.21 
+Temperature: 31.26
+jerk = 0.86 
+angle = -0.21 
+Temperature: 31.21
+jerk = 1.31 
+angle = -0.22 
+Temperature: 31.26
+jerk = 1.83 
+angle = -0.22 
+Enable/Disable Button Pressed!
+Starting NimBLE stack...
+[0;32mI (72598) BLE_INIT: BT controller compile version [c23ab4c][0m
+[0;32mI (72598) BLE_INIT: Bluetooth MAC: 34:b7:da:f6:47:7e[0m
+D (72608) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (72608) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (72608) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (72608) nvs: nvs_close 22[0m
+D (72618) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (72618) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (72628) nvs: nvs_get_str_or_blob our_sec_2[0m
+D (72628) nvs: nvs_close 23[0m
+D (72638) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (72638) nvs: nvs_get_str_or_blob our_sec_3[0m
+D (72648) nvs: nvs_close 24[0m
+D (72648) NIMBLE_NVS: ble_store_config_our_secs restored 1 bonds[0m
+D (72648) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (72658) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (72658) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (72668) nvs: nvs_close 25[0m
+D (72668) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (72678) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (72678) nvs: nvs_get_str_or_blob peer_sec_2[0m
+D (72688) nvs: nvs_close 26[0m
+D (72688) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (72688) nvs: nvs_get_str_or_blob peer_sec_3[0m
+D (72698) nvs: nvs_close 27[0m
+D (72698) NIMBLE_NVS: ble_store_config_peer_secs restored 1 bonds[0m
+D (72708) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (72708) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (72718) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (72718) nvs: nvs_close 28[0m
+D (72718) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 1[0m
+D (72728) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (72738) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (72738) nvs: nvs_close 29[0m
+D (72738) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (72748) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (72748) nvs: nvs_close 30[0m
+D (72758) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (72758) nvs: nvs_get_str_or_blob cccd_sec_4[0m
+D (72758) nvs: nvs_close 31[0m
+D (72768) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (72768) nvs: nvs_get_str_or_blob cccd_sec_5[0m
+D (72778) nvs: nvs_close 32[0m
+D (72778) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (72788) nvs: nvs_get_str_or_blob cccd_sec_6[0m
+D (72788) nvs: nvs_close 33[0m
+D (72788) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (72798) nvs: nvs_get_str_or_blob cccd_sec_7[0m
+D (72798) nvs: nvs_close 34[0m
+D (72798) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (72808) nvs: nvs_get_str_or_blob cccd_sec_8[0m
+D (72808) nvs: nvs_close 35[0m
+D (72818) NIMBLE_NVS: ble_store_config_cccds restored 1 bonds[0m
+D (72818) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (72828) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (72828) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (72838) nvs: nvs_close 36[0m
+D (72838) NIMBLE_NVS: Local IRK in RAM is filled up from NVS index = 1[0m
+D (72848) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (72848) nvs: nvs_get_str_or_blob local_irk_2[0m
+D (72858) nvs: nvs_close 37[0m
+D (72858) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (72858) nvs: nvs_get_str_or_blob local_irk_3[0m
+D (72868) nvs: nvs_close 38[0m
+D (72868) NIMBLE_NVS: ble_store_config_local_irks restored 1 irks[0m
+D (72878) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (72878) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (72888) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (72888) nvs: nvs_close 39[0m
+D (72888) NIMBLE_NVS: RPA_REC in RAM is filled up from NVS index = 1[0m
+D (72898) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (72908) nvs: nvs_get_str_or_blob rpa_rec_2[0m
+D (72908) nvs: nvs_close 40[0m
+D (72908) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (72918) nvs: nvs_get_str_or_blob rpa_rec_3[0m
+D (72918) nvs: nvs_close 41[0m
+D (72918) NIMBLE_NVS: ble_store_config_rpa_recs restored 1 bonds[0m
+[0;32mI (72928) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (72938) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (72938) NimBLE: Device Address: [0m
+[0;32mI (72948) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (72948) NimBLE: 
+[0m
+[0;32mI (72958) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (72958) NimBLE: disc_mode=2[0m
+[0;32mI (72958) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (72968) NimBLE: 
+[0m
+Temperature: 31.26
+jerk = 4.21 
+angle = -0.20 
+Temperature: 31.21
+jerk = 3.48 
+angle = -0.22 
+Temperature: 31.12
+jerk = 0.56 
+angle = -0.21 
+Temperature: 31.26
+jerk = 0.65 
+angle = -0.22 
+Temperature: 31.21
+jerk = 0.54 
+angle = -0.21 
+Temperature: 31.17
+jerk = 0.56 
+angle = -0.21 
+Temperature: 31.31
+jerk = 0.57 
+angle = -0.22 
+Temperature: 31.17
+jerk = 0.50 
+angle = -0.21 
+Temperature: 31.17
+jerk = 0.58 
+angle = -0.22 
+Temperature: 31.17
+jerk = 0.72 
+angle = -0.21 
+Temperature: 31.21
+jerk = 0.44 
+angle = -0.22 
+Temperature: 31.21
+jerk = 0.64 
+angle = -0.22 
+Temperature: 31.26
+jerk = 0.52 
+angle = -0.21 
+Temperature: 31.31
+jerk = 0.66 
+angle = -0.21 
+Temperature: 31.17
+jerk = 0.50 
+angle = -0.22 
+Temperature: 31.31
+jerk = 0.73 
+angle = -0.21 
+Temperature: 31.21
+jerk = 0.89 
+angle = -0.22 
+Temperature: 31.17
+jerk = 0.72 
+angle = -0.22 
+Temperature: 31.26
+jerk = 0.55 
+angle = -0.22 
+Temperature: 31.21
+jerk = 0.34 
+angle = -0.22 
+Temperature: 31.17
+jerk = 0.46 
+angle = -0.23 
+Temperature: 31.17
+jerk = 0.76 
+angle = -0.21 
+Temperature: 31.21
+jerk = 0.42 
+angle = -0.21 
+Temperature: 31.21
+jerk = 0.92 
+angle = -0.22 
+Temperature: 31.26
+jerk = 0.35 
+angle = -0.22 
+Temperature: 31.26
+jerk = 0.70 
+angle = -0.22 
+Temperature: 31.21
+jerk = 0.40 
+angle = -0.22 
+Temperature: 31.17
+jerk = 0.80 
+angle = -0.22 
+Temperature: 31.26
+jerk = 0.27 
+angle = -0.22 
+Temperature: 31.26
+jerk = 0.50 
+angle = -0.22 
+Temperature: 31.21
+jerk = 1.06 
+angle = -0.23 
+Temperature: 31.26
+jerk = 0.81 
+angle = -0.22 
+Temperature: 31.26
+jerk = 0.53 
+angle = -0.23 
+Temperature: 31.21
+jerk = 0.25 
+angle = -0.23 
+Temperature: 31.17
+jerk = 0.69 
+angle = -0.22 
+Temperature: 31.31
+jerk = 0.71 
+angle = -0.22 
+Temperature: 31.17
+jerk = 0.42 
+angle = -0.23 
+Temperature: 31.21
+jerk = 0.39 
+angle = -0.22 
+Temperature: 31.26
+jerk = 0.32 
+angle = -0.22 
+Temperature: 31.17
+jerk = 0.82 
+angle = -0.23 
+Temperature: 31.21
+jerk = 0.91 
+angle = -0.22 
+Temperature: 31.26
+jerk = 0.45 
+angle = -0.22 
+Temperature: 31.26
+jerk = 0.39 
+angle = -0.22 
+Temperature: 31.17
+jerk = 0.55 
+angle = -0.23 
+Temperature: 31.21
+jerk = 0.42 
+angle = -0.22 
+Temperature: 31.17
+jerk = 0.72 
+angle = -0.23 
+Temperature: 31.21
+jerk = 0.45 
+angle = -0.23 
+Temperature: 31.21
+jerk = 0.42 
+angle = -0.23 
+Temperature: 31.26
+jerk = 0.32 
+angle = -0.23 
+Temperature: 31.21
+jerk = 0.26 
+angle = -0.23 
+Temperature: 31.26
+jerk = 0.27 
+angle = -0.23 
+Temperature: 31.21
+jerk = 0.53 
+angle = -0.24 
+Temperature: 31.26
+jerk = 0.97 
+angle = -0.22 
+Temperature: 31.31
+jerk = 0.86 
+angle = -0.24 
+Temperature: 31.17
+jerk = 0.63 
+angle = -0.23 
+Temperature: 31.21
+jerk = 0.52 
+angle = -0.23 
+Temperature: 31.26
+jerk = 0.21 
+angle = -0.23 
+Temperature: 31.17
+jerk = 0.34 
+angle = -0.23 
+Temperature: 31.12
+jerk = 0.37 
+angle = -0.23 
+Temperature: 31.26
+jerk = 0.28 
+angle = -0.23 
+Temperature: 31.12
+jerk = 0.30 
+angle = -0.23 
+Temperature: 31.21
+jerk = 0.56 
+angle = -0.24 
+Temperature: 31.26
+jerk = 0.42 
+angle = -0.24 
+Temperature: 31.12
+jerk = 0.64 
+angle = -0.23 
+Temperature: 31.17
+jerk = 0.13 
+angle = -0.23 
+Temperature: 31.21
+jerk = 0.75 
+angle = -0.23 
+Temperature: 31.26
+jerk = 0.36 
+angle = -0.23 
+Temperature: 31.17
+jerk = 0.39 
+angle = -0.23 
+Temperature: 31.17
+jerk = 0.63 
+angle = -0.23 
+Temperature: 31.17
+jerk = 0.68 
+angle = -0.24 
+Temperature: 31.21
+jerk = 0.24 
+angle = -0.24 
+Temperature: 31.17
+jerk = 0.21 
+angle = -0.24 
+Temperature: 31.21
+jerk = 0.93 
+angle = -0.23 
+Temperature: 31.31
+jerk = 0.56 
+angle = -0.23 
+Temperature: 31.17
+jerk = 0.89 
+angle = -0.24 
+Temperature: 31.17
+jerk = 0.68 
+angle = -0.24 
+Temperature: 31.17
+jerk = 0.55 
+angle = -0.23 
+Temperature: 31.17
+jerk = 0.54 
+angle = -0.23 
+Temperature: 31.17
+jerk = 0.63 
+angle = -0.24 
+Temperature: 31.21
+jerk = 0.36 
+angle = -0.24 
+Temperature: 31.07
+jerk = 0.83 
+angle = -0.24 
+Temperature: 31.26
+jerk = 0.91 
+angle = -0.24 
+Temperature: 31.21
+jerk = 0.93 
+angle = -0.24 
+Temperature: 31.17
+jerk = 0.50 
+angle = -0.24 
+Temperature: 31.21
+jerk = 0.97 
+angle = -0.24 
+Temperature: 31.17
+jerk = 0.85 
+angle = -0.24 
+Temperature: 31.21
+jerk = 0.53 
+angle = -0.24 
+Temperature: 31.17
+jerk = 0.25 
+angle = -0.24 
+Temperature: 31.17
+jerk = 0.41 
+angle = -0.25 
+Temperature: 31.21
+jerk = 0.31 
+angle = -0.24 
+Temperature: 31.26
+jerk = 0.55 
+angle = -0.23 
+Temperature: 31.12
+jerk = 0.36 
+angle = -0.24 
+Temperature: 31.17
+jerk = 0.78 
+angle = -0.24 
+Temperature: 31.26
+jerk = 0.47 
+angle = -0.24 
+Temperature: 31.21
+jerk = 0.55 
+angle = -0.24 
+Temperature: 31.17
+jerk = 0.52 
+angle = -0.25 
+Temperature: 31.21
+jerk = 0.77 
+angle = -0.24 
+Temperature: 31.17
+jerk = 0.31 
+angle = -0.24 
+Temperature: 31.07
+jerk = 0.44 
+angle = -0.24 
+Temperature: 31.21
+jerk = 0.42 
+angle = -0.24 
+Temperature: 31.21
+jerk = 1.02 
+angle = -0.26 
+Temperature: 31.26
+jerk = 0.59 
+angle = -0.25 
+Temperature: 31.21
+jerk = 0.97 
+angle = -0.24 
+Temperature: 31.21
+jerk = 0.85 
+angle = -0.23 
+Temperature: 31.17
+jerk = 4.42 
+angle = -0.25 
+Temperature: 31.17
+jerk = 3.13 
+angle = -0.24 
+Temperature: 31.26
+jerk = 0.83 
+angle = -0.25 
+Temperature: 31.21
+jerk = 0.11 
+angle = -0.25 
+Temperature: 31.21
+jerk = 1.09 
+angle = -0.25 
+Temperature: 31.21
+jerk = 1.69 
+angle = -0.25 
+Temperature: 31.17
+jerk = 0.84 
+angle = -0.24 
+Temperature: 31.21
+jerk = 1.74 
+angle = -0.25 
+Enable/Disable Button Pressed!
+Stopping NimBLE stack...
+[0;32mI (84178) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+D (84178) Timer: Timer not stopped[0m
+[0;32mI (84178) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+D (84188) Timer: Timer not stopped[0m
+NimBLE stack stopped
+Temperature: 31.21
+jerk = 0.40 
+angle = -0.24 
+Temperature: 31.26
+jerk = 3.06 
+angle = -0.25 
+Temperature: 31.21
+jerk = 4.12 
+angle = -0.24 
+Temperature: 31.17
+jerk = 3.31 
+angle = -0.25 
+Temperature: 31.21
+jerk = 0.92 
+angle = -0.24 
+Temperature: 31.35
+jerk = 0.34 
+angle = -0.25 
+Temperature: 31.21
+jerk = 0.98 
+angle = -0.25 
+Temperature: 31.12
+jerk = 0.63 
+angle = -0.25 
+Temperature: 31.17
+jerk = 0.41 
+angle = -0.25 
+Temperature: 31.21
+jerk = 0.49 
+angle = -0.25 
+Temperature: 31.17
+jerk = 0.66 
+angle = -0.25 
+Temperature: 31.26
+jerk = 0.33 
+angle = -0.25 
+Temperature: 31.21
+jerk = 0.25 
+angle = -0.25 
+Temperature: 31.17
+jerk = 1.17 
+angle = -0.24 
+Temperature: 31.21
+jerk = 1.89 
+angle = -0.26 
+Temperature: 31.21
+jerk = 1.39 
+angle = -0.25 
+Temperature: 31.17
+jerk = 0.80 
+angle = -0.24 
+Temperature: 31.21
+jerk = 0.56 
+angle = -0.25 
+Temperature: 31.17
+jerk = 0.78 
+angle = -0.25 
+Temperature: 31.21
+jerk = 1.01 
+angle = -0.25 
+Temperature: 31.26
+jerk = 0.59 
+angle = -0.25 
+Temperature: 31.21
+jerk = 0.74 
+angle = -0.26 
+Temperature: 31.17
+jerk = 1.00 
+angle = -0.26 
+Temperature: 31.21
+jerk = 1.30 
+angle = -0.25 
+Temperature: 31.17
+jerk = 0.50 
+angle = -0.26 
+Temperature: 31.21
+jerk = 0.50 
+angle = -0.26 
+Temperature: 31.26
+jerk = 0.33 
+angle = -0.27 
+Temperature: 31.17
+jerk = 0.79 
+angle = -0.26 
+Temperature: 31.21
+jerk = 0.44 
+angle = -0.25 
+Temperature: 31.17
+jerk = 0.33 
+angle = -0.25 
+Temperature: 31.21
+jerk = 0.57 
+angle = -0.26 
+Temperature: 31.26
+jerk = 0.40 
+angle = -0.25 
+Temperature: 31.21
+jerk = 0.61 
+angle = -0.27 
+Temperature: 31.17
+jerk = 0.52 
+angle = -0.26 
+Temperature: 31.21
+jerk = 0.63 
+angle = -0.25 
+Temperature: 31.35
+jerk = 0.67 
+angle = -0.26 
+Temperature: 31.21
+jerk = 0.50 
+angle = -0.25 
+Temperature: 31.26
+jerk = 1.09 
+angle = -0.26 
+Temperature: 31.31
+jerk = 0.76 
+angle = -0.27 
+Temperature: 31.26
+jerk = 1.00 
+angle = -0.26 
+Temperature: 31.21
+jerk = 0.68 
+angle = -0.26 
+Temperature: 31.17
+jerk = 0.25 
+angle = -0.26 
+Temperature: 31.31
+jerk = 0.48 
+angle = -0.26 
+Temperature: 31.17
+jerk = 0.62 
+angle = -0.27 
+Temperature: 31.21
+jerk = 0.27 
+angle = -0.27 
+Temperature: 31.26
+jerk = 0.82 
+angle = -0.25 
+Temperature: 31.21
+jerk = 0.74 
+angle = -0.26 
+Temperature: 31.26
+jerk = 0.55 
+angle = -0.27 
+Temperature: 31.31
+jerk = 0.91 
+angle = -0.26 
+Temperature: 31.07
+jerk = 0.98 
+angle = -0.27 
+Temperature: 31.17
+jerk = 0.69 
+angle = -0.27 
+Temperature: 31.31
+jerk = 0.21 
+angle = -0.26 
+Temperature: 31.31
+jerk = 0.53 
+angle = -0.27 
+Temperature: 31.31
+jerk = 0.36 
+angle = -0.27 
+Temperature: 31.17
+jerk = 0.29 
+angle = -0.27 
+Temperature: 31.17
+jerk = 0.73 
+angle = -0.26 
+Temperature: 31.17
+jerk = 0.57 
+angle = -0.25 
+Temperature: 31.17
+jerk = 0.59 
+angle = -0.27 
+Temperature: 31.21
+jerk = 1.33 
+angle = -0.27 
+Temperature: 31.17
+jerk = 0.77 
+angle = -0.27 
+Temperature: 31.17
+jerk = 0.82 
+angle = -0.26 
+Temperature: 31.31
+jerk = 0.93 
+angle = -0.27 
+Temperature: 31.17
+jerk = 0.48 
+angle = -0.27 
+Temperature: 31.21
+jerk = 0.37 
+angle = -0.26 
+Temperature: 31.21
+jerk = 0.96 
+angle = -0.27 
+Temperature: 31.26
+jerk = 0.74 
+angle = -0.26 
+Temperature: 31.21
+jerk = 0.75 
+angle = -0.28 
+Temperature: 31.26
+jerk = 1.06 
+angle = -0.26 
+Temperature: 31.21
+jerk = 0.79 
+angle = -0.26 
+Temperature: 31.17
+jerk = 0.72 
+angle = -0.26 
+Temperature: 31.21
+jerk = 0.84 
+angle = -0.27 
+Temperature: 31.17
+jerk = 0.84 
+angle = -0.28 
+Temperature: 31.21
+jerk = 0.69 
+angle = -0.27 
+Temperature: 31.17
+jerk = 0.45 
+angle = -0.27 
+Temperature: 31.21
+jerk = 0.73 
+angle = -0.27 
+Temperature: 31.26
+jerk = 0.98 
+angle = -0.26 
+Temperature: 31.12
+jerk = 0.72 
+angle = -0.27 
+Temperature: 31.26
+jerk = 0.23 
+angle = -0.27 
+Temperature: 31.26
+jerk = 0.51 
+angle = -0.27 
+Temperature: 31.21
+jerk = 0.22 
+angle = -0.28 
+Temperature: 31.17
+jerk = 0.86 
+angle = -0.27 
+Temperature: 31.26
+jerk = 1.16 
+angle = -0.27 
+Temperature: 31.21
+jerk = 0.37 
+angle = -0.28 
+Temperature: 31.26
+jerk = 0.90 
+angle = -0.27 
+Temperature: 31.21
+jerk = 0.83 
+angle = -0.27 
+Temperature: 31.35
+jerk = 1.31 
+angle = -0.27 
+Temperature: 31.21
+jerk = 1.79 
+angle = -0.28 
+Temperature: 31.17
+jerk = 1.15 
+angle = -0.27 
+Temperature: 31.21
+jerk = 1.58 
+angle = -0.28 
+Enable/Disable Button Pressed!
+Starting NimBLE stack...
+[0;32mI (93088) BLE_INIT: BT controller compile version [c23ab4c][0m
+[0;32mI (93088) BLE_INIT: Bluetooth MAC: 34:b7:da:f6:47:7e[0m
+D (93098) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (93098) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (93098) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (93098) nvs: nvs_close 42[0m
+D (93108) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (93108) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (93118) nvs: nvs_get_str_or_blob our_sec_2[0m
+D (93118) nvs: nvs_close 43[0m
+D (93128) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (93128) nvs: nvs_get_str_or_blob our_sec_3[0m
+D (93138) nvs: nvs_close 44[0m
+D (93138) NIMBLE_NVS: ble_store_config_our_secs restored 1 bonds[0m
+D (93138) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (93148) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (93148) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (93158) nvs: nvs_close 45[0m
+D (93158) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (93168) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (93168) nvs: nvs_get_str_or_blob peer_sec_2[0m
+D (93178) nvs: nvs_close 46[0m
+D (93178) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (93178) nvs: nvs_get_str_or_blob peer_sec_3[0m
+D (93188) nvs: nvs_close 47[0m
+D (93188) NIMBLE_NVS: ble_store_config_peer_secs restored 1 bonds[0m
+D (93198) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (93198) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (93208) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (93208) nvs: nvs_close 48[0m
+D (93208) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 1[0m
+D (93218) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (93228) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (93228) nvs: nvs_close 49[0m
+D (93228) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (93238) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (93238) nvs: nvs_close 50[0m
+D (93248) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (93248) nvs: nvs_get_str_or_blob cccd_sec_4[0m
+D (93248) nvs: nvs_close 51[0m
+D (93258) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (93258) nvs: nvs_get_str_or_blob cccd_sec_5[0m
+D (93268) nvs: nvs_close 52[0m
+D (93268) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (93278) nvs: nvs_get_str_or_blob cccd_sec_6[0m
+D (93278) nvs: nvs_close 53[0m
+D (93278) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (93288) nvs: nvs_get_str_or_blob cccd_sec_7[0m
+D (93288) nvs: nvs_close 54[0m
+D (93288) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (93298) nvs: nvs_get_str_or_blob cccd_sec_8[0m
+D (93298) nvs: nvs_close 55[0m
+D (93308) NIMBLE_NVS: ble_store_config_cccds restored 1 bonds[0m
+D (93308) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (93318) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (93318) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (93328) nvs: nvs_close 56[0m
+D (93328) NIMBLE_NVS: Local IRK in RAM is filled up from NVS index = 1[0m
+D (93338) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (93338) nvs: nvs_get_str_or_blob local_irk_2[0m
+D (93348) nvs: nvs_close 57[0m
+D (93348) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (93348) nvs: nvs_get_str_or_blob local_irk_3[0m
+D (93358) nvs: nvs_close 58[0m
+D (93358) NIMBLE_NVS: ble_store_config_local_irks restored 1 irks[0m
+D (93368) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (93368) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (93378) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (93378) nvs: nvs_close 59[0m
+D (93378) NIMBLE_NVS: RPA_REC in RAM is filled up from NVS index = 1[0m
+D (93388) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (93398) nvs: nvs_get_str_or_blob rpa_rec_2[0m
+D (93398) nvs: nvs_close 60[0m
+D (93398) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (93408) nvs: nvs_get_str_or_blob rpa_rec_3[0m
+D (93408) nvs: nvs_close 61[0m
+D (93408) NIMBLE_NVS: ble_store_config_rpa_recs restored 1 bonds[0m
+[0;32mI (93418) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (93428) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (93428) NimBLE: Device Address: [0m
+[0;32mI (93438) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (93438) NimBLE: 
+[0m
+[0;32mI (93448) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (93448) NimBLE: disc_mode=2[0m
+[0;32mI (93448) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (93458) NimBLE: 
+[0m
+Temperature: 31.21
+jerk = 1.32 
+angle = -0.28 
+Temperature: 31.21
+jerk = 1.00 
+angle = -0.28 
+Temperature: 31.21
+jerk = 0.72 
+angle = -0.27 
+Temperature: 31.26
+jerk = 1.13 
+angle = -0.27 
+Temperature: 31.21
+jerk = 0.33 
+angle = -0.27 
+Temperature: 31.26
+jerk = 0.30 
+angle = -0.27 
+Temperature: 31.21
+jerk = 0.32 
+angle = -0.28 
+Temperature: 31.17
+jerk = 0.88 
+angle = -0.28 
+Temperature: 31.21
+jerk = 0.68 
+angle = -0.27 
+Temperature: 31.17
+jerk = 0.93 
+angle = -0.27 
+Temperature: 31.17
+jerk = 1.05 
+angle = -0.28 
+Temperature: 31.17
+jerk = 0.58 
+angle = -0.27 
+Temperature: 31.21
+jerk = 0.30 
+angle = -0.28 
+Temperature: 31.26
+jerk = 0.39 
+angle = -0.28 
+Temperature: 31.26
+jerk = 0.70 
+angle = -0.28 
+Temperature: 31.12
+jerk = 0.64 
+angle = -0.28 
+Temperature: 31.26
+jerk = 0.45 
+angle = -0.28 
+Temperature: 31.17
+jerk = 0.52 
+angle = -0.27 
+Temperature: 31.17
+jerk = 0.53 
+angle = -0.28 
+Temperature: 31.12
+jerk = 0.48 
+angle = -0.28 
+Temperature: 31.26
+jerk = 0.38 
+angle = -0.28 
+Temperature: 31.12
+jerk = 0.57 
+angle = -0.29 
+Temperature: 31.17
+jerk = 0.47 
+angle = -0.28 
+Temperature: 31.26
+jerk = 0.46 
+angle = -0.28 
+Temperature: 31.21
+jerk = 0.27 
+angle = -0.28 
+Temperature: 31.17
+jerk = 0.52 
+angle = -0.28 
+Temperature: 31.26
+jerk = 0.46 
+angle = -0.28 
+Temperature: 31.21
+jerk = 0.58 
+angle = -0.28 
+Temperature: 31.17
+jerk = 0.54 
+angle = -0.28 
+Temperature: 31.12
+jerk = 0.62 
+angle = -0.28 
+Temperature: 31.26
+jerk = 0.12 
+angle = -0.28 
+Temperature: 31.17
+jerk = 0.84 
+angle = -0.29 
+Temperature: 31.21
+jerk = 0.40 
+angle = -0.29 
+Temperature: 31.17
+jerk = 0.80 
+angle = -0.28 
+Temperature: 31.21
+jerk = 0.76 
+angle = -0.29 
+Temperature: 31.26
+jerk = 0.24 
+angle = -0.29 
+Temperature: 31.21
+jerk = 0.56 
+angle = -0.28 
+Temperature: 31.26
+jerk = 0.54 
+angle = -0.29 
+Temperature: 31.21
+jerk = 0.87 
+angle = -0.28 
+Temperature: 31.17
+jerk = 0.45 
+angle = -0.29 
+Temperature: 31.31
+jerk = 0.57 
+angle = -0.28 
+Temperature: 31.26
+jerk = 0.57 
+angle = -0.29 
+Temperature: 31.07
+jerk = 0.38 
+angle = -0.29 
+Temperature: 31.26
+jerk = 0.57 
+angle = -0.28 
+Temperature: 31.31
+jerk = 0.76 
+angle = -0.28 
+Temperature: 31.17
+jerk = 0.45 
+angle = -0.29 
+Temperature: 31.31
+jerk = 0.26 
+angle = -0.30 
+Temperature: 31.17
+jerk = 0.39 
+angle = -0.29 
+Temperature: 31.21
+jerk = 0.53 
+angle = -0.29 
+Temperature: 31.21
+jerk = 0.89 
+angle = -0.29 
+Temperature: 31.26
+jerk = 0.76 
+angle = -0.29 
+Temperature: 31.21
+jerk = 0.28 
+angle = -0.29 
+Temperature: 31.21
+jerk = 0.33 
+angle = -0.28 
+Temperature: 31.17
+jerk = 0.16 
+angle = -0.28 
+Temperature: 31.21
+jerk = 0.38 
+angle = -0.29 
+Temperature: 31.26
+jerk = 0.75 
+angle = -0.29 
+Temperature: 31.21
+jerk = 0.13 
+angle = -0.29 
+Temperature: 31.21
+jerk = 0.47 
+angle = -0.30 
+Temperature: 31.26
+jerk = 0.69 
+angle = -0.29 
+Temperature: 31.21
+jerk = 0.25 
+angle = -0.29 
+Temperature: 31.17
+jerk = 0.49 
+angle = -0.29 
+Temperature: 31.21
+jerk = 0.53 
+angle = -0.29 
+Temperature: 31.17
+jerk = 0.81 
+angle = -0.30 
+Temperature: 31.21
+jerk = 0.51 
+angle = -0.29 
+Temperature: 31.17
+jerk = 0.25 
+angle = -0.29 
+Temperature: 31.26
+jerk = 0.38 
+angle = -0.29 
+Temperature: 31.21
+jerk = 3.98 
+angle = -0.26 
+Temperature: 31.26
+jerk = 3.23 
+angle = -0.24 
+Temperature: 31.26
+jerk = 6.62 
+angle = -0.29 
+Temperature: 31.21
+jerk = 1.08 
+angle = -0.29 
+Temperature: 31.17
+jerk = 1.59 
+angle = -0.29 
+Temperature: 31.21
+jerk = 4.47 
+angle = -0.30 
+Temperature: 31.17
+jerk = 2.94 
+angle = -0.28 
+Temperature: 31.31
+jerk = 2.14 
+angle = -0.29 
+Temperature: 31.17
+jerk = 0.57 
+angle = -0.30 
+Temperature: 31.12
+jerk = 1.42 
+angle = -0.30 
+Temperature: 31.07
+jerk = 0.78 
+angle = -0.29 
+Enable/Disable Button Pressed!
+Stopping NimBLE stack...
+[0;32mI (101168) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+D (101168) Timer: Timer not stopped[0m
+[0;32mI (101168) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+D (101178) Timer: Timer not stopped[0m
+NimBLE stack stopped
+Temperature: 31.21
+jerk = 1.90 
+angle = -0.30 
+Temperature: 31.12
+jerk = 1.65 
+angle = -0.30 
+Temperature: 31.26
+jerk = 1.87 
+angle = -0.32 
+Temperature: 31.21
+jerk = 1.22 
+angle = -0.30 
+Temperature: 31.17
+jerk = 1.70 
+angle = -0.31 
+Temperature: 31.17
+jerk = 5.63 
+angle = -0.29 
+Temperature: 31.21
+jerk = 4.47 
+angle = -0.31 
+Temperature: 31.17
+jerk = 1.66 
+angle = -0.30 
+Temperature: 31.21
+jerk = 1.00 
+angle = -0.30 
+Temperature: 31.12
+jerk = 3.66 
+angle = -0.32 
+Temperature: 31.17
+jerk = 1.66 
+angle = -0.31 
+Temperature: 31.12
+jerk = 1.01 
+angle = -0.31 
+Temperature: 31.17
+jerk = 0.93 
+angle = -0.31 
+Temperature: 31.21
+jerk = 2.12 
+angle = -0.30 
+Temperature: 31.17
+jerk = 1.08 
+angle = -0.31 
+Temperature: 31.26
+jerk = 0.47 
+angle = -0.30 
+Temperature: 31.26
+jerk = 1.55 
+angle = -0.32 
+Temperature: 31.21
+jerk = 0.89 
+angle = -0.31 
+Temperature: 31.26
+jerk = 0.37 
+angle = -0.31 
+Temperature: 31.17
+jerk = 0.18 
+angle = -0.31 
+Temperature: 31.12
+jerk = 0.58 
+angle = -0.31 
+Temperature: 31.26
+jerk = 0.57 
+angle = -0.32 
+Temperature: 31.12
+jerk = 0.66 
+angle = -0.31 
+Temperature: 31.26
+jerk = 0.51 
+angle = -0.31 
+Temperature: 31.21
+jerk = 0.97 
+angle = -0.32 
+Temperature: 31.17
+jerk = 1.00 
+angle = -0.32 
+Temperature: 31.17
+jerk = 1.04 
+angle = -0.31 
+Temperature: 31.21
+jerk = 0.46 
+angle = -0.32 
+Temperature: 31.26
+jerk = 0.62 
+angle = -0.32 
+Temperature: 31.12
+jerk = 0.40 
+angle = -0.32 
+Temperature: 31.21
+jerk = 0.38 
+angle = -0.31 
+Temperature: 31.26
+jerk = 0.85 
+angle = -0.31 
+Temperature: 31.21
+jerk = 0.73 
+angle = -0.32 
+Temperature: 31.26
+jerk = 0.62 
+angle = -0.32 
+Temperature: 31.21
+jerk = 0.91 
+angle = -0.31 
+Temperature: 31.21
+jerk = 0.86 
+angle = -0.32 
+Temperature: 31.26
+jerk = 1.07 
+angle = -0.32 
+Temperature: 31.12
+jerk = 0.49 
+angle = -0.32 
+Temperature: 31.35
+jerk = 0.62 
+angle = -0.33 
+Temperature: 31.26
+jerk = 1.07 
+angle = -0.31 
+Temperature: 31.21
+jerk = 0.40 
+angle = -0.31 
+Temperature: 31.26
+jerk = 0.40 
+angle = -0.32 

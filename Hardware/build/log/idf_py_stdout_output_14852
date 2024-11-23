@@ -1,0 +1,764 @@
+[0;32mI (433) spi_flash: detected chip: generic[0m
+[0;32mESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c0d4
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Oct 18 2024 17:31:12[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (33) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (85) esp_image: segment 0: paddr=00010020 vaddr=3c070020 size=1ad10h (109840) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=0002ad38 vaddr=3fc92e00 size=025f8h (  9720) load[0m
+[0;32mI (113) esp_image: segment 2: paddr=0002d338 vaddr=40380000 size=02ce0h ( 11488) load[0m
+[0;32mI (118) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=61858h (399448) map[0m
+[0;32mI (187) esp_image: segment 4: paddr=00091880 vaddr=40382ce0 size=0ff40h ( 65344) load[0m
+[0;32mI (205) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (206) boot: Disabling RNG early entropy source...[0m
+[0;32mI (217) cpu_start: Unicore app[0m
+D (217) cpu_start: Pro cpu up[0m
+D (225) clk: RTC_SLOW_CLK calibration value: 3631360[0m
+[0;32mI (231) cpu_start: Pro cpu start user code[0m
+[0;32mI (231) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (231) cpu_start: Application information:[0m
+[0;32mI (234) cpu_start: Project name:     app-template[0m
+[0;32mI (239) cpu_start: App version:      9f1355b-dirty[0m
+[0;32mI (245) cpu_start: Compile time:     Nov 20 2024 15:23:26[0m
+[0;32mI (251) cpu_start: ELF file SHA256:  5e144366e...[0m
+[0;32mI (256) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (261) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (266) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (271) cpu_start: Chip rev:         v0.4[0m
+D (276) memory_layout: Checking 5 reserved memory ranges:[0m
+D (281) memory_layout: Reserved memory range 0x3fc80000 - 0x3fc92e00[0m
+D (288) memory_layout: Reserved memory range 0x3fc92e00 - 0x3fc98160[0m
+D (294) memory_layout: Reserved memory range 0x3fcdf060 - 0x3fce0000[0m
+D (300) memory_layout: Reserved memory range 0x50000000 - 0x50000010[0m
+D (307) memory_layout: Reserved memory range 0x50001fe8 - 0x50002000[0m
+D (313) memory_layout: Building list of available memory regions:[0m
+D (319) memory_layout: Available memory region 0x3fc98160 - 0x3fca0000[0m
+D (326) memory_layout: Available memory region 0x3fca0000 - 0x3fcc0000[0m
+D (333) memory_layout: Available memory region 0x3fcc0000 - 0x3fcdc710[0m
+D (339) memory_layout: Available memory region 0x3fcdc710 - 0x3fcdf060[0m
+D (346) memory_layout: Available memory region 0x50000010 - 0x50001fe8[0m
+[0;32mI (352) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (360) heap_init: New heap initialised at 0x3fc98160[0m
+[0;32mI (365) heap_init: At 3FC98160 len 00027EA0 (159 KiB): RAM[0m
+D (371) heap_init: New heap initialised at 0x3fcc0000[0m
+[0;32mI (376) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (383) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+D (390) heap_init: New heap initialised at 0x50000010[0m
+[0;32mI (395) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+D (402) intr_alloc: Connected src 27 to int 2 (cpu 0)[0m
+D (407) spi_flash: trying chip: issi[0m
+D (410) spi_flash: trying chip: gd[0m
+D (414) spi_flash: trying chip: mxic[0m
+D (417) spi_flash: trying chip: winbond[0m
+D (421) spi_flash: trying chip: boya[0m
+D (425) spi_flash: trying chip: th[0m
+D (428) spi_flash: trying chip: generic[0m
+[0;32mI (432) spi_flash: detected chip: generic[0m
+[0;32mI (437) spi_flash: flash io: dio[0m
+[0;33mW (441) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+D (454) cpu_start: calling init function: 0x4204b7d8[0m
+D (459) cpu_start: calling init function: 0x4204b75c[0m
+D (464) cpu_start: calling init function: 0x4204b2a0[0m
+D (469) cpu_start: calling init function: 0x42034948[0m
+[0;33mW (474) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+D (485) cpu_start: calling init function: 0x40389ba2[0m
+D (490) cpu_start: calling init function: 0x4200002a[0m
+D (495) cpu_start: calling init function: 0x42005886 on core: 0[0m
+D (501) intr_alloc: Connected src 39 to int 3 (cpu 0)[0m
+D (506) cpu_start: calling init function: 0x42001c1a on core: 0[0m
+D (512) cpu_start: calling init function: 0x42003550 on core: 0[0m
+[0;32mI (518) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (525) sleep: Enable automatic switching of GPIO sleep configuration[0m
+D (532) cpu_start: calling init function: 0x42001430 on core: 0[0m
+[0;32mI (538) coexist: coex firmware version: d96c1e51f[0m
+[0;32mI (543) coexist: coexist rom version 9387209[0m
+D (548) intr_alloc: Connected src 50 to int 4 (cpu 0)[0m
+D (553) app_start: Starting scheduler on CPU0[0m
+D (558) intr_alloc: Connected src 37 to int 7 (cpu 0)[0m
+[0;32mI (558) main_task: Started on CPU0[0m
+D (558) heap_init: New heap initialised at 0x3fcdc710[0m
+D (558) intr_alloc: Connected src 33 to int 9 (cpu 0)[0m
+[0;32mI (568) main_task: Calling app_main()[0m
+D (568) intr_alloc: Connected src 29 to int 10 (cpu 0)[0m
+[0;32mI (588) BLE_INIT: BT controller compile version [c23ab4c][0m
+D (588) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (588) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (598) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (608) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (608) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (618) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+[0;32mI (628) BLE_INIT: Bluetooth MAC: 34:b7:da:f6:47:7e[0m
+[0;32mI (628) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+D (638) phy_init: loading PHY init data from application binary[0m
+D (648) nvs: nvs_open_from_partition phy 0[0m
+D (648) nvs: nvs_get cal_version 4[0m
+D (648) nvs: nvs_get_str_or_blob cal_mac[0m
+D (658) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (658) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (668) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (678) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (678) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (688) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (698) nvs: nvs_get_str_or_blob cal_data[0m
+D (698) nvs: nvs_close 1[0m
+D (708) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (708) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (718) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (728) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (728) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (738) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (758) temperature_sensor: range changed, change to index 2[0m
+D (788) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (788) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (788) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (788) nvs: nvs_close 2[0m
+D (788) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (798) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (798) nvs: nvs_get_str_or_blob our_sec_2[0m
+D (808) nvs: nvs_close 3[0m
+D (808) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (808) nvs: nvs_get_str_or_blob our_sec_3[0m
+D (818) nvs: nvs_close 4[0m
+D (818) NIMBLE_NVS: ble_store_config_our_secs restored 1 bonds[0m
+D (828) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (828) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (838) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (838) nvs: nvs_close 5[0m
+D (838) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (848) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (848) nvs: nvs_get_str_or_blob peer_sec_2[0m
+D (858) nvs: nvs_close 6[0m
+D (858) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (858) nvs: nvs_get_str_or_blob peer_sec_3[0m
+D (868) nvs: nvs_close 7[0m
+D (868) NIMBLE_NVS: ble_store_config_peer_secs restored 1 bonds[0m
+D (878) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (878) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (888) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (888) nvs: nvs_close 8[0m
+D (888) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 1[0m
+D (898) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (898) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (908) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (908) nvs: nvs_close 9[0m
+D (918) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 2[0m
+D (918) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (928) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (928) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (928) nvs: nvs_close 10[0m
+D (938) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 3[0m
+D (938) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (948) nvs: nvs_get_str_or_blob cccd_sec_4[0m
+D (948) nvs: nvs_close 11[0m
+D (958) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (958) nvs: nvs_get_str_or_blob cccd_sec_5[0m
+D (958) nvs: nvs_close 12[0m
+D (968) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (968) nvs: nvs_get_str_or_blob cccd_sec_6[0m
+D (978) nvs: nvs_close 13[0m
+D (978) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (978) nvs: nvs_get_str_or_blob cccd_sec_7[0m
+D (988) nvs: nvs_close 14[0m
+D (988) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (998) nvs: nvs_get_str_or_blob cccd_sec_8[0m
+D (998) nvs: nvs_close 15[0m
+D (998) NIMBLE_NVS: ble_store_config_cccds restored 3 bonds[0m
+D (1008) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1008) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (1018) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (1018) nvs: nvs_close 16[0m
+D (1018) NIMBLE_NVS: Local IRK in RAM is filled up from NVS index = 1[0m
+D (1028) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1038) nvs: nvs_get_str_or_blob local_irk_2[0m
+D (1038) nvs: nvs_close 17[0m
+D (1038) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1048) nvs: nvs_get_str_or_blob local_irk_3[0m
+D (1048) nvs: nvs_close 18[0m
+D (1058) NIMBLE_NVS: ble_store_config_local_irks restored 1 irks[0m
+D (1058) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1068) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (1068) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (1078) nvs: nvs_close 19[0m
+D (1078) NIMBLE_NVS: RPA_REC in RAM is filled up from NVS index = 1[0m
+D (1078) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1088) nvs: nvs_get_str_or_blob rpa_rec_2[0m
+D (1088) nvs: nvs_close 20[0m
+D (1098) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1098) nvs: nvs_get_str_or_blob rpa_rec_3[0m
+D (1108) nvs: nvs_close 21[0m
+D (1108) NIMBLE_NVS: ble_store_config_rpa_recs restored 1 bonds[0m
+[0;32mI (1118) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1118) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1128) NimBLE: Device Address: [0m
+[0;32mI (1128) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (1128) NimBLE: 
+[0m
+[0;32mI (1138) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1138) NimBLE: disc_mode=2[0m
+[0;32mI (1148) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1158) NimBLE: 
+[0m
+[0;32mI (1158) main_task: Returned from app_main()[0m
+jerk = 9535.42 
+jerk = 484.16 
+jerk = 385.18 
+jerk = 430.38 
+jerk = 275.01 
+jerk = 479.41 
+jerk = 1280.23 
+jerk = 741.47 
+jerk = 1007.57 
+jerk = 3761.52 
+jerk = 2388.12 
+jerk = 5628.23 
+jerk = 5084.24 
+jerk = 5097.13 
+jerk = 6610.49 
+jerk = 15720.47 
+Fallen detected!
+Led Buz
+jerk = 16586.40 
+Fallen detected!
+Led Buz
+jerk = 6281.59 
+jerk = 8364.99 
+jerk = 3730.99 
+jerk = 4141.99 
+jerk = 5234.49 
+jerk = 7104.77 
+jerk = 5528.76 
+jerk = 2962.70 
+jerk = 1125.97 
+jerk = 2520.59 
+jerk = 318.57 
+jerk = 655.53 
+jerk = 499.59 
+jerk = 235.13 
+jerk = 687.81 
+jerk = 799.77 
+jerk = 733.47 
+jerk = 406.48 
+jerk = 381.46 
+jerk = 359.52 
+jerk = 511.37 
+jerk = 285.07 
+jerk = 119.69 
+jerk = 484.05 
+jerk = 381.18 
+jerk = 212.87 
+jerk = 422.67 
+jerk = 636.19 
+jerk = 475.46 
+jerk = 518.51 
+jerk = 370.05 
+jerk = 445.25 
+jerk = 169.47 
+jerk = 248.55 
+jerk = 275.44 
+jerk = 686.82 
+jerk = 2279.33 
+jerk = 1677.10 
+jerk = 3921.82 
+jerk = 2055.33 
+jerk = 4117.96 
+jerk = 2801.09 
+jerk = 2798.25 
+jerk = 1615.82 
+jerk = 1034.90 
+jerk = 1522.48 
+jerk = 874.56 
+jerk = 3565.18 
+jerk = 2896.99 
+jerk = 502.94 
+jerk = 1377.19 
+jerk = 625.38 
+jerk = 2080.19 
+jerk = 2819.70 
+jerk = 141.33 
+jerk = 96.52 
+jerk = 215.54 
+jerk = 250.59 
+jerk = 126.16 
+jerk = 158.71 
+jerk = 124.68 
+jerk = 142.66 
+jerk = 134.50 
+jerk = 180.37 
+jerk = 132.58 
+jerk = 47.55 
+jerk = 70.61 
+jerk = 94.08 
+jerk = 79.72 
+jerk = 93.81 
+jerk = 188.37 
+jerk = 364.46 
+jerk = 204.15 
+jerk = 328.55 
+jerk = 45.28 
+jerk = 128.21 
+jerk = 444.02 
+jerk = 194.10 
+jerk = 38.71 
+jerk = 127.12 
+jerk = 125.45 
+Stop Button Pressed!
+Off led buzjerk = 220.61 
+jerk = 633.41 
+jerk = 584.07 
+jerk = 82.47 
+jerk = 155.94 
+jerk = 61.06 
+jerk = 197.05 
+jerk = 119.82 
+jerk = 524.19 
+jerk = 470.25 
+jerk = 102.31 
+jerk = 194.20 
+jerk = 119.15 
+jerk = 237.54 
+jerk = 173.53 
+jerk = 226.80 
+jerk = 57.08 
+jerk = 294.27 
+jerk = 689.60 
+jerk = 392.74 
+jerk = 117.42 
+jerk = 168.30 
+jerk = 128.57 
+jerk = 123.18 
+jerk = 137.26 
+jerk = 181.96 
+jerk = 102.43 
+jerk = 72.26 
+jerk = 179.38 
+jerk = 147.00 
+jerk = 64.03 
+jerk = 71.44 
+jerk = 62.86 
+jerk = 182.66 
+jerk = 156.47 
+jerk = 73.99 
+jerk = 151.73 
+jerk = 163.57 
+jerk = 215.54 
+jerk = 149.07 
+jerk = 175.04 
+jerk = 83.32 
+jerk = 76.06 
+jerk = 182.76 
+jerk = 46.56 
+jerk = 35.28 
+jerk = 125.06 
+jerk = 131.90 
+jerk = 54.52 
+jerk = 60.19 
+jerk = 55.31 
+jerk = 89.63 
+jerk = 100.66 
+jerk = 117.05 
+jerk = 102.64 
+jerk = 143.53 
+jerk = 229.30 
+jerk = 113.80 
+jerk = 53.95 
+jerk = 101.95 
+jerk = 99.20 
+jerk = 106.00 
+jerk = 31.68 
+jerk = 247.35 
+jerk = 227.67 
+jerk = 143.74 
+jerk = 140.54 
+jerk = 113.75 
+jerk = 24.89 
+jerk = 71.91 
+jerk = 157.20 
+jerk = 119.82 
+jerk = 71.18 
+jerk = 180.85 
+jerk = 90.52 
+jerk = 131.78 
+jerk = 91.85 
+jerk = 104.67 
+jerk = 167.80 
+jerk = 185.45 
+jerk = 118.89 
+jerk = 77.79 
+jerk = 146.69 
+jerk = 92.52 
+jerk = 141.35 
+jerk = 110.57 
+jerk = 78.46 
+jerk = 84.87 
+jerk = 87.95 
+jerk = 120.52 
+jerk = 65.56 
+jerk = 118.96 
+jerk = 91.81 
+jerk = 130.10 
+jerk = 120.93 
+jerk = 75.24 
+jerk = 37.08 
+jerk = 84.87 
+jerk = 80.03 
+jerk = 137.42 
+jerk = 146.41 
+jerk = 93.75 
+jerk = 57.35 
+jerk = 89.07 
+jerk = 31.18 
+jerk = 113.75 
+jerk = 191.84 
+jerk = 221.62 
+jerk = 76.26 
+jerk = 102.79 
+jerk = 71.66 
+jerk = 45.82 
+jerk = 102.79 
+jerk = 157.46 
+jerk = 82.01 
+jerk = 112.71 
+jerk = 100.32 
+jerk = 35.46 
+jerk = 54.07 
+jerk = 261.89 
+jerk = 148.03 
+jerk = 100.82 
+jerk = 115.23 
+jerk = 72.39 
+jerk = 110.12 
+jerk = 48.06 
+jerk = 41.35 
+jerk = 63.89 
+jerk = 81.86 
+jerk = 94.54 
+jerk = 70.17 
+jerk = 99.14 
+jerk = 74.41 
+jerk = 86.07 
+jerk = 35.98 
+jerk = 56.97 
+jerk = 85.09 
+jerk = 190.35 
+jerk = 103.99 
+jerk = 88.55 
+jerk = 97.89 
+jerk = 75.28 
+jerk = 111.80 
+jerk = 124.58 
+jerk = 35.72 
+jerk = 103.06 
+jerk = 101.37 
+jerk = 93.81 
+jerk = 156.00 
+jerk = 150.85 
+jerk = 205.51 
+jerk = 212.04 
+jerk = 61.82 
+jerk = 110.52 
+jerk = 118.49 
+jerk = 135.42 
+jerk = 75.03 
+jerk = 100.60 
+jerk = 224.34 
+jerk = 137.40 
+jerk = 85.20 
+jerk = 61.82 
+jerk = 205.30 
+jerk = 182.58 
+jerk = 145.71 
+jerk = 428.73 
+jerk = 285.34 
+jerk = 344.71 
+jerk = 3038.37 
+jerk = 3086.31 
+jerk = 422.79 
+jerk = 327.48 
+jerk = 227.30 
+jerk = 55.93 
+jerk = 129.29 
+jerk = 143.35 
+jerk = 216.32 
+jerk = 61.01 
+jerk = 289.00 
+jerk = 264.25 
+jerk = 129.72 
+jerk = 319.12 
+jerk = 186.78 
+jerk = 150.99 
+jerk = 95.22 
+jerk = 80.91 
+jerk = 102.64 
+jerk = 116.99 
+jerk = 179.34 
+jerk = 101.82 
+jerk = 123.94 
+jerk = 209.12 
+jerk = 171.90 
+jerk = 121.54 
+jerk = 152.08 
+jerk = 98.48 
+jerk = 62.56 
+jerk = 133.88 
+jerk = 187.71 
+jerk = 51.06 
+jerk = 98.48 
+jerk = 231.05 
+jerk = 95.58 
+jerk = 103.39 
+jerk = 97.06 
+jerk = 48.13 
+jerk = 123.59 
+jerk = 171.03 
+jerk = 110.52 
+jerk = 196.13 
+jerk = 85.85 
+jerk = 45.75 
+jerk = 130.25 
+jerk = 73.03 
+jerk = 53.67 
+jerk = 122.81 
+jerk = 145.22 
+jerk = 104.35 
+jerk = 76.34 
+jerk = 32.73 
+jerk = 74.37 
+jerk = 107.13 
+jerk = 173.64 
+jerk = 80.03 
+jerk = 18.12 
+jerk = 125.65 
+jerk = 145.73 
+jerk = 117.79 
+jerk = 87.95 
+jerk = 117.50 
+jerk = 224.45 
+jerk = 273.77 
+jerk = 131.83 
+jerk = 162.61 
+jerk = 203.50 
+jerk = 138.25 
+jerk = 144.56 
+jerk = 138.23 
+jerk = 78.94 
+jerk = 240.44 
+jerk = 150.27 
+jerk = 48.39 
+jerk = 113.56 
+jerk = 61.26 
+jerk = 121.18 
+jerk = 135.35 
+jerk = 189.43 
+jerk = 66.50 
+jerk = 124.04 
+jerk = 62.42 
+jerk = 18.12 
+jerk = 103.03 
+jerk = 97.28 
+jerk = 59.16 
+jerk = 86.71 
+jerk = 176.07 
+jerk = 125.67 
+jerk = 94.90 
+jerk = 68.65 
+jerk = 137.24 
+jerk = 99.33 
+jerk = 67.56 
+jerk = 17.95 
+jerk = 61.92 
+jerk = 95.52 
+jerk = 55.98 
+jerk = 59.42 
+jerk = 113.80 
+jerk = 141.92 
+jerk = 104.58 
+jerk = 68.52 
+jerk = 104.23 
+jerk = 102.97 
+jerk = 152.68 
+jerk = 154.98 
+jerk = 199.28 
+jerk = 163.67 
+jerk = 161.65 
+jerk = 90.04 
+jerk = 38.07 
+jerk = 76.14 
+jerk = 144.43 
+jerk = 240.08 
+jerk = 104.11 
+jerk = 124.16 
+jerk = 80.64 
+jerk = 85.85 
+jerk = 106.67 
+jerk = 45.35 
+jerk = 212.25 
+jerk = 104.47 
+jerk = 171.72 
+jerk = 87.42 
+jerk = 170.14 
+jerk = 33.85 
+jerk = 8.25 
+jerk = 149.55 
+jerk = 133.70 
+jerk = 85.34 
+jerk = 65.75 
+jerk = 141.44 
+jerk = 189.17 
+jerk = 1343.36 
+jerk = 1574.15 
+jerk = 148.68 
+jerk = 261.74 
+jerk = 206.31 
+jerk = 122.65 
+jerk = 291.39 
+jerk = 127.12 
+jerk = 196.24 
+jerk = 190.59 
+jerk = 89.35 
+jerk = 52.50 
+jerk = 176.21 
+jerk = 176.63 
+jerk = 155.34 
+jerk = 91.98 
+jerk = 108.71 
+jerk = 141.92 
+jerk = 170.07 
+jerk = 30.48 
+jerk = 202.35 
+jerk = 202.63 
+jerk = 135.15 
+jerk = 111.21 
+jerk = 118.68 
+jerk = 84.25 
+jerk = 30.07 
+jerk = 67.70 
+jerk = 67.19 
+jerk = 77.47 
+jerk = 167.37 
+jerk = 47.81 
+jerk = 66.45 
+jerk = 105.53 
+jerk = 61.77 
+jerk = 37.08 
+jerk = 30.98 
+jerk = 62.71 
+jerk = 98.36 
+jerk = 160.40 
+jerk = 176.21 
+jerk = 46.16 
+jerk = 86.53 
+jerk = 120.10 
+jerk = 180.89 
+jerk = 321.51 
+jerk = 258.30 
+jerk = 86.39 
+jerk = 42.60 
+jerk = 58.95 
+jerk = 126.19 
+jerk = 58.79 
+jerk = 35.37 
+jerk = 116.78 
+jerk = 75.49 
+jerk = 113.86 
+jerk = 72.73 
+jerk = 67.42 
+jerk = 143.16 
+jerk = 73.36 
+jerk = 113.53 
+jerk = 46.16 
+jerk = 27.38 
+jerk = 145.73 
+jerk = 181.44 
+jerk = 140.67 
+jerk = 165.64 
+jerk = 162.26 
+jerk = 80.60 
+jerk = 90.45 
+jerk = 122.22 
+jerk = 138.34 
+jerk = 67.75 
+jerk = 137.96 
+jerk = 10.56 
+jerk = 200.09 
+jerk = 106.93 
+jerk = 103.36 
+jerk = 88.09 
+jerk = 201.17 
+jerk = 128.98 
+jerk = 63.89 
+jerk = 71.13 
+jerk = 169.76 
+jerk = 112.79 
+jerk = 73.66 
+jerk = 67.19 
+jerk = 83.10 
+jerk = 190.92 
+jerk = 154.16 
+jerk = 239.34 
+jerk = 297.33 
+jerk = 405.37 
+jerk = 140.52 
+jerk = 111.55 
+jerk = 133.60 
+jerk = 175.18 
+jerk = 171.14 
+jerk = 77.31 
+jerk = 130.22 
+jerk = 104.08 
+jerk = 155.14 
+jerk = 141.20 
+jerk = 115.88 
+jerk = 88.52 
+jerk = 108.45 
+jerk = 48.26 
+jerk = 65.18 
+jerk = 13.40 
+jerk = 43.53 
+jerk = 126.90 
+jerk = 49.46 
+jerk = 138.77 
+jerk = 134.90 
+jerk = 47.81 
+jerk = 190.35 
+jerk = 145.07 
+jerk = 68.65 
+jerk = 187.84 
+jerk = 164.82 
+jerk = 70.65 
+jerk = 48.32 
+jerk = 117.50 
+jerk = 52.73 
+jerk = 66.64 
+jerk = 121.39 
+jerk = 122.98 
+jerk = 107.24 
+jerk = 154.62 
+jerk = 107.76 
+jerk = 77.35 
+jerk = 177.61 
+jerk = 189.16 
+jerk = 193.50 
+jerk = 214.52 
+jerk = 61.52 
+jerk = 75.85 
+jerk = 68.52 

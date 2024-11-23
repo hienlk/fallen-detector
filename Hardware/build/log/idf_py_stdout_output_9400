@@ -1,0 +1,2005 @@
+D (411) spi_flash: trying chip: gd[0m
+D (415) sESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c954
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Oct 18 2024 17:31:12[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (33) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (85) esp_image: segment 0: paddr=00010020 vaddr=3c070020 size=1acf8h (109816) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=0002ad20 vaddr=3fc92e00 size=025f8h (  9720) load[0m
+[0;32mI (113) esp_image: segment 2: paddr=0002d320 vaddr=40380000 size=02cf8h ( 11512) load[0m
+[0;32mI (118) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=61800h (399360) map[0m
+[0;32mI (187) esp_image: segment 4: paddr=00091828 vaddr=40382cf8 size=0ff28h ( 65320) load[0m
+[0;32mI (205) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (206) boot: Disabling RNG early entropy source...[0m
+[0;32mI (217) cpu_start: Unicore app[0m
+D (217) cpu_start: Pro cpu up[0m
+D (225) clk: RTC_SLOW_CLK calibration value: 3601037[0m
+[0;32mI (231) cpu_start: Pro cpu start user code[0m
+[0;32mI (231) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (231) cpu_start: Application information:[0m
+[0;32mI (234) cpu_start: Project name:     app-template[0m
+[0;32mI (239) cpu_start: App version:      a74f263-dirty[0m
+[0;32mI (245) cpu_start: Compile time:     Oct 18 2024 19:13:20[0m
+[0;32mI (251) cpu_start: ELF file SHA256:  43f0d2ea3...[0m
+[0;32mI (256) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (262) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (266) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (271) cpu_start: Chip rev:         v0.4[0m
+D (276) memory_layout: Checking 5 reserved memory ranges:[0m
+D (281) memory_layout: Reserved memory range 0x3fc80000 - 0x3fc92e00[0m
+D (288) memory_layout: Reserved memory range 0x3fc92e00 - 0x3fc98160[0m
+D (294) memory_layout: Reserved memory range 0x3fcdf060 - 0x3fce0000[0m
+D (301) memory_layout: Reserved memory range 0x50000000 - 0x50000010[0m
+D (307) memory_layout: Reserved memory range 0x50001fe8 - 0x50002000[0m
+D (313) memory_layout: Building list of available memory regions:[0m
+D (320) memory_layout: Available memory region 0x3fc98160 - 0x3fca0000[0m
+D (326) memory_layout: Available memory region 0x3fca0000 - 0x3fcc0000[0m
+D (333) memory_layout: Available memory region 0x3fcc0000 - 0x3fcdc710[0m
+D (339) memory_layout: Available memory region 0x3fcdc710 - 0x3fcdf060[0m
+D (346) memory_layout: Available memory region 0x50000010 - 0x50001fe8[0m
+[0;32mI (353) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (360) heap_init: New heap initialised at 0x3fc98160[0m
+[0;32mI (365) heap_init: At 3FC98160 len 00027EA0 (159 KiB): RAM[0m
+D (371) heap_init: New heap initialised at 0x3fcc0000[0m
+[0;32mI (376) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (383) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+D (390) heap_init: New heap initialised at 0x50000010[0m
+[0;32mI (395) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+D (402) intr_alloc: Connected src 27 to int 2 (cpu 0)[0m
+D (407) spi_flash: trying chip: issi[0m
+D (410) spi_flash: trying chip: gd[0m
+D (414) spi_flash: trying chip: mxic[0m
+D (417) spi_flash: trying chip: winbond[0m
+D (421) spi_flash: trying chip: boya[0m
+D (425) spi_flash: trying chip: th[0m
+D (428) spi_flash: trying chip: generic[0m
+[0;32mI (432) spi_flash: detected chip: generic[0m
+[0;32mI (437) spi_flash: flash io: dio[0m
+[0;33mW (441) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+D (454) cpu_start: calling init function: 0x4204b77e[0m
+D (459) cpu_start: calling init function: 0x4204b702[0m
+D (464) cpu_start: calling init function: 0x4204b246[0m
+D (469) cpu_start: calling init function: 0x420348ee[0m
+[0;33mW (474) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+D (485) cpu_start: calling init function: 0x40389ba2[0m
+D (490) cpu_start: calling init function: 0x4200002a[0m
+D (495) cpu_start: calling init function: 0x42005886 on core: 0[0m
+D (501) intr_alloc: Connected src 39 to int 3 (cpu 0)[0m
+D (506) cpu_start: calling init function: 0x42001c1a on core: 0[0m
+D (512) cpu_start: calling init function: 0x42003550 on core: 0[0m
+[0;32mI (518) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (525) sleep: Enable automatic switching of GPIO sleep configuration[0m
+D (532) cpu_start: calling init function: 0x42001430 on core: 0[0m
+[0;32mI (538) coexist: coex firmware version: d96c1e51f[0m
+[0;32mI (543) coexist: coexist rom version 9387209[0m
+D (548) intr_alloc: Connected src 50 to int 4 (cpu 0)[0m
+D (553) app_start: Starting scheduler on CPU0[0m
+D (558) intr_alloc: Connected src 37 to int 7 (cpu 0)[0m
+[0;32mI (558) main_task: Started on CPU0[0m
+D (558) heap_init: New heap initialised at 0x3fcdc710[0m
+D (558) intr_alloc: Connected src 33 to int 9 (cpu 0)[0m
+[0;32mI (568) main_task: Calling app_main()[0m
+D (568) intr_alloc: Connected src 29 to int 10 (cpu 0)[0m
+[0;32mI (588) BLE_INIT: BT controller compile version [c23ab4c][0m
+D (588) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (588) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (598) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (608) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (608) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (618) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+[0;32mI (628) BLE_INIT: Bluetooth MAC: 34:b7:da:f6:47:7e[0m
+[0;32mI (628) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+D (638) phy_init: loading PHY init data from application binary[0m
+D (648) nvs: nvs_open_from_partition phy 0[0m
+D (648) nvs: nvs_get cal_version 4[0m
+D (648) nvs: nvs_get_str_or_blob cal_mac[0m
+D (658) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (658) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (668) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (678) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (678) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (688) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (698) nvs: nvs_get_str_or_blob cal_data[0m
+D (698) nvs: nvs_close 1[0m
+D (708) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (708) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (718) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (728) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (728) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (738) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (758) temperature_sensor: range changed, change to index 2[0m
+D (788) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (788) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (788) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (788) nvs: nvs_close 2[0m
+D (788) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (798) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (798) nvs: nvs_get_str_or_blob our_sec_2[0m
+D (808) nvs: nvs_close 3[0m
+D (808) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (808) nvs: nvs_get_str_or_blob our_sec_3[0m
+D (818) nvs: nvs_close 4[0m
+D (818) NIMBLE_NVS: ble_store_config_our_secs restored 1 bonds[0m
+D (828) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (828) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (838) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (838) nvs: nvs_close 5[0m
+D (838) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (848) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (848) nvs: nvs_get_str_or_blob peer_sec_2[0m
+D (858) nvs: nvs_close 6[0m
+D (858) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (858) nvs: nvs_get_str_or_blob peer_sec_3[0m
+D (868) nvs: nvs_close 7[0m
+D (868) NIMBLE_NVS: ble_store_config_peer_secs restored 1 bonds[0m
+D (878) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (878) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (888) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (888) nvs: nvs_close 8[0m
+D (888) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 1[0m
+D (898) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (898) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (908) nvs: nvs_close 9[0m
+D (908) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (918) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (918) nvs: nvs_close 10[0m
+D (918) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (928) nvs: nvs_get_str_or_blob cccd_sec_4[0m
+D (928) nvs: nvs_close 11[0m
+D (928) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (938) nvs: nvs_get_str_or_blob cccd_sec_5[0m
+D (938) nvs: nvs_close 12[0m
+D (948) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (948) nvs: nvs_get_str_or_blob cccd_sec_6[0m
+D (958) nvs: nvs_close 13[0m
+D (958) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (958) nvs: nvs_get_str_or_blob cccd_sec_7[0m
+D (968) nvs: nvs_close 14[0m
+D (968) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (968) nvs: nvs_get_str_or_blob cccd_sec_8[0m
+D (978) nvs: nvs_close 15[0m
+D (978) NIMBLE_NVS: ble_store_config_cccds restored 1 bonds[0m
+D (988) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (988) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (998) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (998) nvs: nvs_close 16[0m
+D (998) NIMBLE_NVS: Local IRK in RAM is filled up from NVS index = 1[0m
+D (1008) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1018) nvs: nvs_get_str_or_blob local_irk_2[0m
+D (1018) nvs: nvs_close 17[0m
+D (1018) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1028) nvs: nvs_get_str_or_blob local_irk_3[0m
+D (1028) nvs: nvs_close 18[0m
+D (1028) NIMBLE_NVS: ble_store_config_local_irks restored 1 irks[0m
+D (1038) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1048) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (1048) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (1048) nvs: nvs_close 19[0m
+D (1058) NIMBLE_NVS: RPA_REC in RAM is filled up from NVS index = 1[0m
+D (1058) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1068) nvs: nvs_get_str_or_blob rpa_rec_2[0m
+D (1068) nvs: nvs_close 20[0m
+D (1078) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1078) nvs: nvs_get_str_or_blob rpa_rec_3[0m
+D (1078) nvs: nvs_close 21[0m
+D (1088) NIMBLE_NVS: ble_store_config_rpa_recs restored 1 bonds[0m
+[0;32mI (1098) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1098) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1108) NimBLE: Device Address: [0m
+[0;32mI (1108) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (1108) NimBLE: 
+[0m
+[0;32mI (1118) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1118) NimBLE: disc_mode=2[0m
+[0;32mI (1128) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1138) NimBLE: 
+[0m
+[0;32mI (1138) main_task: Returned from app_main()[0m
+Temperature: 30.60
+jerk = 0.00 
+angle = 0.00 
+Temperature: 30.60
+jerk = 53.24 
+angle = -0.03 
+Temperature: 30.69
+jerk = 0.32 
+angle = -0.03 
+Temperature: 30.65
+jerk = 0.54 
+angle = -0.02 
+Temperature: 30.69
+jerk = 0.32 
+angle = -0.03 
+Temperature: 30.74
+jerk = 0.78 
+angle = -0.03 
+Temperature: 30.74
+jerk = 1.10 
+angle = -0.02 
+Temperature: 30.69
+jerk = 0.59 
+angle = -0.03 
+Temperature: 30.65
+jerk = 0.74 
+angle = -0.04 
+Temperature: 30.69
+jerk = 0.70 
+angle = -0.03 
+Enable/Disable Button Pressed!
+Starting NimBLE stack...
+[0;31mE (2138) BLE_INIT: controller init failed
+[0m
+
+assert failed: ble_svc_gap_init ble_svc_gap.c:333 (rc == 0)
+Core  0 register dump:
+MEPC    : 0x40380700  RA      : 0x4038b03a  SP      : 0x3fcb1de0  GP      : 0x3fc93600  
+TP      : 0x3fc97378  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x0000008c  S1      : 0x00000001  A0      : 0x3fcb1e1c  A1      : 0x3fc94869  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x3fc96000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x3fcb1f2b  
+S4      : 0x3fc94868  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fcb1de0: 0x00000019 0x00000000 0x3c07eaf8 0x40391496 0x3fc94524 0x3c07eaf8 0x3fc94cb8 0x3c0757a8
+3fcb1e00: 0x3fc94534 0x3fcb1e14 0x3fc94538 0x3c0754cc 0x3fc94868 0x00333333 0x00000019 0x65737361
+3fcb1e20: 0x66207472 0x656c6961 0x62203a64 0x735f656c 0x675f6376 0x695f7061 0x2074696e 0x5f656c62
+3fcb1e40: 0x5f637673 0x2e706167 0x33333a63 0x72282033 0x3d3d2063 0x00293020 0x00000000 0x3fcb1ebc
+3fcb1e60: 0x3c076e34 0x00000000 0x3fcac128 0x4038b0cc 0x00000000 0x00000000 0x3fcac128 0x4038b6b6
+3fcb1e80: 0x00000000 0x00000000 0x00000103 0x00000000 0x00000804 0x00000054 0x3fc978b0 0xffffffff
+3fcb1ea0: 0x00000000 0x00000001 0x3fc9b204 0x00000000 0x00000000 0x3fcb1f84 0x3fcac128 0x4038b878
+3fcb1ec0: 0x00000000 0x00000000 0x3fc97214 0x4201bdee 0x00000000 0x00000000 0x0000000f 0x4200ca82
+3fcb1ee0: 0x00000000 0x00000000 0x00000000 0x42000000 0x00000001 0x00000002 0x00000000 0x00000000
+3fcb1f00: 0x00000000 0x00000000 0x00000000 0x42009d58 0x00000000 0x00000000 0x00000000 0x42008f8a
+3fcb1f20: 0x00000000 0x00000000 0x00000000 0x420081d6 0x00000000 0x00000000 0x00000000 0x4038c080
+3fcb1f40: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb1f60: 0x00000000 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fcb1f80: 0x00000150 0x3fcb1da0 0x0000009e 0x3fc95630 0x3fc95630 0x3fcb1f84 0x3fc95628 0x00000012
+3fcb1fa0: 0x00000000 0x00000000 0x3fcb1f84 0x00000000 0x00000007 0x3fcb1780 0x626d696e 0x0000656c
+3fcb1fc0: 0x00000000 0x00000000 0x3fcb1f70 0x00000007 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb1fe0: 0x3fc9894c 0x3fc989b4 0x3fc98a1c 0x00000000 0x00000000 0x00000001 0x00000000 0x00000000
+3fcb2000: 0x00000000 0x42004f48 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2020: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2040: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2060: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2080: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb20a0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb20c0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00001e00 0x00000000 0x00000000
+3fcb20e0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2100: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2120: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2140: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2160: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2180: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb21a0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb21c0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+
+
+
+ELF file SHA256: 43f0d2ea3
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403806ec
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Oct 18 2024 17:31:12[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3c070020 size=1acf8h (109816) map[0m
+[0;32mI (110) esp_image: segment 1: paddr=0002ad20 vaddr=3fc92e00 size=025f8h (  9720) load[0m
+[0;32mI (112) esp_image: segment 2: paddr=0002d320 vaddr=40380000 size=02cf8h ( 11512) load[0m
+[0;32mI (118) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=61800h (399360) map[0m
+[0;32mI (187) esp_image: segment 4: paddr=00091828 vaddr=40382cf8 size=0ff28h ( 65320) load[0m
+[0;32mI (205) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Unicore app[0m
+D (217) cpu_start: Pro cpu up[0m
+D (225) clk: RTC_SLOW_CLK calibration value: 3601638[0m
+[0;32mI (230) cpu_start: Pro cpu start user code[0m
+[0;32mI (230) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (230) cpu_start: Application information:[0m
+[0;32mI (233) cpu_start: Project name:     app-template[0m
+[0;32mI (239) cpu_start: App version:      a74f263-dirty[0m
+[0;32mI (244) cpu_start: Compile time:     Oct 18 2024 19:13:20[0m
+[0;32mI (250) cpu_start: ELF file SHA256:  43f0d2ea3...[0m
+[0;32mI (256) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (261) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (266) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (271) cpu_start: Chip rev:         v0.4[0m
+D (275) memory_layout: Checking 5 reserved memory ranges:[0m
+D (281) memory_layout: Reserved memory range 0x3fc80000 - 0x3fc92e00[0m
+D (287) memory_layout: Reserved memory range 0x3fc92e00 - 0x3fc98160[0m
+D (294) memory_layout: Reserved memory range 0x3fcdf060 - 0x3fce0000[0m
+D (300) memory_layout: Reserved memory range 0x50000000 - 0x50000010[0m
+D (306) memory_layout: Reserved memory range 0x50001fe8 - 0x50002000[0m
+D (313) memory_layout: Building list of available memory regions:[0m
+D (319) memory_layout: Available memory region 0x3fc98160 - 0x3fca0000[0m
+D (326) memory_layout: Available memory region 0x3fca0000 - 0x3fcc0000[0m
+D (332) memory_layout: Available memory region 0x3fcc0000 - 0x3fcdc710[0m
+D (339) memory_layout: Available memory region 0x3fcdc710 - 0x3fcdf060[0m
+D (345) memory_layout: Available memory region 0x50000010 - 0x50001fe8[0m
+[0;32mI (352) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (359) heap_init: New heap initialised at 0x3fc98160[0m
+[0;32mI (364) heap_init: At 3FC98160 len 00027EA0 (159 KiB): RAM[0m
+D (371) heap_init: New heap initialised at 0x3fcc0000[0m
+[0;32mI (376) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (383) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+D (390) heap_init: New heap initialised at 0x50000010[0m
+[0;32mI (395) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+D (401) intr_alloc: Connected src 27 to int 2 (cpu 0)[0m
+D (407) spi_flash: trying chip: issi[0m
+D (410) spi_flash: trying chip: gd[0m
+D (413) spi_flash: trying chip: mxic[0m
+D (417) spi_flash: trying chip: winbond[0m
+D (421) spi_flash: trying chip: boya[0m
+D (424) spi_flash: trying chip: th[0m
+D (428) spi_flash: trying chip: generic[0m
+[0;32mI (432) spi_flash: detected chip: generic[0m
+[0;32mI (436) spi_flash: flash io: dio[0m
+[0;33mW (440) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+D (453) cpu_start: calling init function: 0x4204b77e[0m
+D (459) cpu_start: calling init function: 0x4204b702[0m
+D (464) cpu_start: calling init function: 0x4204b246[0m
+D (469) cpu_start: calling init function: 0x420348ee[0m
+[0;33mW (474) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+D (484) cpu_start: calling init function: 0x40389ba2[0m
+D (489) cpu_start: calling init function: 0x4200002a[0m
+D (495) cpu_start: calling init function: 0x42005886 on core: 0[0m
+D (501) intr_alloc: Connected src 39 to int 3 (cpu 0)[0m
+D (505) cpu_start: calling init function: 0x42001c1a on core: 0[0m
+D (512) cpu_start: calling init function: 0x42003550 on core: 0[0m
+[0;32mI (518) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (524) sleep: Enable automatic switching of GPIO sleep configuration[0m
+D (531) cpu_start: calling init function: 0x42001430 on core: 0[0m
+[0;32mI (538) coexist: coex firmware version: d96c1e51f[0m
+[0;32mI (543) coexist: coexist rom version 9387209[0m
+D (548) intr_alloc: Connected src 50 to int 4 (cpu 0)[0m
+D (553) app_start: Starting scheduler on CPU0[0m
+D (557) intr_alloc: Connected src 37 to int 7 (cpu 0)[0m
+[0;32mI (557) main_task: Started on CPU0[0m
+D (557) heap_init: New heap initialised at 0x3fcdc710[0m
+D (557) intr_alloc: Connected src 33 to int 9 (cpu 0)[0m
+[0;32mI (567) main_task: Calling app_main()[0m
+D (567) intr_alloc: Connected src 29 to int 10 (cpu 0)[0m
+[0;32mI (587) BLE_INIT: BT controller compile version [c23ab4c][0m
+D (587) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (587) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (597) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (607) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (607) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (617) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+[0;32mI (627) BLE_INIT: Bluetooth MAC: 34:b7:da:f6:47:7e[0m
+[0;32mI (627) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+D (637) phy_init: loading PHY init data from application binary[0m
+D (647) nvs: nvs_open_from_partition phy 0[0m
+D (647) nvs: nvs_get cal_version 4[0m
+D (647) nvs: nvs_get_str_or_blob cal_mac[0m
+D (657) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (657) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (667) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (677) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (677) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (687) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (697) nvs: nvs_get_str_or_blob cal_data[0m
+D (697) nvs: nvs_close 1[0m
+D (707) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (707) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (717) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (727) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (727) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (737) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (757) temperature_sensor: range changed, change to index 2[0m
+D (787) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (787) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (787) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (787) nvs: nvs_close 2[0m
+D (787) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (797) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (797) nvs: nvs_get_str_or_blob our_sec_2[0m
+D (807) nvs: nvs_close 3[0m
+D (807) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (817) nvs: nvs_get_str_or_blob our_sec_3[0m
+D (817) nvs: nvs_close 4[0m
+D (817) NIMBLE_NVS: ble_store_config_our_secs restored 1 bonds[0m
+D (827) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (827) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (837) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (837) nvs: nvs_close 5[0m
+D (837) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (847) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (847) nvs: nvs_get_str_or_blob peer_sec_2[0m
+D (857) nvs: nvs_close 6[0m
+D (857) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (867) nvs: nvs_get_str_or_blob peer_sec_3[0m
+D (867) nvs: nvs_close 7[0m
+D (867) NIMBLE_NVS: ble_store_config_peer_secs restored 1 bonds[0m
+D (877) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (877) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (887) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (887) nvs: nvs_close 8[0m
+D (887) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 1[0m
+D (897) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (907) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (907) nvs: nvs_close 9[0m
+D (907) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (917) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (917) nvs: nvs_close 10[0m
+D (917) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (927) nvs: nvs_get_str_or_blob cccd_sec_4[0m
+D (927) nvs: nvs_close 11[0m
+D (937) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (937) nvs: nvs_get_str_or_blob cccd_sec_5[0m
+D (947) nvs: nvs_close 12[0m
+D (947) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (947) nvs: nvs_get_str_or_blob cccd_sec_6[0m
+D (957) nvs: nvs_close 13[0m
+D (957) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (957) nvs: nvs_get_str_or_blob cccd_sec_7[0m
+D (967) nvs: nvs_close 14[0m
+D (967) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (977) nvs: nvs_get_str_or_blob cccd_sec_8[0m
+D (977) nvs: nvs_close 15[0m
+D (977) NIMBLE_NVS: ble_store_config_cccds restored 1 bonds[0m
+D (987) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (987) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (997) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (997) nvs: nvs_close 16[0m
+D (1007) NIMBLE_NVS: Local IRK in RAM is filled up from NVS index = 1[0m
+D (1007) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1017) nvs: nvs_get_str_or_blob local_irk_2[0m
+D (1017) nvs: nvs_close 17[0m
+D (1017) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1027) nvs: nvs_get_str_or_blob local_irk_3[0m
+D (1027) nvs: nvs_close 18[0m
+D (1037) NIMBLE_NVS: ble_store_config_local_irks restored 1 irks[0m
+D (1037) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1047) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (1047) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (1057) nvs: nvs_close 19[0m
+D (1057) NIMBLE_NVS: RPA_REC in RAM is filled up from NVS index = 1[0m
+D (1057) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1067) nvs: nvs_get_str_or_blob rpa_rec_2[0m
+D (1067) nvs: nvs_close 20[0m
+D (1077) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1077) nvs: nvs_get_str_or_blob rpa_rec_3[0m
+D (1087) nvs: nvs_close 21[0m
+D (1087) NIMBLE_NVS: ble_store_config_rpa_recs restored 1 bonds[0m
+[0;32mI (1097) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1097) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1107) NimBLE: Device Address: [0m
+[0;32mI (1107) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (1117) NimBLE: 
+[0m
+[0;32mI (1117) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1117) NimBLE: disc_mode=2[0m
+[0;32mI (1127) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1137) NimBLE: 
+[0m
+Enable/Disable Button Pressed!
+Starting NimBLE stack...
+[0;31mE (1147) BLE_INIT: controller init failed
+[0m
+
+assert failed: ble_svc_gap_init ble_svc_gap.c:333 (rc == 0)
+Core  0 register dump:
+MEPC    : 0x40380700  RA      : 0x4038b03a  SP      : 0x3fcb1de0  GP      : 0x3fc93600  
+TP      : 0x3fc97378  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x0000008c  S1      : 0x00000001  A0      : 0x3fcb1e1c  A1      : 0x3fc94869  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x3fc96000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x3fcb1f2b  
+S4      : 0x3fc94868  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fcb1de0: 0x00000019 0x00000000 0x3c07eaf8 0x40391496 0x3fc94524 0x3c07eaf8 0x3fc94cb8 0x3c0757a8
+3fcb1e00: 0x3fc94534 0x3fcb1e14 0x3fc94538 0x3c0754cc 0x3fc94868 0x00333333 0x00000019 0x65737361
+3fcb1e20: 0x66207472 0x656c6961 0x62203a64 0x735f656c 0x675f6376 0x695f7061 0x2074696e 0x5f656c62
+3fcb1e40: 0x5f637673 0x2e706167 0x33333a63 0x72282033 0x3d3d2063 0x00293020 0x00000000 0x3fcb1ebc
+3fcb1e60: 0x3c076e34 0x00000000 0x3fcac128 0x4038b0cc 0x00000000 0x00000000 0x3fcac128 0x4038b6b6
+3fcb1e80: 0x00000000 0x00000000 0x00000103 0x00000000 0x00000804 0x00000054 0x3fc978b0 0xffffffff
+3fcb1ea0: 0x00000000 0x00000001 0x3fcb9b7c 0x00000000 0x00000000 0x3fcb1f84 0x3fcac128 0x4038b878
+3fcb1ec0: 0x00000000 0x00000000 0x3fc97214 0x4201bdee 0x00000000 0x00000000 0x0000000f 0x4200ca82
+3fcb1ee0: 0x00000000 0x00000000 0x00000000 0x42000000 0x00000001 0x00000002 0x00000000 0x00000000
+3fcb1f00: 0x00000000 0x00000000 0x00000000 0x42009d58 0x00000000 0x00000000 0x00000000 0x42008f8a
+3fcb1f20: 0x00000000 0x00000000 0x00000000 0x420081d6 0x00000000 0x00000000 0x00000000 0x4038c080
+3fcb1f40: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb1f60: 0x00000000 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fcb1f80: 0x00000150 0x3fcb1da0 0x00000000 0x3fc95630 0x3fc95630 0x3fcb1f84 0x3fc95628 0x00000012
+3fcb1fa0: 0x00000000 0x00000000 0x3fcb1f84 0x00000000 0x00000007 0x3fcb1780 0x626d696e 0x0000656c
+3fcb1fc0: 0x00000000 0x00000000 0x3fcb1f70 0x00000007 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb1fe0: 0x3fc9894c 0x3fc989b4 0x3fc98a1c 0x00000000 0x00000000 0x00000001 0x00000000 0x00000000
+3fcb2000: 0x00000000 0x42004f48 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2020: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2040: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2060: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2080: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb20a0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb20c0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000c00 0x00000000 0x00000000
+3fcb20e0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2100: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2120: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2140: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2160: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2180: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb21a0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb21c0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+
+
+
+ELF file SHA256: 43f0d2ea3
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403806ec
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Oct 18 2024 17:31:12[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3c070020 size=1acf8h (109816) map[0m
+[0;32mI (110) esp_image: segment 1: paddr=0002ad20 vaddr=3fc92e00 size=025f8h (  9720) load[0m
+[0;32mI (112) esp_image: segment 2: paddr=0002d320 vaddr=40380000 size=02cf8h ( 11512) load[0m
+[0;32mI (118) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=61800h (399360) map[0m
+[0;32mI (187) esp_image: segment 4: paddr=00091828 vaddr=40382cf8 size=0ff28h ( 65320) load[0m
+[0;32mI (205) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Unicore app[0m
+D (217) cpu_start: Pro cpu up[0m
+D (225) clk: RTC_SLOW_CLK calibration value: 3613786[0m
+[0;32mI (230) cpu_start: Pro cpu start user code[0m
+[0;32mI (230) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (230) cpu_start: Application information:[0m
+[0;32mI (233) cpu_start: Project name:     app-template[0m
+[0;32mI (239) cpu_start: App version:      a74f263-dirty[0m
+[0;32mI (244) cpu_start: Compile time:     Oct 18 2024 19:13:20[0m
+[0;32mI (250) cpu_start: ELF file SHA256:  43f0d2ea3...[0m
+[0;32mI (256) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (261) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (266) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (271) cpu_start: Chip rev:         v0.4[0m
+D (275) memory_layout: Checking 5 reserved memory ranges:[0m
+D (281) memory_layout: Reserved memory range 0x3fc80000 - 0x3fc92e00[0m
+D (287) memory_layout: Reserved memory range 0x3fc92e00 - 0x3fc98160[0m
+D (294) memory_layout: Reserved memory range 0x3fcdf060 - 0x3fce0000[0m
+D (300) memory_layout: Reserved memory range 0x50000000 - 0x50000010[0m
+D (306) memory_layout: Reserved memory range 0x50001fe8 - 0x50002000[0m
+D (313) memory_layout: Building list of available memory regions:[0m
+D (319) memory_layout: Available memory region 0x3fc98160 - 0x3fca0000[0m
+D (326) memory_layout: Available memory region 0x3fca0000 - 0x3fcc0000[0m
+D (332) memory_layout: Available memory region 0x3fcc0000 - 0x3fcdc710[0m
+D (339) memory_layout: Available memory region 0x3fcdc710 - 0x3fcdf060[0m
+D (345) memory_layout: Available memory region 0x50000010 - 0x50001fe8[0m
+[0;32mI (352) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (359) heap_init: New heap initialised at 0x3fc98160[0m
+[0;32mI (364) heap_init: At 3FC98160 len 00027EA0 (159 KiB): RAM[0m
+D (371) heap_init: New heap initialised at 0x3fcc0000[0m
+[0;32mI (376) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (383) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+D (390) heap_init: New heap initialised at 0x50000010[0m
+[0;32mI (395) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+D (401) intr_alloc: Connected src 27 to int 2 (cpu 0)[0m
+D (407) spi_flash: trying chip: issi[0m
+D (410) spi_flash: trying chip: gd[0m
+D (413) spi_flash: trying chip: mxic[0m
+D (417) spi_flash: trying chip: winbond[0m
+D (421) spi_flash: trying chip: boya[0m
+D (424) spi_flash: trying chip: th[0m
+D (428) spi_flash: trying chip: generic[0m
+[0;32mI (432) spi_flash: detected chip: generic[0m
+[0;32mI (436) spi_flash: flash io: dio[0m
+[0;33mW (440) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+D (453) cpu_start: calling init function: 0x4204b77e[0m
+D (459) cpu_start: calling init function: 0x4204b702[0m
+D (464) cpu_start: calling init function: 0x4204b246[0m
+D (469) cpu_start: calling init function: 0x420348ee[0m
+[0;33mW (474) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+D (484) cpu_start: calling init function: 0x40389ba2[0m
+D (489) cpu_start: calling init function: 0x4200002a[0m
+D (495) cpu_start: calling init function: 0x42005886 on core: 0[0m
+D (501) intr_alloc: Connected src 39 to int 3 (cpu 0)[0m
+D (505) cpu_start: calling init function: 0x42001c1a on core: 0[0m
+D (512) cpu_start: calling init function: 0x42003550 on core: 0[0m
+[0;32mI (518) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (524) sleep: Enable automatic switching of GPIO sleep configuration[0m
+D (531) cpu_start: calling init function: 0x42001430 on core: 0[0m
+[0;32mI (538) coexist: coex firmware version: d96c1e51f[0m
+[0;32mI (543) coexist: coexist rom version 9387209[0m
+D (548) intr_alloc: Connected src 50 to int 4 (cpu 0)[0m
+D (553) app_start: Starting scheduler on CPU0[0m
+D (557) intr_alloc: Connected src 37 to int 7 (cpu 0)[0m
+[0;32mI (557) main_task: Started on CPU0[0m
+D (557) heap_init: New heap initialised at 0x3fcdc710[0m
+D (557) intr_alloc: Connected src 33 to int 9 (cpu 0)[0m
+[0;32mI (567) main_task: Calling app_main()[0m
+D (567) intr_alloc: Connected src 29 to int 10 (cpu 0)[0m
+[0;32mI (587) BLE_INIT: BT controller compile version [c23ab4c][0m
+D (587) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (587) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (597) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (607) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (607) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (617) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+[0;32mI (627) BLE_INIT: Bluetooth MAC: 34:b7:da:f6:47:7e[0m
+[0;32mI (627) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+D (637) phy_init: loading PHY init data from application binary[0m
+D (647) nvs: nvs_open_from_partition phy 0[0m
+D (647) nvs: nvs_get cal_version 4[0m
+D (647) nvs: nvs_get_str_or_blob cal_mac[0m
+D (657) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (657) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (667) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (677) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (677) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (687) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (697) nvs: nvs_get_str_or_blob cal_data[0m
+D (697) nvs: nvs_close 1[0m
+D (707) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (707) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (717) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (727) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (727) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (737) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (757) temperature_sensor: range changed, change to index 2[0m
+D (777) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (787) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (787) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (787) nvs: nvs_close 2[0m
+D (787) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (797) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (797) nvs: nvs_get_str_or_blob our_sec_2[0m
+D (797) nvs: nvs_close 3[0m
+D (807) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (807) nvs: nvs_get_str_or_blob our_sec_3[0m
+D (817) nvs: nvs_close 4[0m
+D (817) NIMBLE_NVS: ble_store_config_our_secs restored 1 bonds[0m
+D (817) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (827) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (827) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (837) nvs: nvs_close 5[0m
+D (837) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (847) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (847) nvs: nvs_get_str_or_blob peer_sec_2[0m
+D (857) nvs: nvs_close 6[0m
+D (857) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (857) nvs: nvs_get_str_or_blob peer_sec_3[0m
+D (867) nvs: nvs_close 7[0m
+D (867) NIMBLE_NVS: ble_store_config_peer_secs restored 1 bonds[0m
+D (877) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (877) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (887) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (887) nvs: nvs_close 8[0m
+D (887) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 1[0m
+D (897) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (897) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (907) nvs: nvs_close 9[0m
+D (907) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (907) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (917) nvs: nvs_close 10[0m
+D (917) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (927) nvs: nvs_get_str_or_blob cccd_sec_4[0m
+D (927) nvs: nvs_close 11[0m
+D (927) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (937) nvs: nvs_get_str_or_blob cccd_sec_5[0m
+D (937) nvs: nvs_close 12[0m
+D (947) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (947) nvs: nvs_get_str_or_blob cccd_sec_6[0m
+D (947) nvs: nvs_close 13[0m
+D (957) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (957) nvs: nvs_get_str_or_blob cccd_sec_7[0m
+D (967) nvs: nvs_close 14[0m
+D (967) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (967) nvs: nvs_get_str_or_blob cccd_sec_8[0m
+D (977) nvs: nvs_close 15[0m
+D (977) NIMBLE_NVS: ble_store_config_cccds restored 1 bonds[0m
+D (987) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (987) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (997) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (997) nvs: nvs_close 16[0m
+D (997) NIMBLE_NVS: Local IRK in RAM is filled up from NVS index = 1[0m
+D (1007) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1007) nvs: nvs_get_str_or_blob local_irk_2[0m
+D (1017) nvs: nvs_close 17[0m
+D (1017) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1027) nvs: nvs_get_str_or_blob local_irk_3[0m
+D (1027) nvs: nvs_close 18[0m
+D (1027) NIMBLE_NVS: ble_store_config_local_irks restored 1 irks[0m
+D (1037) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1037) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (1047) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (1047) nvs: nvs_close 19[0m
+D (1057) NIMBLE_NVS: RPA_REC in RAM is filled up from NVS index = 1[0m
+D (1057) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1067) nvs: nvs_get_str_or_blob rpa_rec_2[0m
+D (1067) nvs: nvs_close 20[0m
+D (1067) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1077) nvs: nvs_get_str_or_blob rpa_rec_3[0m
+D (1077) nvs: nvs_close 21[0m
+D (1087) NIMBLE_NVS: ble_store_config_rpa_recs restored 1 bonds[0m
+[0;32mI (1087) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1097) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1107) NimBLE: Device Address: [0m
+[0;32mI (1107) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (1107) NimBLE: 
+[0m
+[0;32mI (1117) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1117) NimBLE: disc_mode=2[0m
+[0;32mI (1117) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1127) NimBLE: 
+[0m
+Enable/Disable Button Pressed!
+Starting NimBLE stack...
+[0;31mE (1137) BLE_INIT: controller init failed
+[0m
+
+assert failed: ble_svc_gap_init ble_svc_gap.c:333 (rc == 0)
+Core  0 register dump:
+MEPC    : 0x40380700  RA      : 0x4038b03a  SP      : 0x3fcb1de0  GP      : 0x3fc93600  
+TP      : 0x3fc97378  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x0000008c  S1      : 0x00000001  A0      : 0x3fcb1e1c  A1      : 0x3fc94869  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x3fc96000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x3fcb1f2b  
+S4      : 0x3fc94868  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fcb1de0: 0x00000019 0x00000000 0x3c07eaf8 0x40391496 0x3fc94524 0x3c07eaf8 0x3fc94cb8 0x3c0757a8
+3fcb1e00: 0x3fc94534 0x3fcb1e14 0x3fc94538 0x3c0754cc 0x3fc94868 0x00333333 0x00000019 0x65737361
+3fcb1e20: 0x66207472 0x656c6961 0x62203a64 0x735f656c 0x675f6376 0x695f7061 0x2074696e 0x5f656c62
+3fcb1e40: 0x5f637673 0x2e706167 0x33333a63 0x72282033 0x3d3d2063 0x00293020 0x00000000 0x3fcb1ebc
+3fcb1e60: 0x3c076e34 0x00000000 0x3fcac128 0x4038b0cc 0x00000000 0x00000000 0x3fcac128 0x4038b6b6
+3fcb1e80: 0x00000000 0x00000000 0x00000103 0x00000000 0x00000804 0x00000054 0x3fc978b0 0xffffffff
+3fcb1ea0: 0x00000000 0x00000001 0x3fcb9b7c 0x00000000 0x00000000 0x3fcb1f84 0x3fcac128 0x4038b878
+3fcb1ec0: 0x00000000 0x00000000 0x3fc97214 0x4201bdee 0x00000000 0x00000000 0x0000000f 0x4200ca82
+3fcb1ee0: 0x00000000 0x00000000 0x00000000 0x42000000 0x00000001 0x00000002 0x00000000 0x00000000
+3fcb1f00: 0x00000000 0x00000000 0x00000000 0x42009d58 0x00000000 0x00000000 0x00000000 0x42008f8a
+3fcb1f20: 0x00000000 0x00000000 0x00000000 0x420081d6 0x00000000 0x00000000 0x00000000 0x4038c080
+3fcb1f40: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb1f60: 0x00000000 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fcb1f80: 0x00000150 0x3fcb18e0 0x00000000 0x3fc95630 0x3fc95630 0x3fcb1f84 0x3fc95628 0x00000012
+3fcb1fa0: 0x00000000 0x00000000 0x3fcb1f84 0x00000000 0x00000007 0x3fcb1780 0x626d696e 0x0000656c
+3fcb1fc0: 0x00000000 0x00000000 0x3fcb1f70 0x00000007 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb1fe0: 0x3fc9894c 0x3fc989b4 0x3fc98a1c 0x00000000 0x00000000 0x00000001 0x00000000 0x00000000
+3fcb2000: 0x00000000 0x42004f48 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2020: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2040: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2060: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2080: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb20a0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb20c0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000c00 0x00000000 0x00000000
+3fcb20e0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2100: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2120: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2140: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2160: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2180: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb21a0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb21c0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+
+
+
+ELF file SHA256: 43f0d2ea3
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403806ec
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Oct 18 2024 17:31:12[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3c070020 size=1acf8h (109816) map[0m
+[0;32mI (110) esp_image: segment 1: paddr=0002ad20 vaddr=3fc92e00 size=025f8h (  9720) load[0m
+[0;32mI (112) esp_image: segment 2: paddr=0002d320 vaddr=40380000 size=02cf8h ( 11512) load[0m
+[0;32mI (118) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=61800h (399360) map[0m
+[0;32mI (187) esp_image: segment 4: paddr=00091828 vaddr=40382cf8 size=0ff28h ( 65320) load[0m
+[0;32mI (205) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Unicore app[0m
+D (217) cpu_start: Pro cpu up[0m
+D (225) clk: RTC_SLOW_CLK calibration value: 3613146[0m
+[0;32mI (230) cpu_start: Pro cpu start user code[0m
+[0;32mI (230) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (230) cpu_start: Application information:[0m
+[0;32mI (233) cpu_start: Project name:     app-template[0m
+[0;32mI (239) cpu_start: App version:      a74f263-dirty[0m
+[0;32mI (244) cpu_start: Compile time:     Oct 18 2024 19:13:20[0m
+[0;32mI (250) cpu_start: ELF file SHA256:  43f0d2ea3...[0m
+[0;32mI (256) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (261) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (266) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (271) cpu_start: Chip rev:         v0.4[0m
+D (275) memory_layout: Checking 5 reserved memory ranges:[0m
+D (281) memory_layout: Reserved memory range 0x3fc80000 - 0x3fc92e00[0m
+D (287) memory_layout: Reserved memory range 0x3fc92e00 - 0x3fc98160[0m
+D (294) memory_layout: Reserved memory range 0x3fcdf060 - 0x3fce0000[0m
+D (300) memory_layout: Reserved memory range 0x50000000 - 0x50000010[0m
+D (306) memory_layout: Reserved memory range 0x50001fe8 - 0x50002000[0m
+D (313) memory_layout: Building list of available memory regions:[0m
+D (319) memory_layout: Available memory region 0x3fc98160 - 0x3fca0000[0m
+D (326) memory_layout: Available memory region 0x3fca0000 - 0x3fcc0000[0m
+D (332) memory_layout: Available memory region 0x3fcc0000 - 0x3fcdc710[0m
+D (339) memory_layout: Available memory region 0x3fcdc710 - 0x3fcdf060[0m
+D (345) memory_layout: Available memory region 0x50000010 - 0x50001fe8[0m
+[0;32mI (352) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (359) heap_init: New heap initialised at 0x3fc98160[0m
+[0;32mI (364) heap_init: At 3FC98160 len 00027EA0 (159 KiB): RAM[0m
+D (371) heap_init: New heap initialised at 0x3fcc0000[0m
+[0;32mI (376) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (383) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+D (390) heap_init: New heap initialised at 0x50000010[0m
+[0;32mI (395) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+D (401) intr_alloc: Connected src 27 to int 2 (cpu 0)[0m
+D (407) spi_flash: trying chip: issi[0m
+D (410) spi_flash: trying chip: gd[0m
+D (413) spi_flash: trying chip: mxic[0m
+D (417) spi_flash: trying chip: winbond[0m
+D (421) spi_flash: trying chip: boya[0m
+D (424) spi_flash: trying chip: th[0m
+D (428) spi_flash: trying chip: generic[0m
+[0;32mI (432) spi_flash: detected chip: generic[0m
+[0;32mI (436) spi_flash: flash io: dio[0m
+[0;33mW (440) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+D (453) cpu_start: calling init function: 0x4204b77e[0m
+D (459) cpu_start: calling init function: 0x4204b702[0m
+D (464) cpu_start: calling init function: 0x4204b246[0m
+D (469) cpu_start: calling init function: 0x420348ee[0m
+[0;33mW (474) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+D (484) cpu_start: calling init function: 0x40389ba2[0m
+D (489) cpu_start: calling init function: 0x4200002a[0m
+D (495) cpu_start: calling init function: 0x42005886 on core: 0[0m
+D (501) intr_alloc: Connected src 39 to int 3 (cpu 0)[0m
+D (505) cpu_start: calling init function: 0x42001c1a on core: 0[0m
+D (512) cpu_start: calling init function: 0x42003550 on core: 0[0m
+[0;32mI (518) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (524) sleep: Enable automatic switching of GPIO sleep configuration[0m
+D (531) cpu_start: calling init function: 0x42001430 on core: 0[0m
+[0;32mI (538) coexist: coex firmware version: d96c1e51f[0m
+[0;32mI (543) coexist: coexist rom version 9387209[0m
+D (548) intr_alloc: Connected src 50 to int 4 (cpu 0)[0m
+D (553) app_start: Starting scheduler on CPU0[0m
+D (557) intr_alloc: Connected src 37 to int 7 (cpu 0)[0m
+[0;32mI (557) main_task: Started on CPU0[0m
+D (557) heap_init: New heap initialised at 0x3fcdc710[0m
+D (557) intr_alloc: Connected src 33 to int 9 (cpu 0)[0m
+[0;32mI (567) main_task: Calling app_main()[0m
+D (567) intr_alloc: Connected src 29 to int 10 (cpu 0)[0m
+[0;32mI (587) BLE_INIT: BT controller compile version [c23ab4c][0m
+D (587) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (587) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (597) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (607) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (607) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (617) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+[0;32mI (627) BLE_INIT: Bluetooth MAC: 34:b7:da:f6:47:7e[0m
+[0;32mI (627) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+D (637) phy_init: loading PHY init data from application binary[0m
+D (647) nvs: nvs_open_from_partition phy 0[0m
+D (647) nvs: nvs_get cal_version 4[0m
+D (647) nvs: nvs_get_str_or_blob cal_mac[0m
+D (657) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (657) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (667) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (677) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (677) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (687) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (697) nvs: nvs_get_str_or_blob cal_data[0m
+D (697) nvs: nvs_close 1[0m
+D (707) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (707) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (717) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (727) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (727) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (737) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (757) temperature_sensor: range changed, change to index 2[0m
+D (787) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (787) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (787) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (787) nvs: nvs_close 2[0m
+D (787) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (797) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (797) nvs: nvs_get_str_or_blob our_sec_2[0m
+D (807) nvs: nvs_close 3[0m
+D (807) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (807) nvs: nvs_get_str_or_blob our_sec_3[0m
+D (817) nvs: nvs_close 4[0m
+D (817) NIMBLE_NVS: ble_store_config_our_secs restored 1 bonds[0m
+D (827) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (827) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (827) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (837) nvs: nvs_close 5[0m
+D (837) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (847) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (847) nvs: nvs_get_str_or_blob peer_sec_2[0m
+D (857) nvs: nvs_close 6[0m
+D (857) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (857) nvs: nvs_get_str_or_blob peer_sec_3[0m
+D (867) nvs: nvs_close 7[0m
+D (867) NIMBLE_NVS: ble_store_config_peer_secs restored 1 bonds[0m
+D (877) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (877) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (887) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (887) nvs: nvs_close 8[0m
+D (887) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 1[0m
+D (897) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (897) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (907) nvs: nvs_close 9[0m
+D (907) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (917) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (917) nvs: nvs_close 10[0m
+D (917) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (927) nvs: nvs_get_str_or_blob cccd_sec_4[0m
+D (927) nvs: nvs_close 11[0m
+D (927) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (937) nvs: nvs_get_str_or_blob cccd_sec_5[0m
+D (937) nvs: nvs_close 12[0m
+D (947) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (947) nvs: nvs_get_str_or_blob cccd_sec_6[0m
+D (957) nvs: nvs_close 13[0m
+D (957) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (957) nvs: nvs_get_str_or_blob cccd_sec_7[0m
+D (967) nvs: nvs_close 14[0m
+D (967) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (967) nvs: nvs_get_str_or_blob cccd_sec_8[0m
+D (977) nvs: nvs_close 15[0m
+D (977) NIMBLE_NVS: ble_store_config_cccds restored 1 bonds[0m
+D (987) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (987) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (997) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (997) nvs: nvs_close 16[0m
+D (997) NIMBLE_NVS: Local IRK in RAM is filled up from NVS index = 1[0m
+D (1007) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1007) nvs: nvs_get_str_or_blob local_irk_2[0m
+D (1017) nvs: nvs_close 17[0m
+D (1017) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1027) nvs: nvs_get_str_or_blob local_irk_3[0m
+D (1027) nvs: nvs_close 18[0m
+D (1027) NIMBLE_NVS: ble_store_config_local_irks restored 1 irks[0m
+D (1037) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1047) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (1047) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (1047) nvs: nvs_close 19[0m
+D (1057) NIMBLE_NVS: RPA_REC in RAM is filled up from NVS index = 1[0m
+D (1057) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1067) nvs: nvs_get_str_or_blob rpa_rec_2[0m
+D (1067) nvs: nvs_close 20[0m
+D (1067) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1077) nvs: nvs_get_str_or_blob rpa_rec_3[0m
+D (1077) nvs: nvs_close 21[0m
+D (1087) NIMBLE_NVS: ble_store_config_rpa_recs restored 1 bonds[0m
+[0;32mI (1097) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1097) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1107) NimBLE: Device Address: [0m
+[0;32mI (1107) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (1107) NimBLE: 
+[0m
+[0;32mI (1117) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1117) NimBLE: disc_mode=2[0m
+[0;32mI (1127) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1137) NimBLE: 
+[0m
+Enable/Disable Button Pressed!
+Starting NimBLE stack...
+[0;31mE (1137) BLE_INIT: controller init failed
+[0m
+
+assert failed: ble_svc_gap_init ble_svc_gap.c:333 (rc == 0)
+Core  0 register dump:
+MEPC    : 0x40380700  RA      : 0x4038b03a  SP      : 0x3fcb1de0  GP      : 0x3fc93600  
+TP      : 0x3fc97378  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x0000008c  S1      : 0x00000001  A0      : 0x3fcb1e1c  A1      : 0x3fc94869  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x3fc96000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x3fcb1f2b  
+S4      : 0x3fc94868  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fcb1de0: 0x00000019 0x00000000 0x3c07eaf8 0x40391496 0x3fc94524 0x3c07eaf8 0x3fc94cb8 0x3c0757a8
+3fcb1e00: 0x3fc94534 0x3fcb1e14 0x3fc94538 0x3c0754cc 0x3fc94868 0x00333333 0x00000019 0x65737361
+3fcb1e20: 0x66207472 0x656c6961 0x62203a64 0x735f656c 0x675f6376 0x695f7061 0x2074696e 0x5f656c62
+3fcb1e40: 0x5f637673 0x2e706167 0x33333a63 0x72282033 0x3d3d2063 0x00293020 0x00000000 0x3fcb1ebc
+3fcb1e60: 0x3c076e34 0x00000000 0x3fcac128 0x4038b0cc 0x00000000 0x00000000 0x3fcac128 0x4038b6b6
+3fcb1e80: 0x00000000 0x00000000 0x00000103 0x00000000 0x00000804 0x00000054 0x3fc978b0 0xffffffff
+3fcb1ea0: 0x00000000 0x00000001 0x3fcb9b7c 0x00000000 0x00000000 0x3fcb1f84 0x3fcac128 0x4038b878
+3fcb1ec0: 0x00000000 0x00000000 0x3fc97214 0x4201bdee 0x00000000 0x00000000 0x0000000f 0x4200ca82
+3fcb1ee0: 0x00000000 0x00000000 0x00000000 0x42000000 0x00000001 0x00000002 0x00000000 0x00000000
+3fcb1f00: 0x00000000 0x00000000 0x00000000 0x42009d58 0x00000000 0x00000000 0x00000000 0x42008f8a
+3fcb1f20: 0x00000000 0x00000000 0x00000000 0x420081d6 0x00000000 0x00000000 0x00000000 0x4038c080
+3fcb1f40: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb1f60: 0x00000000 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fcb1f80: 0x00000150 0x3fcb18e0 0x00000000 0x3fc95630 0x3fc95630 0x3fcb1f84 0x3fc95628 0x00000012
+3fcb1fa0: 0x00000000 0x00000000 0x3fcb1f84 0x00000000 0x00000007 0x3fcb1780 0x626d696e 0x0000656c
+3fcb1fc0: 0x00000000 0x00000000 0x3fcb1f70 0x00000007 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb1fe0: 0x3fc9894c 0x3fc989b4 0x3fc98a1c 0x00000000 0x00000000 0x00000001 0x00000000 0x00000000
+3fcb2000: 0x00000000 0x42004f48 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2020: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2040: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2060: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2080: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb20a0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb20c0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000c00 0x00000000 0x00000000
+3fcb20e0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2100: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2120: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2140: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2160: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2180: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb21a0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb21c0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+
+
+
+ELF file SHA256: 43f0d2ea3
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403806ec
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Oct 18 2024 17:31:12[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3c070020 size=1acf8h (109816) map[0m
+[0;32mI (110) esp_image: segment 1: paddr=0002ad20 vaddr=3fc92e00 size=025f8h (  9720) load[0m
+[0;32mI (112) esp_image: segment 2: paddr=0002d320 vaddr=40380000 size=02cf8h ( 11512) load[0m
+[0;32mI (118) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=61800h (399360) map[0m
+[0;32mI (187) esp_image: segment 4: paddr=00091828 vaddr=40382cf8 size=0ff28h ( 65320) load[0m
+[0;32mI (205) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Unicore app[0m
+D (217) cpu_start: Pro cpu up[0m
+D (225) clk: RTC_SLOW_CLK calibration value: 3616230[0m
+[0;32mI (230) cpu_start: Pro cpu start user code[0m
+[0;32mI (230) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (230) cpu_start: Application information:[0m
+[0;32mI (233) cpu_start: Project name:     app-template[0m
+[0;32mI (239) cpu_start: App version:      a74f263-dirty[0m
+[0;32mI (244) cpu_start: Compile time:     Oct 18 2024 19:13:20[0m
+[0;32mI (250) cpu_start: ELF file SHA256:  43f0d2ea3...[0m
+[0;32mI (256) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (261) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (266) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (271) cpu_start: Chip rev:         v0.4[0m
+D (275) memory_layout: Checking 5 reserved memory ranges:[0m
+D (281) memory_layout: Reserved memory range 0x3fc80000 - 0x3fc92e00[0m
+D (287) memory_layout: Reserved memory range 0x3fc92e00 - 0x3fc98160[0m
+D (294) memory_layout: Reserved memory range 0x3fcdf060 - 0x3fce0000[0m
+D (300) memory_layout: Reserved memory range 0x50000000 - 0x50000010[0m
+D (306) memory_layout: Reserved memory range 0x50001fe8 - 0x50002000[0m
+D (313) memory_layout: Building list of available memory regions:[0m
+D (319) memory_layout: Available memory region 0x3fc98160 - 0x3fca0000[0m
+D (326) memory_layout: Available memory region 0x3fca0000 - 0x3fcc0000[0m
+D (332) memory_layout: Available memory region 0x3fcc0000 - 0x3fcdc710[0m
+D (339) memory_layout: Available memory region 0x3fcdc710 - 0x3fcdf060[0m
+D (345) memory_layout: Available memory region 0x50000010 - 0x50001fe8[0m
+[0;32mI (352) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (359) heap_init: New heap initialised at 0x3fc98160[0m
+[0;32mI (364) heap_init: At 3FC98160 len 00027EA0 (159 KiB): RAM[0m
+D (371) heap_init: New heap initialised at 0x3fcc0000[0m
+[0;32mI (376) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (383) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+D (390) heap_init: New heap initialised at 0x50000010[0m
+[0;32mI (395) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+D (401) intr_alloc: Connected src 27 to int 2 (cpu 0)[0m
+D (407) spi_flash: trying chip: issi[0m
+D (410) spi_flash: trying chip: gd[0m
+D (413) spi_flash: trying chip: mxic[0m
+D (417) spi_flash: trying chip: winbond[0m
+D (421) spi_flash: trying chip: boya[0m
+D (424) spi_flash: trying chip: th[0m
+D (428) spi_flash: trying chip: generic[0m
+[0;32mI (432) spi_flash: detected chip: generic[0m
+[0;32mI (436) spi_flash: flash io: dio[0m
+[0;33mW (440) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+D (453) cpu_start: calling init function: 0x4204b77e[0m
+D (459) cpu_start: calling init function: 0x4204b702[0m
+D (464) cpu_start: calling init function: 0x4204b246[0m
+D (469) cpu_start: calling init function: 0x420348ee[0m
+[0;33mW (474) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+D (484) cpu_start: calling init function: 0x40389ba2[0m
+D (489) cpu_start: calling init function: 0x4200002a[0m
+D (495) cpu_start: calling init function: 0x42005886 on core: 0[0m
+D (501) intr_alloc: Connected src 39 to int 3 (cpu 0)[0m
+D (505) cpu_start: calling init function: 0x42001c1a on core: 0[0m
+D (512) cpu_start: calling init function: 0x42003550 on core: 0[0m
+[0;32mI (518) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (524) sleep: Enable automatic switching of GPIO sleep configuration[0m
+D (531) cpu_start: calling init function: 0x42001430 on core: 0[0m
+[0;32mI (538) coexist: coex firmware version: d96c1e51f[0m
+[0;32mI (543) coexist: coexist rom version 9387209[0m
+D (548) intr_alloc: Connected src 50 to int 4 (cpu 0)[0m
+D (553) app_start: Starting scheduler on CPU0[0m
+D (557) intr_alloc: Connected src 37 to int 7 (cpu 0)[0m
+[0;32mI (557) main_task: Started on CPU0[0m
+D (557) heap_init: New heap initialised at 0x3fcdc710[0m
+D (557) intr_alloc: Connected src 33 to int 9 (cpu 0)[0m
+[0;32mI (567) main_task: Calling app_main()[0m
+D (567) intr_alloc: Connected src 29 to int 10 (cpu 0)[0m
+[0;32mI (587) BLE_INIT: BT controller compile version [c23ab4c][0m
+D (587) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (587) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (597) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (607) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (607) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (617) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+[0;32mI (627) BLE_INIT: Bluetooth MAC: 34:b7:da:f6:47:7e[0m
+[0;32mI (627) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+D (637) phy_init: loading PHY init data from application binary[0m
+D (647) nvs: nvs_open_from_partition phy 0[0m
+D (647) nvs: nvs_get cal_version 4[0m
+D (647) nvs: nvs_get_str_or_blob cal_mac[0m
+D (657) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (657) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (667) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (677) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (677) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (687) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (697) nvs: nvs_get_str_or_blob cal_data[0m
+D (697) nvs: nvs_close 1[0m
+D (707) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (707) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (717) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (727) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (727) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (737) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (757) temperature_sensor: range changed, change to index 2[0m
+D (787) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (787) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (787) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (787) nvs: nvs_close 2[0m
+D (787) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (797) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (797) nvs: nvs_get_str_or_blob our_sec_2[0m
+D (807) nvs: nvs_close 3[0m
+D (807) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (807) nvs: nvs_get_str_or_blob our_sec_3[0m
+D (817) nvs: nvs_close 4[0m
+D (817) NIMBLE_NVS: ble_store_config_our_secs restored 1 bonds[0m
+D (827) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (827) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (837) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (837) nvs: nvs_close 5[0m
+D (837) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (847) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (847) nvs: nvs_get_str_or_blob peer_sec_2[0m
+D (857) nvs: nvs_close 6[0m
+D (857) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (867) nvs: nvs_get_str_or_blob peer_sec_3[0m
+D (867) nvs: nvs_close 7[0m
+D (867) NIMBLE_NVS: ble_store_config_peer_secs restored 1 bonds[0m
+D (877) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (877) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (887) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (887) nvs: nvs_close 8[0m
+D (887) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 1[0m
+D (897) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (907) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (907) nvs: nvs_close 9[0m
+D (907) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (917) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (917) nvs: nvs_close 10[0m
+D (917) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (927) nvs: nvs_get_str_or_blob cccd_sec_4[0m
+D (927) nvs: nvs_close 11[0m
+D (937) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (937) nvs: nvs_get_str_or_blob cccd_sec_5[0m
+D (947) nvs: nvs_close 12[0m
+D (947) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (947) nvs: nvs_get_str_or_blob cccd_sec_6[0m
+D (957) nvs: nvs_close 13[0m
+D (957) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (957) nvs: nvs_get_str_or_blob cccd_sec_7[0m
+D (967) nvs: nvs_close 14[0m
+D (967) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (977) nvs: nvs_get_str_or_blob cccd_sec_8[0m
+D (977) nvs: nvs_close 15[0m
+D (977) NIMBLE_NVS: ble_store_config_cccds restored 1 bonds[0m
+D (987) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (987) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (997) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (997) nvs: nvs_close 16[0m
+D (1007) NIMBLE_NVS: Local IRK in RAM is filled up from NVS index = 1[0m
+D (1007) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1017) nvs: nvs_get_str_or_blob local_irk_2[0m
+D (1017) nvs: nvs_close 17[0m
+D (1017) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1027) nvs: nvs_get_str_or_blob local_irk_3[0m
+D (1027) nvs: nvs_close 18[0m
+D (1037) NIMBLE_NVS: ble_store_config_local_irks restored 1 irks[0m
+D (1037) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1047) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (1047) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (1057) nvs: nvs_close 19[0m
+D (1057) NIMBLE_NVS: RPA_REC in RAM is filled up from NVS index = 1[0m
+D (1057) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1067) nvs: nvs_get_str_or_blob rpa_rec_2[0m
+D (1067) nvs: nvs_close 20[0m
+D (1077) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1077) nvs: nvs_get_str_or_blob rpa_rec_3[0m
+D (1087) nvs: nvs_close 21[0m
+D (1087) NIMBLE_NVS: ble_store_config_rpa_recs restored 1 bonds[0m
+[0;32mI (1097) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1097) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1107) NimBLE: Device Address: [0m
+[0;32mI (1107) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (1117) NimBLE: 
+[0m
+[0;32mI (1117) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1117) NimBLE: disc_mode=2[0m
+[0;32mI (1127) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1137) NimBLE: 
+[0m
+[0;32mI (1137) main_task: Returned from app_main()[0m
+Temperature: 30.79
+jerk = 0.00 
+angle = 0.00 
+Enable/Disable Button Pressed!
+Starting NimBLE stack...
+[0;31mE (1237) BLE_INIT: controller init failed
+[0m
+
+assert failed: ble_svc_gap_init ble_svc_gap.c:333 (rc == 0)
+Core  0 register dump:
+MEPC    : 0x40380700  RA      : 0x4038b03a  SP      : 0x3fcb1de0  GP      : 0x3fc93600  
+TP      : 0x3fc97378  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x0000008c  S1      : 0x00000001  A0      : 0x3fcb1e1c  A1      : 0x3fc94869  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x3fc96000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x3fcb1f2b  
+S4      : 0x3fc94868  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fcb1de0: 0x00000019 0x00000000 0x3c07eaf8 0x40391496 0x3fc94524 0x3c07eaf8 0x3fc94cb8 0x3c0757a8
+3fcb1e00: 0x3fc94534 0x3fcb1e14 0x3fc94538 0x3c0754cc 0x3fc94868 0x00333333 0x00000019 0x65737361
+3fcb1e20: 0x66207472 0x656c6961 0x62203a64 0x735f656c 0x675f6376 0x695f7061 0x2074696e 0x5f656c62
+3fcb1e40: 0x5f637673 0x2e706167 0x33333a63 0x72282033 0x3d3d2063 0x00293020 0x00000000 0x3fcb1ebc
+3fcb1e60: 0x3c076e34 0x00000000 0x3fcac128 0x4038b0cc 0x00000000 0x00000000 0x3fcac128 0x4038b6b6
+3fcb1e80: 0x00000000 0x00000000 0x00000103 0x00000000 0x00000804 0x00000054 0x3fc978b0 0xffffffff
+3fcb1ea0: 0x00000000 0x00000001 0x3fc9b140 0x00000000 0x00000000 0x3fcb1f84 0x3fcac128 0x4038b878
+3fcb1ec0: 0x00000000 0x00000000 0x3fc97214 0x4201bdee 0x00000000 0x00000000 0x0000000f 0x4200ca82
+3fcb1ee0: 0x00000000 0x00000000 0x00000000 0x42000000 0x00000001 0x00000002 0x00000000 0x00000000
+3fcb1f00: 0x00000000 0x00000000 0x00000000 0x42009d58 0x00000000 0x00000000 0x00000000 0x42008f8a
+3fcb1f20: 0x00000000 0x00000000 0x00000000 0x420081d6 0x00000000 0x00000000 0x00000000 0x4038c080
+3fcb1f40: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb1f60: 0x00000000 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fcb1f80: 0x00000150 0x3fcb1e90 0x00000044 0x3fc95630 0x3fc95630 0x3fcb1f84 0x3fc95628 0x00000012
+3fcb1fa0: 0x00000000 0x00000000 0x3fcb1f84 0x00000000 0x00000007 0x3fcb1780 0x626d696e 0x0000656c
+3fcb1fc0: 0x00000000 0x00000000 0x3fcb1f70 0x00000007 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb1fe0: 0x3fc9894c 0x3fc989b4 0x3fc98a1c 0x00000000 0x00000000 0x00000001 0x00000000 0x00000000
+3fcb2000: 0x00000000 0x42004f48 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2020: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2040: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2060: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2080: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb20a0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb20c0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00001e00 0x00000000 0x00000000
+3fcb20e0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2100: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2120: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2140: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2160: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2180: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb21a0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb21c0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+
+
+
+ELF file SHA256: 43f0d2ea3
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403806ec
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Oct 18 2024 17:31:12[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3c070020 size=1acf8h (109816) map[0m
+[0;32mI (110) esp_image: segment 1: paddr=0002ad20 vaddr=3fc92e00 size=025f8h (  9720) load[0m
+[0;32mI (112) esp_image: segment 2: paddr=0002d320 vaddr=40380000 size=02cf8h ( 11512) load[0m
+[0;32mI (118) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=61800h (399360) map[0m
+[0;32mI (187) esp_image: segment 4: paddr=00091828 vaddr=40382cf8 size=0ff28h ( 65320) load[0m
+[0;32mI (205) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Unicore app[0m
+D (217) cpu_start: Pro cpu up[0m
+D (225) clk: RTC_SLOW_CLK calibration value: 3614643[0m
+[0;32mI (230) cpu_start: Pro cpu start user code[0m
+[0;32mI (230) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (230) cpu_start: Application information:[0m
+[0;32mI (233) cpu_start: Project name:     app-template[0m
+[0;32mI (239) cpu_start: App version:      a74f263-dirty[0m
+[0;32mI (244) cpu_start: Compile time:     Oct 18 2024 19:13:20[0m
+[0;32mI (250) cpu_start: ELF file SHA256:  43f0d2ea3...[0m
+[0;32mI (256) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (261) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (266) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (271) cpu_start: Chip rev:         v0.4[0m
+D (275) memory_layout: Checking 5 reserved memory ranges:[0m
+D (281) memory_layout: Reserved memory range 0x3fc80000 - 0x3fc92e00[0m
+D (287) memory_layout: Reserved memory range 0x3fc92e00 - 0x3fc98160[0m
+D (294) memory_layout: Reserved memory range 0x3fcdf060 - 0x3fce0000[0m
+D (300) memory_layout: Reserved memory range 0x50000000 - 0x50000010[0m
+D (306) memory_layout: Reserved memory range 0x50001fe8 - 0x50002000[0m
+D (313) memory_layout: Building list of available memory regions:[0m
+D (319) memory_layout: Available memory region 0x3fc98160 - 0x3fca0000[0m
+D (326) memory_layout: Available memory region 0x3fca0000 - 0x3fcc0000[0m
+D (332) memory_layout: Available memory region 0x3fcc0000 - 0x3fcdc710[0m
+D (339) memory_layout: Available memory region 0x3fcdc710 - 0x3fcdf060[0m
+D (345) memory_layout: Available memory region 0x50000010 - 0x50001fe8[0m
+[0;32mI (352) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (359) heap_init: New heap initialised at 0x3fc98160[0m
+[0;32mI (364) heap_init: At 3FC98160 len 00027EA0 (159 KiB): RAM[0m
+D (371) heap_init: New heap initialised at 0x3fcc0000[0m
+[0;32mI (376) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (383) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+D (390) heap_init: New heap initialised at 0x50000010[0m
+[0;32mI (395) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+D (401) intr_alloc: Connected src 27 to int 2 (cpu 0)[0m
+D (407) spi_flash: trying chip: issi[0m
+D (410) spi_flash: trying chip: gd[0m
+D (413) spi_flash: trying chip: mxic[0m
+D (417) spi_flash: trying chip: winbond[0m
+D (421) spi_flash: trying chip: boya[0m
+D (424) spi_flash: trying chip: th[0m
+D (428) spi_flash: trying chip: generic[0m
+[0;32mI (432) spi_flash: detected chip: generic[0m
+[0;32mI (436) spi_flash: flash io: dio[0m
+[0;33mW (440) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+D (453) cpu_start: calling init function: 0x4204b77e[0m
+D (459) cpu_start: calling init function: 0x4204b702[0m
+D (464) cpu_start: calling init function: 0x4204b246[0m
+D (469) cpu_start: calling init function: 0x420348ee[0m
+[0;33mW (474) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+D (484) cpu_start: calling init function: 0x40389ba2[0m
+D (489) cpu_start: calling init function: 0x4200002a[0m
+D (495) cpu_start: calling init function: 0x42005886 on core: 0[0m
+D (501) intr_alloc: Connected src 39 to int 3 (cpu 0)[0m
+D (505) cpu_start: calling init function: 0x42001c1a on core: 0[0m
+D (512) cpu_start: calling init function: 0x42003550 on core: 0[0m
+[0;32mI (518) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (524) sleep: Enable automatic switching of GPIO sleep configuration[0m
+D (531) cpu_start: calling init function: 0x42001430 on core: 0[0m
+[0;32mI (538) coexist: coex firmware version: d96c1e51f[0m
+[0;32mI (543) coexist: coexist rom version 9387209[0m
+D (548) intr_alloc: Connected src 50 to int 4 (cpu 0)[0m
+D (553) app_start: Starting scheduler on CPU0[0m
+D (557) intr_alloc: Connected src 37 to int 7 (cpu 0)[0m
+[0;32mI (557) main_task: Started on CPU0[0m
+D (557) heap_init: New heap initialised at 0x3fcdc710[0m
+D (557) intr_alloc: Connected src 33 to int 9 (cpu 0)[0m
+[0;32mI (567) main_task: Calling app_main()[0m
+D (567) intr_alloc: Connected src 29 to int 10 (cpu 0)[0m
+[0;32mI (587) BLE_INIT: BT controller compile version [c23ab4c][0m
+D (587) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (587) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (597) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (607) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (607) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (617) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+[0;32mI (627) BLE_INIT: Bluetooth MAC: 34:b7:da:f6:47:7e[0m
+[0;32mI (627) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+D (637) phy_init: loading PHY init data from application binary[0m
+D (647) nvs: nvs_open_from_partition phy 0[0m
+D (647) nvs: nvs_get cal_version 4[0m
+D (647) nvs: nvs_get_str_or_blob cal_mac[0m
+D (657) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (657) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (667) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (677) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (677) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (687) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (697) nvs: nvs_get_str_or_blob cal_data[0m
+D (697) nvs: nvs_close 1[0m
+D (707) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (707) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (717) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (727) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (727) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (737) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (757) temperature_sensor: range changed, change to index 2[0m
+D (777) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (787) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (787) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (787) nvs: nvs_close 2[0m
+D (787) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (797) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (797) nvs: nvs_get_str_or_blob our_sec_2[0m
+D (797) nvs: nvs_close 3[0m
+D (807) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (807) nvs: nvs_get_str_or_blob our_sec_3[0m
+D (817) nvs: nvs_close 4[0m
+D (817) NIMBLE_NVS: ble_store_config_our_secs restored 1 bonds[0m
+D (827) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (827) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (827) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (837) nvs: nvs_close 5[0m
+D (837) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (847) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (847) nvs: nvs_get_str_or_blob peer_sec_2[0m
+D (857) nvs: nvs_close 6[0m
+D (857) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (857) nvs: nvs_get_str_or_blob peer_sec_3[0m
+D (867) nvs: nvs_close 7[0m
+D (867) NIMBLE_NVS: ble_store_config_peer_secs restored 1 bonds[0m
+D (877) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (877) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (887) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (887) nvs: nvs_close 8[0m
+D (887) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 1[0m
+D (897) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (897) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (907) nvs: nvs_close 9[0m
+D (907) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (907) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (917) nvs: nvs_close 10[0m
+D (917) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (927) nvs: nvs_get_str_or_blob cccd_sec_4[0m
+D (927) nvs: nvs_close 11[0m
+D (927) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (937) nvs: nvs_get_str_or_blob cccd_sec_5[0m
+D (937) nvs: nvs_close 12[0m
+D (947) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (947) nvs: nvs_get_str_or_blob cccd_sec_6[0m
+D (947) nvs: nvs_close 13[0m
+D (957) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (957) nvs: nvs_get_str_or_blob cccd_sec_7[0m
+D (967) nvs: nvs_close 14[0m
+D (967) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (967) nvs: nvs_get_str_or_blob cccd_sec_8[0m
+D (977) nvs: nvs_close 15[0m
+D (977) NIMBLE_NVS: ble_store_config_cccds restored 1 bonds[0m
+D (987) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (987) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (997) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (997) nvs: nvs_close 16[0m
+D (997) NIMBLE_NVS: Local IRK in RAM is filled up from NVS index = 1[0m
+D (1007) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1007) nvs: nvs_get_str_or_blob local_irk_2[0m
+D (1017) nvs: nvs_close 17[0m
+D (1017) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1027) nvs: nvs_get_str_or_blob local_irk_3[0m
+D (1027) nvs: nvs_close 18[0m
+D (1027) NIMBLE_NVS: ble_store_config_local_irks restored 1 irks[0m
+D (1037) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1037) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (1047) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (1047) nvs: nvs_close 19[0m
+D (1057) NIMBLE_NVS: RPA_REC in RAM is filled up from NVS index = 1[0m
+D (1057) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1067) nvs: nvs_get_str_or_blob rpa_rec_2[0m
+D (1067) nvs: nvs_close 20[0m
+D (1067) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1077) nvs: nvs_get_str_or_blob rpa_rec_3[0m
+D (1077) nvs: nvs_close 21[0m
+D (1087) NIMBLE_NVS: ble_store_config_rpa_recs restored 1 bonds[0m
+[0;32mI (1087) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1097) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1107) NimBLE: Device Address: [0m
+[0;32mI (1107) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (1107) NimBLE: 
+[0m
+[0;32mI (1117) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1117) NimBLE: disc_mode=2[0m
+[0;32mI (1117) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1127) NimBLE: 
+[0m
+[0;32mI (1137) main_task: Returned from app_main()[0m
+Temperature: 30.69
+jerk = 0.00 
+angle = 0.00 
+Enable/Disable Button Pressed!
+Starting NimBLE stack...
+[0;31mE (1237) BLE_INIT: controller init failed
+[0m
+
+assert failed: ble_svc_gap_init ble_svc_gap.c:333 (rc == 0)
+Core  0 register dump:
+MEPC    : 0x40380700  RA      : 0x4038b03a  SP      : 0x3fcb1de0  GP      : 0x3fc93600  
+TP      : 0x3fc97378  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x0000008c  S1      : 0x00000001  A0      : 0x3fcb1e1c  A1      : 0x3fc94869  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x3fc96000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x3fcb1f2b  
+S4      : 0x3fc94868  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fcb1de0: 0x00000019 0x00000000 0x3c07eaf8 0x40391496 0x3fc94524 0x3c07eaf8 0x3fc94cb8 0x3c0757a8
+3fcb1e00: 0x3fc94534 0x3fcb1e14 0x3fc94538 0x3c0754cc 0x3fc94868 0x00333333 0x00000019 0x65737361
+3fcb1e20: 0x66207472 0x656c6961 0x62203a64 0x735f656c 0x675f6376 0x695f7061 0x2074696e 0x5f656c62
+3fcb1e40: 0x5f637673 0x2e706167 0x33333a63 0x72282033 0x3d3d2063 0x00293020 0x00000000 0x3fcb1ebc
+3fcb1e60: 0x3c076e34 0x00000000 0x3fcac128 0x4038b0cc 0x00000000 0x00000000 0x3fcac128 0x4038b6b6
+3fcb1e80: 0x00000000 0x00000000 0x00000103 0x00000000 0x00000804 0x00000054 0x3fc978b0 0xffffffff
+3fcb1ea0: 0x00000000 0x00000001 0x3fc9b140 0x00000000 0x00000000 0x3fcb1f84 0x3fcac128 0x4038b878
+3fcb1ec0: 0x00000000 0x00000000 0x3fc97214 0x4201bdee 0x00000000 0x00000000 0x0000000f 0x4200ca82
+3fcb1ee0: 0x00000000 0x00000000 0x00000000 0x42000000 0x00000001 0x00000002 0x00000000 0x00000000
+3fcb1f00: 0x00000000 0x00000000 0x00000000 0x42009d58 0x00000000 0x00000000 0x00000000 0x42008f8a
+3fcb1f20: 0x00000000 0x00000000 0x00000000 0x420081d6 0x00000000 0x00000000 0x00000000 0x4038c080
+3fcb1f40: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb1f60: 0x00000000 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fcb1f80: 0x00000150 0x3fcb1e90 0x00000044 0x3fc95630 0x3fc95630 0x3fcb1f84 0x3fc95628 0x00000012
+3fcb1fa0: 0x00000000 0x00000000 0x3fcb1f84 0x00000000 0x00000007 0x3fcb1780 0x626d696e 0x0000656c
+3fcb1fc0: 0x00000000 0x00000000 0x3fcb1f70 0x00000007 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb1fe0: 0x3fc9894c 0x3fc989b4 0x3fc98a1c 0x00000000 0x00000000 0x00000001 0x00000000 0x00000000
+3fcb2000: 0x00000000 0x42004f48 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2020: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2040: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2060: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2080: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb20a0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb20c0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00001e00 0x00000000 0x00000000
+3fcb20e0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2100: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2120: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2140: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2160: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2180: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb21a0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb21c0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+
+
+
+ELF file SHA256: 43f0d2ea3
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403806ec
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Oct 18 2024 17:31:12[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3c070020 size=1acf8h (109816) map[0m
+[0;32mI (110) esp_image: segment 1: paddr=0002ad20 vaddr=3fc92e00 size=025f8h (  9720) load[0m
+[0;32mI (112) esp_image: segment 2: paddr=0002d320 vaddr=40380000 size=02cf8h ( 11512) load[0m
+[0;32mI (118) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=61800h (399360) map[0m
+[0;32mI (187) esp_image: segment 4: paddr=00091828 vaddr=40382cf8 size=0ff28h ( 65320) load[0m
+[0;32mI (205) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (217) cpu_start: Unicore app[0m
+D (217) cpu_start: Pro cpu up[0m
+D (225) clk: RTC_SLOW_CLK calibration value: 3614221[0m
+[0;32mI (230) cpu_start: Pro cpu start user code[0m
+[0;32mI (230) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (231) cpu_start: Application information:[0m
+[0;32mI (233) cpu_start: Project name:     app-template[0m
+[0;32mI (239) cpu_start: App version:      a74f263-dirty[0m
+[0;32mI (244) cpu_start: Compile time:     Oct 18 2024 19:13:20[0m
+[0;32mI (250) cpu_start: ELF file SHA256:  43f0d2ea3...[0m
+[0;32mI (256) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (261) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (266) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (271) cpu_start: Chip rev:         v0.4[0m
+D (275) memory_layout: Checking 5 reserved memory ranges:[0m
+D (281) memory_layout: Reserved memory range 0x3fc80000 - 0x3fc92e00[0m
+D (287) memory_layout: Reserved memory range 0x3fc92e00 - 0x3fc98160[0m
+D (294) memory_layout: Reserved memory range 0x3fcdf060 - 0x3fce0000[0m
+D (300) memory_layout: Reserved memory range 0x50000000 - 0x50000010[0m
+D (307) memory_layout: Reserved memory range 0x50001fe8 - 0x50002000[0m
+D (313) memory_layout: Building list of available memory regions:[0m
+D (319) memory_layout: Available memory region 0x3fc98160 - 0x3fca0000[0m
+D (326) memory_layout: Available memory region 0x3fca0000 - 0x3fcc0000[0m
+D (332) memory_layout: Available memory region 0x3fcc0000 - 0x3fcdc710[0m
+D (339) memory_layout: Available memory region 0x3fcdc710 - 0x3fcdf060[0m
+D (345) memory_layout: Available memory region 0x50000010 - 0x50001fe8[0m
+[0;32mI (352) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (359) heap_init: New heap initialised at 0x3fc98160[0m
+[0;32mI (364) heap_init: At 3FC98160 len 00027EA0 (159 KiB): RAM[0m
+D (371) heap_init: New heap initialised at 0x3fcc0000[0m
+[0;32mI (376) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (383) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+D (390) heap_init: New heap initialised at 0x50000010[0m
+[0;32mI (395) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+D (401) intr_alloc: Connected src 27 to int 2 (cpu 0)[0m
+D (407) spi_flash: trying chip: issi[0m
+D (410) spi_flash: trying chip: gd[0m
+D (413) spi_flash: trying chip: mxic[0m
+D (417) spi_flash: trying chip: winbond[0m
+D (421) spi_flash: trying chip: boya[0m
+D (424) spi_flash: trying chip: th[0m
+D (428) spi_flash: trying chip: generic[0m
+[0;32mI (432) spi_flash: detected chip: generic[0m
+[0;32mI (437) spi_flash: flash io: dio[0m
+[0;33mW (440) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+D (454) cpu_start: calling init function: 0x4204b77e[0m
+D (459) cpu_start: calling init function: 0x4204b702[0m
+D (464) cpu_start: calling init function: 0x4204b246[0m
+D (469) cpu_start: calling init function: 0x420348ee[0m
+[0;33mW (474) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+D (484) cpu_start: calling init function: 0x40389ba2[0m
+D (490) cpu_start: calling init function: 0x4200002a[0m
+D (495) cpu_start: calling init function: 0x42005886 on core: 0[0m
+D (501) intr_alloc: Connected src 39 to int 3 (cpu 0)[0m
+D (506) cpu_start: calling init function: 0x42001c1a on core: 0[0m
+D (512) cpu_start: calling init function: 0x42003550 on core: 0[0m
+[0;32mI (518) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (524) sleep: Enable automatic switching of GPIO sleep configuration[0m
+D (531) cpu_start: calling init function: 0x42001430 on core: 0[0m
+[0;32mI (538) coexist: coex firmware version: d96c1e51f[0m
+[0;32mI (543) coexist: coexist rom version 9387209[0m
+D (548) intr_alloc: Connected src 50 to int 4 (cpu 0)[0m
+D (553) app_start: Starting scheduler on CPU0[0m
+D (557) intr_alloc: Connected src 37 to int 7 (cpu 0)[0m
+[0;32mI (557) main_task: Started on CPU0[0m
+D (557) heap_init: New heap initialised at 0x3fcdc710[0m
+D (557) intr_alloc: Connected src 33 to int 9 (cpu 0)[0m
+[0;32mI (567) main_task: Calling app_main()[0m
+D (567) intr_alloc: Connected src 29 to int 10 (cpu 0)[0m
+[0;32mI (587) BLE_INIT: BT controller compile version [c23ab4c][0m
+D (587) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (587) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (597) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (607) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (607) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (617) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+[0;32mI (627) BLE_INIT: Bluetooth MAC: 34:b7:da:f6:47:7e[0m
+[0;32mI (627) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+D (637) phy_init: loading PHY init data from application binary[0m
+D (647) nvs: nvs_open_from_partition phy 0[0m
+D (647) nvs: nvs_get cal_version 4[0m
+D (647) nvs: nvs_get_str_or_blob cal_mac[0m
+D (657) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (657) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (667) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (677) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (677) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (687) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (697) nvs: nvs_get_str_or_blob cal_data[0m
+D (697) nvs: nvs_close 1[0m
+D (707) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (707) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (717) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (727) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (727) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (737) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (757) temperature_sensor: range changed, change to index 2[0m
+D (787) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (787) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (787) nvs: nvs_get_str_or_blob our_sec_1[0m
+D (787) nvs: nvs_close 2[0m
+D (787) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (797) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (797) nvs: nvs_get_str_or_blob our_sec_2[0m
+D (807) nvs: nvs_close 3[0m
+D (807) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (807) nvs: nvs_get_str_or_blob our_sec_3[0m
+D (817) nvs: nvs_close 4[0m
+D (817) NIMBLE_NVS: ble_store_config_our_secs restored 1 bonds[0m
+D (827) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (827) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (837) nvs: nvs_get_str_or_blob peer_sec_1[0m
+D (837) nvs: nvs_close 5[0m
+D (837) NIMBLE_NVS: KEY in RAM is filled up from NVS index = 1[0m
+D (847) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (847) nvs: nvs_get_str_or_blob peer_sec_2[0m
+D (857) nvs: nvs_close 6[0m
+D (857) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (867) nvs: nvs_get_str_or_blob peer_sec_3[0m
+D (867) nvs: nvs_close 7[0m
+D (867) NIMBLE_NVS: ble_store_config_peer_secs restored 1 bonds[0m
+D (877) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (877) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (887) nvs: nvs_get_str_or_blob cccd_sec_1[0m
+D (887) nvs: nvs_close 8[0m
+D (887) NIMBLE_NVS: CCCD in RAM is filled up from NVS index = 1[0m
+D (897) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (907) nvs: nvs_get_str_or_blob cccd_sec_2[0m
+D (907) nvs: nvs_close 9[0m
+D (907) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (917) nvs: nvs_get_str_or_blob cccd_sec_3[0m
+D (917) nvs: nvs_close 10[0m
+D (917) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (927) nvs: nvs_get_str_or_blob cccd_sec_4[0m
+D (927) nvs: nvs_close 11[0m
+D (937) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (937) nvs: nvs_get_str_or_blob cccd_sec_5[0m
+D (947) nvs: nvs_close 12[0m
+D (947) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (947) nvs: nvs_get_str_or_blob cccd_sec_6[0m
+D (957) nvs: nvs_close 13[0m
+D (957) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (957) nvs: nvs_get_str_or_blob cccd_sec_7[0m
+D (967) nvs: nvs_close 14[0m
+D (967) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (977) nvs: nvs_get_str_or_blob cccd_sec_8[0m
+D (977) nvs: nvs_close 15[0m
+D (977) NIMBLE_NVS: ble_store_config_cccds restored 1 bonds[0m
+D (987) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (987) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (997) nvs: nvs_get_str_or_blob local_irk_1[0m
+D (997) nvs: nvs_close 16[0m
+D (1007) NIMBLE_NVS: Local IRK in RAM is filled up from NVS index = 1[0m
+D (1007) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1017) nvs: nvs_get_str_or_blob local_irk_2[0m
+D (1017) nvs: nvs_close 17[0m
+D (1017) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1027) nvs: nvs_get_str_or_blob local_irk_3[0m
+D (1027) nvs: nvs_close 18[0m
+D (1037) NIMBLE_NVS: ble_store_config_local_irks restored 1 irks[0m
+D (1037) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1047) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (1047) nvs: nvs_get_str_or_blob rpa_rec_1[0m
+D (1057) nvs: nvs_close 19[0m
+D (1057) NIMBLE_NVS: RPA_REC in RAM is filled up from NVS index = 1[0m
+D (1057) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1067) nvs: nvs_get_str_or_blob rpa_rec_2[0m
+D (1067) nvs: nvs_close 20[0m
+D (1077) nvs: nvs_open_from_partition nimble_bond 1[0m
+D (1077) nvs: nvs_get_str_or_blob rpa_rec_3[0m
+D (1087) nvs: nvs_close 21[0m
+D (1087) NIMBLE_NVS: ble_store_config_rpa_recs restored 1 bonds[0m
+[0;32mI (1097) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1097) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1107) NimBLE: Device Address: [0m
+[0;32mI (1107) NimBLE: 34:b7:da:f6:47:7e[0m
+[0;32mI (1117) NimBLE: 
+[0m
+[0;32mI (1117) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1117) NimBLE: disc_mode=2[0m
+[0;32mI (1127) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1137) NimBLE: 
+[0m
+Enable/Disable Button Pressed!
+Starting NimBLE stack...
+[0;31mE (1147) BLE_INIT: controller init failed
+[0m
+
+assert failed: ble_svc_gap_init ble_svc_gap.c:333 (rc == 0)
+Core  0 register dump:
+MEPC    : 0x40380700  RA      : 0x4038b03a  SP      : 0x3fcb1de0  GP      : 0x3fc93600  
+TP      : 0x3fc97378  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x0000008c  S1      : 0x00000001  A0      : 0x3fcb1e1c  A1      : 0x3fc94869  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x3fc96000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x3fcb1f2b  
+S4      : 0x3fc94868  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fcb1de0: 0x00000019 0x00000000 0x3c07eaf8 0x40391496 0x3fc94524 0x3c07eaf8 0x3fc94cb8 0x3c0757a8
+3fcb1e00: 0x3fc94534 0x3fcb1e14 0x3fc94538 0x3c0754cc 0x3fc94868 0x00333333 0x00000019 0x65737361
+3fcb1e20: 0x66207472 0x656c6961 0x62203a64 0x735f656c 0x675f6376 0x695f7061 0x2074696e 0x5f656c62
+3fcb1e40: 0x5f637673 0x2e706167 0x33333a63 0x72282033 0x3d3d2063 0x00293020 0x00000000 0x3fcb1ebc
+3fcb1e60: 0x3c076e34 0x00000000 0x3fcac128 0x4038b0cc 0x00000000 0x00000000 0x3fcac128 0x4038b6b6
+3fcb1e80: 0x00000000 0x00000000 0x00000103 0x00000000 0x00000804 0x00000054 0x3fc978b0 0xffffffff
+3fcb1ea0: 0x00000000 0x00000001 0x3fcb9b7c 0x00000000 0x00000000 0x3fcb1f84 0x3fcac128 0x4038b878
+3fcb1ec0: 0x00000000 0x00000000 0x3fc97214 0x4201bdee 0x00000000 0x00000000 0x0000000f 0x4200ca82
+3fcb1ee0: 0x00000000 0x00000000 0x00000000 0x42000000 0x00000001 0x00000002 0x00000000 0x00000000
+3fcb1f00: 0x00000000 0x00000000 0x00000000 0x42009d58 0x00000000 0x00000000 0x00000000 0x42008f8a
+3fcb1f20: 0x00000000 0x00000000 0x00000000 0x420081d6 0x00000000 0x00000000 0x00000000 0x4038c080
+3fcb1f40: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb1f60: 0x00000000 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fcb1f80: 0x00000150 0x3fcb1da0 0x00000000 0x3fc95630 0x3fc95630 0x3fcb1f84 0x3fc95628 0x00000012
+3fcb1fa0: 0x00000000 0x00000000 0x3fcb1f84 0x00000000 0x00000007 0x3fcb1780 0x626d696e 0x0000656c
+3fcb1fc0: 0x00000000 0x00000000 0x3fcb1f70 0x00000007 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb1fe0: 0x3fc9894c 0x3fc989b4 0x3fc98a1c 0x00000000 0x00000000 0x00000001 0x00000000 0x00000000
+3fcb2000: 0x00000000 0x42004f48 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2020: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2040: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2060: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2080: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb20a0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb20c0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000c00 0x00000000 0x00000000
+3fcb20e0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2100: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2120: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2140: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2160: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb2180: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb21a0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb21c0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+
+
+
+ELF file SHA256: 43f0d2ea3
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403806ec
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Oct 18 2024 17:31:12[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3c070020 size=1acf8h (109816) map[0m
+[0;32mI (110) esp_image: segment 1: paddr=0002ad20 vaddr=3fc92e00 size=025f8h (  9720) load[0m
+[0;32mI (112) esp_image: segment 2: paddr=0002d320 vaddr=40380000 size=02cf8h ( 11512) load[0m
+[0;32mI (118) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=61800h (399360) map[0m
+[0;32mI (187) esp_image: segment 4: paddr=00091828 vaddr=40382cf8 size=0ff28h ( 65320) load[0m
+[0;32mI (205) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Unicore app[0m
+D (217) cpu_start: Pro cpu up[0m
+D (225) clk: RTC_SLOW_CLK calibration value: 3615066[0m
+[0;32mI (230) cpu_start: Pro cpu start user code[0m
+[0;32mI (230) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (230) cpu_start: Application information:[0m
+[0;32mI (233) cpu_start: Project name:     app-template[0m
+[0;32mI (239) cpu_start: App version:      a74f263-dirty[0m
+[0;32mI (244) cpu_start: Compile time:     Oct 18 2024 19:13:20[0m
+[0;32mI (250) cpu_start: ELF file SHA256:  43f0d2ea3...[0m
+[0;32mI (256) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (261) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (266) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (271) cpu_start: Chip rev:         v0.4[0m
+D (275) memory_layout: Checking 5 reserved memory ranges:[0m
+D (281) memory_layout: Reserved memory range 0x3fc80000 - 0x3fc92e00[0m
+D (287) memory_layout: Reserved memory range 0x3fc92e00 - 0x3fc98160[0m
+D (294) memory_layout: Reserved memory range 0x3fcdf060 - 0x3fce0000[0m
+D (300) memory_layout: Reserved memory range 0x50000000 - 0x50000010[0m
+D (306) memory_layout: Reserved memory range 0x50001fe8 - 0x50002000[0m
+D (313) memory_layout: Building list of available memory regions:[0m
+D (319) memory_layout: Available memory region 0x3fc98160 - 0x3fca0000[0m
+D (326) memory_layout: Available memory region 0x3fca0000 - 0x3fcc0000[0m
+D (332) memory_layout: Available memory region 0x3fcc0000 - 0x3fcdc710[0m
+D (339) memory_layout: Available memory region 0x3fcdc710 - 0x3fcdf060[0m
+D (345) memory_layout: Available memory region 0x50000010 - 0x50001fe8[0m
+[0;32mI (352) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (359) heap_init: New heap initialised at 0x3fc98160[0m
+[0;32mI (364) heap_init: At 3FC98160 len 00027EA0 (159 KiB): RAM[0m
+D (371) heap_init: New heap initialised at 0x3fcc0000[0m
+[0;32mI (376) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
