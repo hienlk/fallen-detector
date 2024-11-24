@@ -30,7 +30,7 @@ The device features an event cancellation button, which generates an interrupt t
 
 ## Hardware Components Used:
 <p align="center">
-<img src="https://github.com/hienlk/fallen-detector/blob/sp/res/falldetector_bb.png" height="500" width="500">
+<img src="https://github.com/hienlk/fallen-detector/blob/sp/res/falldetector_bb.png" height="450" width="500">
 </p>
 <br>
 
@@ -48,7 +48,7 @@ The device features an event cancellation button, which generates an interrupt t
 
 ## Workflow
 <p align="center">
-<img src="https://github.com/hienlk/fallen-detector/blob/sp/res/uml.png" height="700" width="450">
+<img src="https://github.com/hienlk/fallen-detector/blob/sp/res/uml.png" height="500" width="700">
 </p>
 <br>
 
