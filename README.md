@@ -70,7 +70,7 @@ To use the Fall Detection Device, follow these steps:
 
 1. Assemble the hardware components according to the schematic diagram provided.
 
-2. Config NimBLE: In ESP-IDF ```python idf.py menuconfig → Component Config → Bluetooth → Bluetooth Host → NimBLE - BLE only```
+2. Config NimBLE: In ESP-IDF ``` idf.py menuconfig → Component Config → Bluetooth → Bluetooth Host → NimBLE - BLE only```
 
 3. Upload the provided firmware to the ESP32 using ESP-IDF.
 
