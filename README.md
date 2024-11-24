@@ -1,37 +1,36 @@
 # Fall Detection Device and Mobile Application
 
 
-The Fall Detection Device is a wearable device designed to detect falls using the MPU6050 accelerometer and gyroscope sensor. 
-It utilizes the jerk in accelerations to determine if a fall event has occurred. 
-The device is connect with mobile app via BLE. 
-In case of a fall, the device activates a buzzer and LED to alert people in the vicinity, if it is already connected with mobile app the phone will send SOS SMS to phone number which has been entered. 
-Additionally, it includes an event cancellation button that generates an interrupt to stop the buzzer and an emergency button in case the fall event is detected wrong. 
+The Fall Detection Device is a wearable device designed to detect falls using the MPU6050 accelerometer and gyroscope sensor. It leverages the jerk in acceleration data to identify fall events accurately.
+The device connects to a mobile app via Bluetooth Low Energy (BLE) and incorporates a BLE server built using the NimBLE stack, designed to support pairing and bonding with passkey authentication for enhanced security.
+In the event of a detected fall, the device activates a buzzer and LED to alert people nearby. If the device is already connected to the mobile app, the phone will send an SOS SMS to a pre-entered phone number.
+The device features an event cancellation button, which generates an interrupt to deactivate the buzzer when it is active, allowing users to stop the alert manually. Additionally, it includes an emergency button that can be pressed if the MPU fails to detect a fall, enabling users to manually trigger a fall alert and notify others in critical situations.
 
 
 
 ## Features
 
-- [x] **Fall Detection:** The device continuously monitors the user's movements using the MPU6050 sensor. A significant jerk in accelerations is detected to trigger a fall event.
+- [x] **Fall Detection:** The device continuously monitors the user's movements using the MPU6050 sensor. A significant jerk in acceleration is detected to trigger a fall event.
 
-- [x] **Buzzer and LED Alert:** Once a fall is detected, a buzzer and LED are activated to alert nearby individuals about the fall.
+- [x] **Buzzer and LED Alert:** When a fall is detected, a buzzer and LED are activated to alert nearby individuals about the incident.
 
 - [x] **Event Cancellation Button:** The device is equipped with an event cancellation button. Pressing this button generates an interrupt, stopping the buzzer and preventing false alarms.
 
-- [x] **Emergency Button:** When the elder falls and the device can't catch this event, they can use this button to change to fall event.
+- [x] **Emergency Button:** If the user falls and the device fails to detect the event, they can press the emergency button to manually trigger a fall alert.
 
-- [x] **BLE server:** The server is built to send data from device to phone. It can paring, bonding and using passkey.
+- [x] **BLE server:** The BLE server, built using NimBLE, facilitates data transmission between the device and the mobile app. It supports pairing, bonding, and passkey authentication for secure connections.
 
-- [x] **Send SOS SMS:** In the event of a fall, the device send notification to app through NimBLE and that app send SOS SMS messages to pre-added emergency contacts to request help. The user's location (Google Map) where they fell includes in messages.
+- [x] **Send SOS SMS:** In the event of a fall, the device sends a notification to the app via NimBLE. The app then sends an SOS SMS to pre-added emergency contacts, including the user’s location (Google Maps) to assist with immediate help.
 
-- [x] **Mobile Application:** An Android Mobile Application use to connect to the fall detection device and send SOS SMS when the elder falls.
+- [x] **Mobile Application:** An Android mobile application connects to the fall detection device, sending SOS SMS messages and providing other functionalities for managing the device.
 
-- [ ] **Find Device:** The buzzer of device will be active when user use this function on mobile app.
+- [ ] **Find Device:** This feature allows users to locate the device by activating the buzzer through the mobile app.
 
-- [ ] **Enable/Disable BLE Advertising Button:** Using to enable/disable advertising of BLE whenever user want to connect device with other phone or prevent another person connect their phone with it.
+- [ ] **Enable/Disable BLE Advertising Button:** This button lets users enable or disable BLE advertising, allowing them to connect the device to a new phone or prevent others from pairing with it.
 
 ## Hardware Components Used:
 <p align="center">
-<img src="" height="500" width="500">
+<img src="https://github.com/hienlk/fallen-detector/blob/sp/res/falldetector_bb.png" height="500" width="500">
 </p>
 <br>
 
@@ -47,17 +46,22 @@ Additionally, it includes an event cancellation button that generates an interru
 
 - **Emergency Button**
 
-## How it Works
+## Workflow
 <p align="center">
-<img src="" height="700" width="450">
+<img src="https://github.com/hienlk/fallen-detector/blob/sp/res/uml.png" height="700" width="450">
 </p>
 <br>
 
-Device need connect to phone via mobile app.
-The MPU6050 sensor measures the user's accelerations and jerk in real-time. If the jerk exceeds a certain threshold, it indicates a fall event.
-When falling dectection, the buzzer will sound an alarms. Mobile app will send SOS SMS to phone number which has been added.
-The event cancellation button is used to stop the buzzer.
-BLE gatt server is used to send data from device to user phone.
+The MPU6050 continuously collects motion and temperature data, which is processed by the ESP32.
+If the calculated jerk exceeds a threshold:
+is_fallen() returns True.
+The Buzzer and LED are activated to alert nearby individuals.
+If connected, the app sends an SOS SMS to emergency contacts.
+
+If no fall is detected, is_fallen() returns False, no alerts are triggered, and the system continues its normal operation by processing data to monitor the user's movements in real-time.
+The Event Cancellation Button can deactivate the buzzer and LED when pressed.
+In case the MPU6050 fails to detect a fall, the Emergency Button allows the user to manually trigger a fall event, ensuring the alert is sent promptly.
+The BLE GATT server, implemented using NimBLE, enables secure communication between the ESP32 and the mobile app. It supports pairing, bonding, and passkey authentication for data exchange.
 
 
 ## Getting Started
@@ -66,15 +70,17 @@ To use the Fall Detection Device, follow these steps:
 
 1. Assemble the hardware components according to the schematic diagram provided.
 
-2. Upload the provided firmware to the ESP32 using ESP-IDF.
+2. Config NimBLE: In ESP-IDF ```python idf.py menuconfig → Component Config → Bluetooth → Bluetooth Host → NimBLE - BLE only```
 
-3. Install mobile applicaion by apk.
+3. Upload the provided firmware to the ESP32 using ESP-IDF.
 
-4. Connect to gatt server of the device using app. Pairing and bonding it. The passkey is "123456".
+4. Install mobile applicaion by apk.
 
-5. Add emergency contacts in app.
+5. Connect to BLE server of the device using app. Pairing and bonding it. The passkey is "123456".
 
-6. Wear the device, and it will continuously monitor your movements.
+6. Add emergency contacts in app.
 
-7. In the event of a fall, the buzzer and LED will active, and SOS SMS messages will be sent to the emergency contacts.
+7. Wear the device, and it will continuously monitor your movements.
+
+8. In the event of a fall, the buzzer and LED will active, and SOS SMS messages will be sent to the emergency contacts.
 
