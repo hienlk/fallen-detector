@@ -63,6 +63,9 @@ The Event Cancellation Button can deactivate the buzzer and LED when pressed.
 In case the MPU6050 fails to detect a fall, the Emergency Button allows the user to manually trigger a fall event, ensuring the alert is sent promptly.
 The BLE GATT server, implemented using NimBLE, enables secure communication between the ESP32 and the mobile app. It supports pairing, bonding, and passkey authentication for data exchange.
 
+## Workflow
+
+![](https://github.com/hienlk/fallen-detector/blob/sp/res/result.gif)
 
 ## Getting Started
 
