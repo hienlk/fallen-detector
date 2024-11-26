@@ -65,7 +65,7 @@ The BLE GATT server, implemented using NimBLE, enables secure communication betw
 
 ## Result
 
-<img src="https://github.com/hienlk/fallen-detector/blob/sp/res/result.gif" width="700">
+<img src="https://github.com/hienlk/fallen-detector/blob/sp/res/result.gif" width="500">
 <br><br>
 
 ## Getting Started
