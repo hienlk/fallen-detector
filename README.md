@@ -34,6 +34,13 @@ The device features an event cancellation button, which generates an interrupt t
 </p>
 <br>
 
+<p align="center">
+<img src="https://github.com/hienlk/fallen-detector/blob/sp/res/schematic.png" height="450" width="600">
+<br>
+Schematic
+</p>
+<br>
+
 - **ESP32 C3 Core Board** 
 
 - **MPU6050 Accelerometer and Gyroscope Sensor** 
