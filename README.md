@@ -30,12 +30,12 @@ The device features an event cancellation button, which generates an interrupt t
 
 ## Hardware Components Used:
 <p align="center">
-<img src="https://github.com/hienlk/fallen-detector/blob/sp/res/falldetector_bb.png" height="450" width="500">
+<img src="https://github.com/hienlk/fallen-detector/blob/main/res/falldetector_bb.png" height="450" width="500">
 </p>
 <br>
 
 <p align="center">
-<img src="https://github.com/hienlk/fallen-detector/blob/sp/res/schematic.png" height="450" width="600">
+<img src="https://github.com/hienlk/fallen-detector/blob/main/res/schematic.png" height="450" width="600">
 <br>
 Schematic
 </p>
